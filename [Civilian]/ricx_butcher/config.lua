@@ -1,8 +1,8 @@
 Config = {}
 
-Config.Framework = "redemrp" -- "redemrp" or "vorp" or "qbr" or "qbr2" or "redemrp-reboot"
+Config.Framework = "vorp" -- "redemrp" or "vorp" or "qbr" or "qbr2" or "redemrp-reboot"
 
-Config.Debug = true
+Config.Debug = false
 Config.Marker = true
 Config.Prompts = {
     Prompt1 = 0x05CA7C52,
@@ -70,7 +70,7 @@ Config.Butchers = {
         animals = {`a_c_alligator_03`,`a_c_armadillo_01`,`a_c_badger_01`,}, -- add more animals to array from Config.SellAnimals |  FOR ALL ANIMALS, USE: animals = "all" -- EXAMPLE BUTCHER #2
         quality = {1,2},--buy only quality id 1 or 2 -- Config.Qualities
         extra = 0.1, -- +10% -- IF "tax = -0.1," then it will be -10%
-        jobs = {"butcher", "butcher2"}, --For job check. For No Job: "jobs = false," -- EXAMPLE BUTCHER #2
+        jobs = false, --For job check. For No Job: "jobs = false," -- EXAMPLE BUTCHER #2
     },
     [2] = {
         name = "Black Market",
@@ -88,7 +88,7 @@ Config.Butchers = {
         animals = "all",--BUYS ALL ANIMAL
         quality = {1,2,3},
         extra = 0.1,
-        jobs = {"butcher", "butcher2"},
+        jobs = false,
     },
     [4] = {
         name = "Armadillo",
@@ -97,7 +97,7 @@ Config.Butchers = {
         animals = "all",--BUYS ALL ANIMAL
         quality = {1,2,3},
         extra = 0.1,
-        jobs = {"butcher", "butcher2"},
+        jobs = false,
     },
     [5] = {
         name = "Strawberry",
@@ -106,7 +106,7 @@ Config.Butchers = {
         animals = "all",--BUYS ALL ANIMAL
         quality = {1,2,3},
         extra = 0.1,
-        jobs = {"butcher", "butcher2"},
+        jobs = false,
     },
     [6] = {
         name = "North",
@@ -115,7 +115,7 @@ Config.Butchers = {
         animals = "all",--BUYS ALL ANIMAL
         quality = {1,2,3},
         extra = 0.1,
-        jobs = {"butcher", "butcher2"},
+        jobs = false,
     },
     [7] = {
         name = "Wapiti",
@@ -124,7 +124,7 @@ Config.Butchers = {
         animals = "all",--BUYS ALL ANIMAL
         quality = {1,2,3},
         extra = 0.3,
-        jobs = {"wapiti", "wapiti"},
+        jobs = false,
     },
     [8] = {
         name = "Blackwater",
@@ -133,7 +133,7 @@ Config.Butchers = {
         animals = "all",--BUYS ALL ANIMAL
         quality = {1,2,3},
         extra = 0.1,
-        jobs = {"butcher", "butcher2"},
+        jobs = false,
     },
     [9] = {
         name = "Rhodes",
@@ -142,7 +142,7 @@ Config.Butchers = {
         animals = "all",--BUYS ALL ANIMAL
         quality = {1,2,3},
         extra = 0.1,
-        jobs = {"butcher", "butcher2"},
+        jobs = false,
     },
     [10] = {
         name = "Saint Denis",
@@ -151,7 +151,7 @@ Config.Butchers = {
         animals = "all",--BUYS ALL ANIMAL
         quality = {1,2,3},
         extra = 0.1,
-        jobs = {"butcher", "butcher2"},
+        jobs = false,
     },
     [11] = {
         name = "Van Horn",
@@ -160,7 +160,7 @@ Config.Butchers = {
         animals = "all",--BUYS ALL ANIMAL
         quality = {1,2,3},
         extra = -0.4,
-        jobs = {"butcher", "butcher2"},
+        jobs = false,
     },
     [12] = {
         name = "Annesburg",
@@ -169,7 +169,7 @@ Config.Butchers = {
         animals = "all",--BUYS ALL ANIMAL
         quality = {1,2,3},
         extra = -0.1,
-        jobs = {"butcher", "butcher2"},
+        jobs = false,
     },
 }
 
@@ -180,7 +180,7 @@ Config.ButcherTables = {
         coords = vector3(-755.526, -1287.967, 43.641),
         heading = 99.407,
         useprice = 2,-- 1 dollar / animal butchering
-        jobs = {"butcher", "butcher2"}, --For job check. For No Job: "jobs = false,"
+       jobs = false, --For job check. For No Job: "jobs = false,"
     },
     [2] = {
         name = "Tumbleweed",
@@ -188,7 +188,7 @@ Config.ButcherTables = {
         coords = vector3(-5508.219, -2944.834, -1.876),
         heading = 166.478,
         useprice = 1,
-        jobs = {"butcher", "butcher2"},
+       jobs = false,
     },
     [3] = {
         name = "Armadillo",
@@ -196,7 +196,7 @@ Config.ButcherTables = {
         coords = vector3(-3695.216, -2630.493, -13.830),
         heading = 85.968,
         useprice = 2,
-        jobs = {"butcher", "butcher2"}, 
+       jobs = false, 
     },
     [4] = {
         name = "Strawberry",
@@ -204,7 +204,7 @@ Config.ButcherTables = {
         coords = vector3(-1752.674, -390.606, 156.276),
         heading = 179.492,
         useprice = 2,
-        jobs = {"butcher", "butcher2"}, 
+       jobs = false, 
     },
     [5] = {
         name = "North",
@@ -212,7 +212,7 @@ Config.ButcherTables = {
         coords = vector3(-1344.678, 2405.222, 307.067),
         heading = 328.470,
         useprice = 4,
-        jobs = {"butcher", "butcher2"}, 
+       jobs = false, 
     },
     [6] = {
         name = "Wapiti",
@@ -228,7 +228,7 @@ Config.ButcherTables = {
         coords = vector3(-333.814, 764.490, 116.519),
         heading = 1.415,
         useprice = 5,
-        jobs = {"butcher", "butcher2"}, 
+       jobs = false, 
     },
     [8] = {
         name = "Rhodes",
@@ -236,7 +236,7 @@ Config.ButcherTables = {
         coords = vector3(1298.925, -1276.100, 75.906),
         heading = 153.906,
         useprice = 3,
-        jobs = {"butcher", "butcher2"}, 
+       jobs = false, 
     },
     [9] = {
         name = "Saint Denis",
@@ -244,7 +244,7 @@ Config.ButcherTables = {
         coords = vector3(2817.836, -1330.089, 46.514),
         heading = 232.950,
         useprice = 1,
-        jobs = {"butcher", "butcher2"}, 
+       jobs = false, 
     },
     [10] = {
         name = "Van Horn",
@@ -252,7 +252,7 @@ Config.ButcherTables = {
         coords = vector3(2998.530, 567.791, 44.480),
         heading = 199.839,
         useprice = 2,
-        jobs = {"butcher", "butcher2"}, 
+       jobs = false, 
     },
     [11] = {
         name = "Annesburg",
@@ -260,7 +260,7 @@ Config.ButcherTables = {
         coords = vector3(2937.331, 1306.315, 44.479),
         heading = 188.433,
         useprice = 1,
-        jobs = {"butcher", "butcher2"}, 
+       jobs = false, 
     },
     [12] = {
         name = "Black Market",
