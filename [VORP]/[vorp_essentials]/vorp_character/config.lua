@@ -7,7 +7,7 @@ Config.Align = "top-left" -- menu
 Lang = "English"
 
 --* when player choosing a name  make sure it doesn't contain any of the words in the list below
-Config.BannedNames = { "Arthur", "Marshton", "Shit", "Dick" } --* you can add more words
+Config.BannedNames = { "Arthur", "Marshton", "Shit",} --* you can add more words
 
 Config.AllowPlayerDeleteCharacter = true
 -- item name for second chance character
@@ -239,39 +239,6 @@ Config.keys = {
     prompt_camera_ws = { key = 0x8FD015D8, key2 = 0xD27782E3 },     -- [ W ] and [ S ]
     prompt_camera_rotate = { key = 0x7065027D, key2 = 0xB4E465B4 }, -- [ A ] and [ D ]
     prompt_zoom = { key = 0x8BDE7443, key2 = 0x62800C92 },          -- [ MOUSE SCROLL DOWN ] and [ MOUSE SCROLL UP ]
-}
-
-Config.commands = {
-    CoatClosed = { command = "ccoat" },
-    Hat = { command = "hat" },
-    EyeWear = { command = "eyewear" },
-    Mask = { command = "mask" },
-    NeckWear = { command = "neckwear" },
-    NeckTies = { command = "tie" },
-    Shirt = { command = "shirt" },
-    Vest = { command = "vest" },
-    Coat = { command = "coat" },
-    Poncho = { command = "poncho" },
-    Cloak = { command = "cloak" },
-    Glove = { command = "glove" },
-    Bracelet = { command = "bracelet" },
-    Buckle = { command = "buckle" },
-    Pant = { command = "pant" },
-    Skirt = { command = "skirt" },
-    Chap = { command = "chap" },
-    Boots = { command = "boots" },
-    Spurs = { command = "spurs" },
-    Spats = { command = "spats" },
-    GunbeltAccs = { command = "gunbeltaccs" },
-    Gauntlets = { command = "gauntlets" },
-    Loadouts = { command = "loadouts" },
-    Accessories = { command = "accessories" },
-    Satchels = { command = "satchels" },
-    Dress = { command = "dresses" },
-    Belt = { command = "belt" },
-    Holster = { command = "holster" },
-    Suspender = { command = "suspender" },
-    armor = { command = "armor" },
 }
 
 Config.DefaultChar = {

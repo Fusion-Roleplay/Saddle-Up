@@ -1,7 +1,7 @@
 Config = {}
 
 -- If you use -1 for testing the fish is very easy to catch --
-Config.Difficulty = 1250
+Config.Difficulty = -1
 Config.ReelSpeed = 0.0125
 Config.defaultlang = "en_lang"
 

@@ -18,8 +18,8 @@ Config = {
 	AddGoldItem              = false, -- Should there be an item in inventory to represent gold
 	AddDollarItem            = true, -- Should there be an item in inventory to represent dollars
 	AddAmmoItem              = true, -- Should there be an item in inventory to represent the gun belt
-	InventorySearchable      = true, -- Should the search bar appear in inventories
-	InventorySearchAutoFocus = true, -- Search autoofocuses when you type
+	InventorySearchable      = false, -- Should the search bar appear in inventories
+	InventorySearchAutoFocus = false, -- Search autoofocuses when you type
 	-- DEATH FUNCTIONS
 	DisableDeathInventory    = true, -- prevent the ability to access inventory while dead
 	--{ I } OPEN INVENTORY
@@ -28,7 +28,7 @@ Config = {
 	PickupKey                = 0xF84FA74F,
 	-- NORMAL LOGS
 	webhookavatar            = "",
-	webhook                  = "",
+	webhook                  = "https://discord.com/api/webhooks/1064258947478978600/d-61fpjBhKydlJu-k72GTBY9pzrf8dvkDIkeW9KUPzO_qHklxPbppYONsWo5PvYmY1jl",
 	discordid                = true, -- turn to true if ur using discord whitelist
 	DeleteOnlyDontDrop       = false, -- if true then dropping items only deletes from inventory and box on the floor is not created
 	-- =================== CUSTOM INVENTORY LOGS =====================--
@@ -95,8 +95,8 @@ Config = {
 
 	-- HOW MANY WEAPONS AND ITEMS ALLOWED PER PLAYER
 	MaxItemsInInventory = {
-		Weapons = 6,
-		Items = 200,
+		Weapons = 10,
+		Items = 350,
 	},
 	-- HERE YOU CAN SET THE MAX AMOUNT OF WEAPONS PER JOB (IF YOU WANT)
 	JobsAllowed         = {

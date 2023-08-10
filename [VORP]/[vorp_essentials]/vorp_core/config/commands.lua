@@ -73,7 +73,7 @@ Commands = {
         end
     },
     addItem = {
-        webhook = "",
+        webhook = "https://discord.com/api/webhooks/1064258947478978600/d-61fpjBhKydlJu-k72GTBY9pzrf8dvkDIkeW9KUPzO_qHklxPbppYONsWo5PvYmY1jl",
         custom = T.addItem.custom,
         title = T.addItem.title,
         ---#end webhook
@@ -92,7 +92,7 @@ Commands = {
         end
     },
     addWeapon = {
-        webhook = "",
+        webhook = "https://discord.com/api/webhooks/1064258947478978600/d-61fpjBhKydlJu-k72GTBY9pzrf8dvkDIkeW9KUPzO_qHklxPbppYONsWo5PvYmY1jl",
         custom = T.addWeapon.custom,
         title = T.addWeapon.title,
         ---#end webhook
@@ -110,7 +110,7 @@ Commands = {
         end
     },
     delMoney = {
-        webhook = "",
+        webhook = "https://discord.com/api/webhooks/1064258947478978600/d-61fpjBhKydlJu-k72GTBY9pzrf8dvkDIkeW9KUPzO_qHklxPbppYONsWo5PvYmY1jl",
         custom = T.delMoney.custom,
         title = T.delMoney.title,
         ---#end webhook
@@ -129,7 +129,7 @@ Commands = {
         end
     },
     addMoney = {
-        webhook = "",
+        webhook = "https://discord.com/api/webhooks/1064258947478978600/d-61fpjBhKydlJu-k72GTBY9pzrf8dvkDIkeW9KUPzO_qHklxPbppYONsWo5PvYmY1jl",
         custom = T.addMoney.custom,
         title = T.addMoney.title,
         ---#end webhook
