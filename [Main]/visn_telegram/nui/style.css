@@ -1,0 +1,1114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --telegram-blue        : #0b3252;
+    --telegram-blue-opacity: rgba(11, 50, 82, 0.4);
+    --telegram-dark-blue   : #061d37;
+    --telegram-light-red   : #e13030;
+    --telegram-dark-red    : #7d1717;
+    --telegram-focus       : rgba(238, 222, 175, 0.386);
+    --telegram-side        : rgba(238, 222, 175, 1.0);
+    --telegram-side-active : rgb(241, 200, 75);
+}
+
+@font-face {
+    font-family: 'King';
+    src        : url('assets/fonts/King.woff2') format('woff2'),
+        url('assets/fonts/King.woff') format('woff');
+    font-weight : 500;
+    font-style  : italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hapna Slab Serif DemiBold';
+
+    src: url('assets/fonts/HapnaSlabSerif-DemiBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'RDR Lino Regular';
+    src        : url('assets/fonts/rdr2.ttf')
+}
+
+@font-face {
+    font-family: 'Chase';
+    src        : url('assets/fonts/chase.ttf')
+}
+
+@font-face {
+    font-family: 'Western Bang Bang';
+    src        : url('assets/fonts/wbb.ttf')
+}
+
+.container {
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    right   : 0;
+    bottom  : 0;
+    margin  : auto;
+
+    width : 1080px;
+    height: 720px;
+
+    display: none;
+}
+
+.telegram {
+    position           : relative;
+    width              : 100%;
+    height             : 100%;
+    background-position: center;
+    background-size    : contain;
+}
+
+.telegram_message,
+.telegram_message_simple,
+.telegram_compose {
+    background-image: url(assets/img/telegram_message.png);
+}
+
+.telegram_dashboard,
+.telegram_contacts {
+    background-image: url(assets/img/telegram_dashboard.png);
+}
+
+.container .telegram_title {
+    position: absolute;
+
+    font-family: 'Chase';
+    font-size  : 48px;
+
+    left: 50%;
+
+    transform: translate(-50%);
+    top      : 5rem;
+
+    color: var(--telegram-blue);
+
+    user-select: none;
+}
+
+.container .telegram_logo img {
+    position   : absolute;
+    left       : 50%;
+    transform  : translate(-50%);
+    height     : 92px;
+    user-select: none;
+}
+
+.container .telegram_legal_notice {
+    position: absolute;
+
+    font-family: 'Roboto Slab';
+    font-size  : 12px;
+    font-weight: 600;
+
+    text-align: center;
+
+    width: 35rem;
+
+    left: 50%;
+
+    transform: translate(-50%);
+    top      : 8.7rem;
+
+    color: var(--telegram-dark-blue);
+
+    user-select: none;
+}
+
+.container .telegram_message_notice {
+    position: absolute;
+
+    font-family: 'Roboto Slab';
+    font-size  : 10px;
+    font-weight: 600;
+
+
+    width: 13rem;
+
+    left: 0.8rem;
+
+    top: 5.3rem;
+
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.container .telegram_number {
+    position: absolute;
+    right   : 0.8rem;
+
+    font-family: 'Roboto Slab';
+    font-size  : 64px;
+
+    top: 5.5rem;
+
+    color      : var(--telegram-dark-red);
+    user-select: none;
+}
+
+.container .telegram_location_field {
+    position   : absolute;
+    top        : 3.09rem;
+    width      : 12.55rem;
+    height     : 1.6rem;
+    left       : 0.75rem;
+    user-select: none;
+}
+
+.container .telegram_location_text {
+    position   : relative;
+    font-family: 'Western Bang Bang';
+    font-size  : 24px;
+    text-align : left;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.container .telegram_area_field {
+    position   : absolute;
+    top        : 3.09rem;
+    width      : 13.84rem;
+    height     : 1.6rem;
+    left       : 16.5rem;
+    user-select: none;
+}
+
+.container .telegram_area_text {
+    position   : relative;
+    font-family: 'Western Bang Bang';
+    font-size  : 24px;
+    text-align : center;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.container .telegram_postal_service_field {
+    position   : absolute;
+    top        : 3.09rem;
+    width      : 12.6rem;
+    height     : 1.6rem;
+    left       : 37.05rem;
+    user-select: none;
+}
+
+.container .telegram_postal_service_text {
+    position   : relative;
+    font-family: 'Western Bang Bang';
+    font-size  : 24px;
+    text-align : center;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.container .telegram_no_field {
+    position   : absolute;
+    top        : 3.09rem;
+    width      : 13.85rem;
+    height     : 1.6rem;
+    left       : 52.8rem;
+    user-select: none;
+}
+
+.container .telegram_no_text {
+    position   : relative;
+    font-family: 'Western Bang Bang';
+    font-size  : 24px;
+    text-align : right;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.container .telegram_service_text {
+    position: absolute;
+
+    font-family: 'Roboto Slab';
+    font-size  : 10px;
+    font-weight: 600;
+
+
+    width: 13rem;
+
+    right: 0.8rem;
+
+    top: 2.3rem;
+
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.container .telegram_footer_text {
+    position: absolute;
+
+    font-family: 'Roboto Slab';
+    font-size  : 12px;
+    font-weight: 600;
+
+
+    width : 28rem;
+    left  : 0.87rem;
+    bottom: 1.8rem;
+
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.container .compose_telegram {
+    position: absolute;
+
+    left       : 32rem;
+    width      : 34.55rem;
+    text-align : center;
+    font-family: 'Chase';
+    font-size  : 24px;
+    line-height: 3.2rem;
+
+    background      : var(--telegram-blue);
+    background-image: url(assets/img/mirrored-squares.png);
+
+    color: rgb(190, 179, 179);
+
+    bottom     : 1.222rem;
+    height     : 3.1rem;
+    user-select: none;
+}
+
+.container .compose_telegram:hover {
+    color : white;
+    cursor: pointer;
+}
+
+.container .telegram_table_bg {
+    position: absolute;
+
+    left: 0.8rem;
+    top : 15rem;
+
+    background-color: var(--telegram-focus);
+
+    height: 22.4rem;
+    width : 65.6rem;
+    border: 2px solid var(--telegram-dark-blue);
+}
+
+.telegram_table_bg .telegram_refresh img {
+    position: absolute;
+    right   : 0.4rem;
+    height  : 24px;
+    top     : -2rem;
+    cursor  : pointer;
+}
+
+.telegram_table_bg .telegram_refresh img:hover {
+    filter: invert(13%) sepia(34%) saturate(2833%) hue-rotate(182deg) brightness(96%) contrast(93%);
+}
+
+.container .telegram_table_filter {
+    position   : absolute;
+    left       : 0.8rem;
+    top        : 12.8rem;
+    user-select: none;
+}
+
+.container .telegram_table_filter input {
+    height          : 1.5rem;
+    width           : 12rem;
+    background-color: var(--telegram-focus);
+    background-image: url(assets/img/mirrored-squares.png);
+    border          : 0;
+    outline         : none;
+    border          : 2px solid var(--telegram-dark-blue);
+    font-family     : 'Roboto Slab';
+    padding-left    : 5px;
+    padding-right   : 5px;
+    font-weight     : 600;
+    color           : var(--telegram-dark-blue);
+}
+
+.container .telegram_table {
+    position: absolute;
+
+    left: 0.8rem;
+    top : 15.156rem;
+
+    background-color: var(--telegram-focus);
+
+    width          : 65.7rem;
+    border-collapse: collapse;
+}
+
+.container .telegram_table thead tr {
+    background-color: var(--telegram-blue);
+    background-image: url(assets/img/mirrored-squares.png);
+    width           : 100%;
+    height          : 2rem;
+    line-height     : 2rem;
+    text-transform  : uppercase;
+    color           : white;
+    font-family     : 'Roboto Slab';
+    border-bottom   : 2px solid var(--telegram-dark-blue);
+    user-select     : none;
+}
+
+.container .telegram_table thead th {
+    font-weight : 400;
+    padding-left: 5px;
+    border-left : 2px solid var(--telegram-dark-blue);
+}
+
+.container .telegram_table thead tr {
+    padding-left: 5px;
+    font-weight : 400;
+    border      : 0;
+}
+
+
+.container .telegram_table tbody td {
+    font-family : 'Roboto Slab';
+    padding-left: 5px;
+    height      : 50px;
+}
+
+.container .telegram_table tbody tr {
+    border-left  : 2px solid var(--telegram-dark-blue);
+    border-bottom: 2px solid var(--telegram-dark-blue);
+    cursor       : pointer;
+    user-select  : none;
+}
+
+.container .telegram_table tbody tr:first-child {
+    border-top: 2px solid var(--telegram-dark-blue);
+}
+
+.container .telegram_table tbody tr:hover {
+    background-color: var(--telegram-blue-opacity);
+    color           : white;
+}
+
+.container .telegram_table tbody tr td:first-child {
+    border-right: 2px solid var(--telegram-dark-blue);
+}
+
+.container .telegram_table tbody tr td {
+    border-left: 2px solid var(--telegram-dark-blue);
+}
+
+.container .telegram_dashboard .telegram_table tbody tr[data-opened="false"] td:first-child::before {
+    background-image: url('assets/img/mail_closed.png');
+    background-size : 24px 16px;
+    color           : white;
+    display         : inline-block;
+    width           : 24px;
+    height          : 16px;
+    content         : "";
+    margin-right    : 10px;
+    margin-left     : 5px;
+
+    position: relative;
+    top     : 2px;
+}
+
+.container .telegram_dashboard .telegram_table tbody tr[data-opened="true"] td:first-child::before {
+    background-image: url('assets/img/mail_open.png');
+    background-size : 24px 24px;
+    color           : white;
+    display         : inline-block;
+    width           : 24px;
+    height          : 24px;
+    content         : "";
+    margin-right    : 10px;
+    margin-left     : 5px;
+
+    position: relative;
+    top     : 5px;
+}
+
+.container .telegram_table tbody td:not(:first-child) {
+    text-align: center;
+}
+
+.container .telegram_table tbody td img {
+    height: 22px;
+    width : 22px;
+}
+
+.container .telegram_siting_info {
+    position: absolute;
+
+    left  : 0.8rem;
+    bottom: 5.5rem;
+
+    font-family: 'Roboto Slab';
+
+    font-weight: 600;
+    opacity    : 0.4;
+    user-select: none;
+}
+
+.container .telegram_siting {
+    position: absolute;
+
+    left  : 58rem;
+    bottom: 5.5rem;
+
+    display: inline-block;
+
+    width: 20rem;
+
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    user-select: none;
+    text-align : left;
+}
+
+.container .telegram_siting div {
+    display    : inline-block;
+    user-select: none;
+}
+
+.container .telegram_siting div img {
+    position: relative;
+    top     : 2px;
+    height  : 14px;
+}
+
+.container .telegram_siting .telegram_siting_page {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align : right;
+}
+
+.container .telegram_siting .telegram_siting_maxpage {
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align  : right;
+}
+
+.telegram_siting_last:hover,
+.telegram_siting_prev:hover,
+.telegram_siting_next:hover,
+.telegram_siting_first:hover {
+    cursor: pointer;
+    filter: invert(13%) sepia(21%) saturate(4817%) hue-rotate(184deg) brightness(97%) contrast(93%);
+}
+
+.telegram_message .telegram_body .title_header,
+.telegram_message_simple .telegram_body .title_header {
+    position   : absolute;
+    left       : 0.8rem;
+    top        : 17rem;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.telegram_message .telegram_body .title_content,
+.telegram_message_simple .telegram_body .title_content {
+    position   : absolute;
+    left       : 10rem;
+    top        : 17rem;
+    font-family: 'King';
+    font-weight: 400;
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+}
+
+.telegram_message .telegram_body .message_header,
+.telegram_message_simple .telegram_body .message_header {
+    position   : absolute;
+    left       : 0.8rem;
+    top        : 20rem;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.telegram_message .telegram_body .message_content,
+.telegram_message_simple .telegram_body .message_content {
+    position   : absolute;
+    left       : 10rem;
+    top        : 20rem;
+    font-family: 'King';
+    width      : 53rem;
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    word-break : break-all;
+    hyphens    : auto;
+    white-space: pre-wrap;
+
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+.telegram_message .telegram_body .telegram_sender_header,
+.telegram_message_simple .telegram_body .telegram_sender_header {
+    position   : absolute;
+    left       : 0.8rem;
+    top        : 12.5rem;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.telegram_message .telegram_body .telegram_sender_header .respond {
+    display: inline-block;
+
+    position: relative;
+    top     : 5px;
+
+    margin-left: 5px;
+    height     : 20px;
+    width      : 20px;
+}
+
+
+.telegram_message .telegram_body .telegram_sender_header .respond img {
+    height: 20px;
+}
+
+.telegram_message .telegram_body .telegram_sender_header .add_user {
+    display: inline-block;
+
+    position: relative;
+    top     : 5px;
+
+    margin-left: 10px;
+    height     : 20px;
+    width      : 20px;
+}
+
+
+.telegram_message .telegram_body .telegram_sender_header .add_user img {
+    height: 20px;
+}
+
+.telegram_message .telegram_body .telegram_sender_text,
+.telegram_message_simple .telegram_body .telegram_sender_text {
+    position   : absolute;
+    left       : 0.8rem;
+    top        : 13.75rem;
+    font-family: 'Roboto Slab';
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    word-break : break-all;
+    user-select: none;
+}
+
+.telegram_message .telegram_body .telegram_recipient_header,
+.telegram_message_simple .telegram_body .telegram_recipient_header {
+    position   : absolute;
+    left       : 31.8rem;
+    top        : 12.5rem;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.telegram_message .telegram_body .telegram_recipient_text,
+.telegram_message_simple .telegram_body .telegram_recipient_text {
+    position   : absolute;
+    left       : 31.8rem;
+    top        : 13.75rem;
+    font-family: 'Roboto Slab';
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    word-break : break-all;
+    user-select: none;
+}
+
+.telegram_message .telegram_body .telegram_date_header,
+.telegram_message_simple .telegram_body .telegram_date_header {
+    position   : absolute;
+    left       : 50.8rem;
+    top        : 12.5rem;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.telegram_message .telegram_body .telegram_date_text,
+.telegram_message_simple .telegram_body .telegram_date_text {
+    position   : absolute;
+    left       : 50.8rem;
+    top        : 13.75rem;
+    font-family: 'Roboto Slab';
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    word-break : break-all;
+    user-select: none;
+}
+
+.input_field {
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    right   : 0;
+    bottom  : 0;
+    margin  : auto;
+
+    height: 400px;
+    width : 550px;
+
+    background-image   : url(assets/img/bg_input.png);
+    background-size    : 100% 100%;
+    background-position: center top;
+
+    z-index    : 999 !important;
+    user-select: none;
+
+    display: none;
+}
+
+.input_field .title {
+    position : absolute;
+    left     : 50%;
+    transform: translate(-50%);
+
+    color      : white;
+    font-family: 'RDR Lino Regular';
+
+    font-size: 24px;
+
+    top: 3rem;
+}
+
+.input_field .input_row {
+    display : block;
+    position: relative;
+
+    top      : 6rem;
+    left     : 50%;
+    transform: translate(-50%);
+
+    height       : 40px;
+    width        : 84%;
+    border-bottom: 2px solid black;
+}
+
+.input_field .input_row .input_key {
+    display         : inline-block;
+    position        : relative;
+    background-color: rgba(76, 73, 73, 0.5);
+    border-right    : 2px solid black;
+    height          : 100%;
+    text-align      : left;
+    text-transform  : uppercase;
+    padding-left    : 10px;
+    width           : 40%;
+    line-height     : 40px;
+    color           : white;
+    font-family     : 'Hapna Slab Serif DemiBold';
+    user-select     : none;
+}
+
+.input_field .input_row .input_value {
+    position: relative;
+    left    : -0.21rem;
+    display : inline-block;
+    height  : 100%;
+    margin  : 0;
+    padding : 0;
+    width   : 51%;
+}
+
+.input_field .input_row .input_value input {
+    height          : 100%;
+    width           : 100%;
+    border          : 0;
+    outline         : 0;
+    margin          : 0;
+    padding         : 0;
+    background-color: rgba(207, 200, 200, 0.4);
+    padding-left    : 15px;
+    padding-right   : 15px;
+    font-family     : 'Hapna Slab Serif DemiBold';
+    color           : white;
+}
+
+.input_field .button {
+    position        : relative;
+    height          : 50px;
+    width           : 84%;
+    top             : 8rem;
+    left            : 50%;
+    transform       : translate(-50%);
+    margin-bottom   : 5px;
+    color           : white;
+    line-height     : 50px;
+    font-family     : 'RDR Lino Regular';
+    text-align      : center;
+    font-size       : 24px;
+    background-color: rgb(46, 44, 46);
+    cursor          : pointer;
+}
+
+.input_field .button:hover {
+    background-color: var(--telegram-dark-red);
+}
+
+
+.telegram_compose .telegram_body .title_header {
+    position   : absolute;
+    left       : 0.8rem;
+    top        : 17rem;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.telegram_compose .telegram_body .title_input {
+    position   : absolute;
+    left       : 10rem;
+    top        : 17rem;
+    font-family: 'King';
+    font-weight: 400;
+    font-size  : 1rem;
+}
+
+.telegram_compose .telegram_body .title_input input {
+    outline         : none;
+    border          : 0;
+    width           : 50rem;
+    background-color: var(--telegram-focus);
+    background-image: url(assets/img/mirrored-squares.png);
+    height          : 30px;
+    font-family     : 'King';
+    font-weight     : 400;
+    padding-left    : 5px;
+    padding-right   : 5px;
+}
+
+.telegram_compose .telegram_body .message_header {
+    position   : absolute;
+    left       : 0.8rem;
+    top        : 20rem;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.telegram_compose .telegram_body .message_input {
+    position   : absolute;
+    left       : 10rem;
+    top        : 20rem;
+    font-family: 'King';
+    width      : 53rem;
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    word-break : break-all;
+}
+
+.telegram_compose .telegram_body .message_input textarea {
+    outline         : none;
+    border          : 0;
+    width           : 50rem;
+    background-color: var(--telegram-focus);
+    background-image: url(assets/img/mirrored-squares.png);
+    padding         : 10px;
+    height          : 30px;
+    font-family     : 'King';
+    font-weight     : 400;
+    padding-left    : 5px;
+    padding-right   : 5px;
+    height          : 17rem;
+}
+
+.telegram_compose .telegram_body .telegram_sender_header {
+    position   : absolute;
+    left       : 0.8rem;
+    top        : 12.5rem;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.telegram_compose .telegram_body .telegram_sender_input {
+    position   : absolute;
+    left       : 0.8rem;
+    top        : 13.75rem;
+    font-family: 'Roboto Slab';
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    word-break : break-all;
+    user-select: none;
+}
+
+.telegram_compose .telegram_body .telegram_sender_input input {
+    border          : 0;
+    outline         : 0;
+    background-color: var(--telegram-focus);
+    background-image: url(assets/img/mirrored-squares.png);
+    font-family     : 'Roboto Slab';
+    padding-left    : 5px;
+    padding-right   : 5px;
+    font-weight     : 600;
+}
+
+.telegram_compose .telegram_body .telegram_send_id_header {
+    position   : absolute;
+    left       : 13.8rem;
+    top        : 12.5rem;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.telegram_compose .telegram_body .telegram_send_id_input {
+    position   : absolute;
+    left       : 13.5rem;
+    top        : 13.75rem;
+    font-family: 'Roboto Slab';
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    word-break : break-all;
+    user-select: none;
+}
+
+.checkbox_container {
+    display            : block;
+    position           : relative;
+    left               : 0.3rem;
+    top                : 0.15rem;
+    cursor             : pointer;
+    font-size          : 22px;
+    -webkit-user-select: none;
+    -moz-user-select   : none;
+    -ms-user-select    : none;
+    user-select        : none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox_container input {
+    position: absolute;
+    opacity : 0;
+    cursor  : pointer;
+    height  : 0;
+    width   : 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    height          : 20px;
+    width           : 20px;
+    background-color: var(--telegram-focus);
+    background-image: url(assets/img/mirrored-squares.png);
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox_container:hover input~.checkmark {
+    background-color: rgba(239, 232, 212, 0.386);
+    background-image: url(assets/img/mirrored-squares.png);
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox_container input:checked~.checkmark {
+    background-color: black;
+    background-image: url(assets/img/mirrored-squares.png);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content : "";
+    position: absolute;
+    display : none;
+}
+
+/* Show the checkmark when checked */
+.checkbox_container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox_container .checkmark:after {
+    left             : 6px;
+    top              : 2px;
+    width            : 5px;
+    height           : 10px;
+    border           : solid white;
+    border-width     : 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform    : rotate(45deg);
+    transform        : rotate(45deg);
+}
+
+.telegram_compose .telegram_body .telegram_recipient_header {
+    position   : absolute;
+    left       : 31.8rem;
+    top        : 12.5rem;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.telegram_compose .telegram_body .telegram_recipient_input {
+    position   : absolute;
+    left       : 31.8rem;
+    top        : 13.75rem;
+    font-family: 'Roboto Slab';
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.telegram_compose .telegram_body .telegram_recipient_input input {
+    border          : 0;
+    outline         : 0;
+    background-color: var(--telegram-focus);
+    background-image: url(assets/img/mirrored-squares.png);
+    font-family     : 'Roboto Slab';
+    padding-left    : 5px;
+    padding-right   : 5px;
+    font-weight     : 600;
+}
+
+.telegram_compose .telegram_body .telegram_date_header {
+    position   : absolute;
+    left       : 50.8rem;
+    top        : 12.5rem;
+    font-family: 'Roboto Slab';
+    font-weight: 600;
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.telegram_compose .telegram_body .telegram_date_text {
+    position   : absolute;
+    left       : 50.8rem;
+    top        : 13.75rem;
+    font-family: 'Roboto Slab';
+    font-size  : 1rem;
+    color      : var(--telegram-dark-blue);
+    user-select: none;
+}
+
+.show_telegram {
+    display         : block;
+    margin-top      : 10px;
+    height          : 40px;
+    line-height     : 40px;
+    background-color: var(--telegram-focus);
+    width           : 10rem;
+    text-align      : center;
+    font-family     : 'Roboto Slab';
+    user-select     : none;
+    cursor          : pointer;
+    border-radius   : 4px;
+}
+
+.show_telegram:hover {
+    background-color: var(--telegram-dark-blue);
+    color           : white;
+}
+
+.back_button,
+.close_button {
+    top             : 3.3rem;
+    right           : -4.7rem;
+    height          : 2.5rem;
+    width           : 6rem;
+    background-color: var(--telegram-dark-red);
+    color           : white;
+}
+
+.back_button:hover,
+.close_button:hover {
+    background-color: var(--telegram-light-red);
+    color           : white;
+}
+
+.side_button {
+    position   : absolute;
+    transform  : rotate(90deg);
+    height     : 2.5rem;
+    width      : 8rem;
+    text-align : center;
+    line-height: 2.3rem;
+    font-family: 'Roboto Slab';
+
+    z-index      : -1;
+    border-radius: 5px;
+
+    user-select   : none;
+    cursor        : pointer;
+    text-transform: uppercase;
+
+    background-image: url(assets/img/mirrored-squares.png);
+}
+
+.telegrams_button {
+    bottom          : 12.5rem;
+    right           : -4.7rem;
+    height          : 2.5rem;
+    width           : 8rem;
+    background-color: var(--telegram-side);
+}
+
+.telegrams_button[active],
+.contacts_button[active] {
+    background-color: var(--telegram-side-active);
+}
+
+.contacts_button {
+    bottom          : 3.5rem;
+    right           : -4.7rem;
+    height          : 2.5rem;
+    width           : 8rem;
+    background-color: var(--telegram-side);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--telegram-dark-blue);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.telegram_dashboard .telegram_table tr .trash img.trash_bin:hover,
+.telegram_contacts .telegram_table tr .trash img:hover {
+    filter: invert(30%) sepia(72%) saturate(5608%) hue-rotate(348deg) brightness(94%) contrast(87%);
+}
+
+.telegram_dashboard .telegram_table tr .trash img.retrieve:hover,
+.telegram_message .telegram_body .telegram_sender_header img:hover {
+    filter: invert(16%) sepia(17%) saturate(4442%) hue-rotate(177deg) brightness(90%) contrast(94%);
+}

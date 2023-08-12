@@ -1,0 +1,1 @@
+ALTER TABLE `characters` ADD COLUMN `gunsmith` double(11,2) DEFAULT 0.00;

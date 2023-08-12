@@ -1,0 +1,1 @@
+if you are updating from old syn stores make sure u read inside updater folder

@@ -1,7 +1,7 @@
 Config = {}
 
 -- Enable or disable the chance to receive ITEMS
-Config.canReceiveItems = false -- true | false
+Config.canReceiveItems = true -- true | false
 Config.receiveItem = 20        -- If below this number, then can receive
 Config.chanceGettingItem = 100 -- Percentage out of 100
 Config.items = {               -- You will receive a random item from the list
@@ -11,10 +11,10 @@ Config.items = {               -- You will receive a random item from the list
 }
 
 -- Enable or disable the chance to receive MONEY
-Config.canReceiveMoney = false  -- true | false
+Config.canReceiveMoney = true  -- true | false
 Config.receiveMoney = 50        -- If below this number, then can receive
 Config.chanceGettingMoney = 100 -- Percentage out of 100
-Config.money = { 0.5, 1, 1.5 }  -- You will receive a random value from the list
+Config.money = { 0.5, 1, 1.5, 2.0, 2.5, 3.5, 4.5, 5,0 5,5 }  -- You will receive a random value from the list
 
 -- Enable or disable the chance to receive GOLD
 Config.canReceiveGold = false -- true | false

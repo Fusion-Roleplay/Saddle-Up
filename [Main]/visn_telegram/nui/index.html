@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visn_telegram</title>
+    <link type="text/css" rel="stylesheet" href="https://cfx-nui-visn_telegram/nui/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+
+<body>
+    <div class="input_field">
+        <div class="title">NUI_ADD_CONTACT_TITLE</div>
+        <div class="input_row">
+            <div class="input_key">NUI_ADD_CONTACT_NAME</div>
+            <div class="input_value" id="contact_name"><input></div>
+        </div>
+
+        <div class="input_row">
+            <div class="input_key">NUI_ADD_CONTACT_NUMBER</div>
+            <div class="input_value" id="contact_number"><input></div>
+        </div>
+
+        <div class="input_row">
+            <div class="input_key">NUI_ADD_CONTACT_NOTE</div>
+            <div class="input_value" id="contact_note"><input></div>
+        </div>
+
+        <div class="button" id="add_contact">NUI_ADD_CONTACT_ADD</div>
+        <div class="button" id="cancel_contact">NUI_ADD_CONTACT_CANCEL</div>
+    </div>
+
+    <div class="container">
+        <div class="telegram telegram_message_simple" style="display: none;">
+            <div class="side_button close_button">NUI_CLOSE_BUTTON</div>
+
+            <div class="telegram_header">
+                <div class="telegram_title">NUI_TELEGRAM_TITLE</div>
+                <div class="telegram_logo"><img src="assets/img/hs.png"></div>
+                <div class="telegram_legal_notice">NUI_TELEGRAM_LEGAL_NOTICE</div>
+                <div class="telegram_message_notice">NUI_TELEGRAM_MESSAGE_NOTICE</div>
+                <div class="telegram_service_logo"></div>
+
+                <div class="telegram_location_field">
+                    <div class="telegram_location_text"></div>
+                </div>
+                <div class="telegram_area_field">
+                    <div class="telegram_area_text"></div>
+                </div>
+                <div class="telegram_postal_service_field">
+                    <div class="telegram_postal_service_text">NUI_TELEGRAM_POSTAL_SERVICE</div>
+                </div>
+                <div class="telegram_no_field">
+                    <div class="telegram_no_text">NUI_TELEGRAM_SERVICE</div>
+                </div>
+            </div>
+
+            <div class="telegram_body">
+                <div class="telegram_sender_header">NUI_TELEGRAM_SENDER_HEADER</div>
+                <div class="telegram_sender_text"></div>
+
+                <div class="telegram_recipient_header">NUI_TELEGRAM_RECIPIENT_HEADER</div>
+                <div class="telegram_recipient_text"></div>
+
+                <div class="telegram_date_header">NUI_TELEGRAM_DATE_HEADER</div>
+                <div class="telegram_date_text"></div>
+
+                <div class="title_header">NUI_TELEGRAM_TITLE_HEADER</div>
+                <div class="title_content"></div>
+
+                <div class="message_header">NUI_TELEGRAM_MESSAGE_HEADER</div>
+                <div class="message_content"></div>
+            </div>
+
+            <div class="telegram_footer">
+                <div class="telegram_footer_text">NUI_TELEGRAM_FOOTER_TEXT</div>
+            </div>
+        </div>
+
+        <div class="telegram telegram_compose" style="display: none;">
+            <div class="side_button back_button" data-site="telegram_dashboard">NUI_BACK_BUTTON</div>
+            <div class="side_button telegrams_button private" data-site="telegram_dashboard">NUI_TELEGRAMS_BUTTON</div>
+            <div class="side_button contacts_button" data-site="telegram_contacts">NUI_CONTACTS_BUTTON</div>
+
+            <div class="telegram_header">
+                <div class="telegram_title">NUI_TELEGRAM_TITLE</div>
+                <div class="telegram_logo"><img src="assets/img/hs.png"></div>
+                <div class="telegram_legal_notice">NUI_TELEGRAM_LEGAL_NOTICE</div>
+                <div class="telegram_message_notice">NUI_TELEGRAM_MESSAGE_NOTICE</div>
+                <div class="telegram_service_logo"></div>
+
+                <div class="telegram_location_field">
+                    <div class="telegram_location_text"></div>
+                </div>
+                <div class="telegram_area_field">
+                    <div class="telegram_area_text"></div>
+                </div>
+                <div class="telegram_postal_service_field">
+                    <div class="telegram_postal_service_text">NUI_TELEGRAM_POSTAL_SERVICE</div>
+                </div>
+                <div class="telegram_no_field">
+                    <div class="telegram_no_text">NUI_TELEGRAM_SERVICE</div>
+                    <div class="telegram_service_text">NUI_TELEGRAM_SERIVCE_TEXT</div>
+                </div>
+            </div>
+
+            <div class="telegram_body">
+                <div class="telegram_sender_header">NUI_TELEGRAM_COMPOSE_SENDER_HEADER</div>
+                <div class="telegram_sender_input"><input></div>
+
+                <div class="telegram_send_id_header">NUI_TELEGRAM_COMPOSE_SEND_ID_HEADER</div>
+                <div class="telegram_send_id_input">
+                    <label class="checkbox_container">
+                        <input type="checkbox" id="send_number" tabindex="-1">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="telegram_recipient_header">NUI_TELEGRAM_COMPOSE_RECIPIENT_HEADER</div>
+                <div class="telegram_recipient_input"><input></div>
+
+                <div class="telegram_date_header">NUI_TELEGRAM_COMPOSE_DATE_HEADER</div>
+                <div class="telegram_date_text"></div>
+
+                <div class="title_header">NUI_TELEGRAM_COMPOSE_TITLE_HEADER</div>
+                <div class="title_input"><input></div>
+
+                <div class="message_header">NUI_TELEGRAM_COMPOSE_MESSAGE_HEADER</div>
+                <div class="message_input"><textarea></textarea></div>
+            </div>
+
+            <div class="telegram_footer">
+                <div class="telegram_footer_text">NUI_TELEGRAM_FOOTER_TEXT</div>
+                <div class="compose_telegram">NUI_BUTTON_SEND_TELEGRAM</div>
+            </div>
+        </div>
+
+        <div class="telegram telegram_message" style="display: none;">
+            <div class="side_button back_button" data-site="telegram_dashboard">NUI_BACK_BUTTON</div>
+            <div class="side_button telegrams_button private" data-site="telegram_dashboard">NUI_TELEGRAMS_BUTTON</div>
+            <div class="side_button contacts_button" data-site="telegram_contacts">NUI_CONTACTS_BUTTON</div>
+
+            <div class="telegram_header">
+                <div class="telegram_title">NUI_TELEGRAM_TITLE</div>
+                <div class="telegram_logo"><img src="assets/img/hs.png"></div>
+                <div class="telegram_legal_notice">NUI_TELEGRAM_LEGAL_NOTICE</div>
+                <div class="telegram_message_notice">NUI_TELEGRAM_MESSAGE_NOTICE</div>
+                <div class="telegram_service_logo"></div>
+
+                <div class="telegram_location_field">
+                    <div class="telegram_location_text"></div>
+                </div>
+                <div class="telegram_area_field">
+                    <div class="telegram_area_text"></div>
+                </div>
+                <div class="telegram_postal_service_field">
+                    <div class="telegram_postal_service_text">NUI_TELEGRAM_POSTAL_SERVICE</div>
+                </div>
+                <div class="telegram_no_field">
+                    <div class="telegram_no_text">NUI_TELEGRAM_SERVICE</div>
+                </div>
+            </div>
+
+            <div class="telegram_body">
+                <div class="telegram_sender_header" style="display: inline-block;">NUI_TELEGRAM_SENDER_HEADER <div
+                        class="add_user"><img id="add_user" src="assets/img/add.png"></div>
+                        <div class="respond"><img id="respond" src="assets/img/respond.png"></div>
+                </div>
+                <div class="telegram_sender_text"></div>
+
+                <div class="telegram_recipient_header">NUI_TELEGRAM_RECIPIENT_HEADER</div>
+                <div class="telegram_recipient_text"></div>
+
+                <div class="telegram_date_header">NUI_TELEGRAM_DATE_HEADER</div>
+                <div class="telegram_date_text"></div>
+
+                <div class="title_header">NUI_TELEGRAM_TITLE_HEADER</div>
+                <div class="title_content"></div>
+
+                <div class="message_header">NUI_TELEGRAM_MESSAGE_HEADER</div>
+                <div class="message_content"></div>
+            </div>
+
+            <div class="telegram_footer">
+                <div class="telegram_footer_text">NUI_TELEGRAM_FOOTER_TEXT</div>
+            </div>
+        </div>
+
+        <div class="telegram telegram_dashboard" style="display: none;">
+            <div class="side_button close_button">NUI_CLOSE_BUTTON</div>
+            <div class="side_button telegrams_button private" active data-site="telegram_dashboard">NUI_TELEGRAMS_BUTTON</div>
+            <div class="side_button contacts_button" data-site="telegram_contacts">NUI_CONTACTS_BUTTON</div>
+
+            <div class="telegram_header">
+                <div class="telegram_title">NUI_TELEGRAM_TITLE</div>
+                <div class="telegram_logo"><img src="assets/img/hs.png"></div>
+                <div class="telegram_legal_notice">NUI_TELEGRAM_LEGAL_NOTICE</div>
+                <div class="telegram_message_notice">NUI_TELEGRAM_MESSAGE_NOTICE</div>
+                <div class="telegram_number"></div>
+
+                <div class="telegram_location_field">
+                    <div class="telegram_location_text"></div>
+                </div>
+                <div class="telegram_area_field">
+                    <div class="telegram_area_text"></div>
+                </div>
+
+                <div class="telegram_postal_service_field">
+                    <div class="telegram_postal_service_text">NUI_TELEGRAM_POSTAL_SERVICE</div>
+                </div>
+                <div class="telegram_no_field">
+                    <div class="telegram_no_text">NUI_TELEGRAM_NUMBER</div>
+                </div>
+            </div>
+
+            <div class="telegram_body">
+                <div class="telegram_table_filter"><input placeholder="NUI_TABLE_FILTER"></div>
+                <div class="telegram_table_bg">
+                    <div class="telegram_refresh"><img src="assets/img/refresh.png"></div>
+                </div>
+                <table class="telegram_table">
+                    <thead>
+                        <tr>
+                            <th style="width: 30rem;">NUI_TELEGRAM_TABLE_TITLE</th>
+                            <th style="width: 15rem;">NUI_TELEGRAM_TABLE_SENDER</th>
+                            <th>NUI_TELEGRAM_TABLE_TIMESTAMP</th>
+                            <th style="width: 4rem;"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="telegrams_list"></tbody>
+                </table>
+
+                <div class="telegram_siting_info">NUI_TELEGRAM_PAGING_INFO</div>
+
+                <div class="telegram_siting">
+                    <div class="telegram_siting_first"><img src="assets/img/first.png"></div>
+                    <div class="telegram_siting_prev"><img src="assets/img/prev.png"></div>
+                    <div class="telegram_siting_page">1</div>
+                    <div class="telegram_siting_of">NUI_TABLE_PAGING_OF</div>
+                    <div class="telegram_siting_maxpage">1</div>
+                    <div class="telegram_siting_next"><img src="assets/img/next.png"></div>
+                    <div class="telegram_siting_last"><img src="assets/img/last.png"></div>
+                </div>
+            </div>
+
+            <div class="telegram_footer">
+                <div class="telegram_footer_text">NUI_TELEGRAM_FOOTER_TEXT</div>
+                <div class="compose_telegram">NUI_BUTTON_COMPOSE_TELEGRAM</div>
+            </div>
+        </div>
+
+        <div class="telegram telegram_contacts" style="display: none;">
+            <div class="side_button back_button" data-site="telegram_dashboard">NUI_BACK_BUTTON</div>
+            <div class="side_button telegrams_button private" data-site="telegram_dashboard">NUI_TELEGRAMS_BUTTON</div>
+            <div class="side_button contacts_button" active data-site="telegram_contacts">NUI_CONTACTS_BUTTON</div>
+
+            <div class="telegram_header">
+                <div class="telegram_title">NUI_TELEGRAM_TITLE</div>
+                <div class="telegram_logo"><img src="assets/img/hs.png"></div>
+                <div class="telegram_legal_notice">NUI_TELEGRAM_LEGAL_NOTICE</div>
+                <div class="telegram_message_notice">NUI_TELEGRAM_MESSAGE_NOTICE</div>
+                <div class="telegram_number"></div>
+
+                <div class="telegram_location_field">
+                    <div class="telegram_location_text"></div>
+                </div>
+                <div class="telegram_area_field">
+                    <div class="telegram_area_text"></div>
+                </div>
+
+                <div class="telegram_postal_service_field">
+                    <div class="telegram_postal_service_text">NUI_TELEGRAM_POSTAL_SERVICE</div>
+                </div>
+                <div class="telegram_no_field">
+                    <div class="telegram_no_text">NUI_TELEGRAM_NUMBER</div>
+                </div>
+            </div>
+
+            <div class="telegram_body">
+                <div class="telegram_table_filter">
+                    <input placeholder="Filter">
+                </div>
+                <div class="telegram_table_bg"></div>
+                <table class="telegram_table">
+                    <thead>
+                        <tr>
+                            <th style="width: 20rem;">NUI_CONTACTS_TABLE_NAME</th>
+                            <th style="width: 15rem;">NUI_CONTACTS_TABLE_NUMBER</th>
+                            <th>NUI_CONTACTS_TABLE_NOTE</th>
+                            <th style="width: 2rem;"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="contacts_list"></tbody>
+                </table>
+
+                <div class="telegram_siting_info">NUI_CONTACTS_PAGING_INFO</div>
+
+                <div class="telegram_siting">
+                    <div class="telegram_siting_first"><img src="assets/img/first.png"></div>
+                    <div class="telegram_siting_prev"><img src="assets/img/prev.png"></div>
+                    <div class="telegram_siting_page">1</div>
+                    <div class="telegram_siting_of">NUI_TABLE_PAGING_OF</div>
+                    <div class="telegram_siting_maxpage">1</div>
+                    <div class="telegram_siting_next"><img src="assets/img/next.png"></div>
+                    <div class="telegram_siting_last"><img src="assets/img/last.png"></div>
+                </div>
+            </div>
+
+            <div class="telegram_footer">
+                <div class="telegram_footer_text">NUI_TELEGRAM_FOOTER_TEXT</div>
+                <div class="compose_telegram">NUI_BUTTON_ADD_CONTACT</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cfx-nui-visn_telegram/nui/app.js" async></script>
+    <script type="text/javascript" src="https://cfx-nui-visn_telegram/nui/fivem.js" async></script>
+</body>
+
+</html>

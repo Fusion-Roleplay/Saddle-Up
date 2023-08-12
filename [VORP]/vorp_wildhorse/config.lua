@@ -8,7 +8,7 @@ Config.Language = {
 }
 
 Config.aiTrainerped = true -- spawn ai trainer ped set to false if you dont want an ai trainer ped to spawn
-Config.joblocked = false   -- lock the trainer so only people with the job can access. u can change access to each trainer by editing this  trainerjob= "trainer"
+Config.joblocked = true   -- lock the trainer so only people with the job can access. u can change access to each trainer by editing this  trainerjob= "trainer"
 
 Config.WebhookCheatLog = "" -- webhook for cheater log
 Config.trainers = {
