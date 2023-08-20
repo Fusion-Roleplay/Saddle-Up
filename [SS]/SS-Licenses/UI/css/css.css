@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+@font-face {
+    font-family: handwritten;
+    src: url('handwritten.woff');
+}
+@font-face {
+    font-family: justsignature;
+    src: url('JustSignature.woff');
+}
+
+body, html {
+  font-family: 'Dawning of a New Day', cursive;
+  background: transparent !important;    
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+#reg-paper {
+  position: right;
+  display: none;
+  margin: 100px 10px 0 0;
+  float: right;
+  width: 700px;
+  height: 500px;
+  padding: 50px 50px 50px 50px;
+  background: url("../images/N.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
+  z-index:-9999;
+}
+
+#nrid { /*DESTINATAR */
+  position: relative;     
+  font-family: handwritten;
+  font-weight: 900;
+  float: left;  
+  font-size: 30px;
+  color: #030a59;
+  margin-left: 65px;
+  margin-top: 60px;
+  z-index:5;      
+}
+
+#first-name { /*SENDER */
+  position: relative;    
+  font-family: handwritten;
+  float: left;  
+  font-size: 40px;
+  color: #030a59;
+  margin-left: -10px;
+  margin-top: 150px;  
+  z-index:5;     
+}
+
+#dob { /* TEXTING */
+  position: relative;     
+  font-family: handwritten;
+  font-weight: 900;
+  float: right;  
+  font-size: 30px;
+  color: #030a59;
+  margin-right: 25px;
+  margin-top: 210px;
+  z-index:5;      
+}
+
+#sign2 { /*DESTINATAR */
+  position: relative;     
+  font-family: justsignature;
+  font-weight: 900;
+  float: left;  
+  font-size: 15px;
+  color: #030a59;
+  margin-left: 140px;
+  margin-top: 115px;
+  z-index:5;      
+}
+
+#sign { /*DESTINATAR */
+  position: relative;     
+  font-family: justsignature;
+  font-weight: 900;
+  float: left;  
+  font-size: 17px;
+  color: #030a59;
+  margin-left: 400px;
+  margin-top: -40px;
+  z-index:5;      
+}
