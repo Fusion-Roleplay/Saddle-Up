@@ -38,7 +38,7 @@ Translation = {
             },
         },
         Commands        = {
-            webHookMessage = "**Steam name: **`%s`**\nIdentifier**`%s` \n**Discord:** <@%s>****`%s`", -- only translate
+            webHookMessage = "**Steam name: **`%s`**\nIdentifier**`%s` \n**Discord:**<@%s>****`%s`", -- only translate
             addGroup = {
                 custom = "\n**PlayerID** `%d`\n**Group given** `%s`",
                 tittle = "📋 `/Group command`",
