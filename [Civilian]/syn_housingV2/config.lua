@@ -111,6 +111,11 @@ Config.Locations = { -- money for houses bought goes here. sellers have it to co
         blipsprite = -1656531561, -- blip sprite for job center
 		Name = 'Sold Home Ledger', -- blip name 
     },
+    Blackwater = {	   -- you can add more job centers by copy pasting this 
+    Pos = {x = -875.38, y = -1334.12, z = 43.96}, -- location of job center 
+    blipsprite = -1656531561, -- blip sprite for job center
+    Name = 'Sold Home Ledger', -- blip name 
+},
 }
 
 Config.motellocation = { 
