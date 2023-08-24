@@ -55,13 +55,13 @@ Config.Gold = {
 
 Config.Items = {{
     itemlabel = "Diamond",
-    itemname = "diamond_item",
+    itemname = "diamond",
     chance = 10,
     minoutput = 1,
     maxoutput = 2
 }, {
     itemlabel = "Gold Nugget",
-    itemname = "goldnugget_item",
+    itemname = "gold_nugget",
     chance = 50,
     minoutput = 1,
     maxoutput = 3
