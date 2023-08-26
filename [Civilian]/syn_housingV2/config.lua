@@ -107,7 +107,7 @@ Config.teleporterhouses = { -- use your own mlos to make teleporter homes the on
 
 Config.Locations = { -- money for houses bought goes here. sellers have it to collected from here. 
     Valentine = {	   -- you can add more job centers by copy pasting this 
-        Pos = {x=-180.54, y=634.79, z=114.08}, -- location of job center 
+        Pos = {x = -183.73, y = 630.26, z = 114.09}, -- location of job center 
         blipsprite = -1656531561, -- blip sprite for job center
 		Name = 'Sold Home Ledger', -- blip name 
     },
@@ -115,7 +115,22 @@ Config.Locations = { -- money for houses bought goes here. sellers have it to co
     Pos = {x = -875.38, y = -1334.12, z = 43.96}, -- location of job center 
     blipsprite = -1656531561, -- blip sprite for job center
     Name = 'Sold Home Ledger', -- blip name 
-},
+    },
+    SD = {	   -- you can add more job centers by copy pasting this 
+        Pos = {x = 2732.24, y = -1403.8, z = 46.18}, -- location of job center 
+        blipsprite = -1656531561, -- blip sprite for job center
+		Name = 'Sold Home Ledger', -- blip name 
+    },
+    Rhodes = {	   -- you can add more job centers by copy pasting this 
+        Pos = {x = 1233.88, y = -1293.6, z = 76.9}, -- location of job center 
+        blipsprite = -1656531561, -- blip sprite for job center
+		Name = 'Sold Home Ledger', -- blip name 
+    },
+    Strawberry = {	   -- you can add more job centers by copy pasting this 
+        Pos = {x = -1837.86, y = -418.36, z = 161.66}, -- location of job center 
+        blipsprite = -1656531561, -- blip sprite for job center
+		Name = 'Sold Home Ledger', -- blip name 
+    },
 }
 
 Config.motellocation = { 
