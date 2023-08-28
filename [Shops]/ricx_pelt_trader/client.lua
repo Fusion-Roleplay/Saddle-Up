@@ -106,9 +106,10 @@ end
 local function GetHolding(entity)
     return Citizen.InvokeNative(0x31FEF6A20F00B963, entity)
 end
-
 local function MarkerCreate(coords, r,g,b,a)
-    Citizen.InvokeNative(0x2A32FAA57B937173, 0x6903B113, coords.x, coords.y, coords.z-1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 0.3, r,g,b,a, 0, 0, 2, 0, 0, 0, 0)
+    if not Config.DisableMarker then 
+        Citizen.InvokeNative(0x2A32FAA57B937173, 0x6903B113, coords.x, coords.y, coords.z-1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 0.3, r,g,b,a, 0, 0, 2, 0, 0, 0, 0)
+    end
 end
 
 local function PromptActivate(group, label)
@@ -199,7 +200,7 @@ Citizen.CreateThread(function()
                         for i,v in pairs(Config.PeltTraders) do 
                             local dist = #(pcoords-v.coords)
                             if dist < 10.0 then
-                                t = 7
+                                t = Config.ManualUpdater
                                 MarkerCreate(v.coords, 126, 0, 0, 255)
                                 if dist < 1.2 then 
                                     at = true
@@ -234,7 +235,7 @@ Citizen.CreateThread(function()
                 for i,v in pairs(Config.PeltTraders) do 
                     local dist = #(pcoords-v.coords)
                     if dist < 10.0 then
-                        t = 7
+                        t = Config.ManualUpdater
                         MarkerCreate(v.coords, 126, 0, 0, 255)
                         if dist < 1.2 then 
                             at = true

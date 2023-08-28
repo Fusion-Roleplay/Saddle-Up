@@ -20,6 +20,8 @@ Config.Language = {
     [6] = "~t~Not ~q~allowed",
     [7] = "G",
     [8] = "TELEPORT",
+    [9] = "~t~You don't have the item required !",
+
 }
 
 --LOGS
@@ -43,6 +45,7 @@ Config.Locations = {
         TextCloseOut = "", --Text when close for exit
         jobOut ={"all"},--job to exit // set all for all players
         Price = 0, --price // 0 to disable
+        Item = "Key", --item to teleport- nil to disable
         Fade = false, --If you want a loading screen
         FadeTitleIn = "", --Title loading screen entry
         FadeSubtitleIn = "", --Subtitle loading screen entry
