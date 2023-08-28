@@ -1,6 +1,6 @@
 Config = {}
 
-Config.defaultlang = 'en'
+Config.defaultlang = 'es'
 
 Config.MenuAlign = 'top-left'   -- top-right , top-center , top-left
 
@@ -12,7 +12,7 @@ Config.Zoom = { 0x62800C92, 0x8BDE7443 }    -- MOUSE SCROLL UP and MOUSE SCROLL 
 
 Config.ClothingStores = {
     {
-        Name = 'Blackwater Clothing Store',  -- Clothing store name
+        Name = 'Tienda de ropa de Blackwater',  -- Clothing store name
         Blip = { 
             Enable = true, -- true or false (enable or disable blip)
             Sprite = 'blip_shop_tailor',    -- blip sprite
@@ -28,7 +28,7 @@ Config.ClothingStores = {
         },
     },
     {
-        Name = 'Valentine clothing store',  -- Clothing store name
+        Name = 'Tienda de ropa de Valentine',  -- Clothing store name
         Blip = { 
             Enable = true, -- true or false (enable or disable blip)
             Sprite = 'blip_shop_tailor',    -- blip sprite
@@ -44,7 +44,7 @@ Config.ClothingStores = {
         },
     },
     {
-        Name = 'Rhodes Clothing Store',  -- Clothing store name
+        Name = 'Tienda de ropa de Rhodes',  -- Clothing store name
         Blip = { 
             Enable = true, -- true or false (enable or disable blip)
             Sprite = 'blip_shop_tailor',    -- blip sprite
@@ -60,7 +60,7 @@ Config.ClothingStores = {
         },
     },
     {
-        Name = 'Saint Denis Clothing Store',  -- Clothing store name
+        Name = 'Tienda de ropa de Saint Denis',  -- Clothing store name
         Blip = { 
             Enable = true, -- true or false (enable or disable blip)
             Sprite = 'blip_shop_tailor',    -- blip sprite
@@ -76,7 +76,7 @@ Config.ClothingStores = {
         },
     },
     {
-        Name = 'Van Horn Clothing Store',  -- Clothing store name
+        Name = 'Tienda de ropa de Van Horn',  -- Clothing store name
         Blip = { 
             Enable = true, -- true or false (enable or disable blip)
             Sprite = 'blip_shop_tailor',    -- blip sprite
@@ -92,7 +92,7 @@ Config.ClothingStores = {
         },
     },
     {
-        Name = 'Annesburg Clothing Store',  -- Clothing store name
+        Name = 'Tienda de ropa de Annesburg',  -- Clothing store name
         Blip = { 
             Enable = true, -- true or false (enable or disable blip)
             Sprite = 'blip_shop_tailor',    -- blip sprite
@@ -108,7 +108,7 @@ Config.ClothingStores = {
         },
     },
     {
-        Name = 'Strawberry Clothing Store',  -- Clothing store name
+        Name = 'Tienda de ropa de Strawberry',  -- Clothing store name
         Blip = { 
             Enable = true, -- true or false (enable or disable blip)
             Sprite = 'blip_shop_tailor',    -- blip sprite
@@ -124,7 +124,7 @@ Config.ClothingStores = {
         },
     },
     {
-        Name = 'Armadillo Clothing Store',  -- Clothing store name
+        Name = 'Tienda de ropa de Armadillo',  -- Clothing store name
         Blip = { 
             Enable = true, -- true or false (enable or disable blip)
             Sprite = 'blip_shop_tailor',    -- blip sprite
@@ -140,7 +140,7 @@ Config.ClothingStores = {
         },
     },
     {
-        Name = 'Tumbleweed Clothing Store',  -- Clothing store name
+        Name = 'Tienda de ropa de Tumbleweed',  -- Clothing store name
         Blip = { 
             Enable = true, -- true or false (enable or disable blip)
             Sprite = 'blip_shop_tailor',    -- blip sprite
@@ -193,6 +193,7 @@ Config.Prices = {
     RingLh = 7,
     Badge = 5,
     Armor = 30,
+    HairAccesories = 12,
 
     -- MAKEUP
     texture = 1,

@@ -45,7 +45,7 @@ Config = {
     {
       name = "Clothing Store", -- Saint Denis
       BlipIcon = 1195729388,
-      EnterStore = { 2554.63, -1169.08, 53.68, 2.0 },
+      EnterStore = {1, 1, 1, 2.0 },
       ExitWardrobe = { 2552.91, -1161.32, 52.68, 89.54 },
       Cameras = {
         { 2554.943, -1158.621, 53.58861, -2.330096, 0.0, -156.1156 }, -- Principal Camera
@@ -60,7 +60,7 @@ Config = {
     {
       name = "Clothing Store", -- Blackwater
       BlipIcon = 1195729388,
-      EnterStore = { -761.67, -1291.53, 43.86, 2.0 },
+      EnterStore = {1, 1, 1, 2.0 },
       ExitWardrobe = { -764.82, -1291.39, 42.83, 271.27 },
       Cameras = {
         { -766.0403, -1294.163, 44.43269, -17.62717, 0.0, 129.3011 }, -- Principal Camera
@@ -75,7 +75,7 @@ Config = {
     {
       name = "Clothing Store", -- Valentine
       BlipIcon = 1195729388,
-      EnterStore = { -325.99, 774.77, 117.46, 2.0 },
+      EnterStore = {1, 1, 1, 2.0 },
       ExitWardrobe = { -322.57, 771.95, 116.44, 23.65 },
       Cameras = {
         { -326.5601, 776.4949, 122.2295, -15.07608, 0.0, 124.8089 }, -- Principal Camera
@@ -90,7 +90,7 @@ Config = {
     {
       name = "Clothing Store", -- Rhodes
       BlipIcon = 1195729388,
-      EnterStore = { 1326.11, -1288.78, 77.02, 2.0 },
+      EnterStore = {1, 1, 1, 2.0 },
       ExitWardrobe = { 1323.88, -1292.37, 76.03, 267.47 },
       Cameras = {
         { 2554.943, -1158.621, 53.58861, -2.330096, 0.0, -156.1156 }, -- Principal Camera
@@ -105,7 +105,7 @@ Config = {
     {
       name = "Clothing Store", -- Tumbleweed
       BlipIcon = 1195729388,
-      EnterStore = { -5483.86, -2932.48, -0.4, 2.0 },
+      EnterStore = {1, 1, 1, 2.0 },
       ExitWardrobe = { -5482.74, -2935.01, -1.4, 80.17 },
       Cameras = {
         { 2554.943, -1158.621, 53.58861, -2.330096, 0.0, -156.1156 }, -- Principal Camera
@@ -120,7 +120,7 @@ Config = {
     {
       name = "Clothing Store", -- Armadillo
       BlipIcon = 1195729388,
-      EnterStore = { -3681.88, -2627.49, -13.43, 2.0 },
+      EnterStore = {1, 1, 1, 2.0 },
       ExitWardrobe = { -3686.44, -2627.48, -14.43, 302.64 },
       Cameras = {
         { 2554.943, -1158.621, 53.58861, -2.330096, 0.0, -156.1156 }, -- Principal Camera
