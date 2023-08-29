@@ -488,7 +488,29 @@ Config.Horses = { -- Gold to Dollar Ratio Based on 1899 Gold Price / sellPrice i
 			['a_c_horse_turkoman_perlino']  = { color = 'Perlino',  cashPrice = 1000, goldPrice = 48 },
 		}
 	},
-	
+	{
+		breed = 'Special',
+		colors = {
+			['a_c_horse_eagleflies']                 = { color = 'Eagle Flies Horse', cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_bill']                  = { color = 'Brown Jack',        cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_charles']               = { color = 'Spot',              cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_charles_endlesssummer'] = { color = 'Falmouth',          cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_dutch']                 = { color = 'Arthur',            cashPrice = 2500, goldPrice = 120 },
+			['a_c_horse_gang_hosea']                 = { color = 'Silver Dollar',     cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_javier']                = { color = 'Boaz',              cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_john']                  = { color = 'Old Boy',           cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_karen']                 = { color = 'Old Belle',         cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_kieran']                = { color = 'Branwen',           cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_lenny']                 = { color = 'Mag',               cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_micah']                 = { color = 'Ghost',             cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_sadie']                 = { color = 'Bob',               cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_sadie_endlesssummer']   = { color = 'Sadie',             cashPrice = 1500, goldPrice = 72  },
+			['a_c_horse_gang_sean']                  = { color = 'Ennis',             cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_trelawney']             = { color = 'Gwydion',           cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_uncle']                 = { color = 'Nell II',           cashPrice = 2000, goldPrice = 97  },
+			['a_c_horse_gang_uncle_endlesssummer']   = { color = 'Nell IV',           cashPrice = 1500, goldPrice = 72  },
+		}
+	},
 	{
 		breed = 'Other',
 		colors = {
