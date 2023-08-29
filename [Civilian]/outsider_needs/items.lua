@@ -52,7 +52,7 @@ Items.Consumables = {
                     effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
                     soundRef = "Consumption_Sounds"
                 },
@@ -97,7 +97,7 @@ Items.Consumables = {
                     effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
                     soundRef = "Consumption_Sounds"
                 }
@@ -140,7 +140,50 @@ Items.Consumables = {
                     effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                }
+            },
+            consumable_peach = {
+                removethirst          = 100,
+                removehunger          = 100,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 0,
+                addstamina            = 0,
+                addhunger             = 8,
+                addthirst             = 8,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "s_bit_peach01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = true,
                     soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
                     soundRef = "Consumption_Sounds"
                 }
@@ -183,7 +226,50 @@ Items.Consumables = {
                     effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                }
+            },
+            consumable_salmon_can = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 20,
+                addstamina            = 0,
+                addhunger             = 60,
+                addthirst             = 40,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "canned",                -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "s_canbeans01x",     -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 0,
+                warmup                = 0,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = true,
                     soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
                     soundRef = "Consumption_Sounds"
                 }
@@ -226,7 +312,7 @@ Items.Consumables = {
                     effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
                     soundRef = "Consumption_Sounds"
                 }
@@ -269,7 +355,7 @@ Items.Consumables = {
                     effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
                     soundRef = "Consumption_Sounds"
                 }
@@ -317,7 +403,93 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
+                    soundName = "Core_Fill_Up",
+                    soundRef = "Consumption_Sounds"
+                }
+
+            },
+            chocolatemilk = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 0,
+                addstamina            = 10,
+                addhunger             = 0,
+                addthirst             = 10,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 20,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "drink",
+                animationtype         = "fastdrink",
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "s_drinkshootmg03x",
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",
+                UseDrunkEffect        = false,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 5,
+                warmup                = 30,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,     -- max is 100
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false, -- effect name
+                    effectName = "",   -- effect name
+                },
+                sounds                = {
+                    addSound = true,
+                    soundName = "Core_Fill_Up",
+                    soundRef = "Consumption_Sounds"
+                }
+
+            },
+            consumable_raspberrywater = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 0,
+                addstamina            = 30,
+                addhunger             = 0,
+                addthirst             = 10,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 20,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "drink",
+                animationtype         = "fastdrink",
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "s_inv_moonshine01x",
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",
+                UseDrunkEffect        = false,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 5,
+                warmup                = 30,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,     -- max is 100
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false, -- effect name
+                    effectName = "",   -- effect name
+                },
+                sounds                = {
+                    addSound = true,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -361,7 +533,7 @@ Items.Consumables = {
                     effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
                     soundRef = "Consumption_Sounds"
                 }
@@ -404,7 +576,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -447,7 +619,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -489,7 +661,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -525,7 +697,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -561,7 +733,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -597,7 +769,7 @@ Items.Consumables = {
                     effectName = "",
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -624,7 +796,7 @@ Items.Consumables = {
                     effectName = "",                             -- effect name
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 },
@@ -649,7 +821,7 @@ Items.Consumables = {
                     effectName = "",                             -- effect name
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 },
@@ -673,7 +845,7 @@ Items.Consumables = {
                     effectName = "",                             -- effect name
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 },
@@ -713,7 +885,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -744,7 +916,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -775,7 +947,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = false,
+                    addSound = true,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
