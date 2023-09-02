@@ -1,0 +1,1597 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<PBRSurfaceLibrary>
+  <Gradients/>
+  <SurfaceDefinitions>
+    <Item>
+      <Name>Weapon_Antler_Smooth</Name>
+      <Roughness value="0.50000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.30000000"/>
+      <Porosity value="0.10000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.40000000"/>
+      <AlbedoModMultiply value="0.40000000"/>
+      <InvertAlbedoMods value="1"/>
+      <RoughnessModScreen value="0.00000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="0"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB/>
+      <GUID>{4d6876ca-5666-4d2e-a1d1-904ab26ab003}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Bone_Matte</Name>
+      <Roughness value="0.75000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.35000000"/>
+      <Porosity value="0.30000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.40000000"/>
+      <AlbedoModMultiply value="0.40000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.00000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.10" y="0.10" z="0.10"/>
+      <GUID>{1d7e2504-efb3-4332-993b-b97ba6a4103a}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Ivory_Smooth</Name>
+      <Roughness value="0.50000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.30000000"/>
+      <Porosity value="0.10000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.40000000"/>
+      <AlbedoModMultiply value="0.40000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.00000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.75392100" y="0.67549010" z="0.56960700"/>
+      <GUID>{f97194f9-7f00-470a-9c90-138a4bd9f651}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Ivory_Polished</Name>
+      <Roughness value="0.20000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.35000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.40000000"/>
+      <AlbedoModMultiply value="0.40000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.00000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.75392100" y="0.67549010" z="0.56960700"/>
+      <GUID>{0343c1d8-33e4-4cbb-a37a-1c4fe3fb72a5}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Leather_Rough</Name>
+      <Roughness value="0.65000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.50000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <Translucency value="0.40000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.25000000"/>
+      <AlbedoModMultiply value="0.50000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.50000000"/>
+      <RoughnessModMultiply value="0.20000000"/>
+      <InvertRoughnessMods value="0.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.52647000" y="0.37745000" z="0.19705800"/>
+      <GUID>{ec474aff-7169-426d-b5d8-0ae875cbb0e0}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Leather_Smooth</Name>
+      <Roughness value="0.46000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.20000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <Translucency value="0.50000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.25000000"/>
+      <AlbedoModMultiply value="0.50000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.50000000"/>
+      <RoughnessModMultiply value="0.20000000"/>
+      <InvertRoughnessMods value="0.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.47156800" y="0.30294100" z="0.21784300"/>
+      <GUID>{0acadd80-9fdf-4965-b3dc-f05f5c03d2a3}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Leather_Wrap</Name>
+      <Roughness value="0.60000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.30000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <Translucency value="0.20000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.20000000"/>
+      <AlbedoModMultiply value="0.50000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.75000000"/>
+      <RoughnessModMultiply value="0.75000000"/>
+      <InvertRoughnessMods value="0.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB/>
+      <GUID>{c0967797-e709-4fb5-8d7f-3811a56c6054}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Enamel_White</Name>
+      <Roughness value="0.30000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.30000000"/>
+      <Porosity value="0.10000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.20000000"/>
+      <AlbedoModMultiply value="0.20000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.00000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.90196000" y="0.90196000" z="0.90196000"/>
+      <GUID>{71e6ce2c-8301-421f-b32b-edd0dbc67cae}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Enamel_Yellow</Name>
+      <Roughness value="0.30000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.30000000"/>
+      <Porosity value="0.10000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.20000000"/>
+      <AlbedoModMultiply value="0.20000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.00000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.91372500" y="0.78823500" z="0.37254900"/>
+      <GUID>{672c495f-e10f-4a8f-8319-4a3f685e32d0}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Enamel_Blue</Name>
+      <Roughness value="0.30000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.30000000"/>
+      <Porosity value="0.10000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.20000000"/>
+      <AlbedoModMultiply value="0.20000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.00000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.35294100" y="0.56078400" z="0.71764700"/>
+      <GUID>{530ad1fa-be4a-424e-b2f9-b7ab923ef449}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Enamel_Green</Name>
+      <Roughness value="0.30000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.30000000"/>
+      <Porosity value="0.10000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.20000000"/>
+      <AlbedoModMultiply value="0.20000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.00000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.42745000" y="0.63529400" z="0.29803900"/>
+      <GUID>{c1d6819f-a6f8-4433-ba7c-44521bc76ff9}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Enamel_Red</Name>
+      <Roughness value="0.30000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.30000000"/>
+      <Porosity value="0.10000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.20000000"/>
+      <AlbedoModMultiply value="0.20000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.00000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.58823500" y="0.18823500" z="0.16862700"/>
+      <GUID>{e708dfa6-2b0e-4793-b3e3-6f2a6db6512a}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Steel_Blackened</Name>
+      <Roughness value="0.45000000"/>
+      <Metalness value="0.30000000"/>
+      <Sheen value="0.20000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.06000000"/>
+      <AlbedoModMultiply value="0.65000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.30000000"/>
+      <RoughnessModMultiply value="0.45000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.40000000"/>
+      <MetalnessModMultiply value="0.25000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.08" y="0.08" z="0.08"/>
+      <GUID>{c81574dd-1168-4dae-b5c6-c6e4b9626e83}</GUID>
+      <RustGUID>{695dce31-a5e8-47e2-b238-12a6de6a9c4b}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Steel_Blackened_Oxidized</Name>
+      <Roughness value="0.60000000"/>
+      <Metalness value="0.10000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.25000000"/>
+      <AlbedoModMultiply value="0.20000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.35000000"/>
+      <RoughnessModMultiply value="0.70000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.70000000"/>
+      <MetalnessModMultiply value="0.50000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.13502000" y="0.11235300" z="0.10588200"/>
+      <SecondaryRustRGB x="0.10588200" y="0.07676401" z="0.14902000"/>
+      <GUID>{695dce31-a5e8-47e2-b238-12a6de6a9c4b}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Steel_Blued</Name>
+      <Roughness value="0.3000000"/>
+      <Metalness value="0.70000000"/>
+      <Sheen value="0.70000000"/>
+      <RoughnessModifierLimit value="0.00000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.050000"/>
+      <AlbedoModMultiply value="0.05000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.0010000"/>
+      <RoughnessModMultiply value="0.00000000"/>
+      <InvertRoughnessMods value="0.00000000"/>
+      <MetalnessModScreen value="0.10000000"/>
+      <MetalnessModMultiply value="0.10000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.092961" y="0.100961" z="0.115559"/>
+      <GUID>{b8790e4f-598b-418f-a163-870ec9409c39}</GUID>
+      <RustGUID>{236178df-cab7-42b5-bcb0-2857226490e1}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Steel_Blued_Oxidized</Name>
+      <Roughness value="0.50000000"/>
+      <Metalness value="0.35000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.20000000"/>
+      <AlbedoModMultiply value="0.70000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.20000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.60000000"/>
+      <MetalnessModMultiply value="0.30000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.122961" y="0.130961" z="0.165559"/>
+      <SecondaryRustRGB x="0.28598000" y="0.23392100" z="0.19313000"/>
+      <GUID>{236178df-cab7-42b5-bcb0-2857226490e1}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Steel_Browned</Name>
+      <Roughness value="0.5000000"/>
+      <Metalness value="0.9500000"/>
+      <Sheen value="1.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.12000000"/>
+      <AlbedoModMultiply value="0.85000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.30000000"/>
+      <RoughnessModMultiply value="0.57000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.57000000"/>
+      <MetalnessModMultiply value="0.27000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.40" y="0.35" z="0.34"/>
+      <GUID>{ba32d1c6-5dbb-40f8-958e-5c146109b562}</GUID>
+      <RustGUID>{c6f34f8b-0f01-43b7-8fa6-b01bab7cf382}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Steel_Browned_Oxidized</Name>
+      <Roughness value="0.60000000"/>
+      <Metalness value="0.20000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.10000000"/>
+      <AlbedoModMultiply value="0.22000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.30000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.10000000"/>
+      <MetalnessModMultiply value="0.30000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.24509800" y="0.19647100" z="0.17117600"/>
+      <SecondaryRustRGB x="0.20784300" y="0.14156800" z="0.13264700"/>
+      <GUID>{c6f34f8b-0f01-43b7-8fa6-b01bab7cf382}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Steel_Tempered</Name>
+      <Roughness value="0.2750000"/>
+      <Metalness value="1.000000"/>
+      <Sheen value="0.75000000"/>
+      <RoughnessModifierLimit value="0.40000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <AlbedoTexture>metal_ab</AlbedoTexture>
+      <AlbedoTextureIndex>0</AlbedoTextureIndex>
+      <ForceTintOff value="true"/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.85000000"/>
+      <AlbedoModMultiply value="0.75000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.25000000"/>
+      <RoughnessModMultiply value="0.85000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.85000000"/>
+      <MetalnessModMultiply value="0.20000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB/>
+      <GUID>{3bda2d06-e1f2-4e69-9297-efd62ad65948}</GUID>
+      <RustGUID>{236178df-cab7-42b5-bcb0-2857226490e1}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Brass</Name>
+      <Roughness value="0.1300000"/>
+      <Metalness value="0.90000000"/>
+      <Sheen value="0.90000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.30000000"/>
+      <AlbedoModMultiply value="0.90000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.35000000"/>
+      <RoughnessModMultiply value="0.45000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.30000000"/>
+      <MetalnessModMultiply value="0.30000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.524117" y="0.469215" z="0.317647"/>
+      <GUID>{0c0f178f-59e3-440a-ad97-809b68002013}</GUID>
+      <RustGUID>{c173c7f8-3936-4024-9c00-64007d0b35fb}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Brass_Oxidized</Name>
+      <Roughness value="0.60000000"/>
+      <Metalness value="0.20000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <Translucency value="0.20000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.10000000"/>
+      <AlbedoModMultiply value="0.10000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.25000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.25000000"/>
+      <MetalnessModMultiply value="0.25000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.23921600" y="0.21960800" z="0.12549000"/>
+      <SecondaryRustRGB x="0.24313700" y="0.14902000" z="0.12941200"/>
+      <GUID>{c173c7f8-3936-4024-9c00-64007d0b35fb}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Bronze</Name>
+      <Roughness value="0.32000000"/>
+      <Metalness value="0.90000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.90000000"/>
+      <AlbedoModMultiply value="0.85000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.25000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.25000000"/>
+      <MetalnessModMultiply value="0.25000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <Lyr1AlbedoMod value="0.85000000"/>
+      <Lyr1RoughnessMod value="-0.30000000"/>
+      <Lyr1MetalnessMod value="0.30000000"/>
+      <AlbedoMetalRGB x="0.88627500" y="0.72902000" z="0.52902000"/>
+      <GUID>{137042d7-3bf7-4f22-8bda-711937e6a745}</GUID>
+      <RustGUID>{f3f4d9ac-841b-4fc5-ba30-de234c950f7e}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Bronze_Oxidized</Name>
+      <Roughness value="0.60000000"/>
+      <Metalness value="0.20000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.07000000"/>
+      <AlbedoModMultiply value="0.10000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.25000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.25000000"/>
+      <MetalnessModMultiply value="0.25000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <Lyr1AlbedoMod value="0.85000000"/>
+      <Lyr1RoughnessMod value="-0.30000000"/>
+      <Lyr1MetalnessMod value="0.30000000"/>
+      <AlbedoMetalRGB x="0.16078400" y="0.23529400" z="0.24313700"/>
+      <SecondaryRustRGB x="0.18823500" y="0.15686300" z="0.12549000"/>
+      <GUID>{f3f4d9ac-841b-4fc5-ba30-de234c950f7e}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Copper</Name>
+      <Roughness value="0.2500000"/>
+      <Metalness value="0.95000000"/>
+      <Sheen value="0.75000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <AlbedoTexture>metal_weathered_ab</AlbedoTexture>
+      <AlbedoTextureIndex>0</AlbedoTextureIndex>
+      <ForceTintOff value="true"/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.20000000"/>
+      <AlbedoModMultiply value="0.20000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.25000000"/>
+      <RoughnessModMultiply value="0.25000000"/>
+      <InvertRoughnessMods value="0.00000000"/>
+      <MetalnessModScreen value="0.25000000"/>
+      <MetalnessModMultiply value="0.25000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <Lyr1AlbedoMod value="0.85000000"/>
+      <Lyr1RoughnessMod value="-0.30000000"/>
+      <Lyr1MetalnessMod value="0.30000000"/>
+      <AlbedoMetalRGB/>
+      <GUID>{801a5658-50f3-408c-a62c-0ce468f64300}</GUID>
+      <RustGUID>{20f774d0-28cc-4902-839e-549b30db1404}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Copper_Oxidized</Name>
+      <Roughness value="0.3000000"/>
+      <Metalness value="1.00000000"/>
+      <Sheen value="0.75000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <AlbedoTexture>metal_weathered_ab</AlbedoTexture>
+      <AlbedoTextureIndex>0</AlbedoTextureIndex>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.20000000"/>
+      <AlbedoModMultiply value="0.20000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.25000000"/>
+      <RoughnessModMultiply value="0.25000000"/>
+      <InvertRoughnessMods value="0.00000000"/>
+      <MetalnessModScreen value="0.25000000"/>
+      <MetalnessModMultiply value="0.25000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <Lyr1AlbedoMod value="0.85000000"/>
+      <Lyr1RoughnessMod value="-0.30000000"/>
+      <Lyr1MetalnessMod value="0.30000000"/>
+      <AlbedoMetalRGB/>
+      <GUID>{801a5658-50f3-408c-a62c-0ce468f64300}</GUID>
+      <RustGUID>{20f774d0-28cc-4902-839e-549b30db1404}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Gold</Name>
+      <Roughness value="0.1500000"/>
+      <Metalness value="0.9800000"/>
+      <Sheen value="1.00000000"/>
+      <RoughnessModifierLimit value="0.10000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.10000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.05000000"/>
+      <AlbedoModMultiply value="0.05000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.10000000"/>
+      <RoughnessModMultiply value="0.26000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.20000000"/>
+      <MetalnessModMultiply value="0.20000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <DoesNotRust value="true"/>
+      <AlbedoMetalRGB x="0.67450980" y="0.56470590" z="0.38039220"/>
+      <GUID>{066a360c-08e0-410d-a010-a4c013bff9d1}</GUID>
+      <RustGUID>{3dbfbce5-e7f8-4aa3-963e-7d9cbc6476f5}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Gold_Oxidized</Name>
+      <Roughness value="0.40000000"/>
+      <Metalness value="0.85000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.10000000"/>
+      <AlbedoModMultiply value="0.20000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.20000000"/>
+      <RoughnessModMultiply value="0.20000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.20000000"/>
+      <MetalnessModMultiply value="0.20000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <ShowRustBump value="false"/>
+      <AlbedoMetalRGB x="0.67450980" y="0.56470590" z="0.38039220"/>
+      <SecondaryRustRGB x="0.95000000" y="0.82882400" z="0.55862800"/>
+      <GUID>{3dbfbce5-e7f8-4aa3-963e-7d9cbc6476f5}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Brass_Red</Name>
+      <Roughness value="0.43000000"/>
+      <Metalness value="0.90000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.30000000"/>
+      <AlbedoModMultiply value="0.30000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.25000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.25000000"/>
+      <MetalnessModMultiply value="0.25000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <Lyr1AlbedoMod value="0.85000000"/>
+      <Lyr1RoughnessMod value="-0.30000000"/>
+      <Lyr1MetalnessMod value="0.30000000"/>
+      <Lyr1AlbedoMod value="0.85000000"/>
+      <Lyr1RoughnessMod value="-0.30000000"/>
+      <Lyr1MetalnessMod value="0.30000000"/>
+      <AlbedoMetalRGB x="0.94902000" y="0.71725500" z="0.61137300"/>
+      <GUID>{71c63508-63b8-4803-a75c-510f3d87c40f}</GUID>
+      <RustGUID>{b35e9c56-af80-40f0-9bfb-e24308c63628}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Brass_Rough</Name>
+      <Roughness value="0.45000000"/>
+      <Metalness value="0.40000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.30000000"/>
+      <AlbedoModMultiply value="0.85000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.20000000"/>
+      <RoughnessModMultiply value="0.70000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.55000000"/>
+      <MetalnessModMultiply value="0.20000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <Lyr1AlbedoMod value="0.85000000"/>
+      <Lyr1RoughnessMod value="-0.30000000"/>
+      <Lyr1MetalnessMod value="0.30000000"/>
+      <Lyr1AlbedoMod value="0.85000000"/>
+      <Lyr1RoughnessMod value="-0.30000000"/>
+      <Lyr1MetalnessMod value="0.30000000"/>
+      <AlbedoMetalRGB x="0.43235200" y="0.28333300" z="0.14607800"/>
+      <GUID>{ebbc2b89-6112-4854-9295-df191358352e}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Lead</Name>
+      <Roughness value="0.43000000"/>
+      <Metalness value="0.70000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.85000000"/>
+      <AlbedoModMultiply value="0.85000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.20000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.65000000"/>
+      <MetalnessModMultiply value="0.40000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <Lyr1AlbedoMod value="0.85000000"/>
+      <Lyr1RoughnessMod value="-0.30000000"/>
+      <Lyr1MetalnessMod value="0.30000000"/>
+      <AlbedoMetalRGB x="0.70509800" y="0.66549000" z="0.66549000"/>
+      <GUID>{a206b35b-2add-4ccc-8701-239def372ccf}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Nickel</Name>
+      <Roughness value="0.3000000"/>
+      <Metalness value="0.9700000"/>
+      <Sheen value="0.95000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.15000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.0200000"/>
+      <AlbedoModMultiply value="0.02000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.400000"/>
+      <RoughnessModMultiply value="0.00000000"/>
+      <InvertRoughnessMods value="0.00000000"/>
+      <MetalnessModScreen value="0.200000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.999" y="0.977" z="0.871"/>
+      <GUID>{e40574a7-3b1c-44f2-820a-623529e73c8e}</GUID>
+      <RustGUID>{13a9f9ea-e8a5-44a1-bfd9-b6742277077d}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Nickel_Oxidized</Name>
+      <Roughness value="0.45000000"/>
+      <Metalness value="0.50000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.10000000"/>
+      <AlbedoModMultiply value="0.10000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.20000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.65000000"/>
+      <MetalnessModMultiply value="0.40000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.819" y="0.787" z="0.711"/>
+      <SecondaryRustRGB x="0.82745100" y="0.77607800" z="0.72509800"/>
+      <GUID>{13a9f9ea-e8a5-44a1-bfd9-b6742277077d}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Silver</Name>
+      <Roughness value="0.2500000"/>
+      <Metalness value="0.95000000"/>
+      <Sheen value="0.75000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <AlbedoTexture>damascus_ab</AlbedoTexture>
+      <AlbedoTextureIndex>0</AlbedoTextureIndex>
+      <ForceTintOff value="true"/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.20000000"/>
+      <AlbedoModMultiply value="0.20000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.25000000"/>
+      <RoughnessModMultiply value="0.25000000"/>
+      <InvertRoughnessMods value="0.00000000"/>
+      <MetalnessModScreen value="0.25000000"/>
+      <MetalnessModMultiply value="0.25000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <Lyr1AlbedoMod value="0.85000000"/>
+      <Lyr1RoughnessMod value="-0.30000000"/>
+      <Lyr1MetalnessMod value="0.30000000"/>
+      <AlbedoMetalRGB/>
+      <GUID>{2f1cb330-af0e-409a-9c80-5e4d62358a2a}</GUID>
+      <RustGUID>{b35e9c56-af80-40f0-9bfb-e24308c63628}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Silver_Oxidized</Name>
+      <Roughness value="0.63000000"/>
+      <Metalness value="0.20000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <AlbedoTexture>damascus_ab</AlbedoTexture>
+      <AlbedoTextureIndex>0</AlbedoTextureIndex>
+      <ForceTintOff value="true"/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.10000000"/>
+      <AlbedoModMultiply value="0.10000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.25000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.25000000"/>
+      <MetalnessModMultiply value="0.25000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB/>
+      <SecondaryRustRGB x="0.13333300" y="0.14509800" z="0.13333300"/>
+      <GUID>{b35e9c56-af80-40f0-9bfb-e24308c63628}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Poison</Name>
+      <Roughness value="0.10000000"/>
+      <Metalness value="0.20000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.08000000"/>
+      <AlbedoModMultiply value="0.45000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.10000000"/>
+      <RoughnessModMultiply value="0.85000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.60000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.36862700" y="0.47843100" z="0.19607800"/>
+      <GUID>{ed4e7482-deab-4d80-ab5e-4203f25a8d99}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Steel</Name>
+      <Roughness value="0.35000000"/>
+      <Metalness value="0.80000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.70000000"/>
+      <AlbedoModMultiply value="0.80000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.30000000"/>
+      <RoughnessModMultiply value="0.60000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.60000000"/>
+      <MetalnessModMultiply value="0.40000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.71333300" y="0.74078400" z="0.75647100"/>
+      <GUID>{2f841ca0-7fa8-4c7c-a415-f2914ae4fc78}</GUID>
+      <RustGUID>{1ffaa371-1cf9-4f6c-9c24-a0f1409c3284}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Steel_Rough</Name>
+      <Roughness value="0.55000000"/>
+      <Metalness value="0.75000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.75000000"/>
+      <AlbedoModMultiply value="0.80000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.25000000"/>
+      <RoughnessModMultiply value="0.65000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.80000000"/>
+      <MetalnessModMultiply value="0.50000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.59333300" y="0.61078400" z="0.61647100"/>
+      <GUID>{9e5590a1-8bbd-477b-b5a0-c1f04dfecbbf}</GUID>
+      <RustGUID>{1ffaa371-1cf9-4f6c-9c24-a0f1409c3284}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Steel_Oxidized</Name>
+      <Roughness value="0.55000000"/>
+      <Metalness value="0.20000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.10000000"/>
+      <AlbedoModMultiply value="0.15000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.20000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.65000000"/>
+      <MetalnessModMultiply value="0.40000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.30078400" y="0.17215700" z="0.14156900"/>
+      <SecondaryRustRGB x="0.19607800" y="0.11764700" z="0.15686300"/>
+      <GUID>{1ffaa371-1cf9-4f6c-9c24-a0f1409c3284}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Iron_Oxidized</Name>
+      <Roughness value="0.65000000"/>
+      <Metalness value="0.20000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.30000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.10000000"/>
+      <AlbedoModMultiply value="0.15000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.30000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.10000000"/>
+      <MetalnessModMultiply value="0.30000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.27509800" y="0.16647100" z="0.15117600"/>
+      <SecondaryRustRGB x="0.23529400" y="0.12156900" z="0.09803900"/>
+      <GUID>{9088385f-270d-4144-8104-4c06c7d940dc}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Iron</Name>
+      <Roughness value="0.3500000"/>
+      <Metalness value="0.9500000"/>
+      <Sheen value="0.9500000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.15000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.85000000"/>
+      <AlbedoModMultiply value="0.86000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.20000000"/>
+      <RoughnessModMultiply value="0.45000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.45000000"/>
+      <MetalnessModMultiply value="0.40000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.569412" y="0.532941" z="0.5609409"/>
+      <GUID>{9bd2a405-818b-4f0a-9f18-2e974e26a629}</GUID>
+      <RustGUID>{9088385f-270d-4144-8104-4c06c7d940dc}</RustGUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Blood_Dry</Name>
+      <Roughness value="0.55000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.30000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.03000000"/>
+      <AlbedoModMultiply value="0.80000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.35000000"/>
+      <RoughnessModMultiply value="0.35000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.10000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.38039200" y="0.20039200" z="0.17509800"/>
+      <GUID>{3ef35396-2baa-43a0-8470-dc962e2267e8}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Blood_Fresh</Name>
+      <Roughness value="0.10000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.00000000"/>
+      <AlbedoModMultiply value="0.85000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.00000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.55000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.44784300" y="0.13607800" z="0.14254900"/>
+      <GUID>{ba4e5cff-770f-4010-93d5-f7f3852e01ef}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Blood_Sticky</Name>
+      <Roughness value="0.25000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.00000000"/>
+      <AlbedoModMultiply value="0.85000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.00000000"/>
+      <RoughnessModMultiply value="0.40000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.50000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.45921000" y="0.21607800" z="0.23352900"/>
+      <GUID>{ffa450d2-65b2-4482-a503-4587856f6005}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Wood_Generic_Burnt</Name>
+      <Roughness value="0.83000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.10000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.14000000"/>
+      <AlbedoModMultiply value="0.80000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.80000000"/>
+      <RoughnessModMultiply value="0.00000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB/>
+      <GUID>{74bcee45-523e-4114-94a0-2fbcb52f6802}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Wood_Generic_French_Polish</Name>
+      <Roughness value="0.05000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.14000000"/>
+      <AlbedoModMultiply value="0.80000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.80000000"/>
+      <RoughnessModMultiply value="0.00000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB/>
+      <GUID>{6d55ae07-3958-48a3-962e-112d67a23a4f}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Wood_Generic_Lacquered</Name>
+      <Roughness value="0.20000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.10000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.14000000"/>
+      <AlbedoModMultiply value="0.80000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.55000000"/>
+      <RoughnessModMultiply value="0.50000000"/>
+      <InvertRoughnessMods value="0.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <GUID>{52954180-ac4c-4336-8a0b-4eda120f9068}</GUID>
+      <CollisionTypes/>
+      <Images/>
+      <AlbedoMetalRGB/>
+    </Item>
+    <Item>
+      <Name>Weapon_Wood_Generic_Rough</Name>
+      <Roughness value="0.85000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.60000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.14000000"/>
+      <AlbedoModMultiply value="0.80000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.20000000"/>
+      <RoughnessModMultiply value="0.20000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB/>
+      <GUID>{4aaaea53-fa38-4c38-bc3e-fa16fa7d35b5}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Wood_Generic_Smooth</Name>
+      <Roughness value="0.50000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.10000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.18000000"/>
+      <AlbedoModMultiply value="0.93000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.65000000"/>
+      <RoughnessModMultiply value="0.65000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <DoubleScreenRoughness value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB/>
+      <GUID>{f9b59ca3-4dcf-45e7-a12b-d429fe14de44}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Wood_Generic_Varnished</Name>
+      <Roughness value="0.40000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.10000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.14000000"/>
+      <AlbedoModMultiply value="0.66000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.60000000"/>
+      <RoughnessModMultiply value="0.00000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <GUID>{3e3dd7f4-d933-42c8-b105-8807f461e22a}</GUID>
+      <CollisionTypes/>
+      <Images/>
+      <AlbedoMetalRGB/>
+    </Item>
+    <Item>
+      <Name>Weapon_Wood_Burled_Grip</Name>
+      <Roughness value="0.40000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.10000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.14000000"/>
+      <AlbedoModMultiply value="0.66000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.60000000"/>
+      <RoughnessModMultiply value="0.00000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoTexture>grip_ab</AlbedoTexture>
+      <AlbedoTextureIndex>0</AlbedoTextureIndex>
+      <AlbedoTextureIsWood value="true"/>
+      <GUID>{6d5ec9f8-657b-4117-b8a2-895741a12b1f}</GUID>
+      <CollisionTypes/>
+      <Images/>
+      <AlbedoMetalRGB/>
+    </Item>
+    <Item>
+      <Name>Weapon_Wood_Burled_Stock</Name>
+      <Roughness value="0.40000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.10000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.14000000"/>
+      <AlbedoModMultiply value="0.66000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.60000000"/>
+      <RoughnessModMultiply value="0.00000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoTexture>stock_ab</AlbedoTexture>
+      <AlbedoTextureIndex>0</AlbedoTextureIndex>
+      <AlbedoTextureIsWood value="true"/>
+      <GUID>{8ea6c66d-d446-449b-a4b1-573ac2a56bc1}</GUID>
+      <CollisionTypes/>
+      <Images/>
+      <AlbedoMetalRGB/>
+    </Item>
+    <Item>
+      <Name>Weapon_Pearl_Rough</Name>
+      <Roughness value="0.35000000"/>
+      <Metalness value="0.50000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.14000000"/>
+      <AlbedoModMultiply value="0.30000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.30000000"/>
+      <RoughnessModMultiply value="0.30000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.70000000"/>
+      <MetalnessModMultiply value="0.60000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB/>
+      <GUID>{4ca156dc-6d3d-498e-8c5e-e00320bc4a6a}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Pearl</Name>
+      <Roughness value="0.33000000"/>
+      <Metalness value="0.50000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.14000000"/>
+      <AlbedoModMultiply value="0.30000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.30000000"/>
+      <RoughnessModMultiply value="0.30000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.70000000"/>
+      <MetalnessModMultiply value="0.60000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB/>
+      <GUID>{2d36570c-1b13-4dd2-aadf-6271a0b4d24b}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Drain</Name>
+      <Roughness value="0.10000000"/>
+      <Metalness value="0.20000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.08000000"/>
+      <AlbedoModMultiply value="0.45000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.10000000"/>
+      <RoughnessModMultiply value="0.85000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.60000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.64705800" y="0.15686200" z="0.80392100"/>
+      <GUID>{990c2b41-a4a7-44ef-82a7-26981ced7a64}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Trail</Name>
+      <Roughness value="0.10000000"/>
+      <Metalness value="0.20000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.08000000"/>
+      <AlbedoModMultiply value="0.45000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.10000000"/>
+      <RoughnessModMultiply value="0.85000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.60000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.75294110" y="0.46274500" z="0.18431300"/>
+      <GUID>{1d3549b0-0df8-4ecb-8963-ebc8d9296f5d}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Disorient</Name>
+      <Roughness value="0.10000000"/>
+      <Metalness value="0.20000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.08000000"/>
+      <AlbedoModMultiply value="0.45000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.10000000"/>
+      <RoughnessModMultiply value="0.85000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.60000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.24313700" y="0.19607800" z="0.72549000"/>
+      <GUID>{6f79986f-f7c7-4184-b782-c565abb88bfe}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Wound</Name>
+      <Roughness value="0.10000000"/>
+      <Metalness value="0.20000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.08000000"/>
+      <AlbedoModMultiply value="0.45000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.10000000"/>
+      <RoughnessModMultiply value="0.85000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.60000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.91764700" y="0.34117600" z="0.75294100"/>
+      <GUID>{0b6d9107-4f7d-42ce-a46b-d88bd1f67970}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Confuse</Name>
+      <Roughness value="0.10000000"/>
+      <Metalness value="0.20000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <AlbedoModScreen value="0.08000000"/>
+      <AlbedoModMultiply value="0.45000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.10000000"/>
+      <RoughnessModMultiply value="0.85000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.60000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB x="0.98431300" y="0.98431300" z="0.10588200"/>
+      <GUID>{f9c9e32b-d34f-48fb-970f-007438ea9292}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Generic_SemiMetal</Name>
+      <Roughness value="0.33000000"/>
+      <Metalness value="0.50000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="0.20000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <ForceTintOff value="true"/>
+      <AlbedoModScreen value="0.14000000"/>
+      <AlbedoModMultiply value="0.30000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="0.30000000"/>
+      <RoughnessModMultiply value="0.30000000"/>
+      <InvertRoughnessMods value="1.00000000"/>
+      <MetalnessModScreen value="0.70000000"/>
+      <MetalnessModMultiply value="0.60000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB/>
+      <GUID>{6963f2e5-9e06-4eca-ad71-8ddbce7c83b0}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+    <Item>
+      <Name>Weapon_Roughness_Only</Name>
+      <Roughness value="0.50000000"/>
+      <Metalness value="0.00000000"/>
+      <Sheen value="0.00000000"/>
+      <RoughnessModifierLimit value="1.00000000"/>
+      <Porosity value="0.00000000"/>
+      <PorosityModifierLimit value="0.30000000"/>
+      <MaskRGB/>
+      <UseMatMods value="1.00000000"/>
+      <ForceTintOff value="true"/>
+      <AlbedoModScreen value="0.00000000"/>
+      <AlbedoModMultiply value="0.00000000"/>
+      <InvertAlbedoMods value="0.00000000"/>
+      <RoughnessModScreen value="1.00000000"/>
+      <RoughnessModMultiply value="1.00000000"/>
+      <InvertRoughnessMods value="0.00000000"/>
+      <MetalnessModScreen value="0.00000000"/>
+      <MetalnessModMultiply value="0.00000000"/>
+      <InvertMetalnessMods value="0.00000000"/>
+      <AlbedoMetalRGB/>
+      <GUID>{1ff8f11a-5b17-43f5-8d36-5407b854511c}</GUID>
+      <CollisionTypes/>
+      <Images/>
+    </Item>
+  </SurfaceDefinitions>
+  <Groups>
+    <Item>
+      <Name>Weapon</Name>
+      <Surfaces>
+        <Item>{4d6876ca-5666-4d2e-a1d1-904ab26ab003}</Item>
+        <Item>{1d7e2504-efb3-4332-993b-b97ba6a4103a}</Item>
+        <Item>{f97194f9-7f00-470a-9c90-138a4bd9f651}</Item>
+        <Item>{0343c1d8-33e4-4cbb-a37a-1c4fe3fb72a5}</Item>
+        <Item>{ec474aff-7169-426d-b5d8-0ae875cbb0e0}</Item>
+        <Item>{0acadd80-9fdf-4965-b3dc-f05f5c03d2a3}</Item>
+        <Item>{c0967797-e709-4fb5-8d7f-3811a56c6054}</Item>
+        <Item>{71e6ce2c-8301-421f-b32b-edd0dbc67cae}</Item>
+        <Item>{672c495f-e10f-4a8f-8319-4a3f685e32d0}</Item>
+        <Item>{530ad1fa-be4a-424e-b2f9-b7ab923ef449}</Item>
+        <Item>{c1d6819f-a6f8-4433-ba7c-44521bc76ff9}</Item>
+        <Item>{e708dfa6-2b0e-4793-b3e3-6f2a6db6512a}</Item>
+        <Item>{c81574dd-1168-4dae-b5c6-c6e4b9626e83}</Item>
+        <Item>{695dce31-a5e8-47e2-b238-12a6de6a9c4b}</Item>
+        <Item>{b8790e4f-598b-418f-a163-870ec9409c39}</Item>
+        <Item>{236178df-cab7-42b5-bcb0-2857226490e1}</Item>
+        <Item>{ba32d1c6-5dbb-40f8-958e-5c146109b562}</Item>
+        <Item>{c6f34f8b-0f01-43b7-8fa6-b01bab7cf382}</Item>
+        <Item>{3bda2d06-e1f2-4e69-9297-efd62ad65948}</Item>
+        <Item>{0c0f178f-59e3-440a-ad97-809b68002013}</Item>
+        <Item>{c173c7f8-3936-4024-9c00-64007d0b35fb}</Item>
+        <Item>{137042d7-3bf7-4f22-8bda-711937e6a745}</Item>
+        <Item>{f3f4d9ac-841b-4fc5-ba30-de234c950f7e}</Item>
+        <Item>{801a5658-50f3-408c-a62c-0ce468f64300}</Item>
+        <Item>{20f774d0-28cc-4902-839e-549b30db1404}</Item>
+        <Item>{066a360c-08e0-410d-a010-a4c013bff9d1}</Item>
+        <Item>{3dbfbce5-e7f8-4aa3-963e-7d9cbc6476f5}</Item>
+        <Item>{71c63508-63b8-4803-a75c-510f3d87c40f}</Item>
+        <Item>{ebbc2b89-6112-4854-9295-df191358352e}</Item>
+        <Item>{a206b35b-2add-4ccc-8701-239def372ccf}</Item>
+        <Item>{e40574a7-3b1c-44f2-820a-623529e73c8e}</Item>
+        <Item>{13a9f9ea-e8a5-44a1-bfd9-b6742277077d}</Item>
+        <Item>{2f1cb330-af0e-409a-9c80-5e4d62358a2a}</Item>
+        <Item>{b35e9c56-af80-40f0-9bfb-e24308c63628}</Item>
+        <Item>{ed4e7482-deab-4d80-ab5e-4203f25a8d99}</Item>
+        <Item>{2f841ca0-7fa8-4c7c-a415-f2914ae4fc78}</Item>
+        <Item>{1ffaa371-1cf9-4f6c-9c24-a0f1409c3284}</Item>
+        <Item>{9e5590a1-8bbd-477b-b5a0-c1f04dfecbbf}</Item>
+        <Item>{9088385f-270d-4144-8104-4c06c7d940dc}</Item>
+        <Item>{9bd2a405-818b-4f0a-9f18-2e974e26a629}</Item>
+        <Item>{3ef35396-2baa-43a0-8470-dc962e2267e8}</Item>
+        <Item>{ba4e5cff-770f-4010-93d5-f7f3852e01ef}</Item>
+        <Item>{ffa450d2-65b2-4482-a503-4587856f6005}</Item>
+        <Item>{74bcee45-523e-4114-94a0-2fbcb52f6802}</Item>
+        <Item>{6d55ae07-3958-48a3-962e-112d67a23a4f}</Item>
+        <Item>{52954180-ac4c-4336-8a0b-4eda120f9068}</Item>
+        <Item>{4aaaea53-fa38-4c38-bc3e-fa16fa7d35b5}</Item>
+        <Item>{f9b59ca3-4dcf-45e7-a12b-d429fe14de44}</Item>
+        <Item>{3e3dd7f4-d933-42c8-b105-8807f461e22a}</Item>
+        <Item>{6d5ec9f8-657b-4117-b8a2-895741a12b1f}</Item>
+        <Item>{8ea6c66d-d446-449b-a4b1-573ac2a56bc1}</Item>
+        <Item>{4ca156dc-6d3d-498e-8c5e-e00320bc4a6a}</Item>
+        <Item>{2d36570c-1b13-4dd2-aadf-6271a0b4d24b}</Item>
+        <Item>{990c2b41-a4a7-44ef-82a7-26981ced7a64}</Item>
+        <Item>{1d3549b0-0df8-4ecb-8963-ebc8d9296f5d}</Item>
+        <Item>{6f79986f-f7c7-4184-b782-c565abb88bfe}</Item>
+        <Item>{0b6d9107-4f7d-42ce-a46b-d88bd1f67970}</Item>
+        <Item>{f9c9e32b-d34f-48fb-970f-007438ea9292}</Item>
+        <Item>{6963f2e5-9e06-4eca-ad71-8ddbce7c83b0}</Item>
+        <Item>{1ff8f11a-5b17-43f5-8d36-5407b854511c}</Item>
+      </Surfaces>
+    </Item>
+  </Groups>
+</PBRSurfaceLibrary>

@@ -1,0 +1,1661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<timecycle_modifier_data version="1.000000">
+  <modifier name="veg_opt" description="" numMods="6" userFlags="0">
+    <light_artificial_int_down_intensity>0.000 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.529 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.149 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.000 0.000</light_artificial_int_up_intensity>
+    <artificial_light_power>1.250 0.000</artificial_light_power>
+  </modifier>
+  <modifier name="TRAILER2_shot4" description="" numMods="16" userFlags="0">
+    <ssao_inten>5.000 0.000</ssao_inten>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>1.000 0.000</sun_direction_x>
+    <sun_direction_y>0.206 0.000</sun_direction_y>
+    <sun_direction_z>0.444 0.000</sun_direction_z>
+    <postfx_exposure_spot_meter_width>2.000 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>2.000 0.000</postfx_exposure_spot_meter_height>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <fog_isotropic_phase>4.000 4.000</fog_isotropic_phase>
+    <postfx_bloom_fog_mod_intensity>0.000 0.000</postfx_bloom_fog_mod_intensity>
+    <reflection_occlusion_ao_influence>1.000 0.000</reflection_occlusion_ao_influence>
+    <reflection_occlusion_ray_length>0.446 0.000</reflection_occlusion_ray_length>
+    <reflection_occlusion_depth_threshold>0.016 0.000</reflection_occlusion_depth_threshold>
+    <lod_mult>1.113 0.000</lod_mult>
+    <lod_mult_orphanhd>6.941 0.000</lod_mult_orphanhd>
+  </modifier>
+  <modifier name="TRAILER2_shot14" description="" numMods="10" userFlags="0">
+    <ped_light1_mult>0.000 1.000</ped_light1_mult>
+    <ped_light2_mult>0.000 1.000</ped_light2_mult>
+    <ped_light3_mult>3.520 1.000</ped_light3_mult>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-0.078 0.000</sun_direction_x>
+    <sun_direction_y>0.011 0.000</sun_direction_y>
+    <sun_direction_z>0.083 0.000</sun_direction_z>
+    <postfx_exposure>-0.700 0.000</postfx_exposure>
+    <dir_shadow_softness>-0.426 0.000</dir_shadow_softness>
+  </modifier>
+  <modifier name="TRAILER2_shot15" description="" numMods="23" userFlags="0">
+    <ssao_inten>5.000 0.000</ssao_inten>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-0.528 0.000</sun_direction_x>
+    <sun_direction_y>0.206 0.000</sun_direction_y>
+    <sun_direction_z>0.286 0.000</sun_direction_z>
+    <postfx_exposure_spot_meter_width>2.000 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>2.000 0.000</postfx_exposure_spot_meter_height>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>0.192 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>0.102 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>0.031 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <fog_isotropic_phase>8.000 8.000</fog_isotropic_phase>
+    <postfx_bloom_fog_mod_intensity>0.000 0.000</postfx_bloom_fog_mod_intensity>
+    <reflection_occlusion_ao_influence>1.000 0.000</reflection_occlusion_ao_influence>
+    <reflection_occlusion_ray_length>0.446 0.000</reflection_occlusion_ray_length>
+    <reflection_occlusion_depth_threshold>0.016 0.000</reflection_occlusion_depth_threshold>
+  </modifier>
+  <modifier name="TRAILER2_shot16" description="" numMods="8" userFlags="0">
+    <light_dir_col_r>1.000 1.000</light_dir_col_r>
+    <light_dir_col_g>1.000 1.000</light_dir_col_g>
+    <light_dir_col_b>1.000 1.000</light_dir_col_b>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-0.025 0.000</sun_direction_x>
+    <sun_direction_y>-0.695 0.000</sun_direction_y>
+    <sun_direction_z>1.000 0.000</sun_direction_z>
+  </modifier>
+  <modifier name="regionTexture0Red-Guarma" description="" numMods="11" userFlags="0">
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.400 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_c>0.065 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.150 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-2.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.275 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_c_bright>0.070 0.000</postfx_tonemap_filmic_c_bright>
+    <lut_tc_strength_mult>0.200 0.000</lut_tc_strength_mult>
+    <postfx_exposure>0.600 0.000</postfx_exposure>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="regionTexture0Green-NewAustinEast" description="" numMods="13" userFlags="0">
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.352 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_c>0.070 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_exposure_bright>-1.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.300 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_c_bright>0.068 0.000</postfx_tonemap_filmic_c_bright>
+    <lut_tc_strength_mult>0.200 0.000</lut_tc_strength_mult>
+    <postfx_intensity_bloom>0.155 0.000</postfx_intensity_bloom>
+    <postfx_exposure>0.300 0.000</postfx_exposure>
+    <postfx_tonemap_filmic_d_bright>0.190 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_d>0.150 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+  </modifier>
+  <modifier name="regionTexture0Blue-ScarlettMeadows" description="" numMods="14" userFlags="0">
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.450 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_c>0.065 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.150 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>0.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.350 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_c_bright>0.070 0.000</postfx_tonemap_filmic_c_bright>
+    <lut_tc_strength_mult>0.175 0.000</lut_tc_strength_mult>
+    <postfx_exposure>0.250 0.000</postfx_exposure>
+    <postfx_intensity_bloom>0.125 0.000</postfx_intensity_bloom>
+    <postfx_tonemap_filmic_d_bright>0.200 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_b_bright>0.250 0.000</postfx_tonemap_filmic_b_bright>
+  </modifier>
+  <modifier name="regionTexture0Alpha-BigValley" description="" numMods="13" userFlags="0">
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.500 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_c>0.065 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.150 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>0.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <lut_tc_strength_mult>0.200 0.000</lut_tc_strength_mult>
+    <postfx_tonemap_filmic_c_bright>0.055 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_b_bright>0.350 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_d_bright>0.165 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_a_bright>0.400 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_exposure>0.350 0.000</postfx_exposure>
+  </modifier>
+  <modifier name="regionTexture1Red-GreatPlains_MacFarlane_TallTrees" description="" numMods="14" userFlags="0">
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.500 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_c>0.070 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.150 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>0.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_c_bright>0.070 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_exposure>0.400 0.000</postfx_exposure>
+    <lut_tc_strength_mult>0.250 0.000</lut_tc_strength_mult>
+    <postfx_tonemap_filmic_d_bright>0.190 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_intensity_bloom>0.135 0.000</postfx_intensity_bloom>
+    <postfx_tonemap_filmic_b_bright>0.265 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_a_bright>0.425 0.000</postfx_tonemap_filmic_a_bright>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="regionTexture1Green-NOTUSED" description="" numMods="13" userFlags="0">
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.450 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_c>0.045 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.150 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>0.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.275 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_c_bright>0.065 0.000</postfx_tonemap_filmic_c_bright>
+    <lut_tc_strength_mult>0.200 0.000</lut_tc_strength_mult>
+    <postfx_exposure>0.350 0.000</postfx_exposure>
+    <postfx_intensity_bloom>0.150 0.000</postfx_intensity_bloom>
+    <postfx_tonemap_filmic_d_bright>0.190 0.000</postfx_tonemap_filmic_d_bright>
+  </modifier>
+  <modifier name="regionTexture1Blue-HeartlandsWest" description="" numMods="13" userFlags="0">
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.500 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_c>0.070 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.150 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>0.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.390 0.000</postfx_tonemap_filmic_a_bright>
+    <lut_tc_strength_mult>0.200 0.000</lut_tc_strength_mult>
+    <postfx_exposure>0.375 0.000</postfx_exposure>
+    <postfx_intensity_bloom>0.175 0.000</postfx_intensity_bloom>
+    <postfx_tonemap_filmic_d_bright>0.190 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_c_bright>0.070 0.000</postfx_tonemap_filmic_c_bright>
+  </modifier>
+  <modifier name="regionTexture1Alpha-HeartlandsEast" description="" numMods="17" userFlags="0">
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <lut_tc_strength_mult>0.350 0.000</lut_tc_strength_mult>
+    <local_atmosphere_direct_light_color_r>1.000 0.000</local_atmosphere_direct_light_color_r>
+    <local_atmosphere_direct_light_color_g>1.000 0.000</local_atmosphere_direct_light_color_g>
+    <local_atmosphere_direct_light_color_b>1.000 0.000</local_atmosphere_direct_light_color_b>
+    <postfx_intensity_bloom>0.175 0.000</postfx_intensity_bloom>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>0.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a>0.500 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_c>0.070 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.150 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_d_bright>0.190 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_exposure>0.375 0.000</postfx_exposure>
+    <postfx_tonemap_filmic_c_bright>0.085 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_b_bright>0.225 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_a_bright>0.275 0.000</postfx_tonemap_filmic_a_bright>
+  </modifier>
+  <modifier name="regionTexture2Red-SaintDenis_Lakay" description="" numMods="14" userFlags="0">
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.450 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_c>0.060 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.150 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>0.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.275 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_c_bright>0.080 0.000</postfx_tonemap_filmic_c_bright>
+    <lut_tc_strength_mult>0.200 0.000</lut_tc_strength_mult>
+    <postfx_intensity_bloom>0.145 0.000</postfx_intensity_bloom>
+    <postfx_exposure>0.275 0.000</postfx_exposure>
+    <postfx_tonemap_filmic_d_bright>0.190 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_b_bright>0.250 0.000</postfx_tonemap_filmic_b_bright>
+  </modifier>
+  <modifier name="regionTexture2Green-RoanokeRidge" description="" numMods="14" userFlags="0">
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.400 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_c>0.045 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.150 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>0.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.275 0.000</postfx_tonemap_filmic_a_bright>
+    <lut_tc_strength_mult>0.150 0.000</lut_tc_strength_mult>
+    <postfx_exposure>0.250 0.000</postfx_exposure>
+    <postfx_intensity_bloom>0.135 0.000</postfx_intensity_bloom>
+    <postfx_tonemap_filmic_d_bright>0.185 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_c_bright>0.085 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_b_bright>0.245 0.000</postfx_tonemap_filmic_b_bright>
+  </modifier>
+  <modifier name="regionTexture2Blue-Snowy" description="" numMods="12" userFlags="0">
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.400 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_c>0.045 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.150 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-2.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.275 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_c_bright>0.070 0.000</postfx_tonemap_filmic_c_bright>
+    <lut_tc_strength_mult>0.200 0.000</lut_tc_strength_mult>
+    <postfx_intensity_bloom>0.150 0.000</postfx_intensity_bloom>
+    <postfx_exposure>0.500 0.000</postfx_exposure>
+  </modifier>
+  <modifier name="regionTexture2-NewAustinWest" description="" numMods="10" userFlags="0">
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.300 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_c>0.045 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.150 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-2.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.275 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_c_bright>0.070 0.000</postfx_tonemap_filmic_c_bright>
+    <lut_tc_strength_mult>0.200 0.000</lut_tc_strength_mult>
+  </modifier>
+  <modifier name="RegionTextureRed" description="" numMods="1" userFlags="0">
+    <fog_start>0.000 15.000</fog_start>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="RegionTextureGreen" description="" numMods="2" userFlags="0">
+    <fog_start>-2.000 -2.000</fog_start>
+    <particle_light_intensity_mult>1.350 1.000</particle_light_intensity_mult>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="RegionTextureBlue" description="" numMods="2" userFlags="0">
+    <fog_start>-2.000 -2.000</fog_start>
+    <particle_light_intensity_mult>1.350 1.000</particle_light_intensity_mult>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="townValentine" description="" numMods="2" userFlags="0">
+    <ambient_bounce_local_lights_intensity>3.000 0.000</ambient_bounce_local_lights_intensity>
+    <reflection_object_height_threshold>2.000 0.000</reflection_object_height_threshold>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="townStrawberry" description="" numMods="2" userFlags="0">
+    <ambient_bounce_local_lights_intensity>4.000 0.000</ambient_bounce_local_lights_intensity>
+    <reflection_object_height_threshold>2.500 0.000</reflection_object_height_threshold>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="townAnnesburg" description="" numMods="2" userFlags="0">
+    <ambient_bounce_local_lights_intensity>3.000 0.000</ambient_bounce_local_lights_intensity>
+    <reflection_object_height_threshold>2.500 0.000</reflection_object_height_threshold>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="townVanHorn" description="" numMods="2" userFlags="0">
+    <ambient_bounce_local_lights_intensity>4.000 0.000</ambient_bounce_local_lights_intensity>
+    <reflection_object_height_threshold>2.500 0.000</reflection_object_height_threshold>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="townTumbleWeed" description="" numMods="6" userFlags="0">
+    <ambient_bounce_local_lights_intensity>3.000 0.000</ambient_bounce_local_lights_intensity>
+    <reflection_object_height_threshold>2.000 0.000</reflection_object_height_threshold>
+    <local_atmosphere_fog_volume_smoke_density_mult>0.000 0.000</local_atmosphere_fog_volume_smoke_density_mult>
+    <local_atmosphere_fog_volume_dust_density_mult>0.100 0.000</local_atmosphere_fog_volume_dust_density_mult>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="townArmadillo" description="" numMods="6" userFlags="0">
+    <ambient_bounce_local_lights_intensity>3.000 0.000</ambient_bounce_local_lights_intensity>
+    <reflection_object_height_threshold>3.000 0.000</reflection_object_height_threshold>
+    <local_atmosphere_fog_volume_smoke_density_mult>0.000 0.000</local_atmosphere_fog_volume_smoke_density_mult>
+    <local_atmosphere_fog_volume_dust_density_mult>0.100 0.000</local_atmosphere_fog_volume_dust_density_mult>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="townBlackwater" description="" numMods="1" userFlags="0">
+    <ambient_bounce_local_lights_intensity>3.000 0.000</ambient_bounce_local_lights_intensity>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="townOldFortWallace" description="" numMods="1" userFlags="0">
+    <ambient_bounce_local_lights_intensity>3.000 0.000</ambient_bounce_local_lights_intensity>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="townRhodes" description="" numMods="2" userFlags="0">
+    <ambient_bounce_local_lights_intensity>3.000 0.000</ambient_bounce_local_lights_intensity>
+    <reflection_object_height_threshold>3.000 0.000</reflection_object_height_threshold>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="townNBD" description="" numMods="2" userFlags="0">
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="townSaintDenis" description="" numMods="3" userFlags="0">
+    <ambient_bounce_local_lights_intensity>3.000 0.000</ambient_bounce_local_lights_intensity>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="townLonniesShack" description="" numMods="2" userFlags="0">
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="townSwamp" description="" numMods="2" userFlags="0">
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="noDirectLight" description="" numMods="1" userFlags="0">
+    <light_dir_mult>0.000 1.000</light_dir_mult>
+  </modifier>
+  <modifier name="campHorseShoe" description="" numMods="2" userFlags="0">
+    <light_dir_mult>0.000 1.000</light_dir_mult>
+    <ambient_bounce_local_lights_intensity>3.000 0.000</ambient_bounce_local_lights_intensity>
+  </modifier>
+  <modifier name="campLakay" description="" numMods="5" userFlags="0">
+    <dir_shadow_distance_multiplier>0.300 0.000</dir_shadow_distance_multiplier>
+    <light_shadow_shadows_highest_ped_lod>2.000 0.000</light_shadow_shadows_highest_ped_lod>
+    <lod_mult_grass>0.700 0.000</lod_mult_grass>
+    <tree_imposter_dist_scale>0.500 0.000</tree_imposter_dist_scale>
+    <ambient_bounce_local_lights_intensity>3.000 0.000</ambient_bounce_local_lights_intensity>
+  </modifier>
+  <modifier name="campClemens" description="" numMods="0" userFlags="0" />
+  <modifier name="campBeaverHollow" description="" numMods="0" userFlags="0" />
+  <modifier name="campShadyBelle" description="" numMods="1" userFlags="0">
+    <ambient_bounce_local_lights_intensity>3.000 0.000</ambient_bounce_local_lights_intensity>
+  </modifier>
+  <modifier name="noInteriorArtificialAmbient" description="" numMods="2" userFlags="0">
+    <light_artificial_int_down_intensity>0.010 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_intensity>0.000 0.000</light_artificial_int_up_intensity>
+  </modifier>
+  <modifier name="NOrain" description="" numMods="1" userFlags="0">
+    <no_rain>1.000 0.000</no_rain>
+  </modifier>
+  <modifier name="lightOpt_n07_app_e" description="" numMods="4" userFlags="0">
+    <tree_imposter_dist_scale>0.700 0.000</tree_imposter_dist_scale>
+    <lod_mult_grass>0.500 0.000</lod_mult_grass>
+    <dir_shadow_distance_multiplier>0.800 0.000</dir_shadow_distance_multiplier>
+    <light_shadow_shadows_highest_ped_lod>2.000 0.000</light_shadow_shadows_highest_ped_lod>
+  </modifier>
+  <modifier name="lightOpt_o13_R_junction" description="" numMods="4" userFlags="0">
+    <tree_imposter_dist_scale>0.500 0.000</tree_imposter_dist_scale>
+    <lod_mult_grass>0.500 0.000</lod_mult_grass>
+    <dir_shadow_distance_multiplier>0.700 0.000</dir_shadow_distance_multiplier>
+    <light_shadow_shadows_highest_ped_lod>2.000 0.000</light_shadow_shadows_highest_ped_lod>
+  </modifier>
+  <modifier name="lightOpt_i14_H_junction" description="" numMods="2" userFlags="0">
+    <tree_imposter_dist_scale>0.500 0.000</tree_imposter_dist_scale>
+    <lod_mult_grass>0.500 0.000</lod_mult_grass>
+  </modifier>
+  <modifier name="Butcher_vegopt" description="" numMods="3" userFlags="0">
+    <tree_imposter_dist_scale>0.500 0.000</tree_imposter_dist_scale>
+    <dir_shadow_distance_multiplier>0.500 0.000</dir_shadow_distance_multiplier>
+    <lod_mult_grass>0.600 0.000</lod_mult_grass>
+  </modifier>
+  <modifier name="vegopt_m06_utopia2" description="" numMods="4" userFlags="0">
+    <slod_fade_range>0.500 0.000</slod_fade_range>
+    <lod_mult_grass>0.500 0.000</lod_mult_grass>
+    <tree_imposter_dist_scale>0.500 0.000</tree_imposter_dist_scale>
+    <dir_shadow_distance_multiplier>0.800 0.000</dir_shadow_distance_multiplier>
+  </modifier>
+  <modifier name="vegopt_y13_guarma2" description="" numMods="3" userFlags="0">
+    <lod_mult_grass>0.750 0.000</lod_mult_grass>
+    <tree_imposter_dist_scale>0.500 0.000</tree_imposter_dist_scale>
+    <dir_shadow_num_cascades>3.000 0.000</dir_shadow_num_cascades>
+  </modifier>
+  <modifier name="vegopt_b12_fussar1" description="" numMods="3" userFlags="0">
+    <dir_shadow_num_cascades>3.000 0.000</dir_shadow_num_cascades>
+    <dir_shadow_distance_multiplier>2.000 0.000</dir_shadow_distance_multiplier>
+    <lod_mult>0.650 0.000</lod_mult>
+  </modifier>
+  <modifier name="vegopt_BH_CaveEnt" description="" numMods="12" userFlags="0">
+    <dir_shadow_num_cascades>3.000 0.000</dir_shadow_num_cascades>
+    <dir_shadow_distance_multiplier>2.000 0.000</dir_shadow_distance_multiplier>
+    <water_reflection_force_fast_update>1.000 0.000</water_reflection_force_fast_update>
+    <lod_mult_slod1>0.500 0.000</lod_mult_slod1>
+    <lod_mult_slod2>0.400 0.000</lod_mult_slod2>
+    <lod_mult_slod3>0.400 0.000</lod_mult_slod3>
+    <lod_mult_slod4>0.400 0.000</lod_mult_slod4>
+    <lod_mult_grass>0.500 0.000</lod_mult_grass>
+    <tree_imposter_dist_scale>0.700 0.000</tree_imposter_dist_scale>
+    <carried_light_fallof_mult>0.500 0.000</carried_light_fallof_mult>
+    <carried_light_shadow_fade_distance_mult>0.500 0.000</carried_light_shadow_fade_distance_mult>
+    <light_shadow_shadows_highest_ped_lod>2.000 0.000</light_shadow_shadows_highest_ped_lod>
+  </modifier>
+  <modifier name="vegopt_gala_industry1" description="" numMods="1" userFlags="0">
+    <far_clip>400.000 400.000</far_clip>
+  </modifier>
+  <modifier name="vegopt_i10_wapiti_nat3" description="" numMods="3" userFlags="0">
+    <tree_imposter_dist_scale>0.700 0.000</tree_imposter_dist_scale>
+    <lod_mult_grass>0.500 0.000</lod_mult_grass>
+    <dir_shadow_distance_multiplier>0.900 0.000</dir_shadow_distance_multiplier>
+  </modifier>
+  <modifier name="vegopt_j14" description="" numMods="3" userFlags="0">
+    <lod_mult_grass>0.600 0.000</lod_mult_grass>
+    <tree_imposter_dist_scale>0.700 0.000</tree_imposter_dist_scale>
+    <dir_shadow_distance_multiplier>0.700 0.000</dir_shadow_distance_multiplier>
+  </modifier>
+  <modifier name="vegopt_l14" description="" numMods="3" userFlags="0">
+    <tree_imposter_dist_scale>0.700 0.000</tree_imposter_dist_scale>
+    <dir_shadow_distance_multiplier>0.700 0.000</dir_shadow_distance_multiplier>
+    <lod_mult_grass>0.700 0.000</lod_mult_grass>
+  </modifier>
+  <modifier name="vegopt_c12_fussar2" description="" numMods="2" userFlags="0">
+    <far_clip>50.000 100.000</far_clip>
+    <lod_mult>0.850 0.000</lod_mult>
+  </modifier>
+  <modifier name="vegopt_m09_horseshoe_mud1" description="" numMods="2" userFlags="0">
+    <tree_imposter_dist_scale>0.500 0.000</tree_imposter_dist_scale>
+    <lod_mult_grass>0.500 0.000</lod_mult_grass>
+  </modifier>
+  <modifier name="vegopt_SD_mob3" description="" numMods="1" userFlags="0">
+    <lod_mult_grass>0.600 0.000</lod_mult_grass>
+  </modifier>
+  <modifier name="noExteriorBounceNightTime" description="" numMods="1" userFlags="0">
+    <light_exterior_bounce_intensity>0.000 0.000</light_exterior_bounce_intensity>
+  </modifier>
+  <modifier name="TemperatureTarget30c" description="" numMods="2" userFlags="0">
+    <temperature_target>30.000 0.000</temperature_target>
+    <temperature_flatten>0.500 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="reduceHDR_Reflection_0pt1" description="" numMods="0" userFlags="0" />
+  <modifier name="gameModeSlasher" description="" numMods="1" userFlags="0">
+    <postfx_exposure_max>3.000 0.000</postfx_exposure_max>
+  </modifier>
+  <modifier name="MetapeditorExterior" description="" numMods="25" userFlags="0">
+    <dir_shadow_softness>-0.300 0.000</dir_shadow_softness>
+    <reflection_tweak_directional_mult>1.000 0.000</reflection_tweak_directional_mult>
+    <reflection_tweak_directional_bias>0.000 0.000</reflection_tweak_directional_bias>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_bottom_col_fade>1.000 0.000</postfx_grad_bottom_col_fade>
+    <postfx_grad_middle_col_fade>1.000 0.000</postfx_grad_middle_col_fade>
+    <postfx_grad_top_col_fade>1.000 0.000</postfx_grad_top_col_fade>
+    <postfx_grad_bottom_col_mult>1.000 0.000</postfx_grad_bottom_col_mult>
+    <postfx_grad_middle_col_mult>1.000 0.000</postfx_grad_middle_col_mult>
+    <postfx_grad_top_col_mult>1.000 0.000</postfx_grad_top_col_mult>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+    <postfx_grad_top_middle_midpoint>0.500 0.000</postfx_grad_top_middle_midpoint>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>1.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <lut_tc_strength_mult>0.000 0.000</lut_tc_strength_mult>
+    <postfx_intensity_bloom>0.000 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="Metapeditor_Desert" description="" numMods="28" userFlags="0">
+    <light_exterior_bounce_intensity>1.500 0.000</light_exterior_bounce_intensity>
+    <dir_shadow_softness>-0.300 0.000</dir_shadow_softness>
+    <reflection_tweak_directional_mult>1.000 0.000</reflection_tweak_directional_mult>
+    <reflection_tweak_directional_bias>0.000 0.000</reflection_tweak_directional_bias>
+    <wind_speed_mult>0.000 0.000</wind_speed_mult>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+    <postfx_exposure_min>-11.750 0.000</postfx_exposure_min>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_bottom_col_fade>1.000 0.000</postfx_grad_bottom_col_fade>
+    <postfx_grad_middle_col_fade>1.000 0.000</postfx_grad_middle_col_fade>
+    <postfx_grad_top_col_fade>1.000 0.000</postfx_grad_top_col_fade>
+    <postfx_grad_bottom_col_mult>1.000 0.000</postfx_grad_bottom_col_mult>
+    <postfx_grad_middle_col_mult>1.000 0.000</postfx_grad_middle_col_mult>
+    <postfx_grad_top_col_mult>1.000 0.000</postfx_grad_top_col_mult>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+    <postfx_grad_top_middle_midpoint>0.500 0.000</postfx_grad_top_middle_midpoint>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>1.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <lut_tc_strength_mult>0.000 0.000</lut_tc_strength_mult>
+    <postfx_intensity_bloom>0.000 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="Metapeditor_DryGrass" description="" numMods="28" userFlags="0">
+    <light_exterior_bounce_intensity>1.500 0.000</light_exterior_bounce_intensity>
+    <dir_shadow_softness>-0.300 0.000</dir_shadow_softness>
+    <reflection_tweak_directional_mult>1.000 0.000</reflection_tweak_directional_mult>
+    <reflection_tweak_directional_bias>0.000 0.000</reflection_tweak_directional_bias>
+    <wind_speed_mult>0.000 0.000</wind_speed_mult>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+    <postfx_exposure_min>-11.750 0.000</postfx_exposure_min>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_bottom_col_fade>1.000 0.000</postfx_grad_bottom_col_fade>
+    <postfx_grad_middle_col_fade>1.000 0.000</postfx_grad_middle_col_fade>
+    <postfx_grad_top_col_fade>1.000 0.000</postfx_grad_top_col_fade>
+    <postfx_grad_bottom_col_mult>1.000 0.000</postfx_grad_bottom_col_mult>
+    <postfx_grad_middle_col_mult>1.000 0.000</postfx_grad_middle_col_mult>
+    <postfx_grad_top_col_mult>1.000 0.000</postfx_grad_top_col_mult>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+    <postfx_grad_top_middle_midpoint>0.500 0.000</postfx_grad_top_middle_midpoint>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>1.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <lut_tc_strength_mult>0.000 0.000</lut_tc_strength_mult>
+    <postfx_intensity_bloom>0.000 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="Metapeditor_MudGrass" description="" numMods="28" userFlags="0">
+    <light_exterior_bounce_intensity>1.500 0.000</light_exterior_bounce_intensity>
+    <dir_shadow_softness>-0.300 0.000</dir_shadow_softness>
+    <reflection_tweak_directional_mult>1.000 0.000</reflection_tweak_directional_mult>
+    <reflection_tweak_directional_bias>0.000 0.000</reflection_tweak_directional_bias>
+    <wind_speed_mult>0.000 0.000</wind_speed_mult>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+    <postfx_exposure_min>-12.000 0.000</postfx_exposure_min>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_bottom_col_fade>1.000 0.000</postfx_grad_bottom_col_fade>
+    <postfx_grad_middle_col_fade>1.000 0.000</postfx_grad_middle_col_fade>
+    <postfx_grad_top_col_fade>1.000 0.000</postfx_grad_top_col_fade>
+    <postfx_grad_bottom_col_mult>1.000 0.000</postfx_grad_bottom_col_mult>
+    <postfx_grad_middle_col_mult>1.000 0.000</postfx_grad_middle_col_mult>
+    <postfx_grad_top_col_mult>1.000 0.000</postfx_grad_top_col_mult>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+    <postfx_grad_top_middle_midpoint>0.500 0.000</postfx_grad_top_middle_midpoint>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>1.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <lut_tc_strength_mult>0.000 0.000</lut_tc_strength_mult>
+    <postfx_intensity_bloom>0.000 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="Metapeditor_Snow" description="" numMods="29" userFlags="0">
+    <light_exterior_bounce_intensity>1.500 0.000</light_exterior_bounce_intensity>
+    <dir_shadow_softness>-0.300 0.000</dir_shadow_softness>
+    <reflection_tweak_directional_mult>1.000 0.000</reflection_tweak_directional_mult>
+    <reflection_tweak_directional_bias>0.000 0.000</reflection_tweak_directional_bias>
+    <wind_speed_mult>0.000 0.000</wind_speed_mult>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+    <minimum_soak>0.000 0.000</minimum_soak>
+    <postfx_exposure_min>-12.000 0.000</postfx_exposure_min>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_bottom_col_fade>1.000 0.000</postfx_grad_bottom_col_fade>
+    <postfx_grad_middle_col_fade>1.000 0.000</postfx_grad_middle_col_fade>
+    <postfx_grad_top_col_fade>1.000 0.000</postfx_grad_top_col_fade>
+    <postfx_grad_bottom_col_mult>1.000 0.000</postfx_grad_bottom_col_mult>
+    <postfx_grad_middle_col_mult>1.000 0.000</postfx_grad_middle_col_mult>
+    <postfx_grad_top_col_mult>1.000 0.000</postfx_grad_top_col_mult>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+    <postfx_grad_top_middle_midpoint>0.500 0.000</postfx_grad_top_middle_midpoint>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>1.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <lut_tc_strength_mult>0.000 0.000</lut_tc_strength_mult>
+    <postfx_intensity_bloom>0.000 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="MetapeditorExterior_wind" description="" numMods="28" userFlags="0">
+    <dir_shadow_softness>-0.300 0.000</dir_shadow_softness>
+    <reflection_tweak_directional_mult>1.000 0.000</reflection_tweak_directional_mult>
+    <reflection_tweak_directional_bias>0.000 0.000</reflection_tweak_directional_bias>
+    <wind_speed_mult>1.000 0.000</wind_speed_mult>
+    <wind_gust_speed_mult_min>0.000 0.000</wind_gust_speed_mult_min>
+    <wind_gust_speed_mult_max>5.000 0.000</wind_gust_speed_mult_max>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_bottom_col_fade>1.000 0.000</postfx_grad_bottom_col_fade>
+    <postfx_grad_middle_col_fade>1.000 0.000</postfx_grad_middle_col_fade>
+    <postfx_grad_top_col_fade>1.000 0.000</postfx_grad_top_col_fade>
+    <postfx_grad_bottom_col_mult>1.000 0.000</postfx_grad_bottom_col_mult>
+    <postfx_grad_middle_col_mult>1.000 0.000</postfx_grad_middle_col_mult>
+    <postfx_grad_top_col_mult>1.000 0.000</postfx_grad_top_col_mult>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+    <postfx_grad_top_middle_midpoint>0.500 0.000</postfx_grad_top_middle_midpoint>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>1.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <lut_tc_strength_mult>0.000 0.000</lut_tc_strength_mult>
+    <postfx_intensity_bloom>0.000 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="Metapeditor_Desert_wind" description="" numMods="30" userFlags="0">
+    <light_exterior_bounce_intensity>1.500 0.000</light_exterior_bounce_intensity>
+    <dir_shadow_softness>-0.300 0.000</dir_shadow_softness>
+    <reflection_tweak_directional_mult>1.000 0.000</reflection_tweak_directional_mult>
+    <reflection_tweak_directional_bias>0.000 0.000</reflection_tweak_directional_bias>
+    <wind_speed_mult>1.000 0.000</wind_speed_mult>
+    <wind_gust_speed_mult_min>0.000 0.000</wind_gust_speed_mult_min>
+    <wind_gust_speed_mult_max>5.000 0.000</wind_gust_speed_mult_max>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+    <postfx_exposure_min>-11.750 0.000</postfx_exposure_min>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_bottom_col_fade>1.000 0.000</postfx_grad_bottom_col_fade>
+    <postfx_grad_middle_col_fade>1.000 0.000</postfx_grad_middle_col_fade>
+    <postfx_grad_top_col_fade>1.000 0.000</postfx_grad_top_col_fade>
+    <postfx_grad_bottom_col_mult>1.000 0.000</postfx_grad_bottom_col_mult>
+    <postfx_grad_middle_col_mult>1.000 0.000</postfx_grad_middle_col_mult>
+    <postfx_grad_top_col_mult>1.000 0.000</postfx_grad_top_col_mult>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+    <postfx_grad_top_middle_midpoint>0.500 0.000</postfx_grad_top_middle_midpoint>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>1.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <lut_tc_strength_mult>0.000 0.000</lut_tc_strength_mult>
+    <postfx_intensity_bloom>0.000 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="Metapeditor_DryGrass_wind" description="" numMods="30" userFlags="0">
+    <light_exterior_bounce_intensity>1.500 0.000</light_exterior_bounce_intensity>
+    <dir_shadow_softness>-0.300 0.000</dir_shadow_softness>
+    <reflection_tweak_directional_mult>1.000 0.000</reflection_tweak_directional_mult>
+    <reflection_tweak_directional_bias>0.000 0.000</reflection_tweak_directional_bias>
+    <wind_speed_mult>1.000 0.000</wind_speed_mult>
+    <wind_gust_speed_mult_min>0.000 0.000</wind_gust_speed_mult_min>
+    <wind_gust_speed_mult_max>5.000 0.000</wind_gust_speed_mult_max>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+    <postfx_exposure_min>-11.750 0.000</postfx_exposure_min>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_bottom_col_fade>1.000 0.000</postfx_grad_bottom_col_fade>
+    <postfx_grad_middle_col_fade>1.000 0.000</postfx_grad_middle_col_fade>
+    <postfx_grad_top_col_fade>1.000 0.000</postfx_grad_top_col_fade>
+    <postfx_grad_bottom_col_mult>1.000 0.000</postfx_grad_bottom_col_mult>
+    <postfx_grad_middle_col_mult>1.000 0.000</postfx_grad_middle_col_mult>
+    <postfx_grad_top_col_mult>1.000 0.000</postfx_grad_top_col_mult>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+    <postfx_grad_top_middle_midpoint>0.500 0.000</postfx_grad_top_middle_midpoint>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>1.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <lut_tc_strength_mult>0.000 0.000</lut_tc_strength_mult>
+    <postfx_intensity_bloom>0.000 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="Metapeditor_MudGrass_wind" description="" numMods="30" userFlags="0">
+    <light_exterior_bounce_intensity>1.500 0.000</light_exterior_bounce_intensity>
+    <dir_shadow_softness>-0.300 0.000</dir_shadow_softness>
+    <reflection_tweak_directional_mult>1.000 0.000</reflection_tweak_directional_mult>
+    <reflection_tweak_directional_bias>0.000 0.000</reflection_tweak_directional_bias>
+    <wind_speed_mult>1.000 0.000</wind_speed_mult>
+    <wind_gust_speed_mult_min>0.000 0.000</wind_gust_speed_mult_min>
+    <wind_gust_speed_mult_max>5.000 0.000</wind_gust_speed_mult_max>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+    <postfx_exposure_min>-12.000 0.000</postfx_exposure_min>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_bottom_col_fade>1.000 0.000</postfx_grad_bottom_col_fade>
+    <postfx_grad_middle_col_fade>1.000 0.000</postfx_grad_middle_col_fade>
+    <postfx_grad_top_col_fade>1.000 0.000</postfx_grad_top_col_fade>
+    <postfx_grad_bottom_col_mult>1.000 0.000</postfx_grad_bottom_col_mult>
+    <postfx_grad_middle_col_mult>1.000 0.000</postfx_grad_middle_col_mult>
+    <postfx_grad_top_col_mult>1.000 0.000</postfx_grad_top_col_mult>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+    <postfx_grad_top_middle_midpoint>0.500 0.000</postfx_grad_top_middle_midpoint>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>1.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <lut_tc_strength_mult>0.000 0.000</lut_tc_strength_mult>
+    <postfx_intensity_bloom>0.000 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="Metapeditor_Snow_wind" description="" numMods="31" userFlags="0">
+    <light_exterior_bounce_intensity>1.500 0.000</light_exterior_bounce_intensity>
+    <dir_shadow_softness>-0.300 0.000</dir_shadow_softness>
+    <reflection_tweak_directional_mult>1.000 0.000</reflection_tweak_directional_mult>
+    <reflection_tweak_directional_bias>0.000 0.000</reflection_tweak_directional_bias>
+    <wind_speed_mult>1.000 0.000</wind_speed_mult>
+    <wind_gust_speed_mult_min>0.000 0.000</wind_gust_speed_mult_min>
+    <wind_gust_speed_mult_max>5.000 0.000</wind_gust_speed_mult_max>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+    <minimum_soak>0.000 0.000</minimum_soak>
+    <postfx_exposure_min>-12.000 0.000</postfx_exposure_min>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_bottom_col_fade>1.000 0.000</postfx_grad_bottom_col_fade>
+    <postfx_grad_middle_col_fade>1.000 0.000</postfx_grad_middle_col_fade>
+    <postfx_grad_top_col_fade>1.000 0.000</postfx_grad_top_col_fade>
+    <postfx_grad_bottom_col_mult>1.000 0.000</postfx_grad_bottom_col_mult>
+    <postfx_grad_middle_col_mult>1.000 0.000</postfx_grad_middle_col_mult>
+    <postfx_grad_top_col_mult>1.000 0.000</postfx_grad_top_col_mult>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+    <postfx_grad_top_middle_midpoint>0.500 0.000</postfx_grad_top_middle_midpoint>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>1.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <lut_tc_strength_mult>0.000 0.000</lut_tc_strength_mult>
+    <postfx_intensity_bloom>0.000 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="AssetViewerInterior" description="" numMods="0" userFlags="0" />
+  <modifier name="AssetViewerExterior" description="" numMods="0" userFlags="0" />
+  <modifier name="AssetViewerPBRtool" description="" numMods="0" userFlags="0" />
+  <modifier name="lightning" description="" numMods="8" userFlags="0">
+    <light_dir_col_r>0.486 1.000</light_dir_col_r>
+    <light_dir_col_g>0.584 1.000</light_dir_col_g>
+    <light_dir_col_b>1.000 1.000</light_dir_col_b>
+    <light_dir_mult>10.000 1.000</light_dir_mult>
+    <reflection_tweak_directional>0.000 0.000</reflection_tweak_directional>
+    <particle_light_intensity_mult>0.600 1.000</particle_light_intensity_mult>
+    <local_atmosphere_direct_light_intensity>10.000 1.000</local_atmosphere_direct_light_intensity>
+    <fog_isotropic_phase>1.000 1.000</fog_isotropic_phase>
+  </modifier>
+  <modifier name="lightning_weak" description="" numMods="4" userFlags="0">
+    <light_exterior_bounce_intensity>0.000 0.000</light_exterior_bounce_intensity>
+    <dir_shadow_softness>1.000 0.000</dir_shadow_softness>
+    <particle_light_intensity_mult>0.600 1.000</particle_light_intensity_mult>
+    <postfx_intensity_bloom>0.300 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="lightning_strong" description="" numMods="3" userFlags="0">
+    <particle_light_intensity_mult>0.800 1.000</particle_light_intensity_mult>
+    <postfx_intensity_bloom>0.300 0.000</postfx_intensity_bloom>
+    <light_dir_mult>3.000 1.000</light_dir_mult>
+  </modifier>
+  <modifier name="lightning_cloud" description="" numMods="1" userFlags="0">
+    <local_atmosphere_direct_light_intensity>3.000 1.000</local_atmosphere_direct_light_intensity>
+  </modifier>
+  <modifier name="Underwater" description="" numMods="19" userFlags="0">
+    <light_dir_col_r>0.004 0.900</light_dir_col_r>
+    <light_dir_col_g>0.086 0.900</light_dir_col_g>
+    <light_dir_col_b>0.184 0.900</light_dir_col_b>
+    <light_dir_mult>1.000 0.500</light_dir_mult>
+    <ssao_inten>0.000 0.000</ssao_inten>
+    <postfx_intensity_bloom>1.000 0.000</postfx_intensity_bloom>
+    <postfx_noise>0.020 0.000</postfx_noise>
+    <dir_shadow_num_cascades>2.000 0.000</dir_shadow_num_cascades>
+    <dir_shadow_distance_multiplier>3.000 0.000</dir_shadow_distance_multiplier>
+    <fog_start>0.000 0.000</fog_start>
+    <fog_shadow_amount>0.800 0.000</fog_shadow_amount>
+    <fog_shadow_falloff>10.000 0.000</fog_shadow_falloff>
+    <fog_shadow_base_height>-10.000 0.000</fog_shadow_base_height>
+    <reflection_lod_range_start>0.000 0.000</reflection_lod_range_start>
+    <reflection_lod_range_end>100.000 0.000</reflection_lod_range_end>
+    <reflection_slod_range_start>0.000 0.000</reflection_slod_range_start>
+    <reflection_slod_range_end>0.000 0.000</reflection_slod_range_end>
+    <far_clip>200.000 200.000</far_clip>
+    <particle_light_intensity_mult>0.400 0.900</particle_light_intensity_mult>
+  </modifier>
+  <modifier name="underwater_deep" description="" numMods="19" userFlags="0">
+    <light_dir_col_r>0.000 1.000</light_dir_col_r>
+    <light_dir_col_g>0.004 1.000</light_dir_col_g>
+    <light_dir_col_b>0.012 1.000</light_dir_col_b>
+    <light_dir_mult>0.500 0.500</light_dir_mult>
+    <ssao_inten>6.000 0.000</ssao_inten>
+    <postfx_intensity_bloom>2.000 0.000</postfx_intensity_bloom>
+    <postfx_shift_col_r>0.000 0.000</postfx_shift_col_r>
+    <postfx_shift_col_g>0.369 0.000</postfx_shift_col_g>
+    <postfx_shift_col_b>1.000 0.000</postfx_shift_col_b>
+    <postfx_shift_cutoff>0.050 0.000</postfx_shift_cutoff>
+    <postfx_desaturation>0.700 0.000</postfx_desaturation>
+    <postfx_noise>0.050 0.000</postfx_noise>
+    <lens_dist_coeff>-0.104 0.000</lens_dist_coeff>
+    <lens_dist_cube_coeff>-0.414 0.000</lens_dist_cube_coeff>
+    <chrom_aberration_coeff>0.250 0.000</chrom_aberration_coeff>
+    <chrom_aberration_coeff2>-0.250 0.000</chrom_aberration_coeff2>
+    <fog_start>1.000 1.000</fog_start>
+    <far_clip>500.000 500.000</far_clip>
+    <particle_light_intensity_mult>2.000 1.000</particle_light_intensity_mult>
+  </modifier>
+  <modifier name="FortRiggs" description="" numMods="0" userFlags="0" />
+  <modifier name="VOODOO" description="" numMods="0" userFlags="0" />
+  <modifier name="SPOTMETER_default" description="" numMods="4" userFlags="0">
+    <postfx_exposure_spot_meter_x>0.000 0.000</postfx_exposure_spot_meter_x>
+    <postfx_exposure_spot_meter_y>0.110 0.000</postfx_exposure_spot_meter_y>
+    <postfx_exposure_spot_meter_width>1.172 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>1.496 0.000</postfx_exposure_spot_meter_height>
+  </modifier>
+  <modifier name="SPOTMETER_actionMode" description="" numMods="4" userFlags="0">
+    <postfx_exposure_spot_meter_x>0.000 0.000</postfx_exposure_spot_meter_x>
+    <postfx_exposure_spot_meter_y>0.200 0.000</postfx_exposure_spot_meter_y>
+    <postfx_exposure_spot_meter_width>0.757 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>1.414 0.000</postfx_exposure_spot_meter_height>
+  </modifier>
+  <modifier name="SPOTMETER_aiming" description="" numMods="4" userFlags="0">
+    <postfx_exposure_spot_meter_x>0.000 0.000</postfx_exposure_spot_meter_x>
+    <postfx_exposure_spot_meter_y>0.000 0.000</postfx_exposure_spot_meter_y>
+    <postfx_exposure_spot_meter_width>0.450 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>0.934 0.000</postfx_exposure_spot_meter_height>
+  </modifier>
+  <modifier name="SPOTMETER_riding" description="" numMods="4" userFlags="0">
+    <postfx_exposure_spot_meter_x>0.000 0.000</postfx_exposure_spot_meter_x>
+    <postfx_exposure_spot_meter_y>0.200 0.000</postfx_exposure_spot_meter_y>
+    <postfx_exposure_spot_meter_width>0.600 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>1.300 0.000</postfx_exposure_spot_meter_height>
+  </modifier>
+  <modifier name="SPOTMETER_FPS" description="" numMods="4" userFlags="0">
+    <postfx_exposure_spot_meter_x>0.000 0.000</postfx_exposure_spot_meter_x>
+    <postfx_exposure_spot_meter_y>0.200 0.000</postfx_exposure_spot_meter_y>
+    <postfx_exposure_spot_meter_width>0.618 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>0.800 0.000</postfx_exposure_spot_meter_height>
+  </modifier>
+  <modifier name="SPOTMETER_cinematicCam" description="" numMods="4" userFlags="0">
+    <postfx_exposure_spot_meter_x>0.000 0.000</postfx_exposure_spot_meter_x>
+    <postfx_exposure_spot_meter_y>0.000 0.000</postfx_exposure_spot_meter_y>
+    <postfx_exposure_spot_meter_width>0.800 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>1.000 0.000</postfx_exposure_spot_meter_height>
+  </modifier>
+  <modifier name="SPOTMETER_cutscene" description="" numMods="4" userFlags="0">
+    <postfx_exposure_spot_meter_x>0.000 0.000</postfx_exposure_spot_meter_x>
+    <postfx_exposure_spot_meter_y>0.000 0.000</postfx_exposure_spot_meter_y>
+    <postfx_exposure_spot_meter_width>0.800 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>1.000 0.000</postfx_exposure_spot_meter_height>
+  </modifier>
+  <modifier name="SPOTMETER_stealth" description="" numMods="4" userFlags="0">
+    <postfx_exposure_spot_meter_x>0.000 0.000</postfx_exposure_spot_meter_x>
+    <postfx_exposure_spot_meter_y>0.000 0.000</postfx_exposure_spot_meter_y>
+    <postfx_exposure_spot_meter_width>0.757 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>1.028 0.000</postfx_exposure_spot_meter_height>
+  </modifier>
+  <modifier name="SPOTMETER_spotted" description="" numMods="5" userFlags="0">
+    <postfx_exposure>1.000 0.000</postfx_exposure>
+    <postfx_exposure_spot_meter_x>0.000 0.000</postfx_exposure_spot_meter_x>
+    <postfx_exposure_spot_meter_y>0.000 0.000</postfx_exposure_spot_meter_y>
+    <postfx_exposure_spot_meter_width>0.800 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>1.000 0.000</postfx_exposure_spot_meter_height>
+  </modifier>
+  <modifier name="SANDSTORM" description="" numMods="0" userFlags="0" />
+  <modifier name="TRAILER2_shot1" description="" numMods="8" userFlags="0">
+    <light_dir_mult>2.000 1.000</light_dir_mult>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <sun_direction_x>0.700 0.000</sun_direction_x>
+    <sun_direction_y>0.792 0.000</sun_direction_y>
+    <sun_direction_z>0.418 0.000</sun_direction_z>
+    <postfx_exposure_min>-8.896 0.000</postfx_exposure_min>
+    <postfx_exposure_spot_meter_width>2.000 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>2.000 0.000</postfx_exposure_spot_meter_height>
+  </modifier>
+  <modifier name="TRAILER2_shot3" description="" numMods="14" userFlags="0">
+    <postfx_exposure_min>-6.000 0.000</postfx_exposure_min>
+    <postfx_exposure_max>-6.939 0.000</postfx_exposure_max>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>0.529 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>0.298 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>0.298 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_midpoint>0.490 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_middle_midpoint>0.639 0.000</postfx_grad_top_middle_midpoint>
+    <postfx_grad_middle_bottom_midpoint>0.815 0.000</postfx_grad_middle_bottom_midpoint>
+  </modifier>
+  <modifier name="TRAILER2_shot6" description="" numMods="15" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-0.622 0.000</sun_direction_x>
+    <sun_direction_y>-0.602 0.000</sun_direction_y>
+    <sun_direction_z>0.496 0.000</sun_direction_z>
+    <moon_direction_x>-0.312 0.000</moon_direction_x>
+    <moon_direction_y>0.318 0.000</moon_direction_y>
+    <moon_direction_z>0.792 0.000</moon_direction_z>
+    <postfx_exposure>0.500 0.000</postfx_exposure>
+    <postfx_exposure_spot_meter_width>2.000 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>2.000 0.000</postfx_exposure_spot_meter_height>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <wind_speed_mult>1.000 0.000</wind_speed_mult>
+  </modifier>
+  <modifier name="TRAILER2_shot7" description="" numMods="18" userFlags="0">
+    <light_dir_mult>2.000 1.000</light_dir_mult>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-1.000 0.000</sun_direction_x>
+    <sun_direction_y>-0.585 0.000</sun_direction_y>
+    <sun_direction_z>0.260 0.000</sun_direction_z>
+    <postfx_exposure_min>-6.700 0.000</postfx_exposure_min>
+    <postfx_exposure_spot_meter_width>2.000 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>2.000 0.000</postfx_exposure_spot_meter_height>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <postfx_intensity_bloom>0.320 0.000</postfx_intensity_bloom>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>0.055 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>0.031 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>0.016 0.000</postfx_grad_middle_col_b>
+    <dir_shadow_softness>-1.000 0.000</dir_shadow_softness>
+  </modifier>
+  <modifier name="TRAILER2_shot10" description="" numMods="2" userFlags="0">
+    <postfx_exposure>-2.000 0.000</postfx_exposure>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+  </modifier>
+  <modifier name="TRAILER2_shot8-2" description="" numMods="16" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>0.475 0.000</sun_direction_x>
+    <sun_direction_y>0.050 0.000</sun_direction_y>
+    <sun_direction_z>0.098 0.000</sun_direction_z>
+    <postfx_exposure>0.000 0.000</postfx_exposure>
+    <postfx_exposure_min>-7.000 0.000</postfx_exposure_min>
+    <postfx_exposure_max>-7.000 0.000</postfx_exposure_max>
+    <postfx_exposure_spot_meter_width>2.000 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>2.000 0.000</postfx_exposure_spot_meter_height>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <postfx_intensity_bloom>0.400 0.000</postfx_intensity_bloom>
+    <wind_speed_mult>0.100 0.000</wind_speed_mult>
+    <wind_gust_speed_mult_min>0.000 0.000</wind_gust_speed_mult_min>
+    <wind_gust_speed_mult_max>0.010 0.000</wind_gust_speed_mult_max>
+    <lod_mult>2.000 0.000</lod_mult>
+  </modifier>
+  <modifier name="TRAILER2_shot11" description="" numMods="25" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>0.230 0.000</sun_direction_x>
+    <sun_direction_y>0.050 0.000</sun_direction_y>
+    <sun_direction_z>0.098 0.000</sun_direction_z>
+    <moon_direction_x>0.478 0.000</moon_direction_x>
+    <moon_direction_y>-0.060 0.000</moon_direction_y>
+    <moon_direction_z>0.070 0.000</moon_direction_z>
+    <postfx_exposure_min>8.000 0.000</postfx_exposure_min>
+    <postfx_exposure_max>8.000 0.000</postfx_exposure_max>
+    <postfx_exposure_spot_meter_width>2.000 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>2.000 0.000</postfx_exposure_spot_meter_height>
+    <postfx_exposure_perpixel_amount>0.200 0.000</postfx_exposure_perpixel_amount>
+    <postfx_intensity_bloom>0.300 0.000</postfx_intensity_bloom>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>0.165 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>0.145 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>0.086 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_bloom_fog_mod_intensity>0.000 0.000</postfx_bloom_fog_mod_intensity>
+    <far_clip>1500.000 1500.000</far_clip>
+  </modifier>
+  <modifier name="TRAILER2_shot13" description="" numMods="25" userFlags="0">
+    <ssao_inten>5.000 0.000</ssao_inten>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-0.710 0.000</sun_direction_x>
+    <sun_direction_y>-0.854 0.000</sun_direction_y>
+    <sun_direction_z>0.596 0.000</sun_direction_z>
+    <postfx_exposure>1.000 0.000</postfx_exposure>
+    <postfx_exposure_spot_meter_width>2.000 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>2.000 0.000</postfx_exposure_spot_meter_height>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <postfx_intensity_bloom>0.300 0.000</postfx_intensity_bloom>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>1.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>0.416 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>0.584 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <fog_isotropic_phase>8.000 8.000</fog_isotropic_phase>
+    <reflection_occlusion_ao_influence>1.000 0.000</reflection_occlusion_ao_influence>
+    <reflection_occlusion_ray_length>0.446 0.000</reflection_occlusion_ray_length>
+    <reflection_occlusion_depth_threshold>0.016 0.000</reflection_occlusion_depth_threshold>
+    <far_clip>1480.000 1480.000</far_clip>
+  </modifier>
+  <modifier name="TRAILER2_shot2" description="" numMods="12" userFlags="0">
+    <light_dir_mult>1.500 1.000</light_dir_mult>
+    <ssao_inten>5.000 0.000</ssao_inten>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-0.856 0.000</sun_direction_x>
+    <sun_direction_y>1.000 0.000</sun_direction_y>
+    <sun_direction_z>0.363 0.000</sun_direction_z>
+    <postfx_exposure_spot_meter_width>2.000 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>2.000 0.000</postfx_exposure_spot_meter_height>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <fog_isotropic_phase>8.000 8.000</fog_isotropic_phase>
+    <postfx_bloom_fog_mod_intensity>0.000 0.000</postfx_bloom_fog_mod_intensity>
+  </modifier>
+  <modifier name="winter1_MoonPos" description="" numMods="5" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <moon_direction_x>1.000 0.000</moon_direction_x>
+    <moon_direction_y>0.104 0.000</moon_direction_y>
+    <moon_direction_z>0.354 0.000</moon_direction_z>
+  </modifier>
+  <modifier name="baseToneMapper" description="" numMods="19" userFlags="0">
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.220 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_b>0.300 0.000</postfx_tonemap_filmic_b>
+    <postfx_tonemap_filmic_c>0.100 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.200 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_e>0.010 0.000</postfx_tonemap_filmic_e>
+    <postfx_tonemap_filmic_f>0.300 0.000</postfx_tonemap_filmic_f>
+    <postfx_tonemap_filmic_w>11.200 0.000</postfx_tonemap_filmic_w>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-4.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.220 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_b_bright>0.300 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_c_bright>0.100 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_d_bright>0.200 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_e_bright>0.010 0.000</postfx_tonemap_filmic_e_bright>
+    <postfx_tonemap_filmic_f_bright>0.300 0.000</postfx_tonemap_filmic_f_bright>
+    <postfx_tonemap_filmic_w_bright>11.200 0.000</postfx_tonemap_filmic_w_bright>
+  </modifier>
+  <modifier name="newTonemapper" description="" numMods="19" userFlags="0">
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.150 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_b>0.350 0.000</postfx_tonemap_filmic_b>
+    <postfx_tonemap_filmic_c>0.160 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.230 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_e>0.010 0.000</postfx_tonemap_filmic_e>
+    <postfx_tonemap_filmic_f>0.300 0.000</postfx_tonemap_filmic_f>
+    <postfx_tonemap_filmic_w>11.200 0.000</postfx_tonemap_filmic_w>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-4.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.150 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_b_bright>0.350 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_c_bright>0.160 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_d_bright>0.230 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_e_bright>0.015 0.000</postfx_tonemap_filmic_e_bright>
+    <postfx_tonemap_filmic_f_bright>0.300 0.000</postfx_tonemap_filmic_f_bright>
+    <postfx_tonemap_filmic_w_bright>11.200 0.000</postfx_tonemap_filmic_w_bright>
+  </modifier>
+  <modifier name="newTonemapper_Hab" description="" numMods="18" userFlags="0">
+    <postfx_tonemap_filmic_override_dark>1.000 0.000</postfx_tonemap_filmic_override_dark>
+    <postfx_tonemap_filmic_exposure_dark>1.000 0.000</postfx_tonemap_filmic_exposure_dark>
+    <postfx_tonemap_filmic_a>0.150 0.000</postfx_tonemap_filmic_a>
+    <postfx_tonemap_filmic_b>0.400 0.000</postfx_tonemap_filmic_b>
+    <postfx_tonemap_filmic_c>0.100 0.000</postfx_tonemap_filmic_c>
+    <postfx_tonemap_filmic_d>0.200 0.000</postfx_tonemap_filmic_d>
+    <postfx_tonemap_filmic_e>0.001 0.000</postfx_tonemap_filmic_e>
+    <postfx_tonemap_filmic_f>0.300 0.000</postfx_tonemap_filmic_f>
+    <postfx_tonemap_filmic_w>11.200 0.000</postfx_tonemap_filmic_w>
+    <postfx_tonemap_filmic_override_bright>1.000 0.000</postfx_tonemap_filmic_override_bright>
+    <postfx_tonemap_filmic_exposure_bright>-4.000 0.000</postfx_tonemap_filmic_exposure_bright>
+    <postfx_tonemap_filmic_a_bright>0.150 0.000</postfx_tonemap_filmic_a_bright>
+    <postfx_tonemap_filmic_b_bright>0.500 0.000</postfx_tonemap_filmic_b_bright>
+    <postfx_tonemap_filmic_c_bright>0.100 0.000</postfx_tonemap_filmic_c_bright>
+    <postfx_tonemap_filmic_d_bright>0.200 0.000</postfx_tonemap_filmic_d_bright>
+    <postfx_tonemap_filmic_e_bright>0.020 0.000</postfx_tonemap_filmic_e_bright>
+    <postfx_tonemap_filmic_f_bright>0.300 0.000</postfx_tonemap_filmic_f_bright>
+    <postfx_tonemap_filmic_w_bright>11.200 0.000</postfx_tonemap_filmic_w_bright>
+  </modifier>
+  <modifier name="WINTER2_mountainWind" description="" numMods="3" userFlags="0">
+    <wind_speed_mult>1.000 0.000</wind_speed_mult>
+    <wind_gust_speed_mult_min>5.000 0.000</wind_gust_speed_mult_min>
+    <wind_gust_speed_mult_max>5.000 0.000</wind_gust_speed_mult_max>
+  </modifier>
+  <modifier name="TRAILER2_shot5" description="" numMods="23" userFlags="0">
+    <light_dir_col_r>0.890 1.000</light_dir_col_r>
+    <light_dir_col_g>0.675 1.000</light_dir_col_g>
+    <light_dir_col_b>0.392 1.000</light_dir_col_b>
+    <light_natural_amb_intensity_far>0.284 0.000</light_natural_amb_intensity_far>
+    <light_natural_amb_intensity_distance>98.800 0.000</light_natural_amb_intensity_distance>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-0.097 0.000</sun_direction_x>
+    <sun_direction_y>0.256 0.000</sun_direction_y>
+    <sun_direction_z>0.810 0.000</sun_direction_z>
+    <postfx_exposure_min>-7.000 0.000</postfx_exposure_min>
+    <postfx_exposure_max>-7.000 0.000</postfx_exposure_max>
+    <postfx_exposure_perpixel_amount>0.500 0.000</postfx_exposure_perpixel_amount>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>0.133 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>0.118 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>0.102 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_midpoint>0.532 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_middle_midpoint>0.500 0.000</postfx_grad_top_middle_midpoint>
+    <dir_shadow_distance_multiplier>0.699 0.000</dir_shadow_distance_multiplier>
+    <dir_shadow_softness>-1.000 0.000</dir_shadow_softness>
+  </modifier>
+  <modifier name="TRAILER2_shot12" description="" numMods="18" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>0.338 0.000</sun_direction_x>
+    <sun_direction_y>0.533 0.000</sun_direction_y>
+    <sun_direction_z>0.116 0.000</sun_direction_z>
+    <postfx_exposure>-0.500 0.000</postfx_exposure>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>0.043 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>0.071 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>0.125 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+    <dir_shadow_softness>1.000 0.000</dir_shadow_softness>
+  </modifier>
+  <modifier name="TRAILER2_shot18" description="" numMods="20" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>0.374 0.000</sun_direction_x>
+    <sun_direction_y>0.636 0.000</sun_direction_y>
+    <sun_direction_z>0.456 0.000</sun_direction_z>
+    <postfx_exposure>0.500 0.000</postfx_exposure>
+    <postfx_exposure_min>-10.176 0.000</postfx_exposure_min>
+    <postfx_exposure_max>-4.700 0.000</postfx_exposure_max>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <postfx_grad_top_col_r>0.196 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.435 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>0.647 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>0.722 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_midpoint>0.272 0.000</postfx_grad_midpoint>
+    <no_wet_peds>1.000 0.000</no_wet_peds>
+    <minimum_wetness>0.010 0.000</minimum_wetness>
+    <maximum_wetness>0.050 0.000</maximum_wetness>
+    <minimum_soak>0.100 0.000</minimum_soak>
+  </modifier>
+  <modifier name="TRAILER2_shot19" description="" numMods="21" userFlags="0">
+    <light_dir_col_r>1.000 1.000</light_dir_col_r>
+    <light_dir_col_g>1.000 1.000</light_dir_col_g>
+    <light_dir_col_b>1.000 1.000</light_dir_col_b>
+    <light_dir_mult>0.500 1.000</light_dir_mult>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-0.168 0.000</sun_direction_x>
+    <sun_direction_y>-0.040 0.000</sun_direction_y>
+    <sun_direction_z>0.064 0.000</sun_direction_z>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>0.027 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>0.027 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>0.027 0.000</postfx_grad_bottom_col_b>
+    <dir_shadow_num_cascades>4.000 0.000</dir_shadow_num_cascades>
+    <dir_shadow_distance_multiplier>0.500 0.000</dir_shadow_distance_multiplier>
+    <dir_shadow_softness>-0.690 0.000</dir_shadow_softness>
+  </modifier>
+  <modifier name="TRAILER2_shot17" description="" numMods="12" userFlags="0">
+    <light_dir_col_r>0.267 1.000</light_dir_col_r>
+    <light_dir_col_g>0.416 1.000</light_dir_col_g>
+    <light_dir_col_b>1.000 1.000</light_dir_col_b>
+    <light_dir_mult>4.000 1.000</light_dir_mult>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <moon_direction_x>-1.000 0.000</moon_direction_x>
+    <moon_direction_y>0.424 0.000</moon_direction_y>
+    <moon_direction_z>0.532 0.000</moon_direction_z>
+    <postfx_exposure>-1.000 0.000</postfx_exposure>
+    <postfx_exposure_perpixel_amount>0.200 0.000</postfx_exposure_perpixel_amount>
+    <postfx_intensity_bloom>0.300 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="TRAILER2_shot21" description="" numMods="6" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <moon_direction_x>0.150 0.000</moon_direction_x>
+    <moon_direction_y>-0.784 0.000</moon_direction_y>
+    <moon_direction_z>0.306 0.000</moon_direction_z>
+    <postfx_exposure>-0.400 0.000</postfx_exposure>
+  </modifier>
+  <modifier name="TRAILER2_shot22" description="" numMods="13" userFlags="0">
+    <light_dir_col_r>1.000 1.000</light_dir_col_r>
+    <light_dir_col_g>0.769 1.000</light_dir_col_g>
+    <light_dir_col_b>0.427 1.000</light_dir_col_b>
+    <light_dir_mult>1.300 1.000</light_dir_mult>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>1.000 0.000</sun_direction_x>
+    <sun_direction_y>-0.078 0.000</sun_direction_y>
+    <sun_direction_z>0.416 0.000</sun_direction_z>
+    <postfx_exposure>-0.500 0.000</postfx_exposure>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <postfx_intensity_bloom>0.200 0.000</postfx_intensity_bloom>
+    <dir_shadow_softness>-1.000 0.000</dir_shadow_softness>
+  </modifier>
+  <modifier name="TRAILER2_shot23" description="" numMods="14" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <moon_direction_x>-1.000 0.000</moon_direction_x>
+    <moon_direction_y>0.028 0.000</moon_direction_y>
+    <moon_direction_z>0.228 0.000</moon_direction_z>
+    <postfx_exposure_perpixel_amount>0.200 0.000</postfx_exposure_perpixel_amount>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_midpoint>0.054 0.000</postfx_grad_midpoint>
+    <postfx_grad_middle_bottom_midpoint>0.808 0.000</postfx_grad_middle_bottom_midpoint>
+  </modifier>
+  <modifier name="TRAILER2_shot24" description="" numMods="7" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <moon_direction_x>-1.000 0.000</moon_direction_x>
+    <moon_direction_y>0.350 0.000</moon_direction_y>
+    <moon_direction_z>0.345 0.000</moon_direction_z>
+    <postfx_exposure>0.500 0.000</postfx_exposure>
+    <postfx_exposure_perpixel_amount>0.200 0.000</postfx_exposure_perpixel_amount>
+  </modifier>
+  <modifier name="TRAILER2_shot26" description="" numMods="10" userFlags="0">
+    <light_dir_col_r>0.890 1.000</light_dir_col_r>
+    <light_dir_col_g>0.651 1.000</light_dir_col_g>
+    <light_dir_col_b>0.392 1.000</light_dir_col_b>
+    <light_dir_mult>2.000 1.000</light_dir_mult>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-0.925 0.000</sun_direction_x>
+    <sun_direction_y>-0.250 0.000</sun_direction_y>
+    <sun_direction_z>0.432 0.000</sun_direction_z>
+    <postfx_exposure>1.000 0.000</postfx_exposure>
+  </modifier>
+  <modifier name="TRAILER2_shot27" description="" numMods="7" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-0.202 0.000</sun_direction_x>
+    <sun_direction_y>0.272 0.000</sun_direction_y>
+    <sun_direction_z>0.347 0.000</sun_direction_z>
+    <postfx_exposure>-0.200 0.000</postfx_exposure>
+    <dir_shadow_softness>-0.506 0.000</dir_shadow_softness>
+  </modifier>
+  <modifier name="TRAILER2_shot27b" description="" numMods="9" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>0.956 0.000</sun_direction_x>
+    <sun_direction_y>0.474 0.000</sun_direction_y>
+    <sun_direction_z>0.550 0.000</sun_direction_z>
+    <no_wet_peds>1.000 0.000</no_wet_peds>
+    <minimum_wetness>0.000 0.000</minimum_wetness>
+    <maximum_wetness>0.500 0.000</maximum_wetness>
+    <minimum_soak>0.200 0.000</minimum_soak>
+  </modifier>
+  <modifier name="TRAILER2_shot28" description="" numMods="0" userFlags="0" />
+  <modifier name="TRAILER2_shot31" description="" numMods="29" userFlags="0">
+    <light_dir_col_r>0.890 1.000</light_dir_col_r>
+    <light_dir_col_g>0.675 1.000</light_dir_col_g>
+    <light_dir_col_b>0.392 1.000</light_dir_col_b>
+    <light_dir_mult>2.000 1.000</light_dir_mult>
+    <light_exterior_bounce_intensity>2.000 0.000</light_exterior_bounce_intensity>
+    <ped_light2_col_r>1.000 1.000</ped_light2_col_r>
+    <ped_light2_col_g>0.675 1.000</ped_light2_col_g>
+    <ped_light2_col_b>0.349 1.000</ped_light2_col_b>
+    <ped_light2_mult>27.648 1.000</ped_light2_mult>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>0.000 0.000</sun_direction_x>
+    <sun_direction_y>-0.290 0.000</sun_direction_y>
+    <sun_direction_z>0.520 0.000</sun_direction_z>
+    <postfx_exposure>2.300 0.000</postfx_exposure>
+    <postfx_exposure_max>-8.500 0.000</postfx_exposure_max>
+    <postfx_exposure_lowlights_percent>0.500 0.000</postfx_exposure_lowlights_percent>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>1.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <dir_shadow_distance_multiplier>0.200 0.000</dir_shadow_distance_multiplier>
+    <dir_shadow_softness>-1.000 0.000</dir_shadow_softness>
+  </modifier>
+  <modifier name="TRAILER2_shot32" description="" numMods="36" userFlags="0">
+    <ped_light_falloff>100.000 1.000</ped_light_falloff>
+    <ped_light_falloff_start>1.000 1.000</ped_light_falloff_start>
+    <ped_light_falloff_end>0.000 1.000</ped_light_falloff_end>
+    <ped_light_wrap_dist>50.000 1.000</ped_light_wrap_dist>
+    <ped_light_wrap_min>0.200 1.000</ped_light_wrap_min>
+    <ped_light_wrap_max>1.000 1.000</ped_light_wrap_max>
+    <ped_light_ssao>5.000 1.000</ped_light_ssao>
+    <ped_light_min_roughness>0.650 1.000</ped_light_min_roughness>
+    <ped_light1_col_r>0.502 1.000</ped_light1_col_r>
+    <ped_light1_col_g>0.682 1.000</ped_light1_col_g>
+    <ped_light1_col_b>1.000 1.000</ped_light1_col_b>
+    <ped_light1_mult>64.000 1.000</ped_light1_mult>
+    <ped_light2_col_r>1.000 1.000</ped_light2_col_r>
+    <ped_light2_col_g>1.000 1.000</ped_light2_col_g>
+    <ped_light2_col_b>1.000 1.000</ped_light2_col_b>
+    <ped_light2_mult>64.000 1.000</ped_light2_mult>
+    <ped_light3_col_r>1.000 1.000</ped_light3_col_r>
+    <ped_light3_col_g>1.000 1.000</ped_light3_col_g>
+    <ped_light3_col_b>1.000 1.000</ped_light3_col_b>
+    <ped_light3_mult>64.000 1.000</ped_light3_mult>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <moon_direction_x>0.275 0.000</moon_direction_x>
+    <moon_direction_y>-1.000 0.000</moon_direction_y>
+    <moon_direction_z>0.402 0.000</moon_direction_z>
+    <postfx_exposure_min>6.000 0.000</postfx_exposure_min>
+    <postfx_exposure_max>6.000 0.000</postfx_exposure_max>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>0.141 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>0.102 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>0.063 0.000</postfx_grad_middle_col_b>
+    <dir_shadow_distance_multiplier>0.500 0.000</dir_shadow_distance_multiplier>
+    <dir_shadow_softness>-1.000 0.000</dir_shadow_softness>
+  </modifier>
+  <modifier name="TRAILER2_shot34" description="" numMods="19" userFlags="0">
+    <ped_light1_mult>0.000 1.000</ped_light1_mult>
+    <ped_light2_mult>0.000 1.000</ped_light2_mult>
+    <ped_light3_mult>0.000 1.000</ped_light3_mult>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <moon_direction_x>-1.000 0.000</moon_direction_x>
+    <moon_direction_y>0.554 0.000</moon_direction_y>
+    <moon_direction_z>0.260 0.000</moon_direction_z>
+    <postfx_exposure>1.000 0.000</postfx_exposure>
+    <postfx_exposure_perpixel_amount>0.100 0.000</postfx_exposure_perpixel_amount>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_bottom_col_r>0.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>0.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>0.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_middle_midpoint>0.500 0.000</postfx_grad_top_middle_midpoint>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+  </modifier>
+  <modifier name="TRAILER2_shot14b" description="" numMods="15" userFlags="0">
+    <ped_light1_mult>0.000 1.000</ped_light1_mult>
+    <ped_light2_mult>0.000 1.000</ped_light2_mult>
+    <ped_light3_mult>3.520 1.000</ped_light3_mult>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-0.078 0.000</sun_direction_x>
+    <sun_direction_y>0.011 0.000</sun_direction_y>
+    <sun_direction_z>0.083 0.000</sun_direction_z>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>0.157 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>0.086 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>0.031 0.000</postfx_grad_middle_col_b>
+    <dir_shadow_softness>-0.426 0.000</dir_shadow_softness>
+  </modifier>
+  <modifier name="TRAILER2_shot27a" description="" numMods="14" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-0.800 0.000</sun_direction_x>
+    <sun_direction_y>1.000 0.000</sun_direction_y>
+    <sun_direction_z>0.630 0.000</sun_direction_z>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>1.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>0.067 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>0.059 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>0.051 0.000</postfx_grad_bottom_col_b>
+  </modifier>
+  <modifier name="TRAILER2_shot27aALT" description="" numMods="5" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>0.000 0.000</light_direction_override_overrides_sun>
+    <moon_direction_x>-1.000 0.000</moon_direction_x>
+    <moon_direction_y>0.098 0.000</moon_direction_y>
+    <moon_direction_z>0.734 0.000</moon_direction_z>
+  </modifier>
+  <modifier name="TRAILER2_shot30" description="" numMods="14" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <sun_direction_x>-0.470 0.000</sun_direction_x>
+    <sun_direction_y>-0.424 0.000</sun_direction_y>
+    <sun_direction_z>1.000 0.000</sun_direction_z>
+    <postfx_exposure>1.000 0.000</postfx_exposure>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>0.067 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>0.051 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>0.039 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+  </modifier>
+  <modifier name="TRAILER2_shot30alt" description="" numMods="5" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>-0.092 0.000</sun_direction_x>
+    <sun_direction_y>0.478 0.000</sun_direction_y>
+    <sun_direction_z>0.244 0.000</sun_direction_z>
+  </modifier>
+  <modifier name="winter4_cloudsCamShot" description="" numMods="5" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <sun_direction_x>1.000 0.000</sun_direction_x>
+    <sun_direction_y>-0.726 0.000</sun_direction_y>
+    <sun_direction_z>0.602 0.000</sun_direction_z>
+    <postfx_exposure>1.000 0.000</postfx_exposure>
+  </modifier>
+  <modifier name="TRAILER2_shot36" description="" numMods="2" userFlags="0">
+    <postfx_exposure_min>7.000 0.000</postfx_exposure_min>
+    <postfx_exposure_max>7.000 0.000</postfx_exposure_max>
+  </modifier>
+  <modifier name="TRAILER2_shot37" description="" numMods="6" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <moon_direction_x>0.025 0.000</moon_direction_x>
+    <moon_direction_y>0.444 0.000</moon_direction_y>
+    <moon_direction_z>1.000 0.000</moon_direction_z>
+    <postfx_exposure_min>0.448 0.000</postfx_exposure_min>
+    <postfx_exposure_max>5.888 0.000</postfx_exposure_max>
+  </modifier>
+  <modifier name="TRAILER2_shot38" description="" numMods="6" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <moon_direction_x>0.576 0.000</moon_direction_x>
+    <moon_direction_y>-1.000 0.000</moon_direction_y>
+    <moon_direction_z>0.248 0.000</moon_direction_z>
+    <postfx_exposure_min>6.272 0.000</postfx_exposure_min>
+    <postfx_exposure_max>5.632 0.000</postfx_exposure_max>
+  </modifier>
+  <modifier name="TRAILER_shot9-1" description="" numMods="7" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <moon_direction_x>-0.750 0.000</moon_direction_x>
+    <moon_direction_y>-0.954 0.000</moon_direction_y>
+    <moon_direction_z>0.364 0.000</moon_direction_z>
+    <postfx_exposure_min>2.500 0.000</postfx_exposure_min>
+    <postfx_exposure_max>2.500 0.000</postfx_exposure_max>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+  </modifier>
+  <modifier name="TRAILER2_shot25" description="" numMods="18" userFlags="0">
+    <ped_light_ssao>0.000 1.000</ped_light_ssao>
+    <ped_light_min_roughness>0.187 1.000</ped_light_min_roughness>
+    <ped_light1_col_r>0.510 1.000</ped_light1_col_r>
+    <ped_light1_col_g>0.686 1.000</ped_light1_col_g>
+    <ped_light1_col_b>1.000 1.000</ped_light1_col_b>
+    <ped_light1_mult>8.000 1.000</ped_light1_mult>
+    <ped_light2_col_r>1.000 1.000</ped_light2_col_r>
+    <ped_light2_col_g>0.729 1.000</ped_light2_col_g>
+    <ped_light2_col_b>0.518 1.000</ped_light2_col_b>
+    <ped_light2_mult>10.000 1.000</ped_light2_mult>
+    <ped_light3_col_r>1.000 1.000</ped_light3_col_r>
+    <ped_light3_col_g>0.890 1.000</ped_light3_col_g>
+    <ped_light3_col_b>0.773 1.000</ped_light3_col_b>
+    <ped_light3_mult>15.840 1.000</ped_light3_mult>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <sun_direction_x>-0.925 0.000</sun_direction_x>
+    <sun_direction_y>-0.750 0.000</sun_direction_y>
+    <sun_direction_z>0.360 0.000</sun_direction_z>
+  </modifier>
+  <modifier name="TRAILER2_shot35" description="" numMods="16" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <moon_direction_x>1.000 0.000</moon_direction_x>
+    <moon_direction_y>-0.900 0.000</moon_direction_y>
+    <moon_direction_z>0.270 0.000</moon_direction_z>
+    <postfx_exposure_min>8.000 0.000</postfx_exposure_min>
+    <postfx_exposure_max>8.000 0.000</postfx_exposure_max>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>0.278 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>0.278 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>0.278 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+  </modifier>
+  <modifier name="TRAILER2_shot33" description="" numMods="12" userFlags="0">
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>0.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>0.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>0.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_middle_midpoint>0.500 0.000</postfx_grad_top_middle_midpoint>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+  </modifier>
+  <modifier name="trailer2_shot4_alt" description="" numMods="29" userFlags="0">
+    <ssao_inten>5.000 0.000</ssao_inten>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>1.000 0.000</sun_direction_x>
+    <sun_direction_y>0.206 0.000</sun_direction_y>
+    <sun_direction_z>0.444 0.000</sun_direction_z>
+    <postfx_exposure>0.500 0.000</postfx_exposure>
+    <postfx_exposure_spot_meter_width>2.000 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>2.000 0.000</postfx_exposure_spot_meter_height>
+    <postfx_exposure_perpixel_amount>0.100 0.000</postfx_exposure_perpixel_amount>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>0.192 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>0.192 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>0.192 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>1.000 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>1.000 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>1.000 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_top_middle_midpoint>0.500 0.000</postfx_grad_top_middle_midpoint>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+    <fog_isotropic_phase>4.000 4.000</fog_isotropic_phase>
+    <postfx_bloom_fog_mod_intensity>0.000 0.000</postfx_bloom_fog_mod_intensity>
+    <reflection_occlusion_ao_influence>1.000 0.000</reflection_occlusion_ao_influence>
+    <reflection_occlusion_ray_length>0.446 0.000</reflection_occlusion_ray_length>
+    <reflection_occlusion_depth_threshold>0.016 0.000</reflection_occlusion_depth_threshold>
+    <lod_mult>1.113 0.000</lod_mult>
+    <lod_mult_orphanhd>6.941 0.000</lod_mult_orphanhd>
+  </modifier>
+  <modifier name="TRAILER2_shot1_alt" description="" numMods="21" userFlags="0">
+    <light_dir_col_r>1.000 1.000</light_dir_col_r>
+    <light_dir_col_g>1.000 1.000</light_dir_col_g>
+    <light_dir_col_b>1.000 1.000</light_dir_col_b>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <sun_direction_x>1.000 0.000</sun_direction_x>
+    <sun_direction_y>-0.239 0.000</sun_direction_y>
+    <sun_direction_z>0.100 0.000</sun_direction_z>
+    <postfx_exposure_perpixel_amount>0.100 0.000</postfx_exposure_perpixel_amount>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <lod_mult>2.000 0.000</lod_mult>
+    <lodlight_range_mult>1.000 0.000</lodlight_range_mult>
+    <lod_mult_hd>10.000 0.000</lod_mult_hd>
+    <lod_mult_orphanhd>10.000 0.000</lod_mult_orphanhd>
+    <lod_mult_lod>10.000 0.000</lod_mult_lod>
+    <lod_mult_slod1>10.000 0.000</lod_mult_slod1>
+    <lod_mult_slod2>10.000 0.000</lod_mult_slod2>
+    <lod_mult_slod3>10.000 0.000</lod_mult_slod3>
+    <lod_mult_slod4>10.000 0.000</lod_mult_slod4>
+    <lod_mult_grass>10.000 0.000</lod_mult_grass>
+  </modifier>
+  <modifier name="TRAILER2_shot2_alt" description="" numMods="20" userFlags="0">
+    <ssao_inten>5.000 0.000</ssao_inten>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>1.000 0.000</sun_direction_x>
+    <sun_direction_y>0.604 0.000</sun_direction_y>
+    <sun_direction_z>0.388 0.000</sun_direction_z>
+    <postfx_exposure_spot_meter_width>2.000 0.000</postfx_exposure_spot_meter_width>
+    <postfx_exposure_spot_meter_height>2.000 0.000</postfx_exposure_spot_meter_height>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <postfx_grad_top_col_r>1.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>1.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>1.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>0.612 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>0.584 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>0.522 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>0.031 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>0.024 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>0.012 0.000</postfx_grad_bottom_col_b>
+    <fog_isotropic_phase>8.000 8.000</fog_isotropic_phase>
+    <postfx_bloom_fog_mod_intensity>0.000 0.000</postfx_bloom_fog_mod_intensity>
+  </modifier>
+  <modifier name="TRAILER2_shot12_alt" description="" numMods="21" userFlags="0">
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <light_direction_override_overrides_sun>1.000 0.000</light_direction_override_overrides_sun>
+    <sun_direction_x>0.338 0.000</sun_direction_x>
+    <sun_direction_y>0.533 0.000</sun_direction_y>
+    <sun_direction_z>0.116 0.000</sun_direction_z>
+    <postfx_exposure>-0.500 0.000</postfx_exposure>
+    <postfx_exposure_min>-5.000 0.000</postfx_exposure_min>
+    <postfx_exposure_max>-3.000 0.000</postfx_exposure_max>
+    <postfx_exposure_perpixel_amount>0.000 0.000</postfx_exposure_perpixel_amount>
+    <postfx_grad_top_col_r>0.000 0.000</postfx_grad_top_col_r>
+    <postfx_grad_top_col_g>0.000 0.000</postfx_grad_top_col_g>
+    <postfx_grad_top_col_b>0.000 0.000</postfx_grad_top_col_b>
+    <postfx_grad_middle_col_r>1.000 0.000</postfx_grad_middle_col_r>
+    <postfx_grad_middle_col_g>1.000 0.000</postfx_grad_middle_col_g>
+    <postfx_grad_middle_col_b>1.000 0.000</postfx_grad_middle_col_b>
+    <postfx_grad_bottom_col_r>0.043 0.000</postfx_grad_bottom_col_r>
+    <postfx_grad_bottom_col_g>0.071 0.000</postfx_grad_bottom_col_g>
+    <postfx_grad_bottom_col_b>0.125 0.000</postfx_grad_bottom_col_b>
+    <postfx_grad_midpoint>0.500 0.000</postfx_grad_midpoint>
+    <postfx_grad_middle_bottom_midpoint>0.500 0.000</postfx_grad_middle_bottom_midpoint>
+    <dir_shadow_softness>1.000 0.000</dir_shadow_softness>
+  </modifier>
+  <modifier name="TRAILER_shot9-2" description="" numMods="3" userFlags="0">
+    <postfx_exposure_min>-1.500 0.000</postfx_exposure_min>
+    <postfx_exposure_max>1.500 0.000</postfx_exposure_max>
+    <postfx_exposure_perpixel_amount>0.100 0.000</postfx_exposure_perpixel_amount>
+  </modifier>
+</timecycle_modifier_data>

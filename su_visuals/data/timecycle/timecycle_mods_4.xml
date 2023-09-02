@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<timecycle_modifier_data version="1.000000">
+  <modifier name="INT_streetlighting" description="" numMods="0" userFlags="2" />
+  <modifier name="StreetLighting" description="" numMods="0" userFlags="0" />
+  <modifier name="StreetLightingtraffic" description="" numMods="0" userFlags="0" />
+  <modifier name="StreetLightingJunction" description="" numMods="0" userFlags="0" />
+  <modifier name="NoAmbientmult_interior" description="" numMods="0" userFlags="1" />
+  <modifier name="FullAmbientmult_interior" description="" numMods="0" userFlags="1" />
+  <modifier name="INT_NoAmbientmult" description="" numMods="0" userFlags="1" />
+  <modifier name="INT_NoAmbientmult_art" description="" numMods="3" userFlags="1">
+    <postfx_exposure>32.000 0.000</postfx_exposure>
+    <postfx_exposure_max>-26.368 0.000</postfx_exposure_max>
+    <postfx_intensity_bloom>10.851 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="INT_FullAmbientmult" description="" numMods="0" userFlags="1" />
+  <modifier name="INT_FULLAmbientmult_art" description="" numMods="0" userFlags="1" />
+  <modifier name="INT_FULLAmbientmult_both" description="" numMods="0" userFlags="1" />
+  <modifier name="INT_NoAmbientmult_both" description="" numMods="0" userFlags="1" />
+  <modifier name="LODmult_global_reduce" description="" numMods="1" userFlags="0">
+    <lod_mult>0.100 0.000</lod_mult>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="LODmult_HD_orphan_reduce" description="" numMods="2" userFlags="0">
+    <lod_mult_hd>0.100 0.000</lod_mult_hd>
+    <lod_mult_orphanhd>0.100 0.000</lod_mult_orphanhd>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="LODmult_HD_orphan_LOD_reduce" description="" numMods="3" userFlags="0">
+    <lod_mult_hd>0.100 0.000</lod_mult_hd>
+    <lod_mult_orphanhd>0.100 0.000</lod_mult_orphanhd>
+    <lod_mult_lod>0.100 0.000</lod_mult_lod>
+    <temperature_target>10.000 0.000</temperature_target>
+    <temperature_flatten>1.000 0.000</temperature_flatten>
+  </modifier>
+  <modifier name="LODmult_LOD_reduce" description="" numMods="1" userFlags="0">
+    <lod_mult_lod>0.100 0.000</lod_mult_lod>
+  </modifier>
+  <modifier name="LODmult_SLOD1_reduce" description="" numMods="1" userFlags="0">
+    <lod_mult_slod1>0.100 0.000</lod_mult_slod1>
+  </modifier>
+  <modifier name="LODmult_SLOD2_reduce" description="" numMods="1" userFlags="0">
+    <lod_mult_slod2>0.100 0.000</lod_mult_slod2>
+  </modifier>
+  <modifier name="LODmult_SLOD3_reduce" description="" numMods="1" userFlags="0">
+    <lod_mult_slod3>0.100 0.000</lod_mult_slod3>
+  </modifier>
+  <modifier name="V_recycle_mainroom" description="" numMods="14" userFlags="0">
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.443 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.067 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.040 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.659 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.773 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.890 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.020 0.000</light_artificial_int_up_intensity>
+    <postfx_exposure>-1.000 0.000</postfx_exposure>
+    <postfx_intensity_bloom>2.000 0.000</postfx_intensity_bloom>
+    <reflection_lod_range_start>0.000 0.000</reflection_lod_range_start>
+    <reflection_lod_range_end>5.000 0.000</reflection_lod_range_end>
+    <reflection_slod_range_start>5.000 0.000</reflection_slod_range_start>
+    <reflection_slod_range_end>5.000 0.000</reflection_slod_range_end>
+  </modifier>
+  <modifier name="NewMicheal" description="" numMods="15" userFlags="0">
+    <light_artificial_int_down_col_r>0.855 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.733 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.478 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>1.000 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.918 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.631 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.439 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.500 0.000</light_artificial_int_up_intensity>
+    <ssao_inten>3.000 0.000</ssao_inten>
+    <postfx_intensity_bloom>0.500 0.000</postfx_intensity_bloom>
+    <dir_shadow_distance_multiplier>0.200 0.000</dir_shadow_distance_multiplier>
+    <reflection_lod_range_start>0.000 0.000</reflection_lod_range_start>
+    <reflection_lod_range_end>-1.000 0.000</reflection_lod_range_end>
+    <reflection_slod_range_start>-1.000 0.000</reflection_slod_range_start>
+    <reflection_slod_range_end>-1.000 0.000</reflection_slod_range_end>
+  </modifier>
+  <modifier name="buildingTOP" description="" numMods="1" userFlags="0">
+    <dir_shadow_distance_multiplier>2.500 0.000</dir_shadow_distance_multiplier>
+  </modifier>
+  <modifier name="NewMichealupstairs" description="" numMods="14" userFlags="0">
+    <light_artificial_int_down_col_r>0.890 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.816 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.659 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>3.500 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.855 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.612 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>1.000 0.000</light_artificial_int_up_intensity>
+    <ssao_inten>2.300 0.000</ssao_inten>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <sun_direction_x>-0.376 0.000</sun_direction_x>
+    <sun_direction_y>-0.678 0.000</sun_direction_y>
+    <sun_direction_z>1.000 0.000</sun_direction_z>
+    <postfx_intensity_bloom>1.000 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="NewMichealstoilet" description="" numMods="14" userFlags="0">
+    <light_artificial_int_down_col_r>0.890 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.816 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.659 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>3.500 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.976 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.333 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.286 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>1.000 0.000</light_artificial_int_up_intensity>
+    <ssao_inten>1.800 0.000</ssao_inten>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <sun_direction_x>-0.372 0.000</sun_direction_x>
+    <sun_direction_y>-1.000 0.000</sun_direction_y>
+    <sun_direction_z>1.000 0.000</sun_direction_z>
+    <postfx_intensity_bloom>0.350 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="NewMichealgirly" description="" numMods="14" userFlags="0">
+    <light_artificial_int_down_col_r>0.882 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.816 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.659 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.500 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.502 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.608 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.200 0.000</light_artificial_int_up_intensity>
+    <ssao_inten>1.800 0.000</ssao_inten>
+    <light_direction_override>1.000 0.000</light_direction_override>
+    <sun_direction_x>-0.376 0.000</sun_direction_x>
+    <sun_direction_y>-0.678 0.000</sun_direction_y>
+    <sun_direction_z>1.000 0.000</sun_direction_z>
+    <postfx_intensity_bloom>1.000 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="NoAmbientmult" description="" numMods="0" userFlags="0" />
+  <modifier name="INT_garage" description="" numMods="10" userFlags="1">
+    <light_artificial_int_down_col_r>0.953 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>1.000 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.871 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.500 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.902 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.635 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.500 0.000</light_artificial_int_up_intensity>
+    <ssao_inten>2.000 0.000</ssao_inten>
+    <postfx_intensity_bloom>1.000 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="int_amb_mult_large" description="" numMods="0" userFlags="0" />
+  <modifier name="int_extlight_large" description="" numMods="13" userFlags="0">
+    <light_artificial_int_down_col_r>0.875 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.910 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.898 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.500 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.843 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.859 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.878 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.700 0.000</light_artificial_int_up_intensity>
+    <postfx_intensity_bloom>0.350 0.000</postfx_intensity_bloom>
+    <reflection_lod_range_start>0.000 0.000</reflection_lod_range_start>
+    <reflection_lod_range_end>5.000 0.000</reflection_lod_range_end>
+    <reflection_slod_range_start>5.000 0.000</reflection_slod_range_start>
+    <reflection_slod_range_end>5.000 0.000</reflection_slod_range_end>
+  </modifier>
+  <modifier name="ext_int_extlight_large" description="" numMods="8" userFlags="0">
+    <light_artificial_int_down_col_r>0.875 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.910 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.898 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.500 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.843 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.859 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.878 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.700 0.000</light_artificial_int_up_intensity>
+  </modifier>
+  <modifier name="int_extlight_small" description="" numMods="10" userFlags="0">
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>1.000 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>1.000 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>2.500 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.824 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.525 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.500 0.000</light_artificial_int_up_intensity>
+    <ssao_inten>16.000 0.000</ssao_inten>
+    <postfx_intensity_bloom>1.000 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="int_extlight_small_clipped" description="" numMods="10" userFlags="0">
+    <light_artificial_int_down_col_r>0.875 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.910 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.898 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.500 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.843 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.859 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.878 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.700 0.000</light_artificial_int_up_intensity>
+    <postfx_intensity_bloom>0.350 0.000</postfx_intensity_bloom>
+    <far_clip>0.000 525.000</far_clip>
+  </modifier>
+  <modifier name="int_extlight_large_fog" description="" numMods="10" userFlags="0">
+    <light_artificial_int_down_col_r>0.875 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.910 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.894 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.500 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.839 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.859 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.875 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.700 0.000</light_artificial_int_up_intensity>
+    <postfx_intensity_bloom>0.350 0.000</postfx_intensity_bloom>
+    <fog_start>1.000 25.000</fog_start>
+  </modifier>
+  <modifier name="int_extlight_small_fog" description="" numMods="10" userFlags="0">
+    <light_artificial_int_down_col_r>0.875 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.910 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.894 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.500 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.839 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.859 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.875 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.700 0.000</light_artificial_int_up_intensity>
+    <postfx_intensity_bloom>0.350 0.000</postfx_intensity_bloom>
+    <fog_start>1.000 25.000</fog_start>
+  </modifier>
+  <modifier name="int_extlight_none" description="" numMods="9" userFlags="0">
+    <light_artificial_int_down_col_r>1.000 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>1.000 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>1.000 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.250 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.918 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.855 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>1.000 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.150 0.000</light_artificial_int_up_intensity>
+    <postfx_intensity_bloom>0.500 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="int_extlight_none_dark" description="" numMods="13" userFlags="0">
+    <light_dir_mult>14.700 1.000</light_dir_mult>
+    <light_artificial_int_down_col_r>0.875 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.910 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.894 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.200 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.839 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.859 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.875 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.300 0.000</light_artificial_int_up_intensity>
+    <postfx_intensity_bloom>0.250 0.000</postfx_intensity_bloom>
+    <far_clip>0.000 200.000</far_clip>
+    <no_weather_fx>1.000 0.000</no_weather_fx>
+    <no_rain>1.000 0.000</no_rain>
+  </modifier>
+  <modifier name="int_extlight_none_dark_fog" description="" numMods="11" userFlags="0">
+    <light_artificial_int_down_col_r>0.875 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.910 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.894 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.300 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.839 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.859 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.875 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.450 0.000</light_artificial_int_up_intensity>
+    <postfx_intensity_bloom>0.250 0.000</postfx_intensity_bloom>
+    <fog_start>1.000 8.000</fog_start>
+    <far_clip>0.000 200.000</far_clip>
+  </modifier>
+  <modifier name="int_extlight_none_fog" description="" numMods="10" userFlags="0">
+    <light_artificial_int_down_col_r>0.875 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.910 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.890 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.450 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>0.835 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>0.859 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>0.875 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.650 0.000</light_artificial_int_up_intensity>
+    <postfx_intensity_bloom>0.350 0.000</postfx_intensity_bloom>
+    <fog_start>1.000 25.000</fog_start>
+  </modifier>
+  <modifier name="int_clean_extlight_large" description="" numMods="10" userFlags="0">
+    <light_artificial_int_down_col_r>0.980 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.976 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.941 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.250 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>1.000 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>1.000 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>0.500 0.000</light_artificial_int_up_intensity>
+    <ssao_inten>1.500 0.000</ssao_inten>
+    <postfx_intensity_bloom>0.350 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="int_clean_extlight_small" description="" numMods="10" userFlags="0">
+    <light_artificial_int_down_col_r>0.980 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.976 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.941 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.600 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>1.000 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>1.000 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>1.000 0.000</light_artificial_int_up_intensity>
+    <ssao_inten>1.500 0.000</ssao_inten>
+    <postfx_intensity_bloom>0.350 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="int_clean_extlight_none" description="" numMods="10" userFlags="0">
+    <light_artificial_int_down_col_r>0.980 1.000</light_artificial_int_down_col_r>
+    <light_artificial_int_down_col_g>0.976 1.000</light_artificial_int_down_col_g>
+    <light_artificial_int_down_col_b>0.941 1.000</light_artificial_int_down_col_b>
+    <light_artificial_int_down_intensity>0.600 0.000</light_artificial_int_down_intensity>
+    <light_artificial_int_up_col_r>1.000 1.000</light_artificial_int_up_col_r>
+    <light_artificial_int_up_col_g>1.000 1.000</light_artificial_int_up_col_g>
+    <light_artificial_int_up_col_b>1.000 1.000</light_artificial_int_up_col_b>
+    <light_artificial_int_up_intensity>1.000 0.000</light_artificial_int_up_intensity>
+    <ssao_inten>1.500 0.000</ssao_inten>
+    <postfx_intensity_bloom>0.350 0.000</postfx_intensity_bloom>
+  </modifier>
+  <modifier name="TrainInterior" description="" numMods="2" userFlags="0">
+    <local_atmosphere_voxel_distribution_blend>0.700 0.000</local_atmosphere_voxel_distribution_blend>
+    <dir_shadow_distance_multiplier>0.7 0.000</dir_shadow_distance_multiplier>
+  </modifier>
+</timecycle_modifier_data>

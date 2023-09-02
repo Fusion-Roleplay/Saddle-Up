@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- VisualRedemption (VisualR) 1.0.200 -->
+<!-- DO NOT DISTRIBUTE WITHOUT PERMISSION OF THE CREATORS! -->
+<!--
+For the interpolation_type attribute use one of these values (these curves 
+can be visualised in the Renderer > PostFX > Easing Curves widget):
+	EASE_LINEAR_IN
+	EASE_LINEAR_OUT
+	EASE_QUADRATIC_IN
+	EASE_QUADRATIC_OUT
+	EASE_QUADRATIC_INOUT
+	EASE_CUBIC_IN
+	EASE_CUBIC_OUT
+	EASE_CUBIC_INOUT
+	EASE_QUARTIC_IN
+	EASE_QUARTIC_OUT
+	EASE_QUARTIC_INOUT
+	EASE_QUINTIC_IN
+	EASE_QUINTIC_OUT
+	EASE_QUINTIC_INOUT
+	EASE_EXPONENTIAL_IN
+	EASE_EXPONENTIAL_OUT
+	EASE_EXPONENTIAL_INOUT
+	EASE_SINE_IN
+	EASE_SINE_OUT
+	EASE_SINE_INOUT
+	EASE_CIRCULAR_IN
+	EASE_CIRCULAR_OUT
+	EASE_CIRCULAR_INOUT
+	EASE_BOUNCE_IN
+	EASE_BOUNCE_OUT
+	EASE_BOUNCE_INOUT
+-->
+<time_data version="1.000000" mode="dynamic">
+  <suninfo sun_roll="125" sun_yaw="0.0" moon_roll="0" />
+  <mooninfo moon_speed="1" moon_roll="0" moon_wobble_freq="2" moon_wobble_amp="0.2" moon_wobble_offset="0.375" moon_cycle="0.5" />
+  <sample name="00:00 = -1.57" hour="0" uw_tc_mod="underwater" interpolation_type="EASE_LINEAR_IN"/>
+  <sample name="04:00 = -0.45" hour="4" uw_tc_mod="underwater" interpolation_type="EASE_LINEAR_IN"/>
+  <sample name="05:00 = -0.22" hour="5" uw_tc_mod="underwater" interpolation_type="EASE_LINEAR_IN"/>
+  <sample name="06:00 = -0.04" hour="6" uw_tc_mod="underwater" interpolation_type="EASE_LINEAR_IN"/>
+  <sample name="07:00 =  0.00" hour="7" uw_tc_mod="underwater" interpolation_type="EASE_LINEAR_IN"/>
+  <sample name="09:00 =  0.30" hour="9" uw_tc_mod="underwater" interpolation_type="EASE_LINEAR_IN"/>
+  <sample name="12:00 =  1.57" hour="12" uw_tc_mod="underwater" interpolation_type="EASE_LINEAR_IN"/>
+  <sample name="16:00 =  2.57" hour="16" uw_tc_mod="underwater" interpolation_type="EASE_LINEAR_IN"/>
+  <sample name="18:00 =  3.09" hour="18" uw_tc_mod="underwater" interpolation_type="EASE_LINEAR_IN"/>
+  <sample name="19:00 = -3.14" hour="19" uw_tc_mod="underwater" interpolation_type="EASE_LINEAR_IN"/>
+  <sample name="20:00 = -3.09" hour="20" uw_tc_mod="underwater" interpolation_type="EASE_LINEAR_IN"/>
+  <sample name="21:00 = -2.77" hour="21" uw_tc_mod="underwater" interpolation_type="EASE_LINEAR_IN"/>
+  <sample name="22:00 = -2.42" hour="22" uw_tc_mod="underwater" interpolation_type="EASE_LINEAR_IN"/>
+  <region name="URBAN" />
+</time_data>

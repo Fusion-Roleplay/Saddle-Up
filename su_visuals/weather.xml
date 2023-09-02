@@ -1,0 +1,3168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- VisualRedemption (VisualR) 1.0.100 -->
+<!-- DO NOT DISTRIBUTE WITHOUT PERMISSION OF THE CREATORS! -->
+
+<!-- THE LINES CONTAINING "resources:/" HAVE BEEN ALTERED FOR RedM USAGE -->
+
+<CContentsOfWeatherXmlFile>
+  <VersionNumber value="1.000000"/>
+  <WeatherGpuFx>
+    <Item>
+      <Name>DRIZZLE_DROP</Name>
+      <SystemType>SYSTEM_TYPE_DROP</SystemType>
+      <diffuseName>rain</diffuseName>
+      <distortionTexture>distortion_rain_n</distortionTexture>
+      <diffuseSplashName>rain_anim_td</diffuseSplashName>
+      <driveType>DRIVE_TYPE_RAIN</driveType>
+      <windInfluence value="0.25"/>
+      <gravity value="-8.000000"/>
+      <particleStartThreshold value="0.7"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/drizzle_emitter_drop</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/drizzle_render_drop</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>HAIL_DROP</Name>
+      <SystemType>SYSTEM_TYPE_DROP</SystemType>
+      <diffuseName>plankton</diffuseName>
+      <distortionTexture />
+      <diffuseSplashName />
+      <driveType>DRIVE_TYPE_RAIN</driveType>
+      <windInfluence value="0.0500000"/>
+      <gravity value="-25.0"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/hail_emitter_drop</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/hail_render_drop</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>HAIL_GROUND</Name>
+      <SystemType>SYSTEM_TYPE_GROUND</SystemType>
+      <diffuseName>plankton</diffuseName>
+      <distortionTexture />
+      <diffuseSplashName />
+      <driveType>DRIVE_TYPE_RAIN</driveType>
+      <windInfluence value="0.0000"/>
+      <gravity value="0.000000"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/hail_emitter_ground</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/hail_render_ground</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>RAINSTORM_DROP</Name>
+      <SystemType>SYSTEM_TYPE_DROP</SystemType>
+      <diffuseName>rain</diffuseName>
+      <distortionTexture>distortion_rain_n</distortionTexture>
+      <diffuseSplashName>rain_anim_td</diffuseSplashName>
+      <driveType>DRIVE_TYPE_RAIN</driveType>
+      <windInfluence value="0.10000"/>
+      <gravity value="-25.000000"/>
+      <particleStartThreshold value="0.7"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/rainstorm_emitter_drop</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/rainstorm_render_drop</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>RAINSTORM_GROUND</Name>
+      <SystemType>SYSTEM_TYPE_GROUND</SystemType>
+      <diffuseName>rain_anim_td</diffuseName>
+      <distortionTexture>rain_anim_tn</distortionTexture>
+      <diffuseSplashName>rain_anim_td</diffuseSplashName>
+      <alphaThresholdName>rain_anim_tt</alphaThresholdName>
+      <driveType>DRIVE_TYPE_RAIN</driveType>
+      <windInfluence value="0.0000"/>
+      <gravity value="0.000000"/>
+	  <particleStartThreshold value="0.7"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/rainstorm_emitter_ground</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/rainstorm_render_ground</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>THUNDER_DROP</Name>
+      <SystemType>SYSTEM_TYPE_DROP</SystemType>
+      <diffuseName>rain</diffuseName>
+      <distortionTexture>distortion_rain_n</distortionTexture>
+      <diffuseSplashName>rain_anim_td</diffuseSplashName>
+      <driveType>DRIVE_TYPE_RAIN</driveType>
+      <windInfluence value="0.02"/>
+      <gravity value="-35.000000"/>
+	  <particleStartThreshold value="0.3"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/thunder_emitter_drop</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/thunder_render_drop</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>THUNDER_GROUND</Name>
+      <SystemType>SYSTEM_TYPE_GROUND</SystemType>
+      <diffuseName>rain_anim_td</diffuseName>
+      <distortionTexture>rain_anim_tn</distortionTexture>
+      <diffuseSplashName>rain_anim_td</diffuseSplashName>
+      <alphaThresholdName>rain_anim_tt</alphaThresholdName>
+      <driveType>DRIVE_TYPE_RAIN</driveType>
+      <windInfluence value="0.00000"/>
+      <gravity value="0.000000"/>
+	  <particleStartThreshold value="0.3"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/thunder_emitter_ground</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/thunder_render_ground</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>THUNDER_SHEET</Name>
+      <SystemType>SYSTEM_TYPE_SHEET</SystemType>
+      <diffuseName>rain</diffuseName>
+      <distortionTexture>distortion_rain_n</distortionTexture>
+      <diffuseSplashName>rain_anim_td</diffuseSplashName>
+      <driveType>DRIVE_TYPE_RAIN</driveType>
+      <windInfluence value="0.02"/>
+      <gravity value="-35.000000"/>
+	  <particleStartThreshold value="0.3"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/thunder_emitter_sheet</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/thunder_render_sheet</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>SLEET_DROP</Name>
+      <SystemType>SYSTEM_TYPE_DROP</SystemType>
+      <diffuseName>rain</diffuseName>
+      <distortionTexture>distortion_rain_n</distortionTexture>
+      <diffuseSplashName>rain_anim_td</diffuseSplashName>
+      <driveType>DRIVE_TYPE_RAIN</driveType>
+      <windInfluence value="0.050000"/>
+      <gravity value="-30.5"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/sleet_emitter_drop</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/sleet_render_drop</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>SNOW_LIGHT_DROP</Name>
+      <SystemType>SYSTEM_TYPE_DROP</SystemType>
+      <diffuseName>snow</diffuseName>
+      <diffuseSplashName>mist</diffuseSplashName>
+      <driveType>DRIVE_TYPE_SNOW</driveType>
+      <windInfluence value="0.10000"/>
+      <gravity value="-18.8"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/snowlight_emitter_drop</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/snowlight_render_drop</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>SNOW_HEAVY_DROP</Name>
+      <SystemType>SYSTEM_TYPE_DROP</SystemType>
+      <diffuseName>snow</diffuseName>
+      <diffuseSplashName>mist</diffuseSplashName>
+      <driveType>DRIVE_TYPE_SNOW</driveType>
+      <windInfluence value="0.100000"/>
+      <gravity value="-15.200000"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/snowheavy_emitter_drop</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/snowheavy_render_drop</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>SNOW_HEAVY_GROUND</Name>
+      <SystemType>SYSTEM_TYPE_GROUND</SystemType>
+      <diffuseName>mist</diffuseName>
+      <diffuseSplashName>mist</diffuseSplashName>
+      <driveType>DRIVE_TYPE_SNOW</driveType>
+      <windInfluence value="0.070000"/>
+      <gravity value="-1.000000"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/snowheavy_emitter_ground</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/snowheavy_render_ground</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>GROUND_BLIZZARD_DROP</Name>
+      <SystemType>SYSTEM_TYPE_DROP</SystemType>
+      <diffuseName>snow_blur</diffuseName>
+      <distortionTexture>snow_blur_n</distortionTexture>
+      <diffuseSplashName>snow_blur</diffuseSplashName>
+      <driveType>DRIVE_TYPE_SNOW</driveType>
+      <windInfluence value="0.400000"/>
+      <gravity value="-30.000000"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/ground_bliz_emitter_drop</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/ground_bliz_render_drop</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>GROUND_BLIZZARD_GROUND</Name>
+      <SystemType>SYSTEM_TYPE_GROUND</SystemType>
+      <diffuseName>blizzard_ground</diffuseName>
+      <diffuseSplashName>blizzard_ground</diffuseSplashName>
+      <driveType>DRIVE_TYPE_SNOW</driveType>
+      <windInfluence value="0.100000"/>
+      <gravity value="-1.000000"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/ground_bliz_emitter_ground</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/ground_bliz_render_ground</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>BLIZZARD_DROP</Name>
+      <SystemType>SYSTEM_TYPE_DROP</SystemType>
+      <diffuseName>snow_blur</diffuseName>
+      <distortionTexture>snow_blur_n</distortionTexture>
+      <diffuseSplashName>snow_blur</diffuseSplashName>
+      <windInfluence value="0.600000"/>
+      <gravity value="-4.000000"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/blizzard_emitter_drop</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/blizzard_render_drop</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>BLIZZARD_GROUND</Name>
+      <SystemType>SYSTEM_TYPE_GROUND</SystemType>
+      <diffuseName>blizzard_ground</diffuseName>
+      <diffuseSplashName>blizzard_ground</diffuseSplashName>
+      <driveType>DRIVE_TYPE_SNOW</driveType>
+      <windInfluence value="0.100000"/>
+      <gravity value="-9.800000"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/blizzard_emitter_ground</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/blizzard_render_ground</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>BLIZZARD2_DROP</Name>
+      <SystemType>SYSTEM_TYPE_DROP</SystemType>
+      <diffuseName>snow_blur</diffuseName>
+      <distortionTexture>snow_blur_n</distortionTexture>
+      <diffuseSplashName>snow_blur</diffuseSplashName>
+      <driveType>DRIVE_TYPE_SNOW</driveType>
+      <windInfluence value="0.850000"/>
+      <gravity value="-25.000000"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/blizzard2_emitter_drop</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/blizzard2_render_drop</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>BLIZZARD2_SHEET</Name>
+      <SystemType>SYSTEM_TYPE_SHEET</SystemType>
+      <diffuseName>snow_blur</diffuseName>
+      <distortionTexture>snow_blur_n</distortionTexture>
+      <diffuseSplashName>snow_blur</diffuseSplashName>
+      <driveType>DRIVE_TYPE_SNOW</driveType>
+      <windInfluence value="0.7"/>
+      <gravity value="-30.000000"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/blizzard2_emitter_sheet</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/blizzard2_render_sheet</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>BLIZZARD2_GROUND</Name>
+      <SystemType>SYSTEM_TYPE_GROUND</SystemType>
+      <diffuseName>blizzard_ground</diffuseName>
+      <diffuseSplashName>blizzard_ground</diffuseSplashName>
+      <driveType>DRIVE_TYPE_SNOW</driveType>
+      <windInfluence value="0.050000000"/>
+      <gravity value="-0.1000000"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/blizzard2_emitter_ground</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/blizzard2_render_ground</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>SNOW_CLEAR_DROP</Name>
+      <SystemType>SYSTEM_TYPE_DROP</SystemType>
+      <diffuseName>snow_blur</diffuseName>
+      <distortionTexture>snow_blur_n</distortionTexture>
+      <diffuseSplashName>snow_blur</diffuseSplashName>
+      <driveType>DRIVE_TYPE_SNOW</driveType>
+      <windInfluence value="0.700000"/>
+      <gravity value="-9.000000"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/snowclear_emitter_drop</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/snowclear_render_drop</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>SNOW_CLEAR_GROUND</Name>
+      <SystemType>SYSTEM_TYPE_GROUND</SystemType>
+      <diffuseName>blizzard_ground</diffuseName>
+      <diffuseSplashName>blizzard_ground</diffuseSplashName>
+      <driveType>DRIVE_TYPE_SNOW</driveType>
+      <windInfluence value="1.000000"/>
+      <gravity value="-1.000000"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/snowclear_emitter_ground</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/snowclear_render_ground</renderSettingsName>
+    </Item>
+    <Item>
+      <Name>UNDERWATER_DROP</Name>
+      <SystemType>SYSTEM_TYPE_DROP</SystemType>
+      <diffuseName>plankton</diffuseName>
+      <diffuseSplashName>plankton</diffuseSplashName>
+      <driveType>DRIVE_TYPE_UNDERWATER</driveType>
+      <windInfluence value="1.000000"/>
+      <gravity value="0.000000"/>
+      <emitterSettingsName>common:/data/levels/rdr3/weather/underwater_emitter_drop</emitterSettingsName>
+      <renderSettingsName>common:/data/levels/rdr3/weather/underwater_render_drop</renderSettingsName>
+    </Item>
+  </WeatherGpuFx>
+  <WeatherTypes>
+
+    <!--  WARNING  NEW WEATHERS  WARNING  -->
+
+    <Item>
+      <Name>HIGHPRESSURE</Name>
+      <ShortName>HiPr</ShortName>
+      <Sun value="1.0"/>
+      <Cloud value="0.000000"/>
+      <WindMin value="0.5"/>
+      <WindMax value="2.0"/>
+      <WindAngle value="279.0"/>
+      <WindGustsChance value="90.0"/>
+      <WindGustsSpeedMin value="9.0"/>
+      <WindGustsSpeedMax value="15.0"/>
+      <WindGustsDurationMin value="8.0"/>
+      <WindGustsDurationMax value="15.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.000000"/>
+      <Snow value="0.000000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.01"/>
+      <Humidity value="-0.100000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.01667" />
+      <SoakIncSpeed value="0.00" />
+      <SoakDecSpeed value="0.0055" />
+      <Honor value="0.0000" />
+	<RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="2.72000" />
+      <OceanNoiseMinAmplitude value="17.10000" />
+      <OceanWaveAmplitude value="3.560000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.000000" />
+      <ShoreWaveMinAmplitude value="0.200000" />
+      <OceanWaveMaxAmplitude value="18.00000" />
+      <ShoreWaveMaxAmplitude value="1.5000000" />
+      <OceanFoamIntensity value="0.140000" />
+      <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="true"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="-0.50000"/>
+      <MinWeatherAccumulation value="0.000000"/>
+      <MaxWeatherAccumulation value="0.000000"/>
+      <VehSnowAccumulationRate value="0.000000"/>
+      <VehMaxSnowAccumulation value="0.000000"/>
+      <VehWetnessAccumulationRate value="0.000000"/>
+      <TemperatureTarget  value="25.000000"/>
+      <TemperatureFlatten  value="0.400000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <OldSettingName>-</OldSettingName>
+      <DropSettingName>-</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_HIGHPRESSURE.XML</TimeCycleFilename>
+	  <Variations>
+        <TimeCycleVariation>
+          <Name>HIGHPRESSURE_guama</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_HIGHPRESSURE_guama.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_high</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_Water</LocalizedDensityMap>
+    </Item>
+    <Item>
+      <Name>SUNNY</Name>
+      <ShortName>Sun</ShortName>
+      <Sun value="0.8"/>
+      <Cloud value="0.000000"/>
+      <WindMin value="1.6"/>
+      <WindMax value="2.4"/>
+      <WindAngle value="240.000"/>
+      <WindGustsChance value="50.0"/>
+      <WindGustsSpeedMin value="5.0"/>
+      <WindGustsSpeedMax value="10.0"/>
+      <WindGustsDurationMin value="4.0"/>
+      <WindGustsDurationMax value="12.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.000000"/>
+      <Snow value="0.000000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.05"/>
+      <Humidity value="-0.0500000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.01334" />
+      <SoakIncSpeed value="0.00" />
+      <SoakDecSpeed value="0.00416" />
+      <Honor value="0.0000" />
+     <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="2.72000" />
+      <OceanNoiseMinAmplitude value="17.10000" />
+      <OceanWaveAmplitude value="3.560000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.000000" />
+      <ShoreWaveMinAmplitude value="0.200000" />
+      <OceanWaveMaxAmplitude value="18.00000" />
+      <ShoreWaveMaxAmplitude value="1.5000000" />
+      <OceanFoamIntensity value="0.140000" />
+      <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="true"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.000000"/>
+      <MinWeatherAccumulation value="0.000000"/>
+      <MaxWeatherAccumulation value="0.000000"/>
+      <VehSnowAccumulationRate value="0.000000"/>
+      <VehMaxSnowAccumulation value="0.000000"/>
+      <VehWetnessAccumulationRate value="0.000000"/>
+      <TemperatureTarget  value="22.000000"/>
+      <TemperatureFlatten  value="0.300000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <OldSettingName>-</OldSettingName>
+      <DropSettingName>-</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_SUNNY.XML</TimeCycleFilename>
+	  <Variations>
+        <TimeCycleVariation>
+          <Name>Sunny_odriscols4</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/W_Sunny_odriscols4.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_far</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_water</LocalizedDensityMap>
+    </Item>
+    <Item>
+      <Name>MISTY</Name>
+      <ShortName>Mst</ShortName>
+      <Sun value="0.9"/>
+      <Cloud value="0.100000"/>
+      <WindMin value="1.0"/>
+      <WindMax value="2.0"/>
+      <WindAngle value="158.000"/>
+      <WindGustsChance value="10.0"/>
+      <WindGustsSpeedMin value="0.5"/>
+      <WindGustsSpeedMax value="4.2"/>
+      <WindGustsDurationMin value="5.0"/>
+      <WindGustsDurationMax value="8.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.000000"/>
+      <Snow value="0.000000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.0800"/>
+      <Humidity value="0.100000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.001" />
+      <SoakIncSpeed value="0.00" />
+      <SoakDecSpeed value="0.00066" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="2.72000" />
+      <OceanNoiseMinAmplitude value="17.10000" />
+      <OceanWaveAmplitude value="3.560000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.000000" />
+      <ShoreWaveMinAmplitude value="0.200000" />
+      <OceanWaveMaxAmplitude value="18.00000" />
+      <ShoreWaveMaxAmplitude value="1.5000000" />
+      <OceanFoamIntensity value="0.140000" />
+      <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="true"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.000000"/>
+      <MinWeatherAccumulation value="0.000000"/>
+      <MaxWeatherAccumulation value="0.000000"/>
+      <VehSnowAccumulationRate value="0.000000"/>
+      <VehMaxSnowAccumulation value="0.000000"/>
+      <VehWetnessAccumulationRate value="0.001000"/>
+      <TemperatureTarget  value="22.000000"/>
+      <TemperatureFlatten  value="0.400000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <OldSettingName>-</OldSettingName>
+      <DropSettingName>-</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_MISTY.XML</TimeCycleFilename>
+	  <Variations>
+        <TimeCycleVariation>
+          <Name>MISTY_guama</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/W_MISTY_guama.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>MISTY_finale1</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/W_MISTY_finale1.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>MISTY_finale1B</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/W_MISTY_finale1B.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>MISTY_train1</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_misty_train1.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>MISTY_braithwaites3</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_misty_braithwaites3.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>MISTY_finale2</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_misty_finale2.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>MISTY_MP_intro</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_misty_MP_intro.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>MISTY_MP_Pred</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_misty_MP_Pred.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_far</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_misty</LocalizedDensityMap>
+    </Item>
+    <Item>
+      <Name>FOG</Name>
+      <ShortName>Fog</ShortName>
+      <Sun value="0.8"/>
+      <Cloud value="0.000000"/>
+      <WindMin value="0.5"/>
+      <WindMax value="0.9"/>
+      <WindAngle value="145.750"/>
+      <WindGustsChance value="30.0"/>
+      <WindGustsSpeedMin value="0.1"/>
+      <WindGustsSpeedMax value="0.5"/>
+      <WindGustsDurationMin value="5.0"/>
+      <WindGustsDurationMax value="8.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.000000"/>
+      <Snow value="0.000000"/>
+      <Fog value="1.000000"/>
+      <CloudType value="0.11"/>
+      <Humidity value="0.150000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.001" />
+      <SoakIncSpeed value="0.00" />
+      <SoakDecSpeed value="0.00033" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="2.72000" />
+      <OceanNoiseMinAmplitude value="17.10000" />
+      <OceanWaveAmplitude value="3.560000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.000000" />
+      <ShoreWaveMinAmplitude value="0.200000" />
+      <OceanWaveMaxAmplitude value="18.00000" />
+      <ShoreWaveMaxAmplitude value="1.5000000" />
+      <OceanFoamIntensity value="0.140000" />
+     <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.000000"/>
+      <MinWeatherAccumulation value="0.000000"/>
+      <MaxWeatherAccumulation value="0.000000"/>
+      <VehSnowAccumulationRate value="0.000000"/>
+      <VehMaxSnowAccumulation value="0.000000"/>
+      <VehWetnessAccumulationRate value="0.000010"/>
+      <TemperatureTarget  value="15.000000"/>
+      <TemperatureFlatten  value="0.400000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <OldSettingName>-</OldSettingName>
+      <DropSettingName>-</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_FOG.XML</TimeCycleFilename>
+      <Variations>
+        <TimeCycleVariation>
+          <Name>FOG_guama</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/W_FOG_GUAMA.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>Fog_MP_Pred</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_fog_MP_Pred.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_high</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_fog</LocalizedDensityMap>
+    </Item>
+    <Item>
+      <Name>CLOUDS</Name>
+      <ShortName>Cls</ShortName>
+      <Sun value="0.5"/>
+      <Cloud value="0.000000"/>
+      <WindMin value="7.0"/>
+      <WindMax value="9"/>
+      <WindAngle value="47.250"/>
+      <WindGustsChance value="50.0"/>
+      <WindGustsSpeedMin value="8.0"/>
+      <WindGustsSpeedMax value="15.0"/>
+      <WindGustsDurationMin value="8.0"/>
+      <WindGustsDurationMax value="16.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.000000"/>
+      <Snow value="0.000000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.1400000"/>
+      <Humidity value="-0.000000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.0075" />
+      <SoakIncSpeed value="0.000" />
+      <SoakDecSpeed value="0.00333" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="2.72000" />
+      <OceanNoiseMinAmplitude value="17.10000" />
+      <OceanWaveAmplitude value="3.560000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.000000" />
+      <ShoreWaveMinAmplitude value="0.200000" />
+      <OceanWaveMaxAmplitude value="18.00000" />
+      <ShoreWaveMaxAmplitude value="1.5000000" />
+      <OceanFoamIntensity value="0.140000" />
+      <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="true"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.000000"/>
+      <MinWeatherAccumulation value="0.000000"/>
+      <MaxWeatherAccumulation value="0.000000"/>
+      <VehSnowAccumulationRate value="0.000000"/>
+      <VehMaxSnowAccumulation value="0.000000"/>
+      <VehWetnessAccumulationRate value="0.000000"/>
+      <TemperatureTarget  value="15.000000"/>
+      <TemperatureFlatten  value="0.400000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <OldSettingName>-</OldSettingName>
+      <DropSettingName>-</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_CLOUDS.XML</TimeCycleFilename>
+	  <Variations>
+        <TimeCycleVariation>
+          <Name>CLOUDS_mudtown3B</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/W_CLOUDS_mudtown3B.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_far</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_Rain</LocalizedDensityMap>
+    </Item>
+    <Item>
+      <Name>OVERCAST</Name>
+      <ShortName>Ovc</ShortName>
+      <Sun value="0.3"/>
+      <Cloud value="0.000000"/>
+      <WindMin value="1.0"/>
+      <WindMax value="3.0"/>
+      <WindAngle value="124.750"/>
+      <WindGustsChance value="50.0"/>
+      <WindGustsSpeedMin value="1.0"/>
+      <WindGustsSpeedMax value="8.0"/>
+      <WindGustsDurationMin value="5.0"/>
+      <WindGustsDurationMax value="12.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.000000"/>
+      <Snow value="0.000000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.1700000"/>
+      <Humidity value="0.0500000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.005" />
+      <SoakIncSpeed value="0.00" />
+      <SoakDecSpeed value="0.0016666" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="3.62000" />
+      <OceanNoiseMinAmplitude value="17.10000" />
+      <OceanWaveAmplitude value="3.560000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.000000" />
+      <ShoreWaveMinAmplitude value="0.200000" />
+      <OceanWaveMaxAmplitude value="18.00000" />
+      <ShoreWaveMaxAmplitude value="1.5000000" />
+      <OceanFoamIntensity value="0.140000" />
+       <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="true"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.000000"/>
+      <MinWeatherAccumulation value="0.000000"/>
+      <MaxWeatherAccumulation value="0.000000"/>
+      <VehSnowAccumulationRate value="0.000000"/>
+      <VehMaxSnowAccumulation value="0.000000"/>
+      <VehWetnessAccumulationRate value="0.000000"/>
+      <TemperatureTarget  value="18.000000"/>
+      <TemperatureFlatten  value="0.500000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <OldSettingName>-</OldSettingName>
+      <DropSettingName>-</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_OVERCAST.XML</TimeCycleFilename>
+      <CloudSettingsName>CLOUDS_far</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_default</LocalizedDensityMap>
+    </Item>
+    <Item>
+      <Name>OVERCASTDARK</Name>
+      <ShortName>OvcD</ShortName>
+      <Sun value="0.0"/>
+      <Cloud value="0.000000"/>
+      <WindMin value="8"/>
+      <WindMax value="10.0"/>
+      <WindAngle value="40.500"/>
+      <WindGustsChance value="50.0"/>
+      <WindGustsSpeedMin value="5.0"/>
+      <WindGustsSpeedMax value="20.0"/>
+      <WindGustsDurationMin value="5.0"/>
+      <WindGustsDurationMax value="8.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.000000"/>
+      <Snow value="0.000000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.2000"/>
+      <Humidity value="0.100000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.005" />
+      <SoakIncSpeed value="0.00" />
+      <SoakDecSpeed value="0.002777" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="3.62000" />
+      <OceanNoiseMinAmplitude value="17.10000" />
+      <OceanWaveAmplitude value="3.560000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.000000" />
+      <ShoreWaveMinAmplitude value="0.200000" />
+      <OceanWaveMaxAmplitude value="18.00000" />
+      <ShoreWaveMaxAmplitude value="1.5000000" />
+      <OceanFoamIntensity value="0.140000" />
+      <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.000000"/>
+      <MinWeatherAccumulation value="0.000000"/>
+      <MaxWeatherAccumulation value="0.000000"/>
+      <VehSnowAccumulationRate value="0.000000"/>
+      <VehMaxSnowAccumulation value="0.000000"/>
+      <VehWetnessAccumulationRate value="0.000000"/>
+      <TemperatureTarget  value="10.000000"/>
+      <TemperatureFlatten  value="0.400000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <OldSettingName>-</OldSettingName>
+      <DropSettingName>-</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_OVERCASTDARK.XML</TimeCycleFilename>
+	  <Variations>
+        <TimeCycleVariation>
+          <Name>OVERCASTDARK_Gang2</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/W_OVERCASTDARK_Gang2.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>OVERCASTDARK_STD1</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/W_OVERCASTDARK_STD1.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>OVERCASTDARK_finale2</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/W_OVERCASTDARK_finale2.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>OVERCASTDARK_native3</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/W_OVERCASTDARK_native3.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_far</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_overcastDark</LocalizedDensityMap>
+    </Item>
+    <Item>
+      <Name>DRIZZLE</Name>
+      <ShortName>Drz</ShortName>
+      <Sun value="0.1"/>
+      <Cloud value="0.000000"/>
+      <WindMin value="0.5"/>
+      <WindMax value="1.0"/>
+      <WindAngle value="118.500"/>
+      <WindGustsChance value="20.0"/>
+      <WindGustsSpeedMin value="1.0"/>
+      <WindGustsSpeedMax value="10.0"/>
+      <WindGustsDurationMin value="8.0"/>
+      <WindGustsDurationMax value="16.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.40000"/>
+      <Snow value="0.000000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.33000"/>
+      <Humidity value="0.200000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.020" />
+      <WetnessDecSpeed value="0.00" />
+      <SoakIncSpeed value="0.010" />
+      <SoakDecSpeed value="0.00" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.060000" />
+      <RippleSpeed value="15.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="4.46000" />
+      <OceanNoiseMinAmplitude value="20.55000" />
+      <OceanWaveAmplitude value="2.030000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.760000" />
+      <ShoreWaveMinAmplitude value="2.000000" />
+      <OceanWaveMaxAmplitude value="14.500000" />
+      <ShoreWaveMaxAmplitude value="1.500000" />
+      <OceanFoamIntensity value="0.140000" />
+      <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.000000"/>
+      <MinWeatherAccumulation value="0.000000"/>
+      <MaxWeatherAccumulation value="0.000000"/>
+      <VehSnowAccumulationRate value="0.000000"/>
+      <VehMaxSnowAccumulation value="0.000000"/>
+      <VehWetnessAccumulationRate value="0.010000"/>
+      <TemperatureTarget  value="14.000000"/>
+      <TemperatureFlatten  value="0.400000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="0.012000" />
+      <PuddleRippleMaxSizeModifier value="0.110000" />
+      <PuddleRippleMinDurationModifier value="0.400000" />
+      <PuddleRippleMaxDurationModifier value="0.600000" />
+      <PuddleRippleStrengthModifier value="0.600000" />
+      <PuddleRippleCountModifier value="0.800000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <DropSettingName>DRIZZLE_DROP</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_DRIZZLE.XML</TimeCycleFilename>
+	  <Variations>
+        <TimeCycleVariation>
+          <Name>DRIZZLE_finale1</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_DRIZZLE_finale1.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>DRIZZLE_finale1B</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_DRIZZLE_finale1B.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_far</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_RainDense</LocalizedDensityMap>
+    </Item>
+    <Item>
+      <Name>RAIN</Name>
+      <ShortName>Rai</ShortName>
+      <Sun value="0.1"/>
+      <Cloud value="0.000000"/>
+      <WindMin value="5.5"/>
+      <WindMax value="8.0"/>
+      <WindAngle value="89.750"/>
+      <WindGustsChance value="100.0"/>
+      <WindGustsSpeedMin value="3.0"/>
+      <WindGustsSpeedMax value="20.0"/>
+      <WindGustsDurationMin value="4.0"/>
+      <WindGustsDurationMax value="8.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.600000"/>
+      <Snow value="0.000000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.3"/>
+      <Humidity value="0.2500000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.025" />
+      <WetnessDecSpeed value="0.00" />
+      <SoakIncSpeed value="0.015" />
+      <SoakDecSpeed value="0.000" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="4.46000" />
+      <OceanNoiseMinAmplitude value="20.55000" />
+      <OceanWaveAmplitude value="2.030000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.760000" />
+      <ShoreWaveMinAmplitude value="2.000000" />
+      <OceanWaveMaxAmplitude value="14.500000" />
+      <ShoreWaveMaxAmplitude value="1.500000" />
+      <OceanFoamIntensity value="0.140000" />
+      <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.000000"/>
+      <MinWeatherAccumulation value="0.000000"/>
+      <MaxWeatherAccumulation value="0.000000"/>
+      <VehSnowAccumulationRate value="0.000000"/>
+      <VehMaxSnowAccumulation value="0.000000"/>
+      <VehWetnessAccumulationRate value="0.040000"/>
+      <TemperatureTarget  value="14.000000"/>
+      <TemperatureFlatten  value="0.400000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <DropSettingName>RAINSTORM_DROP</DropSettingName>
+      <GroundSettingName>RAINSTORM_GROUND</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_RAIN.XML</TimeCycleFilename>
+      <CloudSettingsName>CLOUDS_far</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_Rain</LocalizedDensityMap>
+    </Item>
+    <Item>
+      <Name>THUNDER</Name>
+      <ShortName>Thu</ShortName>
+      <Sun value="0.0"/>
+      <Cloud value="0.000000"/>
+      <WindMin value="0.5"/>
+      <WindMax value="2.0"/>
+      <WindAngle value="204.500"/>
+      <WindGustsChance value="80.0"/>
+      <WindGustsSpeedMin value="10.0"/>
+      <WindGustsSpeedMax value="20.0"/>
+      <WindGustsDurationMin value="5.0"/>
+      <WindGustsDurationMax value="8.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.000000"/>
+      <Snow value="0.000000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.39"/>
+      <Humidity value="0.100000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.003" />
+      <SoakIncSpeed value="0.00" />
+      <SoakDecSpeed value="0.001666" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="4.46000" />
+      <OceanNoiseMinAmplitude value="20.55000" />
+      <OceanWaveAmplitude value="2.030000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.760000" />
+      <ShoreWaveMinAmplitude value="2.000000" />
+      <OceanWaveMaxAmplitude value="14.500000" />
+      <ShoreWaveMaxAmplitude value="1.500000" />
+      <OceanFoamIntensity value="0.140000" />
+       <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="true"/>
+      <Sandstorm value="false"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.000000"/>
+      <MinWeatherAccumulation value="0.000000"/>
+      <MaxWeatherAccumulation value="0.000000"/>
+      <VehSnowAccumulationRate value="0.000000"/>
+      <VehMaxSnowAccumulation value="0.000000"/>
+      <VehWetnessAccumulationRate value="0.070000"/>
+      <TemperatureTarget  value="15.000000"/>
+      <TemperatureFlatten  value="0.400000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+      <DropSettingName>-</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_THUNDER.XML</TimeCycleFilename>
+      <CloudSettingsName>CLOUDS_far</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_Rain</LocalizedDensityMap>
+    </Item>
+    <Item>
+      <Name>THUNDERSTORM</Name>
+      <ShortName>ThSt</ShortName>
+      <Sun value="0.0"/>
+      <Cloud value="0.000000"/>
+      <WindMin value="13.5"/>
+      <WindMax value="16.0"/>
+      <WindAngle value="152.500"/>
+      <WindGustsChance value="90.0"/>
+      <WindGustsSpeedMin value="12.0"/>
+      <WindGustsSpeedMax value="20.0"/>
+      <WindGustsDurationMin value="8.0"/>
+      <WindGustsDurationMax value="16.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="1.00000"/>
+      <Snow value="0.000000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.42"/>
+      <Humidity value="0.2500000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.1" />
+      <WetnessDecSpeed value="0.00" />
+      <SoakIncSpeed value="0.05" />
+      <SoakDecSpeed value="0.000" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="4.46000" />
+      <OceanNoiseMinAmplitude value="20.55000" />
+      <OceanWaveAmplitude value="2.030000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.760000" />
+      <ShoreWaveMinAmplitude value="2.000000" />
+      <OceanWaveMaxAmplitude value="14.500000" />
+      <ShoreWaveMaxAmplitude value="1.500000" />
+      <OceanFoamIntensity value="0.140000" />
+      <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="true"/>
+      <Sandstorm value="false"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.000000"/>
+      <MinWeatherAccumulation value="0.000000"/>
+      <MaxWeatherAccumulation value="0.000000"/>
+      <VehSnowAccumulationRate value="0.000000"/>
+      <VehMaxSnowAccumulation value="0.000000"/>
+      <VehWetnessAccumulationRate value="0.080000"/>
+      <TemperatureTarget  value="12.000000"/>
+      <TemperatureFlatten  value="0.200000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <DropSettingName>THUNDER_DROP</DropSettingName>
+      <SheetSettingName>THUNDER_SHEET</SheetSettingName>
+      <GroundSettingName>THUNDER_GROUND</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_THUNDERSTORM.XML</TimeCycleFilename>
+	  <Variations>
+        <TimeCycleVariation>
+          <Name>THUNDERSTORM_nativeSon3</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_THUNDERSTORM_nativeSon3.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>THUNDERSTORM_MP_Pred</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_thunderstorm_MP_Pred.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_far</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_Rain</LocalizedDensityMap>
+    </Item>
+    <Item>
+      <Name>HURRICANE</Name>
+      <ShortName>Hur</ShortName>
+      <Sun value="0.0"/>
+      <Cloud value="1.000000"/>
+      <WindMin value="26.0"/>
+      <WindMax value="32.0"/>
+      <WindAngle value="118.500"/>
+      <WindGustsChance value="100.0"/>
+      <WindGustsSpeedMin value="8.0"/>
+      <WindGustsSpeedMax value="20.0"/>
+      <WindGustsDurationMin value="5.0"/>
+      <WindGustsDurationMax value="8.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.800000"/>
+      <Snow value="0.000000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.4500000"/>
+      <Humidity value="0.1500000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.06" />
+      <WetnessDecSpeed value="0.00" />
+      <SoakIncSpeed value="0.025" />
+      <SoakDecSpeed value="0.000" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="4.46000" />
+      <OceanNoiseMinAmplitude value="20.55000" />
+      <OceanWaveAmplitude value="2.030000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.760000" />
+      <ShoreWaveMinAmplitude value="2.000000" />
+      <OceanWaveMaxAmplitude value="14.500000" />
+      <ShoreWaveMaxAmplitude value="1.500000" />
+      <OceanFoamIntensity value="0.140000" />
+       <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.000000"/>
+      <MinWeatherAccumulation value="0.000000"/>
+      <MaxWeatherAccumulation value="0.000000"/>
+      <VehSnowAccumulationRate value="0.000000"/>
+      <VehMaxSnowAccumulation value="0.000000"/>
+      <VehWetnessAccumulationRate value="0.100000"/>
+      <TemperatureTarget  value="10.000000"/>
+      <TemperatureFlatten  value="0.300000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="0.578000" />
+      <OceanFoamIntensityWeight value="0.162000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <DropSettingName>DRIZZLE_DROP</DropSettingName>
+      <SheetSettingName>-</SheetSettingName>
+      <GroundSettingName>DRIZZLE_GROUND</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_HURRICANE.XML</TimeCycleFilename> 
+	  <Variations>
+        <TimeCycleVariation>
+          <Name>HURRICANE_guama</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_HURRICANE_guama.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_far</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_Rain</LocalizedDensityMap>
+    </Item>
+    <Item>
+      <Name>SHOWER</Name>
+      <ShortName>Shw</ShortName>
+      <Sun value="0.2"/>
+      <Cloud value="0.500000"/>
+      <WindMin value="1.0"/>
+      <WindMax value="2.3"/>
+      <WindAngle value="73.750"/>
+      <WindGustsChance value="40.0"/>
+      <WindGustsSpeedMin value="2.0"/>
+      <WindGustsSpeedMax value="3.0"/>
+      <WindGustsDurationMin value="4.0"/>
+      <WindGustsDurationMax value="16.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.2000000"/>
+      <Snow value="0.000000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.3600000"/>
+      <Humidity value="0.200000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.015" />
+      <WetnessDecSpeed value="0.00" />
+      <SoakIncSpeed value="0.01" />
+      <SoakDecSpeed value="0.00" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="2.72000" />
+      <OceanNoiseMinAmplitude value="17.10000" />
+      <OceanWaveAmplitude value="3.560000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.000000" />
+      <ShoreWaveMinAmplitude value="0.200000" />
+      <OceanWaveMaxAmplitude value="18.00000" />
+      <ShoreWaveMaxAmplitude value="1.5000000" />
+      <OceanFoamIntensity value="0.140000" />
+     <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="true"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.000000"/>
+      <MinWeatherAccumulation value="0.000000"/>
+      <MaxWeatherAccumulation value="0.000000"/>
+      <VehSnowAccumulationRate value="0.000000"/>
+      <VehMaxSnowAccumulation value="0.000000"/>
+      <VehWetnessAccumulationRate value="0.040000"/>
+      <TemperatureTarget  value="16.000000"/>
+      <TemperatureFlatten  value="0.400000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.096000" />
+      <OceanFoamIntensityScale value="0.638000" />
+      <OceanFoamIntensityWeight value="0.161000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="1.1200000"/>
+      <OceanFoamSmoothstepBlendMin value="0.617000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <DropSettingName>RAINSTORM_DROP</DropSettingName>
+      <GroundSettingName>RAINSTORM_GROUND</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_SHOWER.XML</TimeCycleFilename>
+	  <Variations>
+        <TimeCycleVariation>
+          <Name>SHOWER_guama</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_SHOWER_guama.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>SHOWER_finale2</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_SHOWER_finale2.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>shower_MP_Pred</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_shower_MP_Pred.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_far</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_RainDense</LocalizedDensityMap>
+    </Item>
+    <Item>
+      <Name>HAIL</Name>
+      <ShortName>Hai</ShortName>
+      <Sun value="0.5"/>
+      <Cloud value="0.500000"/>
+      <WindMin value="0.5"/>
+      <WindMax value="1.5"/>
+      <WindAngle value="319.250"/>
+      <WindGustsChance value="20.0"/>
+      <WindGustsSpeedMin value="5.0"/>
+      <WindGustsSpeedMax value="7.0"/>
+      <WindGustsDurationMin value="2.0"/>
+      <WindGustsDurationMax value="4.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.300000"/>
+      <Snow value="1.00000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.1400000"/>
+      <Humidity value="0.100000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.015" />
+      <WetnessDecSpeed value="0.00" />
+      <SoakIncSpeed value="0.005" />
+      <SoakDecSpeed value="0.000" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="2.72000" />
+      <OceanNoiseMinAmplitude value="17.10000" />
+      <OceanWaveAmplitude value="3.560000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.000000" />
+      <ShoreWaveMinAmplitude value="0.200000" />
+      <OceanWaveMaxAmplitude value="18.00000" />
+      <ShoreWaveMaxAmplitude value="1.5000000" />
+      <OceanFoamIntensity value="0.140000" />
+      <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.030000"/>
+      <MinWeatherAccumulation value="0.100000"/>
+      <MaxWeatherAccumulation value="0.120000"/>
+      <VehSnowAccumulationRate value="0.010000"/>
+      <VehMaxSnowAccumulation value="0.500000"/>
+      <VehWetnessAccumulationRate value="0.000000"/>
+      <TemperatureTarget  value="00.000000"/>
+      <TemperatureFlatten  value="0.650000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <DropSettingName>HAIL_DROP</DropSettingName>
+      <SheetSettingName>-</SheetSettingName>
+      <GroundSettingName>HAIL_GROUND</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_HAIL.XML</TimeCycleFilename>
+      <CloudSettingsName>CLOUDS_far</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_default</LocalizedDensityMap>
+      <PedDirtDefinition>DIRTDEF_SNOW_DEFAULT</PedDirtDefinition>
+      <DirtCannedColor>SNOW_CLEAN</DirtCannedColor>
+    </Item>
+    <Item>
+      <Name>SLEET</Name>
+      <ShortName>Sle</ShortName>
+      <Sun value="0.5"/>
+      <Cloud value="0.500000"/>
+      <WindMin value="3.5"/>
+      <WindMax value="5.0"/>
+      <WindAngle value="68.750"/>
+      <WindGustsChance value="75.0"/>
+      <WindGustsSpeedMin value="2.0"/>
+      <WindGustsSpeedMax value="4.0"/>
+      <WindGustsDurationMin value="5.0"/>
+      <WindGustsDurationMax value="8.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.7000000"/>
+      <Snow value="1.000000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.6400000"/>
+      <Humidity value="0.2500000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.075" />
+      <WetnessDecSpeed value="0.0" />
+      <SoakIncSpeed value="0.025" />
+      <SoakDecSpeed value="0.00" />
+      <Honor value="0.0000" />
+     <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="2.72000" />
+      <OceanNoiseMinAmplitude value="17.10000" />
+      <OceanWaveAmplitude value="3.560000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.000000" />
+      <ShoreWaveMinAmplitude value="0.200000" />
+      <OceanWaveMaxAmplitude value="18.00000" />
+      <ShoreWaveMaxAmplitude value="1.5000000" />
+      <OceanFoamIntensity value="0.140000" />
+      <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="true"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.050000"/>
+      <MinWeatherAccumulation value="0.100000"/>
+      <MaxWeatherAccumulation value="0.120000"/>
+      <VehSnowAccumulationRate value="-0.10000"/>
+      <VehMaxSnowAccumulation value="1.000000"/>
+      <VehWetnessAccumulationRate value="0.000000"/>
+      <TemperatureTarget  value="00.000000"/>
+      <TemperatureFlatten  value="0.900000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <DropSettingName>SLEET_DROP</DropSettingName>
+      <SheetSettingName>-</SheetSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_SLEET.XML</TimeCycleFilename>
+      <CloudSettingsName>CLOUDS_far</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_default</LocalizedDensityMap>
+      <PedDirtDefinition>DIRTDEF_SNOW_DEFAULT</PedDirtDefinition>
+      <DirtCannedColor>SNOW_CLEAN</DirtCannedColor>
+    </Item>
+    <Item>
+      <Name>SNOWCLEARING</Name>
+      <ShortName>SnwClr</ShortName>
+      <Sun value="1.000000"/>
+      <Cloud value="0.000000"/>
+      <WindMin value="1.5"/>
+      <WindMax value="3.0"/>
+      <WindAngle value="121.750"/>
+      <WindGustsChance value="50.0"/>
+      <WindGustsSpeedMin value="2.0"/>
+      <WindGustsSpeedMax value="4.0"/>
+      <WindGustsDurationMin value="5.0"/>
+      <WindGustsDurationMax value="8.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.000000"/>
+      <Snow value="0.100000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.48"/>
+      <Humidity value="0.1500000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.015" />
+      <SoakIncSpeed value="0.00" />
+      <SoakDecSpeed value="0.005" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="1.00000" />
+      <OceanNoiseMinAmplitude value="5.00000" />
+      <OceanWaveAmplitude value="0.500000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="0.000000" />
+      <ShoreWaveMinAmplitude value="0.000000" />
+      <OceanWaveMaxAmplitude value="0.500000" />
+      <ShoreWaveMaxAmplitude value="1.500000" />
+      <OceanFoamIntensity value="0.140000" />
+       <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.009000"/>
+      <MinWeatherAccumulation value="0.001000"/>
+      <MaxWeatherAccumulation value="0.009000"/>
+      <VehSnowAccumulationRate value="0.010000"/>
+      <VehMaxSnowAccumulation value="1.000000"/>
+      <VehWetnessAccumulationRate value="0.000000"/>
+      <TemperatureTarget  value="05.000000"/>
+      <TemperatureFlatten  value="0.650000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <DropSettingName>-</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_snowclearing.XML</TimeCycleFilename>
+	  <Variations>
+        <TimeCycleVariation>
+          <Name>SNOWCLEARING_mud1</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_snowclearing_mud1.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>SNOWCLEARING_winter4</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_snowclearing_winter4.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_far</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_groundBlizzard</LocalizedDensityMap>
+      <PedDirtDefinition>DIRTDEF_SNOW_DEFAULT</PedDirtDefinition>
+      <DirtCannedColor>SNOW_CLEAN</DirtCannedColor>
+    </Item>
+    <Item>
+      <Name>SNOWLIGHT</Name>
+      <ShortName>Snl</ShortName>
+      <Sun value="1.000000"/>
+      <Cloud value="0.000000"/>
+      <WindMin value="0.5"/>
+      <WindMax value="1.5"/>
+      <WindAngle value="329.000"/>
+      <WindGustsChance value="25.0"/>
+      <WindGustsSpeedMin value="1.0"/>
+      <WindGustsSpeedMax value="2.0"/>
+      <WindGustsDurationMin value="5.0"/>
+      <WindGustsDurationMax value="8.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.000000"/>
+      <Snow value="0.500000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.27"/>
+      <Humidity value="0.100000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.015" />
+      <SoakIncSpeed value="0.00" />
+      <SoakDecSpeed value="0.005" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="1.00000" />
+      <OceanNoiseMinAmplitude value="5.00000" />
+      <OceanWaveAmplitude value="0.500000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="0.000000" />
+      <ShoreWaveMinAmplitude value="0.000000" />
+      <OceanWaveMaxAmplitude value="0.500000" />
+      <ShoreWaveMaxAmplitude value="1.500000" />
+      <OceanFoamIntensity value="0.140000" />
+       <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.009000"/>
+      <MinWeatherAccumulation value="0.090000"/>
+      <MaxWeatherAccumulation value="0.110000"/>
+      <VehSnowAccumulationRate value="0.010000"/>
+      <VehMaxSnowAccumulation value="1.000000"/>
+      <VehWetnessAccumulationRate value="0.000000"/>
+      <TemperatureTarget  value="-01.000000"/>
+      <TemperatureFlatten  value="0.850000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <DropSettingName>SNOW_LIGHT_DROP</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_snowlight.XML</TimeCycleFilename>
+	 <Variations>
+        <TimeCycleVariation>
+          <Name>SNOWLIGHT_Pearson1</Name>
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_snowlight_Pearson1.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>SNOWLIGHT_Odriscolls1</Name>
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_snowlight_odriscolls1.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>SNOWLIGHT_finale2</Name>
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_snowlight_finale2.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations> 
+      <CloudSettingsName>CLOUDS_high</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_groundBlizzard</LocalizedDensityMap>
+      <PedDirtDefinition>DIRTDEF_SNOW_DEFAULT</PedDirtDefinition>
+      <DirtCannedColor>SNOW_CLEAN</DirtCannedColor>
+    </Item>
+    <Item>
+      <Name>SNOW</Name>
+      <ShortName>Snw</ShortName>
+      <Sun value="0.2"/>
+      <Cloud value="0.900000"/>
+      <WindMin value="3.0"/>
+      <WindMax value="5.0"/>
+      <WindAngle value="31.000"/>
+      <WindGustsChance value="50.0"/>
+      <WindGustsSpeedMin value="2.0"/>
+      <WindGustsSpeedMax value="4.0"/>
+      <WindGustsDurationMin value="5.0"/>
+      <WindGustsDurationMax value="8.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.000000"/>
+      <Snow value="0.980000"/>
+      <Fog value="0.500000"/>
+      <CloudType value="0.2400000"/>
+      <Humidity value="0.000000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.015" />
+      <SoakIncSpeed value="0.00" />
+      <SoakDecSpeed value="0.005" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="1.00000" />
+      <OceanNoiseMinAmplitude value="5.00000" />
+      <OceanWaveAmplitude value="0.500000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="0.000000" />
+      <ShoreWaveMinAmplitude value="0.000000" />
+      <OceanWaveMaxAmplitude value="0.500000" />
+      <ShoreWaveMaxAmplitude value="1.500000" />
+      <OceanFoamIntensity value="0.140000" />
+       <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.009000"/>
+      <MinWeatherAccumulation value="0.190000"/>
+      <MaxWeatherAccumulation value="0.260000"/>
+      <MinWeatherAccumulationAfterMovement value="0.200000"/>
+      <WeatherAccumulationLossFromMovement value="0.050000"/>
+      <VehSnowAccumulationRate value="0.010000"/>
+      <VehMaxSnowAccumulation value="1.000000"/>
+      <VehWetnessAccumulationRate value="0.000000"/>
+      <TemperatureTarget  value="-01.000000"/>
+      <TemperatureFlatten  value="0.850000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <DropSettingName>SNOW_HEAVY_DROP</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_snow.XML</TimeCycleFilename>
+	 <Variations>
+        <TimeCycleVariation>
+          <Name>SNOW_Pearson1</Name>
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_snow_Pearson1.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>SNOW_Odriscolls1</Name>
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_snow_odriscolls1.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_high</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_groundBlizzard</LocalizedDensityMap>
+      <PedDirtDefinition>DIRTDEF_SNOW_DEFAULT</PedDirtDefinition>
+      <DirtCannedColor>SNOW_CLEAN</DirtCannedColor>
+    </Item>
+    <Item>
+      <Name>BLIZZARD</Name>
+      <ShortName>Bliz</ShortName>
+      <Sun value="0.2"/>
+      <Cloud value="0.900000"/>
+      <WindMin value="15.5"/>
+      <WindMax value="17.0"/>
+      <WindAngle value="20.0"/>
+      <WindGustsChance value="100.0"/>
+      <WindGustsSpeedMin value="13.2"/>
+      <WindGustsSpeedMax value="17.0"/>
+      <WindGustsDurationMin value="5.0"/>
+      <WindGustsDurationMax value="8.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.000000"/>
+      <Snow value="1.000000"/>
+      <Fog value="0.800000"/>
+      <CloudType value="0.5600000"/>
+      <Humidity value="0.100000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.015" />
+      <SoakIncSpeed value="0.000" />
+      <SoakDecSpeed value="0.005" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="1.00000" />
+      <OceanNoiseMinAmplitude value="5.00000" />
+      <OceanWaveAmplitude value="0.500000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="0.000000" />
+      <ShoreWaveMinAmplitude value="0.000000" />
+      <OceanWaveMaxAmplitude value="0.500000" />
+      <ShoreWaveMaxAmplitude value="1.500000" />
+      <OceanFoamIntensity value="0.140000" />
+       <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="true"/>
+      <WeatherAccumulationRate value="0.0085000"/>
+      <MinWeatherAccumulation value="0.400000"/>
+      <MaxWeatherAccumulation value="0.750000"/>
+      <MinWeatherAccumulationAfterMovement value="0.450000"/>
+      <WeatherAccumulationLossFromMovement value="0.150000"/>
+      <VehSnowAccumulationRate value="0.100000"/>
+      <VehMaxSnowAccumulation value="1.000000"/>
+      <VehWetnessAccumulationRate value="0.000000"/>
+      <TemperatureTarget  value="-16.000000"/>
+      <TemperatureFlatten  value="0.900000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <DropSettingName>BLIZZARD_DROP</DropSettingName>
+      <SheetSettingName>BLIZZARD2_SHEET</SheetSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_blizzard.XML</TimeCycleFilename>
+	   <Variations>
+        <TimeCycleVariation>
+          <Name>BLIZZARD_winter2</Name>
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_BLIZZARD_winter2.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_high</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_groundBlizzard</LocalizedDensityMap>
+      <PedDirtDefinition>DIRTDEF_SNOW_DEFAULT</PedDirtDefinition>
+      <DirtCannedColor>SNOW_CLEAN</DirtCannedColor>
+    </Item>
+    <Item>
+      <Name>GROUNDBLIZZARD</Name>
+      <ShortName>GrndBliz</ShortName>
+      <Sun value="0.2"/>
+      <Cloud value="0.900000"/>
+      <WindMin value="22.0"/>
+      <WindMax value="28.0"/>
+      <WindAngle value="355.0"/>
+      <WindGustsChance value="100.0"/>
+      <WindGustsSpeedMin value="8.0"/>
+      <WindGustsSpeedMax value="12.0"/>
+      <WindGustsDurationMin value="5.0"/>
+      <WindGustsDurationMax value="8.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.000000"/>
+      <Snow value="1.000000"/>
+      <Fog value="0.300000"/>
+      <CloudType value="0.61"/>
+      <Humidity value="-0.2500000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.015" />
+      <SoakIncSpeed value="0.00" />
+      <SoakDecSpeed value="0.005" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="1.00000" />
+      <OceanNoiseMinAmplitude value="5.00000" />
+      <OceanWaveAmplitude value="0.500000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="0.000000" />
+      <ShoreWaveMinAmplitude value="0.000000" />
+      <OceanWaveMaxAmplitude value="0.500000" />
+      <ShoreWaveMaxAmplitude value="1.500000" />
+      <OceanFoamIntensity value="0.140000" />
+       <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="true"/>
+      <WeatherAccumulationRate value="0.0090000"/>
+      <MinWeatherAccumulation value="0.240000"/>
+      <MaxWeatherAccumulation value="0.320000"/>
+      <MinWeatherAccumulationAfterMovement value="0.240000"/>
+      <WeatherAccumulationLossFromMovement value="0.060000"/>
+      <VehSnowAccumulationRate value="0.010000"/>
+      <VehMaxSnowAccumulation value="1.000000"/>
+      <VehWetnessAccumulationRate value="0.000000"/>
+      <TemperatureTarget  value="-16.000000"/>
+      <TemperatureFlatten  value="0.900000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <DropSettingName>GROUND_BLIZZARD_DROP</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/w_groundblizzard.xml</TimeCycleFilename>
+	  <Variations>
+        <TimeCycleVariation>
+          <Name>GROUNDBLIZZARD_winter2</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_groundblizzard_Winter2.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+		<TimeCycleVariation>
+          <Name>GROUNDBLIZZARD_odriscols</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/w_groundblizzard_odriscols.xml</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_high</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_groundBlizzard</LocalizedDensityMap>
+      <PedDirtDefinition>DIRTDEF_SNOW_DEFAULT</PedDirtDefinition>
+      <DirtCannedColor>SNOW_CLEAN</DirtCannedColor>
+    </Item>
+    <Item>
+      <Name>WHITEOUT</Name>
+      <ShortName>WiOt</ShortName>
+      <Sun value="0.2"/>
+      <Cloud value="0.900000"/>
+      <WindMin value="10.0"/>
+      <WindMax value="15.0"/>
+      <WindAngle value="32.0"/>
+      <WindGustsChance value="100.0"/>
+      <WindGustsSpeedMin value="8.0"/>
+      <WindGustsSpeedMax value="12.0"/>
+      <WindGustsDurationMin value="5.0"/>
+      <WindGustsDurationMax value="8.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <WindEmission value="0"/>
+      <WindEmissionWindSpeedMin value="0"/>
+      <WindEmissionWindSpeedMax value="0"/>
+      <Rain value="0.000000"/>
+      <Snow value="1.000000"/>
+      <Fog value="0.800000"/>
+      <CloudType value="0.5800000"/>
+      <Humidity value="0.300000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.015" />
+      <SoakIncSpeed value="0.00" />
+      <SoakDecSpeed value="0.005" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="1.00000" />
+      <OceanNoiseMinAmplitude value="5.00000" />
+      <OceanWaveAmplitude value="0.500000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="0.000000" />
+      <ShoreWaveMinAmplitude value="0.000000" />
+      <OceanWaveMaxAmplitude value="0.500000" />
+      <ShoreWaveMaxAmplitude value="1.500000" />
+      <OceanFoamIntensity value="0.140000" />
+       <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="false"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="true"/>
+      <WeatherAccumulationRate value="0.009000"/>
+      <MinWeatherAccumulation value="0.90000"/>
+      <MaxWeatherAccumulation value="1.000000"/>
+      <MinWeatherAccumulationAfterMovement value="0.600000"/>
+      <WeatherAccumulationLossFromMovement value="0.250000"/>
+      <VehSnowAccumulationRate value="0.010000"/>
+      <VehMaxSnowAccumulation value="1.000000"/>
+      <VehWetnessAccumulationRate value="0.000000"/>
+      <TemperatureTarget  value="-16.000000"/>
+      <TemperatureFlatten  value="0.900000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <DropSettingName>BLIZZARD2_DROP</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <GroundSettingName>BLIZZARD2_GROUND</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/W_WHITEOUT.XML</TimeCycleFilename>
+	  <Variations>
+        <TimeCycleVariation>
+          <Name>WHITEOUT_winter1</Name> <!-- This name has to match the one in the TimeCycle file -->
+          <TimeCycleVariationFileName>COMMON:/DATA/TIMECYCLE/W_WHITEOUT_WINTER1.XML</TimeCycleVariationFileName>
+        </TimeCycleVariation>
+      </Variations>
+      <CloudSettingsName>CLOUDS_high</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_whiteOut</LocalizedDensityMap>
+      <PedDirtDefinition>DIRTDEF_SNOW_DEFAULT</PedDirtDefinition>
+      <DirtCannedColor>SNOW_CLEAN</DirtCannedColor>
+    </Item>
+    <Item>
+      <Name>SandStorm</Name>
+      <ShortName>Sand</ShortName>
+      <Sun value="0.6"/>
+      <Cloud value="0.000000"/>
+      <WindMin value="15.0"/>
+      <WindMax value="20.0"/>
+      <WindAngle value="260.0"/>
+      <WindGustsChance value="100.0"/>
+      <WindGustsSpeedMin value="4.0"/>
+      <WindGustsSpeedMax value="8.0"/>
+      <WindGustsDurationMin value="5.0"/>
+      <WindGustsDurationMax value="8.0"/>
+      <WindGustsFadeInRatioMin value="0.1"/>
+      <WindGustsFadeInRatioMax value="0.25"/>
+      <WindGustsFadeOutRatioMin value="0.6"/>
+      <WindGustsFadeOutRatioMax value="0.75"/>
+      <Rain value="0.000000"/>
+      <Snow value="0.000000"/>
+      <Fog value="0.000000"/>
+      <CloudType value="0.67"/>
+      <Humidity value="-0.3500000" />
+      <MudWashSpeed value="0.0" />
+      <WetnessIncSpeed value="0.00" />
+      <WetnessDecSpeed value="0.015" />
+      <SoakIncSpeed value="0.00" />
+      <SoakDecSpeed value="0.005" />
+      <Honor value="0.0000" />
+      <RippleBumpiness value="1.0000" />
+      <RippleMinBumpiness value="0.250000" />
+      <RippleMaxBumpiness value="1.00000" />
+      <RippleBumpinessWindScale value="0.500000" />
+      <RippleScale value="0.040000" />
+      <RippleSpeed value="20.000000" />
+      <RippleVelocityTransfer value="0.450000" />
+      <OceanBumpiness value="0.250000" />
+      <DeepOceanScale value="2.72000" />
+      <OceanNoiseMinAmplitude value="17.10000" />
+      <OceanWaveAmplitude value="3.560000" />
+      <ShoreWaveAmplitude value="1.800000" />
+      <OceanWaveWindScale value="0.700000" />
+      <ShoreWaveWindScale value="0.700000" />
+      <OceanWaveMinAmplitude value="3.000000" />
+      <ShoreWaveMinAmplitude value="0.200000" />
+      <OceanWaveMaxAmplitude value="18.00000" />
+      <ShoreWaveMaxAmplitude value="1.5000000" />
+      <OceanFoamIntensity value="0.140000" />
+       <Water_WindGusts_MinBumpIntensity value="0.03100000" />
+      <Water_WindGusts_MaxBumpIntensity value="0.300000" />
+      <Water_WindGusts_MaxGustVel value="20.000000" />
+      <OceanFoamScale value="0.050000" />
+      <RippleDisturb value="0.050000" />
+      <Lightning value="false"/>
+      <Sandstorm value="true"/>
+      <IsNice value="false"/>
+      <IsBlizzard value="false"/>
+      <WeatherAccumulationRate value="0.000000"/>
+      <MinWeatherAccumulation value="0.000000"/>
+      <MaxWeatherAccumulation value="0.000000"/>
+      <VehSnowAccumulationRate value="0.000000"/>
+      <VehMaxSnowAccumulation value="0.000000"/>
+      <VehWetnessAccumulationRate value="0.000000"/>
+      <TemperatureTarget  value="22.000000"/>
+      <TemperatureFlatten  value="0.300000"/>
+      <TemperatureOffset value="+00.000000"/>
+      <PuddleRippleMinSizeModifier value="1.000000" />
+      <PuddleRippleMaxSizeModifier value="1.000000" />
+      <PuddleRippleMinDurationModifier value="1.000000" />
+      <PuddleRippleMaxDurationModifier value="1.000000" />
+      <PuddleRippleStrengthModifier value="1.000000" />
+      <PuddleRippleCountModifier value="1.000000" />
+
+      <!-- Ocean Ripples and Foam -->
+      <OceanRippleUVScale value="0.04000" />
+      <OceanFoamUVScale value="0.143000" />
+      <OceanFoamIntensityScale value="1.620000" />
+      <OceanFoamIntensityWeight value="0.317000" />
+      <OceanFoamLightingScale value="0.700000"/>
+      <OceanFoamLightingOffset value="0.300000"/>
+      <OceanFoamAmbientLightingScale value="1.000000"/>
+      <OceanFoamPuddleMaskScale value="0.7300000"/>
+      <OceanFoamSmoothstepBlendMin value="0.499000"/>
+      <OceanFoamSmoothstepBlendMax value="0.993000"/>
+
+      <OldSettingName>-</OldSettingName>
+      <DropSettingName>-</DropSettingName>
+      <GroundSettingName>-</GroundSettingName>
+      <TimeCycleFilename>resources:/redm_visuals/DATA/TIMECYCLE/w_SandStorm.XML</TimeCycleFilename>
+      <CloudSettingsName>CLOUDS_high</CloudSettingsName>
+      <LocalizedDensityMap>localized_density_map_sandstorm</LocalizedDensityMap>
+    </Item>
+  </WeatherTypes>
+  <WeatherCycles>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="1" />
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>RAIN</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>FOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>THUNDER</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>RAIN</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>FOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>THUNDER</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>RAIN</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="4"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>FOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>THUNDERSTORM</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>FOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="4"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>RAIN</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="4"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>THUNDER</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>THUNDERSTORM</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>FOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>RAIN</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>THUNDER</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>FOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>FOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>FOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>FOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>RAIN</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>THUNDERSTORM</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>FOG</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>FOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>RAIN</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="5"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="4"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>FOG</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>RAIN</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>THUNDER</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>THUNDERSTORM</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>SUNNY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="3"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>HIGHPRESSURE</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>THUNDERSTORM</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>THUNDER</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>OVERCAST</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+    <Item>
+      <CycleName>CLOUDS</CycleName>
+      <TimeMult value="2"/>
+    </Item>
+    <Item>
+      <CycleName>MISTY</CycleName>
+      <TimeMult value="1"/>
+    </Item>
+  </WeatherCycles>
+
+  <SinglePlayerOnlyWeathers>
+    <Item>SNOWCLEARING</Item>
+  </SinglePlayerOnlyWeathers>
+
+  <WeatherMiscData>
+    <HonorThresholdForGraph value="0.100000"/>
+    <HonorThresholdForWeatherChange value="0.100000"/>
+    <HonorDecreaseWaitTime value="30.000000"/>
+    <HonorWeatherChangeTime value="30.000000"/>
+  </WeatherMiscData>
+</CContentsOfWeatherXmlFile>
