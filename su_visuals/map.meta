@@ -131,7 +131,7 @@
 			<fileType>TIMECYCLE_FILE</fileType>
 		</Item>
 	<Item>
-			<filename>resources:/redm_visuals//timecycle_mods_1.xml</filename>
+			<filename>resources:/su_visuals//timecycle_mods_1.xml</filename>
 			<fileType>TIMECYCLEMOD_FILE</fileType>
 		</Item>
 		<Item>
@@ -184,7 +184,7 @@
 			<fileType>MISSION_METADATA_FILE</fileType>
 		</Item>
 		<Item>
-			<filename>resources:/redm_visuals/TIME.XML</filename>
+			<filename>resources:/su_visuals/TIME.XML</filename>
 			<fileType>TIME_FILE</fileType>
 		</Item>
 		<Item>
@@ -192,7 +192,7 @@
 			<fileType>TIME_WEATHER_FILE</fileType>
 		</Item>
 		<Item>
-			<filename>resources:/redm_visuals/WEATHER.XML</filename>
+			<filename>resources:/su_visuals/WEATHER.XML</filename>
 			<fileType>WEATHER_FILE</fileType>
 		</Item>
 		<Item>
@@ -244,7 +244,7 @@
 			<fileType>POPZONE_FILE</fileType>
 		</Item>
 		<Item>
-			<filename>resources:/redm_visuals/data/levels/popzone.ymt</filename>
+			<filename>resources:/su_visuals/data/levels/popzone.ymt</filename>
 			<fileType>POPZONE_FILE</fileType>
 		</Item>
 		<Item>
