@@ -10,6 +10,8 @@ Config.Discord = {
     }
 }
 
+
+-- This is a Role DB check. Alerts if a role has changed. (This is VORP specific, disable if you are not using VORP)
 Config.DB = {
     active = true,
     adminpingrate = 50000,
@@ -98,3 +100,36 @@ Config.KickOnResourceStop = {
         warning = "Stoping resources is not allowed"
     }
 }
+
+Config.Objects = { -- Anti Spawn Object
+    active = false,
+
+    --- Add more objects
+    --- Example: [GetHashKey("p_benchnbx02x")],
+    --- You can view the objects here https://redlookup.com/objects
+	blacklist = {}
+}
+
+-- A check to ensure no one is using Infinite ammo
+Config.InfiniteAmmo = {
+    active = true
+}
+
+Config.Weapons = { -- Blacklist Weapon and Anti Infinte Ammo
+    active = false,
+
+--- Add more weapons
+--- Example: [GetHashKey("weapon_revolver_navy")],
+--- You can view the weapons here https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua
+    blacklistlist = {}
+}
+
+Config.PlayerStatus = { -- Anti Change Health
+    active = false,
+    health = 600, -- Default Value (2088 = Golden Core Health)
+    lang = {
+        kickreason = "Player health hack detected"
+    }
+}
+
+

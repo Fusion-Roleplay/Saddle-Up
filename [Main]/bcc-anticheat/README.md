@@ -17,6 +17,10 @@
 - Player Bad Behavior Prevention export APIs for external scripts
   - Profanity Filter for any string
   - String XSS Check
+- Blacklist Option
+  - Anti Spawn Blacklist Object
+  - Anti Spawn Blacklist Weapon
+  - Anti Health Hack
 
 ## How to install
 * Download this repo
@@ -146,13 +150,6 @@ print(isxss)
 
 ## TODO:
 - Add other commonly exploited key spams
-- Potentially migrate player state flags for net, and afk to statebags
 - Detect Menus better
 - Multi-Framework support
 - Open to suggestions!
-
-## Need More Support? 
-- [Vorp Disord](https://discord.gg/DHGVAbCj7N)
-
-## Requirements
-- [VORP-Core](https://github.com/VORPCORE/VORP-Core/releases)
