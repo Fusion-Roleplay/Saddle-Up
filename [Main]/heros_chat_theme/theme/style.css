@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+* {  font-family: 'Patrick Hand', cursive;
+  color: rgba(255, 255, 255, 0.802);
+  font-size: 0.99em;
+  background: #fc242400;
+  margin-left: 5.5px;
+}
+
+.no-grow {
+  flex-grow: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+#app {
+  --webkit-font-smoothing: antialiased;
+  --moz-osx-font-smoothing: grayscale;
+  color: #ecf0ff;
+  background-color: transparent;
+}
+
+.chat-window {
+  max-width: 600px;
+  max-height: 1000px;
+  position: absolute;
+  background: #fffcfcf4 !important;
+  background-color: #00000000 !important;
+  --webkit-animation-duration: 2s;
+}
+
+.chat-messages {
+  position: relative;
+  font-size: 1.5em;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.chat-input {
+  font-size: 8em;
+  position: absolute;
+  width: 30%;
+  max-width: 600px;
+  box-sizing: content-box;
+}
+
+.prefix {
+  opacity: 0;
+  height: 0px;
+  width: 0px;
+}
+
+.chat-input > div.input {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  min-height: 40px !important;
+  height: auto;
+  background-color: #24262a;
+  opacity: 85%;
+  border-radius: 14px;
+}
+
+textarea {
+  font-size: 0.15em;
+  display: block;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: #ffffff;
+  background-size:contain;
+  width: 50%;
+  border-width: 0;
+  height: 40px !important;
+  overflow: hidden;
+  
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.suggestions {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0px;
+  padding-left: 27px;
+  font-size: 10em;
+  box-sizing: border-box;
+  color: #ffffff;
+  background-color: rgba(36, 38, 42, 0.85) !important;
+  border-radius: 14px;
+  width: 80%;
+  padding-left: 0px;
+  padding: 6px;
+  padding-bottom: 3px;
+}
+
+.suggestion {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 13px;
+  background-color: #17181a !important;
+  opacity: 100%;
+  border-radius: 8px;
+  padding: 7px;
+}
+
+.suggestion small {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #989898;
+}
+
+.disabled {
+ color: #989898 !important;
+ background-color: rgba(252, 253, 254, 0) !important;
+}
+.param.disabled {
+  background: linear-gradient(45deg, rgba(224,224,224,1) 0%, rgba(161,161,161,1) 100%) !important;
+  color: #26292E !important;
+}
+
+.param {
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(223,223,223,1) 100%);
+  color: #26292E !important;
+  padding: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+
+.msg {
+  margin-bottom: 5px;
+}
+
+.multiline {  
+  background-color: rgba(8, 8, 8, 0.527);
+  border-width: 2px;
+  border-radius: 5px;
+  border-style:ridge;
+  border-color: rgba(0, 0, 0, 0.248);
+  margin: 2px;
+  padding: 3px;
+}
+
+.help {
+  color: #FFFFFF;
+}
+
+.disabled {  
+  color: #FFFFFF;
+}
+
+.suggestion {
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 50em;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 50em;
+  font-weight: 900;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6em;
+}
+
+#notification {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: #FEFEFF;
+  border-radius: 14px;
+  max-width: 98%;
+  width: fit-content;
+  min-width: 15%;
+  word-wrap: break-word;
+}
+
+#info {
+  margin-left: 90%;
+  max-width: 100%;
+  position: relative;
+  min-width: 85%;
+}
+
+#top-info {
+  padding-bottom: 5px;
+  margin-left: 200px;
+}
+
+#left-info {
+  margin-left: 200px;
+  margin-right: 90%;
+}
+
+#right-info{
+  float:right;
+  width:50%;
+}
+
+#title {
+  float:left;
+  width: auto;
+  padding-right: 10px;
+}
+
+#sub-title {
+  float:right;
+  color: #C6C6C6;
+  padding-right: 10px;
+}
+
+#time {
+  float: right;
+  right: 5px;
+  color: #C6C6C6;
+  margin-top: 2px;
+}
+
+
+.notifyjs-happyblue-base {
+  white-space: nowrap;
+  background-color: lightblue;
+  padding: 5px;
+}
+
+.notifyjs-happyblue-superblue {
+  color: white;
+  background-color: blue;
+}
+
