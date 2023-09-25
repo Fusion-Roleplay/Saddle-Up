@@ -42,6 +42,7 @@ files {
     'stream/hud_textures.ytd',
     'stream/pbrWeaponSurfaces.ymt',
     'stream/strings.gxt2',
+    'stream/multiwheel_weapons.ytd',
 
 
     'map.meta',

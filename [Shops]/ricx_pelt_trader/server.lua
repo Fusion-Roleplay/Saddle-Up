@@ -1,3 +1,29 @@
+local function CheckVersion()
+    local resource = GetCurrentResourceName()
+    local version = GetResourceMetadata(resource, 'version')
+    local repo = "rs_pelt_trader_version"
+    if version then 
+        PerformHttpRequest('https://api.github.com/repos/rsc0/'..repo..'/releases/latest', function(err, text, headers)
+            if text then 
+                local info = json.decode(text)
+                Wait(80)
+                if version == info.tag_name then 
+                    print("^3[INFO] The ["..resource.."] version is up to date ("..version..")^0")
+                else
+                    print("^8[INFO] The ["..resource.."] version is NOT up to date! Update files (fxmanifest.lua as well) from Keymaster! (Script Version: "..info.tag_name.." | Server Version: "..version..")^0")
+                end
+            end
+        end)
+    else
+        print("^8[INFO] No version found in fxmanifest.lua! Update the files from Keymaster for "..resource.."!^0")
+    end
+end
+
+Citizen.CreateThread(function()
+    Citizen.Wait(1000)
+    CheckVersion()
+end)
+
 local VorpCore
 local VorpInv
 TriggerEvent("getCore",function(core)
@@ -66,7 +92,7 @@ AddEventHandler("ricx_pelt_trader:check_shop", function(id)
         for i,v in pairs(inventory) do
             if Config.ItemHash[v.name] then 
                 local nr = #senditems + 1
-                local p = Config.ItemHash[v.name].price * shop.multiplier
+                local p = tonumber(string.format("%.2f", Config.ItemHash[v.name].price * shop.multiplier))
                 senditems[nr] = {
                     item = v.name, 
                     label = v.label,
@@ -87,7 +113,7 @@ AddEventHandler("ricx_pelt_trader:check_shop", function(id)
 end)
 
 RegisterServerEvent("ricx_pelt_trader:add_item")
-AddEventHandler("ricx_pelt_trader:add_item", function(holding)
+AddEventHandler("ricx_pelt_trader:add_item", function(holding, dat)
     local _source = source
     local peltInfo = nil 
     for c,k in pairs(Config.Pelts) do 
@@ -113,6 +139,7 @@ AddEventHandler("ricx_pelt_trader:add_item", function(holding)
             if not peltInfo[3] then 
                 VorpInv.addItem(_source, peltInfo[2], 1)
                 TriggerClientEvent("Notification:left_pelt_trader", _source, TEXTS.Pelt, TEXTS.StoredPelt, TEXTURES.alert[1], TEXTURES.alert[2], 2000)
+                TriggerClientEvent("ricx_pelt_trader:remove_ent2", _source, dat)
             else
                 TriggerClientEvent("Notification:left_pelt_trader", _source, TEXTS.Pelt, (TEXTS.CantStore2 or "Cant store pelt!"), TEXTURES.alert[1], TEXTURES.alert[2], 2000)
             end

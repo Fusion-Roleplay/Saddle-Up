@@ -3,6 +3,38 @@ Items = {}
 
 --############ THESE ARE JUST EXAMPLES MAKE YOUR OWN AND ADD THEM TO THE DATABSE ###############
 
+-- * EXAMPLES *--
+-------- give item back after use --------
+-- add this to each item if you want an item to give back another item after use like eating an apple can get appleseeds
+
+--[[
+    giveItemBack          = true, -- should it give the item back after use ?
+      appleseeds = 1, -- item name and ammount
+     -- can add more items here
+    }
+]]
+
+------ custom items ------
+-- add this to any item, if this is enabled then it wont do any animations or effects or add any value to needs, you must do that your self.
+-- this is for developers only
+
+--[[
+    -- this is server side only
+    customFunction        = function(source, value)
+       -- value is the values you set for the item like addhealth = 10  etc
+       -- source is the player source
+       CustomFunction(source, value) -- to a server side file
+       or
+       TriggerClientEvent("CustomFunction", source, value) -- to a client side file
+    end
+
+    -- example in server file
+    function CustomFunction(source, value)
+       -- do your stuff here and trigger to client for animations and effects
+    end
+ ]]
+
+
 
 Items.Consumables = {
     Types = {
@@ -41,7 +73,7 @@ Items.Consumables = {
                 cooldown              = 0,                       -- duration it should last to cool down in seconds
                 amountToWarm          = 0,                       -- a number to warm the player up for cold weathers  or hot food
                 warmup                = 0,                       -- duration it should last to warm up in seconds
-                requiredItem          = false,                   -- does it require an extra item to use this ? like a spoon ?
+                requiredItem          = false,                   -- does it require an extra item to use this ? like a spoon ? its a table {"itemname", "itemname2"}
                 removeRequiredItem    = false,                   -- should it remove the required item after use ?
                 addStress             = 0,                       -- should this item add stress to player ? max is 100
                 addAddiction          = 0,                       --  should this item add addiction to player ? max is 100
@@ -52,55 +84,10 @@ Items.Consumables = {
                     effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
                     soundRef = "Consumption_Sounds"
                 },
-
-            },
-
-            consumable_coffee = {
-                -- item name like in your database
-                removethirst          = 0,
-                removehunger          = 0,
-                removestamina         = 0,
-                removehealth          = 0,
-                addhealth             = 0,
-                addstamina            = 10,
-                addhunger             = 0,
-                addthirst             = 10,
-                addgooldstaminaInner  = 0,
-                addgooldstaminaOutter = 20,
-                addgoldhealthInner    = 0,
-                addgoldhealthOutter   = 0,
-                Type                  = "drink",
-                animationtype         = "mug",
-                description           = "Provided by Jack&Jill", -- provide a custom description for this item
-                model                 = "p_mugCoffee01x",
-                Drunk                 = false,
-                DrunkEffect           = "MP_Downed",
-                UseDrunkEffect        = false,
-                DrunkDuration         = 0,
-                TimesUsed             = 1,
-                amountToCool          = 0,
-                cooldown              = 0,
-                amountToWarm          = 5,
-                warmup                = 30,
-                requiredItem          = false,
-                removeRequiredItem    = false, -- should it remove the required item after use ?
-                addStress             = 0,
-                addAddiction          = 0,
-                removeAddiction       = 0,
-                removeStress          = 0,
-                effects               = {
-                    addEffect = false,
-                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
-                },
-                sounds                = {
-                    addSound = true,
-                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
-                    soundRef = "Consumption_Sounds"
-                }
             },
             apple = {
                 removethirst          = 100,
@@ -140,53 +127,16 @@ Items.Consumables = {
                     effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
                     soundRef = "Consumption_Sounds"
-                }
-            },
-            consumable_peach = {
-                removethirst          = 100,
-                removehunger          = 100,
-                removestamina         = 0,
-                removehealth          = 0,
-                addhealth             = 0,
-                addstamina            = 0,
-                addhunger             = 8,
-                addthirst             = 8,
-                addgooldstaminaInner  = 0,
-                addgooldstaminaOutter = 0,
-                addgoldhealthInner    = 0,
-                addgoldhealthOutter   = 0,
-                Type                  = "eat",
-                animationtype         = "hand",                  -- types for eat [ hand sandwich bowl canned berry ]
-                description           = "Provided by Jack&Jill", -- provide a custom description for this item
-                model                 = "s_bit_peach01x",        -- not all models will be positioned correctly
-                Drunk                 = false,
-                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
-                UseDrunkEffect        = false,
-                Drunkness             = 0.0,
-                DrunkDuration         = 0,
-                TimesUsed             = 1,
-                amountToCool          = 0,
-                cooldown              = 0,
-                amountToWarm          = 20,
-                warmup                = 10,
-                requiredItem          = false,
-                removeRequiredItem    = false, -- should it remove the required item after use ?
-                addStress             = 0,
-                addAddiction          = 0,
-                removeAddiction       = 0,
-                removeStress          = 0,
-                effects               = {
-                    addEffect = false,
-                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
                 },
-                sounds                = {
-                    addSound = true,
-                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
-                    soundRef = "Consumption_Sounds"
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    appleseeds = 1,            -- item name and ammount
                 }
+
             },
             consumable_fruitsalad = {
                 removethirst          = 0,
@@ -226,50 +176,7 @@ Items.Consumables = {
                     effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
                 },
                 sounds                = {
-                    addSound = true,
-                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
-                    soundRef = "Consumption_Sounds"
-                }
-            },
-            consumable_salmon_can = {
-                removethirst          = 0,
-                removehunger          = 0,
-                removestamina         = 0,
-                removehealth          = 0,
-                addhealth             = 20,
-                addstamina            = 0,
-                addhunger             = 60,
-                addthirst             = 40,
-                addgooldstaminaInner  = 0,
-                addgooldstaminaOutter = 0,
-                addgoldhealthInner    = 0,
-                addgoldhealthOutter   = 0,
-                Type                  = "eat",
-                animationtype         = "canned",                -- types for eat [ hand sandwich bowl canned berry ]
-                description           = "Provided by Jack&Jill", -- provide a custom description for this item
-                model                 = "s_canbeans01x",     -- not all models will be positioned correctly
-                Drunk                 = false,
-                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
-                UseDrunkEffect        = false,
-                Drunkness             = 0.0,
-                DrunkDuration         = 0,
-                TimesUsed             = 1,
-                amountToCool          = 0,
-                cooldown              = 0,
-                amountToWarm          = 0,
-                warmup                = 0,
-                requiredItem          = false,
-                removeRequiredItem    = false, -- should it remove the required item after use ?
-                addStress             = 0,
-                addAddiction          = 0,
-                removeAddiction       = 0,
-                removeStress          = 0,
-                effects               = {
-                    addEffect = false,
-                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
-                },
-                sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
                     soundRef = "Consumption_Sounds"
                 }
@@ -312,7 +219,7 @@ Items.Consumables = {
                     effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
                     soundRef = "Consumption_Sounds"
                 }
@@ -355,7 +262,7 @@ Items.Consumables = {
                     effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
                     soundRef = "Consumption_Sounds"
                 }
@@ -366,28 +273,71 @@ Items.Consumables = {
         -- types of animation for  * drink * >> [  "mug" "flask" "bottle" "potion" "fastdrink" ] -- each type has its own anmimation
         Drinks = {
             --ITEM NAME--
+            consumable_coffee = {
+                -- item name like in your database
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 0,
+                addstamina            = 10,
+                addhunger             = 0,
+                addthirst             = 10,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 20,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "drink",
+                animationtype         = "mug",
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_mugCoffee01x",
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",
+                UseDrunkEffect        = false,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 5,
+                warmup                = 30,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                }
+            },
             water = {
                 removethirst          = 0,
                 removehunger          = 0,
                 removestamina         = 0,
                 removehealth          = 0,
                 addhealth             = 0,
-                addstamina            = 10,
+                addstamina            = 150,
                 addhunger             = 0,
-                addthirst             = 10,
+                addthirst             = 50,
                 addgooldstaminaInner  = 0,
-                addgooldstaminaOutter = 20,
+                addgooldstaminaOutter = 0,
                 addgoldhealthInner    = 0,
                 addgoldhealthOutter   = 0,
                 Type                  = "drink",
                 animationtype         = "fastdrink",
-                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                description           = "Provided by Jack Jill", -- provide a custom description for this item
                 model                 = "s_inv_moonshine01x",
                 Drunk                 = false,
                 DrunkEffect           = "MP_Downed",
                 UseDrunkEffect        = false,
                 DrunkDuration         = 0,
-                TimesUsed             = 1,
+                TimesUsed             = 3,
                 amountToCool          = 0,
                 cooldown              = 0,
                 amountToWarm          = 5,
@@ -403,93 +353,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = true,
-                    soundName = "Core_Fill_Up",
-                    soundRef = "Consumption_Sounds"
-                }
-
-            },
-            chocolatemilk = {
-                removethirst          = 0,
-                removehunger          = 0,
-                removestamina         = 0,
-                removehealth          = 0,
-                addhealth             = 0,
-                addstamina            = 10,
-                addhunger             = 0,
-                addthirst             = 10,
-                addgooldstaminaInner  = 0,
-                addgooldstaminaOutter = 20,
-                addgoldhealthInner    = 0,
-                addgoldhealthOutter   = 0,
-                Type                  = "drink",
-                animationtype         = "fastdrink",
-                description           = "Provided by Jack&Jill", -- provide a custom description for this item
-                model                 = "s_drinkshootmg03x",
-                Drunk                 = false,
-                DrunkEffect           = "MP_Downed",
-                UseDrunkEffect        = false,
-                DrunkDuration         = 0,
-                TimesUsed             = 1,
-                amountToCool          = 0,
-                cooldown              = 0,
-                amountToWarm          = 5,
-                warmup                = 30,
-                requiredItem          = false,
-                removeRequiredItem    = false, -- should it remove the required item after use ?
-                addStress             = 0,
-                addAddiction          = 0,     -- max is 100
-                removeAddiction       = 0,
-                removeStress          = 0,
-                effects               = {
-                    addEffect = false, -- effect name
-                    effectName = "",   -- effect name
-                },
-                sounds                = {
-                    addSound = true,
-                    soundName = "Core_Fill_Up",
-                    soundRef = "Consumption_Sounds"
-                }
-
-            },
-            consumable_raspberrywater = {
-                removethirst          = 0,
-                removehunger          = 0,
-                removestamina         = 0,
-                removehealth          = 0,
-                addhealth             = 0,
-                addstamina            = 30,
-                addhunger             = 0,
-                addthirst             = 10,
-                addgooldstaminaInner  = 0,
-                addgooldstaminaOutter = 20,
-                addgoldhealthInner    = 0,
-                addgoldhealthOutter   = 0,
-                Type                  = "drink",
-                animationtype         = "fastdrink",
-                description           = "Provided by Jack&Jill", -- provide a custom description for this item
-                model                 = "s_inv_moonshine01x",
-                Drunk                 = false,
-                DrunkEffect           = "MP_Downed",
-                UseDrunkEffect        = false,
-                DrunkDuration         = 0,
-                TimesUsed             = 1,
-                amountToCool          = 0,
-                cooldown              = 0,
-                amountToWarm          = 5,
-                warmup                = 30,
-                requiredItem          = false,
-                removeRequiredItem    = false, -- should it remove the required item after use ?
-                addStress             = 0,
-                addAddiction          = 0,     -- max is 100
-                removeAddiction       = 0,
-                removeStress          = 0,
-                effects               = {
-                    addEffect = false, -- effect name
-                    effectName = "",   -- effect name
-                },
-                sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -533,7 +397,7 @@ Items.Consumables = {
                     effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
                     soundRef = "Consumption_Sounds"
                 }
@@ -576,7 +440,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -619,7 +483,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -661,7 +525,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -697,7 +561,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -733,7 +597,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -769,7 +633,7 @@ Items.Consumables = {
                     effectName = "",
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -796,7 +660,7 @@ Items.Consumables = {
                     effectName = "",                             -- effect name
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 },
@@ -821,7 +685,7 @@ Items.Consumables = {
                     effectName = "",                             -- effect name
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 },
@@ -845,7 +709,7 @@ Items.Consumables = {
                     effectName = "",                             -- effect name
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 },
@@ -876,7 +740,7 @@ Items.Consumables = {
                 animationtype         = "cigarette",
                 description           = "Jack&Jill Cigarette pack", -- provide a custom description for this item
                 TimesUsed             = 10,
-                requiredItem          = false,                      -- like matches or a lighter "itemname"
+                requiredItem          = false,                      -- like matches or a lighter {"itemname",add more}
                 removeRequiredItem    = false,                      -- should it remove the required item after use ?
                 addAddiction          = 100,                        -- max is 100
                 removeStress          = 0,
@@ -885,7 +749,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -907,7 +771,7 @@ Items.Consumables = {
                 animationtype         = "cigar",
                 description           = "Jack&Jill Cigarette pack", -- provide a custom description for this item
                 TimesUsed             = 10,
-                requiredItem          = false,                      -- like matches or a lighter "itemname"
+                requiredItem          = false,                      -- like matches or a lighter {"itemname",add more}
                 removeRequiredItem    = false,                      -- should it remove the required item after use ?
                 addAddiction          = 2,                          -- max is 100
                 removeStress          = 0,
@@ -916,7 +780,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -938,7 +802,7 @@ Items.Consumables = {
                 animationtype         = "pipe",
                 description           = "Jack&Jill Cigarette pack", -- provide a custom description for this item
                 TimesUsed             = 1,
-                requiredItem          = false,                      -- like matches or a lighter "itemname"
+                requiredItem          = false,                      -- like matches or a lighter {"itemname",add more}
                 removeRequiredItem    = false,                      -- should it remove the required item after use ?
                 addAddiction          = 100,                        -- max is 100
                 removeStress          = 0,
@@ -947,7 +811,7 @@ Items.Consumables = {
                     effectName = "",   -- effect name
                 },
                 sounds                = {
-                    addSound = true,
+                    addSound = false,
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
@@ -975,7 +839,7 @@ Items.Consumables = {
                 animationtype         = "inject",
                 description           = "Provided by Jack&Jill", -- provide a custom description for this item
                 TimesUsed             = 1,
-                requiredItem          = false,                   -- can require matches or a lighter "itemname"
+                requiredItem          = false,                   -- like matches or a lighter {"itemname",add more}
                 removeRequiredItem    = false,                   -- should it remove the required item after use ?
                 addAddiction          = 0,                       -- max is 100
                 removeStress          = 0,
@@ -998,7 +862,7 @@ Items.Consumables = {
                 animationtype         = "peyote",
                 description           = "Provided by Jack&Jill", -- provide a custom description for this item
                 TimesUsed             = 1,
-                requiredItem          = false,                   -- can require matches or a lighter "itemname"
+                requiredItem          = false,                   -- like matches or a lighter {"itemname",add more}
                 removeRequiredItem    = false,                   -- should it remove the required item after use ?
                 addAddiction          = 100,                     -- max is 100
                 removeStress          = 0,
@@ -1021,7 +885,7 @@ Items.Consumables = {
                 animationtype         = "smoke",
                 description           = "Provided by Jack&Jill", -- provide a custom description for this item
                 TimesUsed             = 1,
-                requiredItem          = false,                   -- can require matches or a lighter "itemname"
+                requiredItem          = false,                   -- like matches or a lighter {"itemname",add more}
                 removeRequiredItem    = false,                   -- should it remove the required item after use ?
                 addAddiction          = 100,                     -- max is 100
                 removeStress          = 0,

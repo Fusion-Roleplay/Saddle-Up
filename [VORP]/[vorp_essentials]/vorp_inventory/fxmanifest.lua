@@ -30,7 +30,8 @@ shared_scripts {
   "languages/*.lua",
   "shared/models/*.lua",
   "shared/services/*.lua",
-  "shared/services/Regex.js"
+  "shared/services/Regex.js",
+  '@redm_weapon_maintenance/patches/vorp_inventory.lua'
 }
 
 files { 'html/**/*' }

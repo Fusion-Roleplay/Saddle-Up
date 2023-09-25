@@ -1,0 +1,1 @@
+ALTER TABLE `loadout_props` ADD `permDegradation` double NOT NULL DEFAULT 0 AFTER `id`;

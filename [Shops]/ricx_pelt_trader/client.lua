@@ -141,13 +141,12 @@ Citizen.CreateThread(function()
                                 end
                                 if peltInfo then
                                     PromptSetEnabled(v, 0)
-                                    DeleteEntity(entity)
-                                    SetEntityAsNoLongerNeeded(entity)
-                                    Citizen.Wait(500)
-                                    PromptDelete(v)
-                                    remove = i
-                                    TriggerServerEvent("ricx_pelt_trader:add_item", holding)
+                                    local dat = {prompt = v, netId = NetworkGetNetworkIdFromEntity(entity), remove = i}
+                                    TriggerServerEvent("ricx_pelt_trader:add_item", holding, dat)
                                     Citizen.Wait(2000)
+                                    if PromptIsValid(PromptKey[i]) then 
+                                        PromptSetEnabled(v, 1)
+                                    end
                                     break
                                 else
                                     TriggerEvent("Notification:left_pelt_trader", TEXTS.Pelt, TEXTS.NoEntry, TEXTURES.alert[1], TEXTURES.alert[2], 2000)
@@ -302,7 +301,18 @@ Citizen.CreateThread(function()
         Citizen.Wait(t)
     end
 end)
-
+--------------------------------------------------------------------------------------------------------------------------------------------
+RegisterNetEvent("ricx_pelt_trader:remove_ent2", function(dat)
+    local entity = NetToEnt(dat.netId)
+    DeleteEntity(entity)
+    SetEntityAsNoLongerNeeded(entity)
+    Citizen.Wait(500)
+    PromptDelete(dat.prompt)
+    if dat.remove and PromptKey[dat.remove] then 
+        PromptKey[dat.remove] = nil 
+    end
+end)
+--------------------------------------------------------------------------------------------------------------------------------------------
 RegisterNetEvent("ricx_pelt_trader:remove_ent")
 AddEventHandler("ricx_pelt_trader:remove_ent", function(entity)
     if PromptKey[entity] then 

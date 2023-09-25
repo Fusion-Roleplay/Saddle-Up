@@ -1,10 +1,10 @@
 fx_version "bodacious"
 games {"rdr3"}
 rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aware my resources *will* become incompatible once RedM ships.'
-author 'SIREC#0001'
+author 'SIREC'
 description 'SS-JoinScene'
 code "SSJOINSCENE"
-version '2.0'
+version '2.1'
 lua54 'yes'
 
 ui_page 'UI/UI.html'

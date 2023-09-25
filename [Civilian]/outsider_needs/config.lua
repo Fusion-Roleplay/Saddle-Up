@@ -1,19 +1,20 @@
 Config                    = {
     -- in vorp core config disable health and stamina UI cores
     --=================================== HUNGER AND THIRST ======================================--
-    Devmode                  = false,  -- set to true if you testing things
+    Devmode                  = true,  -- set to true if you testing things
     -- MAX THIRST AND HUNGER IS 100
     saveNeedsTick            = 60000, -- save player data on server every 1 minute
     removehunger             = 0.1,   -- how much to remove at every tick
-    removethirst             = 0.1,   -- how much to remove at every thick
+    removethirst             = 0.2,   -- how much to remove at every thick
     RemoveThirstTick         = 10000, -- thick every 10 seconds removes 0.1 of thirst from out of 100
-    RemoveHungerTick         = 40000, -- thick every 10 seconds removes 0.2 of hunger
-    removeWhenInSprintHunger = 0.3,   -- leave 0 if hunger is not removed when sprinintg, if more than 0 then at every `remove thirst tick` will be removed this amount
-    removeWhenInSprintThirst = 0.2,   --  if more than 0 then at every `remove hunger thick` will be removed this amount, at every 10 seonds 0.5 will be removed if player is sprining
+    RemoveHungerTick         = 10000, -- thick every 10 seconds removes 0.2 of hunger
+    removeWhenInSprintHunger = 0.5,   -- leave 0 if hunger is not removed when sprinintg, if more than 0 then at every `remove thirst tick` will be removed this amount
+    removeWhenInSprintThirst = 0.5,   --  if more than 0 then at every `remove hunger thick` will be removed this amount, at every 10 seonds 0.5 will be removed if player is sprining
     removeHealthHunger       = 1,     -- once hunger is 0 remove this much -- NEW
     removeHealthThirst       = 1,     -- once  thirst is 0 remove this much -- NEW
-    NotifyThirst             = 15000, -- time for each notification to draw when Thirst is low --NEW
-    NotifyHunger             = 15000, -- dont make it too long or players prob wont see them changing --NEW
+    NotifyThirst             = 15000, -- time for each notification to draw when Thirst is low
+    NotifyHunger             = 15000, -- dont make it too long or players prob wont see them changing
+    disableAudioPain         = true,  -- if true will disable audio pain when hunger or thirst is lower -- >>>>>>>>>>>> NEW FEATURE <<<<<<<<<<<< --
     --=================================== TEMPERATURE ============================================--
     Colors                   = {
         one = "img/rpg_verycold.png",                    -- very cold
@@ -25,22 +26,22 @@ Config                    = {
         seven = "img/rpg_cold.png",                      -- normal
     },
     border                   = " 5px ",                  -- for the UI body temp border to make it ticker or slimer
-    localTempCelsius         = false,                     -- if false will use fahrenheit
-    whenTooHotRemoveThirst   = 0.3,                      -- amount to remove thirst when too hot  [startRemoveThirst = 30,] define here when should be too hot this will also effect clothing
-    whenTooColdRemoveHunger  = 0.3,                      -- amount to remove hunger when too cold [startRemoveHunger = -5,] define bellow when should be too cold this will also effect clothing
+    localTempCelsius         = true,                     -- if false will use fahrenheit
+    whenTooHotRemoveThirst   = 0.5,                      -- amount to remove thirst when too hot  [startRemoveThirst = 30,] define here when should be too hot this will also effect clothing
+    whenTooColdRemoveHunger  = 0.5,                      -- amount to remove hunger when too cold [startRemoveHunger = -5,] define bellow when should be too cold this will also effect clothing
     TickTemperature          = 6000,                     -- at every 6 seconds if too cold or too hot  remove hunger or thirst? increase or decrease use in miliseconds
     -- translate this if you dont use fahrenheit --
-    startRemoveHunger        = 15,                      -- at -14 degrees celcius 23
-    startRemoveThirst        = 70,                       -- at 33 degrees celcius  will start removing thirst and temp will be darkred
-    MaxTemperature           = 40,                       -- if past this clothing used o will start the system ListHash below
-    MinTemperature           = 25,                        -- if bellow this Clothing used will start system bellow  ListHash
+    startRemoveHunger        = -10,                      -- at -14 degrees celcius 23
+    startRemoveThirst        = 34,                       -- at 33 degrees celcius  will start removing thirst and temp will be darkred
+    MaxTemperature           = 26,                       -- if past this clothing used o will start the system ListHash below
+    MinTemperature           = 5,                        -- if bellow this Clothing used will start system bellow  ListHash
     ---- for the UI  and colors translate to fahrenheit ----
     LightBlue                = 5,                        -- light blue starts at 5 degrees celcius
     White                    = 15,                       -- white starts at 15 degrees celcius
     White1                   = 20,                       -- white starts at 20 degrees celcius
     LightRed                 = 25,                       -- light red starts at 25 degrees celcius
     -------------------------------
-    RemoveWheninwater        = 15,                       -- when inside water cool player the amount remove is this
+    RemoveWheninwater        = 10,                       -- when inside water cool player the amount remove is this
     --* Permissions
     commandHeal              = "healneeds",              -- command to heal hunger and thirst
     EditCommand              = "editneeds",              -- command to edit UI
@@ -50,7 +51,7 @@ Config                    = {
     ------------------------
     ---- * UI VOICE * ------
     useUiVoice               = true,
-    UseSaltyChat             = false,       -- if you use salty chat set this to true
+    UseSaltyChat             = true,       -- if you use salty chat set this to true
     PressTalking             = 0x4BC9DABB, --N key only works for pma oice
     voice                    = {
         whisper = {
@@ -96,10 +97,11 @@ Config                    = {
     -------------------------------------------------------------
     ------------- * ADDICTION & STRESS SYSTEM * -----------------
     Stress                   = {
-        usestress = false,            -- if true will use stress
+        usestress = true,            -- if true will use stress
         WaterFoodLevel = 1,          --  at every one second it will add this value if food or water is below 0
         --* NEW *--
-        ShootingFightingLevel = 1,   -- at every one second it will add this value if player is shooting or fighting
+        ShootingLevel = 1,           -- at every one second it will add this value if player is shooting  <<<<<<NEW FEATURE >>>>>>>
+        MeleeCombatLevel = 1,        -- at every one second it will add this value if player is  fighting <<<<<<NEW FEATURE >>>>>>>
         SprintingOnFootLevel = 1,    -- at every one second it will add this value if player is sprinting on foot or on horse or on vehicle
         SpritingOnHorseLevel = 1,    -- at every one second it will add this value if player is sprinting on horse
         SprintingInVehicleLevel = 1, -- at every one second it will add this value if player is sprinting on wagon
@@ -115,26 +117,26 @@ Config                    = {
         Level1 = {
             StressRemoveStamina = 0, -- remove stamina while stressed every 1 second
             CanHoldWeapons = false,  -- if true player cant hold weapons
-            Blurriness = 1.0,        -- blurriness while stressed
+            Blurriness = 0.0,        -- blurriness while stressed
         },
         Level2 = {
-            CanHoldWeapons = false,  -- if true player cant hold weapons
-            StressRemoveStamina = 5, -- remove stamina while stressed every 1 second
-            Blurriness = 2.5,        -- blurriness while stressed
-            AnimPostfx = 'l_0026a09djq',
+            CanHoldWeapons = false,    -- if true player cant hold weapons
+            StressRemoveStamina = 0.1, -- remove stamina while stressed every 1 second
+            Blurriness = 2.5,          -- blurriness while stressed
+            AnimPostfx = '',           --l_0026a09djq
         },
         Level3 = {
-            CanHoldWeapons = true,    -- if true player cant hold weapons
-            StressRemoveStamina = 10, -- remove stamina while stressed every 1 second
-            Blurriness = 3.5,         -- blurriness while stressed
+            CanHoldWeapons = true,     -- if true player cant hold weapons
+            StressRemoveStamina = 0.2, -- remove stamina while stressed every 1 second
+            Blurriness = 3.5,          -- blurriness while stressed
             --* NEW* --
-            removeHud = true,         -- if true will remove all HUDS playercant access no prompts no weapons or receive any notifications
+            removeHud = true,          -- if true will remove all HUDS playercant access no prompts no weapons or receive any notifications
             AnimPostfx = 'MP_VibrationAlt',
         },
     },
 
     Addiction                = {
-        useaddiction = false,                  -- if true will use addiction
+        useaddiction = true,                  -- if true will use addiction
         Level1 = {
             AddictionRemoveHungerLevel = 0.5, -- remove hunger while addicted,
             AddictionRemoveThirstLevel = 0.5, -- remove thirst while addicted
