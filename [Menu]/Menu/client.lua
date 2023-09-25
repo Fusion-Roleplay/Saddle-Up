@@ -1,7 +1,7 @@
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(3)
-        if IsControlJustPressed(0, 0xB238FE0B ) then
+        if IsControlJustPressed(0, 0x3C0A40F2 ) then
             AxRadialMenu.Menus[3].submenu = true
             for k,v in pairs(AxRadialMenu.WorkMenu) do
                 -- if (framework).PlayerData.job.name == k then
