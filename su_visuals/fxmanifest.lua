@@ -43,6 +43,7 @@ files {
     'stream/pbrWeaponSurfaces.ymt',
     'stream/strings.gxt2',
     'stream/multiwheel_weapons.ytd',
+    'stream/pbrWeaponSurfaces.ymt',
 
 
     'map.meta',
