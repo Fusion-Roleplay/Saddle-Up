@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<UNK_MEMBER_0x5927CCB8>
+    <MapMovieName>minimap_v2</MapMovieName>
+    <TileSetConstructionData>
+        <Item>
+            <sName>0x96C9AC2E</sName>
+            <iRows value="5"/>
+            <iCols value="5"/>
+            <uTotalTiles value="25"/>
+            <fTileWidth value="2457.60000000"/>
+            <fTileHeight value="1945.60000000"/>
+            <bUseOffsetTaps value="true"/>
+        </Item>
+        <Item>
+            <sName>0x6401B22C</sName>
+            <iRows value="5"/>
+            <iCols value="5"/>
+            <uTotalTiles value="25"/>
+            <fTileWidth value="2457.60000000"/>
+            <fTileHeight value="1945.60000000"/>
+            <bUseOffsetTaps value="true"/>
+        </Item>
+        <Item>
+            <sName>0xAC03F98E</sName>
+            <iRows value="4"/>
+            <iCols value="4"/>
+            <uTotalTiles value="16"/>
+            <fTileWidth value="3072.00000000"/>
+            <fTileHeight value="2432.00000000"/>
+            <bUseOffsetTaps value="true"/>
+        </Item>
+        <Item>
+            <sName>0xED060749</sName>
+            <iRows value="29"/>
+            <iCols value="33"/>
+            <uTotalTiles value="957"/>
+            <fTileWidth value="340.00000000"/>
+            <fTileHeight value="340.00000000"/>
+            <bUseOffsetTaps value="true"/>
+        </Item>
+        <Item>
+            <sName>0xDDAC011F</sName>
+            <iRows value="8"/>
+            <iCols value="10"/>
+            <uTotalTiles value="80"/>
+            <fTileWidth value="1230.00000000"/>
+            <fTileHeight value="1216.00000000"/>
+            <bUseOffsetTaps value="true"/>
+        </Item>
+        <Item>
+            <sName>0x0F12BB32</sName>
+            <iRows value="29"/>
+            <iCols value="33"/>
+            <uTotalTiles value="957"/>
+            <fTileWidth value="340.00000000"/>
+            <fTileHeight value="340.00000000"/>
+            <bUseOffsetTaps value="true"/>
+        </Item>
+        <Item>
+            <sName>0xC00C76C3</sName>
+            <iRows value="8"/>
+            <iCols value="8"/>
+            <uTotalTiles value="64"/>
+            <fTileWidth value="1536.00000000"/>
+            <fTileHeight value="1216.00000000"/>
+            <bUseOffsetTaps value="true"/>
+        </Item>
+        <Item>
+            <sName>0x3024ED39</sName>
+            <iRows value="24"/>
+            <iCols value="16"/>
+            <uTotalTiles value="384"/>
+            <fTileWidth value="224.00000000"/>
+            <fTileHeight value="192.00000000"/>
+            <bUseOffsetTaps value="true"/>
+        </Item>
+        <Item>
+            <sName>0x0D0B7C9F</sName>
+            <iRows value="6"/>
+            <iCols value="4"/>
+            <uTotalTiles value="24"/>
+            <fTileWidth value="896.00000000"/>
+            <fTileHeight value="768.00000000"/>
+            <bUseOffsetTaps value="true"/>
+        </Item>
+        <Item>
+            <sName>0x4CAF9CCF</sName>
+            <iRows value="6"/>
+            <iCols value="4"/>
+            <uTotalTiles value="24"/>
+            <fTileWidth value="896.00000000"/>
+            <fTileHeight value="768.00000000"/>
+            <bUseOffsetTaps value="true"/>
+        </Item>
+        <Item>
+            <sName>0x3A54E4EA</sName>
+            <iRows value="24"/>
+            <iCols value="16"/>
+            <uTotalTiles value="384"/>
+            <fTileWidth value="224.00000000"/>
+            <fTileHeight value="192.00000000"/>
+            <bUseOffsetTaps value="true"/>
+        </Item>
+        <Item>
+            <sName>0x56F777DD</sName>
+            <iRows value="6"/>
+            <iCols value="4"/>
+            <uTotalTiles value="24"/>
+            <fTileWidth value="896.00000000"/>
+            <fTileHeight value="768.00000000"/>
+            <bUseOffsetTaps value="true"/>
+        </Item>
+        <Item>
+            <sName>0xD149F599</sName>
+            <iRows value="8"/>
+            <iCols value="4"/>
+            <uTotalTiles value="32"/>
+            <fTileWidth value="896.00000000"/>
+            <fTileHeight value="576.00000000"/>
+            <bUseOffsetTaps value="true"/>
+        </Item>
+    </TileSetConstructionData>
+    <MapConstructionData>
+        <Item>
+            <sName>0x3D88F3F5</sName>
+            <fWidth value="11000.00000000"/>
+            <fHeight value="9400.00000000"/>
+            <ViewReferenceHeight value="512.00000000"/>
+            <fMinZoom value="0.00000000"/>
+            <fMaxZoom value="20.00000000"/>
+            <vPaperUVScale x="0.01000000" y="0.01000000"/>
+            <fPaperIntensity value="1.50000000"/>
+            <OverlayColor value="0x7F000000"/>
+            <uTintRow value="3"/>
+            <uBackgroundColorIdx value="6"/>
+            <vWorldStart x="-7168.00000000" y="4096.00000000"/>
+            <TileSetIds>
+                <Item>0xED060749</Item>
+                <Item>0x0F12BB32</Item>
+                <Item>0xC00C76C3</Item>
+            </TileSetIds>
+            <Layers>
+                <Item>
+                    <fStartMinZoom value="0.00000000"/>
+                    <fMinZoom value="0.00000000"/>
+                    <fStartMaxZoom value="0.00000000"/>
+                    <fMaxZoom value="20.00000000"/>
+                    <SDFColor0 value="0xFF678DA8"/>
+                    <SDFColor1 value="0xFF506469"/>
+                    <fSDFMidPoint value="0.25000000"/>
+                    <fSDFStep value="128.00000000"/>
+                    <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+                    <uFogLayerKey/>
+                    <TileSet>0xC00C76C3</TileSet>
+                </Item>
+                <!--        <Item>
+          <fStartMinZoom value="0.00000000"/>
+          <fMinZoom value="0.00000000"/>
+          <fStartMaxZoom value="20.00000000"/>
+          <fMaxZoom value="20.00000000"/>
+          <SDFColor0 value="0x00000000"/>
+          <SDFColor1 value="0x320A1428"/>
+          <fSDFMidPoint value="0.24800000"/>
+          <fSDFStep value="128.00000000"/>
+          <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+          <uFogLayerKey/>
+          <TileSet>0x0F12BB32</TileSet>
+        </Item>-->
+                <Item>
+                    <fStartMinZoom value="0.00000000"/>
+                    <fMinZoom value="0.00000000"/>
+                    <fStartMaxZoom value="0.00000000"/>
+                    <fMaxZoom value="20.00000000"/>
+                    <SDFColor0 value="0x00000000"/>
+                    <SDFColor1 value="0xE6000000"/>
+                    <fSDFMidPoint value="0.24800000"/>
+                    <fSDFStep value="128.00000000"/>
+                    <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+                    <uFogLayerKey/>
+                    <TileSet>0xED060749</TileSet>
+                </Item>
+            </Layers>
+        </Item>
+      
+        <Item>
+            <sName>WORLD</sName>
+            <fWidth value="12288.00000000"/>
+            <fHeight value="9728.00000000"/>
+            <ViewReferenceHeight value="1080.00000000"/>
+            <fMinZoom value="0.10000000"/>
+            <fMaxZoom value="20.00000000"/>
+            <vPaperUVScale x="0.00300000" y="0.00300000"/>
+            <fPaperIntensity value="1.25000000"/>
+            <OverlayColor value="0x7F000000"/>
+            <uTintRow value="1"/>
+            <uBackgroundColorIdx value="0"/>
+            <vWorldStart x="-7168.00000000" y="4096.00000000"/>
+            <TileSetIds>
+                <Item>0x96C9AC2E</Item>
+                <Item>0xED060749</Item>
+                <Item>0x6401B22C</Item>
+                <Item>0xDDAC011F</Item>
+                <Item>0xAC03F98E</Item>
+                <Item>0x0F12BB32</Item>
+                <Item>0xC00C76C3</Item>
+            </TileSetIds>
+            <Layers>
+                <!--background-->
+                <Item>
+                    <fStartMinZoom value="0.00000000"/>
+                    <fMinZoom value="0.00000000"/>
+                    <fStartMaxZoom value="20.00000000"/>
+                    <fMaxZoom value="20.00000000"/>
+                    <SDFColor0 value="0xFFFFFFFF"/>
+                    <SDFColor1 value="0xFF987257"/>
+                    <fSDFMidPoint value="0.25000000"/>
+                    <fSDFStep value="128.00000000"/>
+                    <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+                    <uFogLayerKey>0x36548962</uFogLayerKey>
+                    <TileSet>0xC00C76C3</TileSet>
+                </Item>
+                <!--    <Item>
+          <fStartMinZoom value="0.00000000"/>
+          <fMinZoom value="0.00000000"/>
+          <fStartMaxZoom value="0.75000000"/>
+          <fMaxZoom value="0.95000000"/>
+          <SDFColor0 value="0x00000000"/>
+          <SDFColor1 value="0x00000000"/>
+          <fSDFMidPoint value="0.24400000"/>
+          <fSDFStep value="128.00000000"/>
+          <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+          <uFogLayerKey>0x36548962</uFogLayerKey>
+          <TileSet>0xAC03F98E</TileSet>
+        </Item>-->
+                <!--reliefs-->
+                <!--        <Item>
+          <fStartMinZoom value="0.70000000"/>
+          <fMinZoom value="0.90000000"/>
+          <fStartMaxZoom value="20.00000000"/>
+          <fMaxZoom value="20.00000000"/>
+          <SDFColor0 value="0x00000000"/>
+          <SDFColor1 value="0xFF2a2a2a"/>
+          <fSDFMidPoint value="0.24800000"/>
+          <fSDFStep value="128.00000000"/>
+          <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+          <uFogLayerKey>0x36548962</uFogLayerKey>
+          <TileSet>0x0F12BB32</TileSet>
+        </Item>-->
+                <!--        <Item>
+          <fStartMinZoom value="0.00000000"/>
+          <fMinZoom value="0.00000000"/>
+          <fStartMaxZoom value="0.55000000"/>
+          <fMaxZoom value="0.70000000"/>
+          <SDFColor0 value="0x00000000"/>
+          <SDFColor1 value="0xE6000000"/>
+          <fSDFMidPoint value="0.26000000"/>
+          <fSDFStep value="128.00000000"/>
+          <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+          <uFogLayerKey>0x36548962</uFogLayerKey>
+          <TileSet>0x6401B22C</TileSet>
+        </Item>-->
+                <!--lines for details-->
+                <Item>
+                    <fStartMinZoom value="0.45000000"/>
+                    <fMinZoom value="0.65000000"/>
+                    <fStartMaxZoom value="4.00000000"/>
+                    <fMaxZoom value="10.00000000"/>
+                    <SDFColor0 value="0x00000000"/>
+                    <SDFColor1 value="0xE6000000"/>
+                    <fSDFMidPoint value="0.26000000"/>
+                    <fSDFStep value="128.00000000"/>
+                    <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+                    <uFogLayerKey>0x36548962</uFogLayerKey>
+                    <TileSet>0xDDAC011F</TileSet>
+                </Item>
+                <!--        <Item>
+          <fStartMinZoom value="0.00000000"/>
+          <fMinZoom value="0.00000000"/>
+          <fStartMaxZoom value="0.55000000"/>
+          <fMaxZoom value="0.75000000"/>
+          <SDFColor0 value="0x00000000"/>
+          <SDFColor1 value="0xE6000000"/>
+          <fSDFMidPoint value="0.25000000"/>
+          <fSDFStep value="128.00000000"/>
+          <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+          <uFogLayerKey>0x4151C3C2</uFogLayerKey>
+          <TileSet>0x96C9AC2E</TileSet>
+        </Item>-->
+                <!--border lines-->
+                <Item>
+                    <fStartMinZoom value="0.00000000"/>
+                    <fMinZoom value="0.00000000"/>
+                    <fStartMaxZoom value="20.00000000"/>
+                    <fMaxZoom value="20.00000000"/>
+                    <SDFColor0 value="0x00000000"/>
+                    <SDFColor1 value="0xE6000000"/>
+                    <fSDFMidPoint value="0.24800000"/>
+                    <fSDFStep value="128.00000000"/>
+                    <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+                    <uFogLayerKey>0x4151C3C2</uFogLayerKey>
+                    <TileSet>0xED060749</TileSet>
+                </Item>
+            </Layers>
+        </Item>
+        <Item>
+            <sName>0x6A59370E</sName>
+            <fWidth value="3584.00000000"/>
+            <fHeight value="4608.00000000"/>
+            <ViewReferenceHeight value="256.00000000"/>
+            <fMinZoom value="0.00000000"/>
+            <fMaxZoom value="20.00000000"/>
+            <vPaperUVScale x="0.01000000" y="0.01000000"/>
+            <fPaperIntensity value="1.50000000"/>
+            <OverlayColor value="0x7F000000"/>
+            <uTintRow value="3"/>
+            <uBackgroundColorIdx value="6"/>
+            <vWorldStart x="-512.00000000" y="-3584.00000000"/>
+            <TileSetIds>
+                <Item>0x3024ED39</Item>
+                <Item>0x3A54E4EA</Item>
+                <Item>0xD149F599</Item>
+            </TileSetIds>
+            <Layers>
+                <Item>
+                    <fStartMinZoom value="0.00000000"/>
+                    <fMinZoom value="0.00000000"/>
+                    <fStartMaxZoom value="20.00000000"/>
+                    <fMaxZoom value="20.00000000"/>
+                    <SDFColor0 value="0xFF678DA8"/>
+                    <SDFColor1 value="0xFF506469"/>
+                    <fSDFMidPoint value="0.25000000"/>
+                    <fSDFStep value="128.00000000"/>
+                    <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+                    <uFogLayerKey/>
+                    <TileSet>0xD149F599</TileSet>
+                </Item>
+                <!--        <Item>
+          <fStartMinZoom value="0.00000000"/>
+          <fMinZoom value="0.00000000"/>
+          <fStartMaxZoom value="20.00000000"/>
+          <fMaxZoom value="20.00000000"/>
+          <SDFColor0 value="0x00000000"/>
+          <SDFColor1 value="0x3C000000"/>
+          <fSDFMidPoint value="0.24800000"/>
+          <fSDFStep value="128.00000000"/>
+          <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+          <uFogLayerKey/>
+          <TileSet>0x3A54E4EA</TileSet>
+        </Item>-->
+                <Item>
+                    <fStartMinZoom value="0.00000000"/>
+                    <fMinZoom value="0.00000000"/>
+                    <fStartMaxZoom value="0.50000000"/>
+                    <fMaxZoom value="9.00000000"/>
+                    <SDFColor0 value="0x00000000"/>
+                    <SDFColor1 value="0xE6000000"/>
+                    <fSDFMidPoint value="0.24800000"/>
+                    <fSDFStep value="128.00000000"/>
+                    <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+                    <uFogLayerKey/>
+                    <TileSet>0x3024ED39</TileSet>
+                </Item>
+            </Layers>
+        </Item>
+ <!--guarma-->      
+        <Item>
+            <sName>0x615748FD</sName>
+            <fWidth value="3584.00000000"/>
+            <fHeight value="4608.00000000"/>
+            <ViewReferenceHeight value="1080.00000000"/>
+            <fMinZoom value="0.10000000"/>
+            <fMaxZoom value="20.00000000"/>
+            <vPaperUVScale x="0.00300000" y="0.00300000"/>
+            <fPaperIntensity value="1.25000000"/>
+            <OverlayColor value="0x7F000000"/>
+            <uTintRow value="1"/>
+            <uBackgroundColorIdx value="6"/>
+            <vWorldStart x="-512.00000000" y="-3584.00000000"/>
+            <TileSetIds>
+                <Item>0x0D0B7C9F</Item>
+                <Item>0x3024ED39</Item>
+                <Item>0x4CAF9CCF</Item>
+                <Item>0x56F777DD</Item>
+                <Item>0x3A54E4EA</Item>
+                <Item>0xD149F599</Item>
+            </TileSetIds>
+            <Layers>
+                <Item>
+                    <fStartMinZoom value="0.00000000"/>
+                    <fMinZoom value="0.00000000"/>
+                    <fStartMaxZoom value="15.00000000"/>
+                    <fMaxZoom value="15.00000000"/>
+                    <SDFColor0 value="0xFF678DA8"/>
+                    <SDFColor1 value="0xFF506469"/>
+                    <fSDFMidPoint value="0.25000000"/>
+                    <fSDFStep value="128.00000000"/>
+                    <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+                    <uFogLayerKey>0x36548962</uFogLayerKey>
+                    <TileSet>0xD149F599</TileSet>
+                </Item>
+                <!--        <Item>
+          <fStartMinZoom value="0.10000000"/>
+          <fMinZoom value="0.50000000"/>
+          <fStartMaxZoom value="0.75000000"/>
+          <fMaxZoom value="0.95000000"/>
+          <SDFColor0 value="0x00000000"/>
+          <SDFColor1 value="0x28141E32"/>
+          <fSDFMidPoint value="0.24800000"/>
+          <fSDFStep value="128.00000000"/>
+          <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+          <uFogLayerKey>0x36548962</uFogLayerKey>
+          <TileSet>0x56F777DD</TileSet>
+        </Item>
+        <Item>
+          <fStartMinZoom value="0.70000000"/>
+          <fMinZoom value="0.90000000"/>
+          <fStartMaxZoom value="20.00000000"/>
+          <fMaxZoom value="20.00000000"/>
+          <SDFColor0 value="0x00000000"/>
+          <SDFColor1 value="0x28141E32"/>
+          <fSDFMidPoint value="0.24800000"/>
+          <fSDFStep value="128.00000000"/>
+          <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+          <uFogLayerKey>0x36548962</uFogLayerKey>
+          <TileSet>0x3A54E4EA</TileSet>
+        </Item>-->
+                <Item>
+                    <fStartMinZoom value="0.00000000"/>
+                    <fMinZoom value="0.00000000"/>
+                    <fStartMaxZoom value="4.00000000"/>
+                    <fMaxZoom value="10.00000000"/>
+                    <SDFColor0 value="0x00000000"/>
+                    <SDFColor1 value="0xE6000000"/>
+                    <fSDFMidPoint value="0.25000000"/>
+                    <fSDFStep value="128.00000000"/>
+                    <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+                    <uFogLayerKey>0x36548962</uFogLayerKey>
+                    <TileSet>0x4CAF9CCF</TileSet>
+                </Item>
+                <!--        <Item>
+          <fStartMinZoom value="0.00000000"/>
+          <fMinZoom value="0.00000000"/>
+          <fStartMaxZoom value="1.00000000"/>
+          <fMaxZoom value="2.50000000"/>
+          <SDFColor0 value="0x00000000"/>
+          <SDFColor1 value="0xE6000000"/>
+          <fSDFMidPoint value="0.24800000"/>
+          <fSDFStep value="128.00000000"/>
+          <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+          <uFogLayerKey>0x4151C3C2</uFogLayerKey>
+          <TileSet>0x0D0B7C9F</TileSet>
+        </Item>-->
+                <Item>
+                    <fStartMinZoom value="0.00000000"/>
+                    <fMinZoom value="0.00000000"/>
+                    <fStartMaxZoom value="20.00000000"/>
+                    <fMaxZoom value="20.00000000"/>
+                    <SDFColor0 value="0x00000000"/>
+                    <SDFColor1 value="0xE6000000"/>
+                    <fSDFMidPoint value="0.24800000"/>
+                    <fSDFStep value="128.00000000"/>
+                    <uRenderingMode>0x5DCBE2AA</uRenderingMode>
+                    <uFogLayerKey>0x4151C3C2</uFogLayerKey>
+                    <TileSet>0x3024ED39</TileSet>
+                </Item>
+            </Layers>
+        </Item>
+        <Item>
+            <sName>0x889E0512</sName>
+            <fWidth value="12288.00000000"/>
+            <fHeight value="9728.00000000"/>
+            <ViewReferenceHeight value="1080.00000000"/>
+            <fMinZoom value="0.10000000"/>
+            <fMaxZoom value="1.00000000"/>
+            <vPaperUVScale x="0.00200000" y="0.00200000"/>
+            <fPaperIntensity value="1.00000000"/>
+            <OverlayColor value="0x7F000000"/>
+            <uTintRow value="1"/>
+            <uBackgroundColorIdx value="6"/>
+            <vWorldStart x="-7168.00000000" y="4096.00000000"/>
+            <TileSetIds/>
+            <Layers/>
+        </Item>
+    </MapConstructionData>
+</UNK_MEMBER_0x5927CCB8>
