@@ -44,6 +44,7 @@ files {
     'stream/strings.gxt2',
     'stream/multiwheel_weapons.ytd',
     'stream/pbrWeaponSurfaces.ymt',
+    'stream/map_data.ymt',
 
 
     'map.meta',
