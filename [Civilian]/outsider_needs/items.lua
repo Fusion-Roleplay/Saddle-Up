@@ -182,7 +182,7 @@ Items.Consumables = {
                     soundRef = "Consumption_Sounds"
                 },
                 -- give item back NEW FEATURE
-                giveItemBack          = true, -- should it give the item back after use ? like a bowl or spoon
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
                 itemsToGive           = {
                     apple = 2,                -- item name and ammount
                 }
