@@ -14,7 +14,7 @@ Config                    = {
     removeHealthThirst       = 1,     -- once  thirst is 0 remove this much -- NEW
     NotifyThirst             = 15000, -- time for each notification to draw when Thirst is low
     NotifyHunger             = 15000, -- dont make it too long or players prob wont see them changing
-    disableAudioPain         = true,  -- if true will disable audio pain when hunger or thirst is lower -- >>>>>>>>>>>> NEW FEATURE <<<<<<<<<<<< --
+    disableAudioPain         = false,  -- if true will disable audio pain when hunger or thirst is lower -- >>>>>>>>>>>> NEW FEATURE <<<<<<<<<<<< --
     --=================================== TEMPERATURE ============================================--
     Colors                   = {
         one = "img/rpg_verycold.png",                    -- very cold
@@ -26,7 +26,7 @@ Config                    = {
         seven = "img/rpg_cold.png",                      -- normal
     },
     border                   = " 5px ",                  -- for the UI body temp border to make it ticker or slimer
-    localTempCelsius         = true,                     -- if false will use fahrenheit
+    localTempCelsius         = false,                     -- if false will use fahrenheit
     whenTooHotRemoveThirst   = 0.5,                      -- amount to remove thirst when too hot  [startRemoveThirst = 30,] define here when should be too hot this will also effect clothing
     whenTooColdRemoveHunger  = 0.5,                      -- amount to remove hunger when too cold [startRemoveHunger = -5,] define bellow when should be too cold this will also effect clothing
     TickTemperature          = 6000,                     -- at every 6 seconds if too cold or too hot  remove hunger or thirst? increase or decrease use in miliseconds
@@ -51,7 +51,7 @@ Config                    = {
     ------------------------
     ---- * UI VOICE * ------
     useUiVoice               = true,
-    UseSaltyChat             = true,       -- if you use salty chat set this to true
+    UseSaltyChat             = false,       -- if you use salty chat set this to true
     PressTalking             = 0x4BC9DABB, --N key only works for pma oice
     voice                    = {
         whisper = {
@@ -97,7 +97,7 @@ Config                    = {
     -------------------------------------------------------------
     ------------- * ADDICTION & STRESS SYSTEM * -----------------
     Stress                   = {
-        usestress = true,            -- if true will use stress
+        usestress = false,            -- if true will use stress
         WaterFoodLevel = 1,          --  at every one second it will add this value if food or water is below 0
         --* NEW *--
         ShootingLevel = 1,           -- at every one second it will add this value if player is shooting  <<<<<<NEW FEATURE >>>>>>>
@@ -136,7 +136,7 @@ Config                    = {
     },
 
     Addiction                = {
-        useaddiction = true,                  -- if true will use addiction
+        useaddiction = false,                  -- if true will use addiction
         Level1 = {
             AddictionRemoveHungerLevel = 0.5, -- remove hunger while addicted,
             AddictionRemoveThirstLevel = 0.5, -- remove thirst while addicted
