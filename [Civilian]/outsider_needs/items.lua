@@ -666,6 +666,270 @@ Items.Consumables = {
                     soundRef = "Consumption_Sounds"
                 }
             },
+            consumable_chickenpie = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 20,
+                addstamina            = 0,
+                addhunger             = 20,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_bowl04x_stew",     -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 0,
+                warmup                = 0,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                }
+            },
+            consumable_coffeecake = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 12,
+                addstamina            = 0,
+                addhunger             = 12,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_oatcake01x",     -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 0,
+                warmup                = 0,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                }
+            },
+            consumable_crumbcake = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 12,
+                addstamina            = 0,
+                addhunger             = 12,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_oatcake01x",     -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 0,
+                warmup                = 0,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                }
+            },
+            consumable_cupcake = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 12,
+                addstamina            = 0,
+                addhunger             = 12,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_oatcake01x",     -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 0,
+                warmup                = 0,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                }
+            },
+            consumable_donut = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 9,
+                addstamina            = 0,
+                addhunger             = 9,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_oatcake01x",     -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 0,
+                warmup                = 0,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                }
+            },
+            consumable_game = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 14,
+                addstamina            = 0,
+                addhunger             = 14,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_cs_jerky01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
             consumable_fruitsalad = {
                 removethirst          = 0,
                 removehunger          = 0,
@@ -709,12 +973,1121 @@ Items.Consumables = {
                     soundRef = "Consumption_Sounds"
                 }
             },
-            consumable_shepardspie = {
+            consumable_grapejelly = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 7,
+                addstamina            = 0,
+                addhunger             = 7,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "canned",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_cuptin01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_kidneybeans_can = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 13,
+                addstamina            = 0,
+                addhunger             = 13,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "canned",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_cuptin01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_lemoncake = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 12,
+                addstamina            = 0,
+                addhunger             = 12,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_oatcake01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_meat_greavy = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 18,
+                addstamina            = 0,
+                addhunger             = 18,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "canned",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_cuptin01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_peachcobbler = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 13,
+                addstamina            = 0,
+                addhunger             = 13,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "canned",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_cuptin01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            peach = {
                 removethirst          = 0,
                 removehunger          = 0,
                 removestamina         = 0,
                 removehealth          = 0,
                 addhealth             = 0,
+                addstamina            = 0,
+                addhunger             = 8,
+                addthirst             = 8,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "s_bit_peach01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            pear = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 0,
+                addstamina            = 0,
+                addhunger             = 8,
+                addthirst             = 8,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_pear_01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            peppermint = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 5,
+                addstamina            = 0,
+                addhunger             = 5,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "s_inv_raspberry01bx",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_peachjelly = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 7,
+                addstamina            = 0,
+                addhunger             = 7,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "canned",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_cuptin01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_poundcake = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 12,
+                addstamina            = 0,
+                addhunger             = 12,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_oatcake01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_pretzel = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 9,
+                addstamina            = 0,
+                addhunger             = 9,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_oatcake01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_raspberryjelly = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 7,
+                addstamina            = 0,
+                addhunger             = 7,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "canned",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_cuptin01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_salmon = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 15,
+                addstamina            = 0,
+                addhunger             = 15,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_cs_jerky01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_salmon_can = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 15,
+                addstamina            = 0,
+                addhunger             = 15,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "canned",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_cuptin01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_spongecake = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 12,
+                addstamina            = 0,
+                addhunger             = 12,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_oatcake01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_steakpie = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 20,
+                addstamina            = 0,
+                addhunger             = 50,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "bowl",
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_bowl04x_stew",        -- bowl do not need object
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 10,    -- can be used as spicy food
+                warmup                = 0,     -- how long should the hot last
+                requiredItem          = false, -- you can require a spoon in order to eat from a bowl leave false if you dont want
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                }
+            },
+            consumable_trout = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 15,
+                addstamina            = 0,
+                addhunger             = 35,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "bowl",
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_cs_trout02x",         -- bowl do not need object
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 10,    -- can be used as spicy food
+                warmup                = 0,     -- how long should the hot last
+                requiredItem          = false, -- you can require a spoon in order to eat from a bowl leave false if you dont want
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                }
+            },
+            consumable_veggies = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 15,
+                addstamina            = 0,
+                addhunger             = 22,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "bowl",
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_carrot01x",           -- bowl do not need object
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 10,    -- can be used as spicy food
+                warmup                = 0,     -- how long should the hot last
+                requiredItem          = false, -- you can require a spoon in order to eat from a bowl leave false if you dont want
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                }
+            },
+            consumable_herb_chanterelles = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 4,
+                addstamina            = 0,
+                addhunger             = 4,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "canned",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_herbsdry04x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_herb_evergreen_huckleberry = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 4,
+                addstamina            = 0,
+                addhunger             = 4,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "canned",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_herbsdry04x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_herb_oregano = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 4,
+                addstamina            = 0,
+                addhunger             = 4,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "canned",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_herbsdry04x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_herb_vanilla_flower = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 4,
+                addstamina            = 0,
+                addhunger             = 4,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "canned",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_herbsdry04x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_herb_wintergreen_berry = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 4,
+                addstamina            = 0,
+                addhunger             = 4,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "canned",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_herbsdry04x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+                -- give item back NEW FEATURE
+                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                itemsToGive           = {
+                    apple = 2,                -- item name and ammount
+                }
+
+            },
+            consumable_shepardspie = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 20,
                 addstamina            = 0,
                 addhunger             = 50,
                 addthirst             = 0,
