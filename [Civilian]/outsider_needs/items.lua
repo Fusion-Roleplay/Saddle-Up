@@ -231,7 +231,7 @@ Items.Consumables = {
                     soundRef = "Consumption_Sounds"
                 }
             },
-            knotmeat = {
+            consumable_shepardspie = {
                 removethirst          = 0,
                 removehunger          = 0,
                 removestamina         = 0,

@@ -84,11 +84,12 @@ CreateThread(function()
     for _, value in pairs(Commands) do
         RegisterCommand(value.commandName, function(source, args, rawCommand)
             local _source = source
-            local group = VorpCore.getUser(_source).getGroup -- User DB table group
-
-            if _source == 0 then                             -- its a player
-                return
+            if _source == 0 then -- its a player
+                return print("you must be in game to use this command")
             end
+
+            local group = VorpCore.getUser(_source)
+                .getGroup                                                                                        -- User DB table group
 
             if not CheckAce(value.aceAllowed, _source) and not CheckGroupAllowed(value.groupAllowed, group) then -- check ace first then group
                 return VorpCore.NotifyObjective(_source, T.NoPermissions, 4000)
@@ -110,7 +111,7 @@ CreateThread(function()
 
             local arguments = { source = _source, args = args, rawCommand = rawCommand, config = value } -- arguments passed
             value.callFunction(arguments)
-        end)
+        end, false)
     end
 end)
 
@@ -159,8 +160,7 @@ function AddJob(data)
     Character.setJobGrade(jobgrade)
     SendDiscordLogs(data.config.webhook, data, data.source, newjob, jobgrade)
 
-    VorpCore.NotifyRightTip(data.source, string.format(Translation[Lang].Notify.AddJob, newjob, target, jobgrade),
-        4000)
+    VorpCore.NotifyRightTip(data.source, string.format(Translation[Lang].Notify.AddJob, newjob, target, jobgrade), 4000)
     VorpCore.NotifyRightTip(target, string.format(Translation[Lang].Notify.AddJob1, newjob, jobgrade), 4000)
 end
 
@@ -207,6 +207,7 @@ function AddItems(data)
 
     VORPInv.addItem(target, item, count)
     SendDiscordLogs(data.config.webhook, data, data.source, item, count)
+    VorpCore.NotifyRightTip(target, string.format(Translation[Lang].Notify.AddItems, item, count), 4000)
 end
 
 --ADDWEAPONS
@@ -222,6 +223,7 @@ function AddWeapons(data)
         end
         VORPInv.createWeapon(target, weaponHash)
         SendDiscordLogs(data.config.webhook, data, data.source, weaponHash, "")
+        VorpCore.NotifyRightTip(target, Translation[Lang].Notify.AddWeapons, 4000)
     end, weaponHash)
 end
 
@@ -308,7 +310,6 @@ function BanPlayers(data)
 
     local datetime = os.time() + banTime * 3600
     TriggerEvent("vorpbans:addtodb", true, target, banTime)
-    --TriggerClientEvent("vorp:ban", data.source, target, datetime)
 
     local text = banTime == 0 and Translation[Lang].Notify.banned or
         (Translation[Lang].Notify.banned2 .. os.date(Config.DateTimeFormat, datetime + Config.TimeZoneDifference * 3600) .. Config.TimeZone)
@@ -320,7 +321,6 @@ end
 function UnBanPlayers(data)
     local target = tonumber(data.args[1])
     TriggerEvent("vorpbans:addtodb", false, target, 0)
-    --TriggerClientEvent("vorp:unban", data.source, target)
     SendDiscordLogs(data.config.webhook, data, data.source, "", "")
 end
 

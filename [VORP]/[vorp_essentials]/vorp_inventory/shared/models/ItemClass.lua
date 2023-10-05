@@ -1,4 +1,18 @@
----@class Item
+---@class Item : table Item class
+---@field count number @Item amount
+---@field id number  @Item id
+---@field name string @Item name
+---@field createdAt string @Item creation date
+---@field owner string @Item owner charid
+---@field group number @Item group type
+---@field limit number @Item limit
+---@field label string @Item label
+---@field metadata table @Item metadata
+---@field item string @Item name
+---@field type string @Item type
+---@field canUse boolean  @Item can use 
+---@field canRemove boolean @Item can remove
+---@field desc string @Item description
 Item = {}
 
 Item.id = nil
@@ -16,33 +30,37 @@ Item.limit = nil
 Item.weight = nil
 Item.canUse = false
 Item.canRemove = false
-Item.desc = nil
 Item.dropOnDeath = false
+Item.group = nil
 
 -- ID
-function Item:setId(id) 
+function Item:setId(id)
 	self.id = id
 end
 
-function Item:getId() 
+function Item:getId()
 	return self.id
 end
 
 -- NAME
-function Item:setName(name) 
+function Item:setName(name)
 	self.name = name
 end
 
-function Item:getName() 
+function Item:getGroup()
+	return self.group
+end
+
+function Item:getName()
 	return self.name
 end
 
 -- DESCRIPTION
-function Item:getDesc() 
+function Item:getDesc()
 	return self.desc
 end
 
-function Item:setDesc(desc) 
+function Item:setDesc(desc)
 	self.desc = desc
 end
 
@@ -75,7 +93,7 @@ end
 
 -- Metadata
 function Item:setMetadata(metadata)
-	if metadata ~= nil then
+	if metadata then
 		self.metadata = metadata
 	end
 end
@@ -101,20 +119,22 @@ function Item:addCount(amount, ignoreStackLimit)
 	return false
 end
 
-function Item:quitCount(amount) 
-	if amount == nil then
-		print('[^3Item quitCount^7]^1 Error: given amount is nil^7')
+function Item:quitCount(amount)
+	if not amount then
+		if Config.Debug then
+			print('[^3Item quitCount^7]^1 Error: given amount is nil^7')
+		end
 		return
 	end
 	self.count = self.count - amount
 end
 
 -- LIMIT
-function Item:setLimit(limit) 
+function Item:setLimit(limit)
 	self.limit = limit
 end
 
-function Item:getLimit() 
+function Item:getLimit()
 	return self.limit
 end
 
@@ -128,25 +148,25 @@ function Item:getWeight()
 end
 
 -- CanUse
-function Item:setCanUse(canUse) 
+function Item:setCanUse(canUse)
 	self.canUse = canUse
 end
 
-function Item:getCanUse() 
+function Item:getCanUse()
 	return self.canUse
 end
 
 -- CanRemove
-function Item:setCanRemove(canRemove) 
+function Item:setCanRemove(canRemove)
 	self.canRemove = canRemove
 end
 
-function Item:getCanRemove() 
+function Item:getCanRemove()
 	return self.canRemove
 end
 
 -- Owner
-function Item:setOwner(owner) 
+function Item:setOwner(owner)
 	self.owner = owner
 end
 
@@ -163,8 +183,8 @@ function Item:getDropOnDeath()
 	return self.dropOnDeath
 end
 
----@return Item
-function Item:New (t)
+---@return Item Item class
+function Item:New(t)
 	t = t or {}
 	setmetatable(t, self)
 	self.__index = self

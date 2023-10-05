@@ -313,9 +313,11 @@ function secondInventorySetup(items) {
     count = item.count;
     if (item.type !== "item_weapon") {
       /* items  */
-      const group = item.group;
-      $("#secondInventoryElement").append(`
-      <div data-label="${item.label}"' data-group ='${group}'
+      if (!item.group) {
+        item.group = 1;
+      }
+
+      $("#secondInventoryElement").append(`<div data-label='${item.label}' data-group ='${item.group}'
       style='background-image: url(\"img/items/${item.name ? item.name.toLowerCase() : ""
         }.png\"), url(); background-size: 90px 90px, 90px 90px; background-repeat: no-repeat; background-position: center;'
       id="item-${index}" class='item'> ${count > 0 ? `<div class='count'>${count}</div>` : ``} 
@@ -324,7 +326,7 @@ function secondInventorySetup(items) {
       `);
     } else {
       /* weapons */
-      const group = 5;
+      var group = 5;
       $("#secondInventoryElement").append(`
         <div data-label='${item.label}' data-group ='${group}'
          style='background-image: url("img/items/${item.name.toLowerCase()

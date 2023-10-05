@@ -1,6 +1,5 @@
 InventoryApiService = {}
 
-
 InventoryApiService.addItem = function(itemData)
     local itemId = itemData.id
     local itemAmount = itemData.count
@@ -20,7 +19,6 @@ InventoryApiService.subItem = function(id, qty, metadata)
     if UserInventory[id] == nil then
         return
     end
-
 
     UserInventory[id]:setCount(qty)
     if UserInventory[id]:getCount() == 0 then

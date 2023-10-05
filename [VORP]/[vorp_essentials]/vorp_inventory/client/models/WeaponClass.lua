@@ -11,6 +11,7 @@ Weapon.used = false
 Weapon.used2 = false
 Weapon.desc = nil
 Weapon.currInv = ''
+Weapon.group = 5
 
 
 local equippedWeapons = {}
@@ -43,6 +44,7 @@ local function addWeapon(weapon, slot, id)
 	local inventoryId = 1
 	local slotHash = joaat(sHash)
 	local move = false
+	local playerPedId = PlayerPedId()
 
 	--Now add it to the characters inventory
 	local isValid = Citizen.InvokeNative(0x6D5D51B188333FD1, weaponHash, 0) --ItemdatabaseIsKeyValid
@@ -94,9 +96,9 @@ local function addWeapon(weapon, slot, id)
 		return false
 	end
 
-	Citizen.InvokeNative(0x12FB95FE3D579238, PlayerPedId(), itemData:Buffer(), true, slot, false, false)
+	Citizen.InvokeNative(0x12FB95FE3D579238, playerPedId, itemData:Buffer(), true, slot, false, false)
 	if move then
-		Citizen.InvokeNative(0x12FB95FE3D579238, PlayerPedId(), equippedWeapons[1].guid, true, 1, false, false)
+		Citizen.InvokeNative(0x12FB95FE3D579238, playerPedId, equippedWeapons[1].guid, true, 1, false, false)
 		TriggerServerEvent("syn_weapons:applyDupeTint", id, itemData:Buffer(), weaponHash)
 	end
 	if id then
@@ -122,6 +124,7 @@ function Weapon:RemoveWeaponFromPed()
 	local isWeaponAGun = Citizen.InvokeNative(0x705BE297EEBDB95D, joaat(self.name))
 	local isWeaponOneHanded = Citizen.InvokeNative(0xD955FEE4B87AFA07, joaat(self.name))
 	local move = false
+	local playerPedId = PlayerPedId()
 
 	if isWeaponAGun and isWeaponOneHanded then
 		for k, v in pairs(equippedWeapons) do
@@ -145,9 +148,9 @@ function Weapon:RemoveWeaponFromPed()
 			return false
 		end
 		moveInventoryItem(inventoryId, equippedWeapons[1].guid, weaponItem:Buffer(), 0)
-		Citizen.InvokeNative(0x12FB95FE3D579238, PlayerPedId(), equippedWeapons[1].guid, true, 0, false, false)
+		Citizen.InvokeNative(0x12FB95FE3D579238, playerPedId, equippedWeapons[1].guid, true, 0, false, false)
 	else
-		RemoveWeaponFromPed(PlayerPedId(), joaat(self.name), true, 0)
+		RemoveWeaponFromPed(playerPedId, joaat(self.name), true, 0)
 	end
 end
 
@@ -156,33 +159,35 @@ function Weapon:equipwep()
 	local isWeaponThrowable = Citizen.InvokeNative(0x30E7C16B12DA8211, joaat(self.name))
 	local isWeaponAGun = Citizen.InvokeNative(0x705BE297EEBDB95D, joaat(self.name))
 	local isWeaponOneHanded = Citizen.InvokeNative(0xD955FEE4B87AFA07, joaat(self.name))
+	local playerPedId = PlayerPedId()
+	local ammoCount = 0
+	-- is weapon assigned as no ammo needed then set to 1 so it can be used
+	for k, v in pairs(Config.nonAmmoThrowables) do
+		if tostring(v) == self.name then
+			ammoCount = 1
+		end
+	end
 
 	if isWeaponMelee or isWeaponThrowable then
-		GiveDelayedWeaponToPed(PlayerPedId(), joaat(self.name), 0, true, 0)
+		GiveDelayedWeaponToPed(playerPedId, joaat(self.name), ammoCount, true, 0)
 	else
 		if self.used2 then
 			if isWeaponAGun and isWeaponOneHanded then
 				addWeapon(self.name, 1, self.id)
 			else
-				local _, weaponHash = GetCurrentPedWeapon(PlayerPedId(), false, 0, false)
-				Citizen.InvokeNative(0x5E3BDDBCB83F3D84, PlayerPedId(), weaponHash, 1, 1, 1, 2, false, 0.5, 1.0,
+				local _, weaponHash = GetCurrentPedWeapon(playerPedId, false, 0, false)
+				Citizen.InvokeNative(0x5E3BDDBCB83F3D84, playerPedId, weaponHash, 1, 1, 1, 2, false, 0.5, 1.0,
 					752097756, 0, true, 0.0)
-				Citizen.InvokeNative(0x5E3BDDBCB83F3D84, PlayerPedId(), joaat(self.name), 1, 1, 1, 3, false, 0.5,
+				Citizen.InvokeNative(0x5E3BDDBCB83F3D84, playerPedId, joaat(self.name), 1, 1, 1, 3, false, 0.5,
 					1.0, 752097756, 0, true, 0.0)
-				Citizen.InvokeNative(0xADF692B254977C0C, PlayerPedId(), weaponHash, 0, 1, 0, 0)
-				Citizen.InvokeNative(0xADF692B254977C0C, PlayerPedId(), joaat(self.name), 0, 0, 0, 0)
+				Citizen.InvokeNative(0xADF692B254977C0C, playerPedId, weaponHash, 0, 1, 0, 0)
+				Citizen.InvokeNative(0xADF692B254977C0C, playerPedId, joaat(self.name), 0, 0, 0, 0)
 			end
 		else
 			if isWeaponAGun and isWeaponOneHanded then
 				addWeapon(self.name, 0, self.id)
 			else
-				local ammoCount = 0
-				for k, v in pairs(Config.nonAmmoThrowables) do
-					if tostring(v) == self.name then
-						ammoCount = 1
-					end
-				end
-				GiveDelayedWeaponToPed(PlayerPedId(), joaat(self.name), ammoCount, true, 0)
+				GiveDelayedWeaponToPed(playerPedId, joaat(self.name), ammoCount, true, 0)
 			end
 		end
 	end
@@ -190,7 +195,7 @@ end
 
 function Weapon:loadComponents()
 	for _, value in pairs(self.components) do
-		Citizen.InvokeNative(0x74C9090FDD1BB48E, PlayerPedId(), joaat(value), joaat(self.name), true)
+		Citizen.InvokeNative(0x74C9090FDD1BB48E, playerPedId, joaat(value), joaat(self.name), true)
 	end
 end
 
@@ -330,4 +335,8 @@ end
 
 function Weapon:getCurrInv()
 	return self.currInv
+end
+
+function Weapon:getGroup()
+	self.group = self.group
 end

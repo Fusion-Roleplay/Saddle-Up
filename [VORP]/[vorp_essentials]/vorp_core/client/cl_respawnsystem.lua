@@ -1,6 +1,6 @@
 local setDead = false
 local TimeToRespawn = 1
-local cam = nil
+local cam
 local angleY = 0.0
 local angleZ = 0.0
 local prompts = GetRandomIntInRange(0, 0xffffff)
@@ -8,14 +8,10 @@ local prompt
 local PressKey = false
 local carried = false
 local Done = false
-
 local T = Translation[Lang].MessageOfSystem
 
---================================= FUNCTIONS ==========================================--
 
----GET LABLE FOR PROMPT
----@return string
-local CheckLable = function()
+local function CheckLable()
     if not carried then
         if not Done then
             local label = CreateVarString(10, 'LITERAL_STRING',
@@ -32,9 +28,8 @@ local CheckLable = function()
     end
 end
 
----comment
----@return table
-local ProcessNewPosition = function()
+
+local function ProcessNewPosition()
     local mouseX = 0.0
     local mouseY = 0.0
     if (IsInputDisabled(0)) then
@@ -78,7 +73,7 @@ local ProcessNewPosition = function()
     return pos
 end
 
-local EndDeathCam = function()
+local function EndDeathCam()
     NetworkSetInSpectatorMode(false, PlayerPedId())
     ClearFocus()
     RenderScriptCams(false, false, 0, true, false)
@@ -88,10 +83,10 @@ local EndDeathCam = function()
 end
 
 local keepdown
-local ResurrectPlayer = function(currentHospital, currentHospitalName, justrevive)
+local function ResurrectPlayer(currentHospital, currentHospitalName, justrevive)
     local player = PlayerPedId()
     Citizen.InvokeNative(0xCE7A90B160F75046, false)
-    if Config.HideUi then -- SHOW VORP core ui
+    if Config.HideUi then
         TriggerEvent("vorp:showUi", false)
     else
         TriggerEvent("vorp:showUi", true)
@@ -106,17 +101,17 @@ local ResurrectPlayer = function(currentHospital, currentHospitalName, justreviv
     setPVP()
     TriggerEvent("vorpcharacter:reloadafterdeath")
     Wait(500)
-    if currentHospital and currentHospital then -- set entitycoords with heading
+    if currentHospital and currentHospital then
         Citizen.InvokeNative(0x203BEFFDBE12E96A, player, currentHospital, false, false, false)
     end
     Wait(2000)
-    HealPlayer() -- heal fully the player
+    CoreAction.Admin.HealPlayer()
     if Config.RagdollOnResurrection and not justrevive then
         keepdown = true
         CreateThread(function() -- tread to keep player down
             while keepdown do
                 Wait(0)
-                SetPedToRagdoll(PlayerPedId(), 4000, 4000, 0, 0, 0, 0)
+                SetPedToRagdoll(PlayerPedId(), 4000, 4000, 0, false, false, false)
                 ResetPedRagdollTimer(PlayerPedId())
                 DisablePedPainAudio(PlayerPedId(), true)
             end
@@ -124,26 +119,26 @@ local ResurrectPlayer = function(currentHospital, currentHospitalName, justreviv
         AnimpostfxPlay("Title_Gen_FewHoursLater")
         Wait(3000)
         DoScreenFadeIn(2000)
-        AnimpostfxPlay("PlayerWakeUpInterrogation") -- disabled
+        AnimpostfxPlay("PlayerWakeUpInterrogation")
         Wait(19000)
         keepdown = false
         local dict = "minigames_hud"
         local icon = "five_finger_burnout"
         TriggerEvent('vorp:NotifyLeft', currentHospitalName or T.message6, T.message5,
             dict, icon
-            , 8000, "COLOR_PURE_WHITE") -- mesage only if this is active and justrevive is false
+            , 8000, "COLOR_PURE_WHITE")
     else
-        DoScreenFadeIn(2000)            -- fadein
+        DoScreenFadeIn(2000)
     end
 end
 
-ResspawnPlayer = function()
+function ResspawnPlayer()
     local player = PlayerPedId()
     TriggerServerEvent("vorp:PlayerForceRespawn")
     TriggerEvent("vorp:PlayerForceRespawn")
     local closestDistance = math.huge
     local closestLocation = ""
-    local coords = ""
+    local coords = nil
     local pedCoords = GetEntityCoords(player)
     for _, location in pairs(Config.Hospitals) do
         local locationCoords = vector3(location.pos.x, location.pos.y, location.pos.z)
@@ -155,35 +150,24 @@ ResspawnPlayer = function()
             coords = location.pos
         end
     end
+    -- heal metabolism --
+    TriggerEvent("vorpmetabolism:changeValue", "Thirst", 1000)
+    TriggerEvent("vorpmetabolism:changeValue", "Hunger", 1000)
+    TriggerEvent('fred_meta:consume', 100, 100, 0, 0, 0.0, 0.0, 0.0, 0.0, 0.0)
     ResurrectPlayer(coords, closestLocation, false)
     TriggerServerEvent("vorpcharacter:getPlayerSkin")
 end
 
---[[local StartDeathCam = function()
+local function StartDeathCam()
     ClearFocus()
     local playerPed = PlayerPedId()
-    cam = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", GetEntityCoords(playerPed), 0, 0, 0, GetGameplayCamFov())
+    local pos = GetEntityCoords(playerPed)
+    cam = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", pos.x, pos.y, pos.z, 0, 0, 0, GetGameplayCamFov(), false, 0)
     SetCamActive(cam, true)
-    RenderScriptCams(true, true, 1000, true, false)
-
+    RenderScriptCams(true, true, 1000, true, false, 0)
 end
 
-local ProcessCamControls = function()
-    local playerPed = PlayerPedId()
-    local playerCoords = ProcessNewPosition()
-    local newPos = playerCoords
-    SetCamCoord(cam, newPos.x, newPos.y, newPos.z)
-    PointCamAtCoord(cam, playerCoords.x, playerCoords.y, playerCoords.z + 0.5)
-end]]
-local StartDeathCam = function()
-    ClearFocus()
-    local playerPed = PlayerPedId()
-    cam = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", GetEntityCoords(playerPed), 0, 0, 0, GetGameplayCamFov())
-    SetCamActive(cam, true)
-    RenderScriptCams(true, true, 1000, true, false)
-end
-
-local ProcessCamControls = function()
+local function ProcessCamControls()
     local playerCoords
     if Config.UseControlsCamera then
         playerCoords = ProcessNewPosition()
@@ -238,11 +222,11 @@ end)
 local RespawnTimer = function()
     CreateThread(function() -- asyncronous
         while true do
-            Wait(1000)      -- every second
+            Wait(1000)
             TimeToRespawn = TimeToRespawn - 1
             if TimeToRespawn < 0 and setDead then
                 TimeToRespawn = 0
-                break -- break the loop
+                break
             end
         end
     end)
@@ -257,19 +241,17 @@ AddEventHandler("vorp_core:Client:AddTimeToRespawn", function(time) -- from clie
         RespawnTimer()
     end
 end)
---=========================== DEATH HANDLER =================================--
-
 
 --DEATH HANDLER
 CreateThread(function()
     while Config.UseDeathHandler do
         Wait(0)
         local sleep = true
-        local player = PlayerPedId() -- call it once
+        local player = PlayerPedId()
 
-        if IsEntityDead(player) then -- if player is dead
+        if IsEntityDead(player) then
             sleep = false
-            if not setDead then      -- set only once
+            if not setDead then
                 NetworkSetInSpectatorMode(false, player)
                 exports.spawnmanager.setAutoSpawn(false)
                 TriggerServerEvent("vorp:ImDead", true)
@@ -285,7 +267,7 @@ CreateThread(function()
             end
 
             if not PressKey and setDead then
-                if not IsEntityAttachedToAnyPed(player) then -- is not  player being carried
+                if not IsEntityAttachedToAnyPed(player) then
                     PromptSetActiveGroupThisFrame(prompts, CheckLable())
 
                     if PromptHasHoldModeCompleted(prompt) then
@@ -298,7 +280,7 @@ CreateThread(function()
                         sleep    = true
                     end
 
-                    if TimeToRespawn >= 1 and setDead then -- message will only show if timer has not been met
+                    if TimeToRespawn >= 1 and setDead then
                         ProcessCamControls()
                         Done = false
                         PromptSetEnabled(prompt, 0)
@@ -308,7 +290,7 @@ CreateThread(function()
                         PromptSetEnabled(prompt, 1)
                     end
                     carried = false
-                else -- if is being carried
+                else
                     if setDead then
                         PromptSetActiveGroupThisFrame(prompts, CheckLable())
                         PromptSetEnabled(prompt, 0)

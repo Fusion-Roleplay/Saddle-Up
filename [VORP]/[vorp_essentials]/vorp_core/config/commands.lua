@@ -73,7 +73,7 @@ Commands = {
         end
     },
     addItem = {
-        webhook = "https://discord.com/api/webhooks/1064258947478978600/d-61fpjBhKydlJu-k72GTBY9pzrf8dvkDIkeW9KUPzO_qHklxPbppYONsWo5PvYmY1jl",
+        webhook = "",
         custom = T.addItem.custom,
         title = T.addItem.title,
         ---#end webhook
@@ -92,7 +92,7 @@ Commands = {
         end
     },
     addWeapon = {
-        webhook = "https://discord.com/api/webhooks/1064258947478978600/d-61fpjBhKydlJu-k72GTBY9pzrf8dvkDIkeW9KUPzO_qHklxPbppYONsWo5PvYmY1jl",
+        webhook = "",
         custom = T.addWeapon.custom,
         title = T.addWeapon.title,
         ---#end webhook
@@ -110,7 +110,7 @@ Commands = {
         end
     },
     delMoney = {
-        webhook = "https://discord.com/api/webhooks/1064258947478978600/d-61fpjBhKydlJu-k72GTBY9pzrf8dvkDIkeW9KUPzO_qHklxPbppYONsWo5PvYmY1jl",
+        webhook = "",
         custom = T.delMoney.custom,
         title = T.delMoney.title,
         ---#end webhook
@@ -129,7 +129,7 @@ Commands = {
         end
     },
     addMoney = {
-        webhook = "https://discord.com/api/webhooks/1064258947478978600/d-61fpjBhKydlJu-k72GTBY9pzrf8dvkDIkeW9KUPzO_qHklxPbppYONsWo5PvYmY1jl",
+        webhook = "",
         custom = T.addMoney.custom,
         title = T.addMoney.title,
         ---#end webhook
@@ -224,8 +224,8 @@ Commands = {
         callFunction = function(...)
             local data = ...
             -- in here you can add your metabolism events
-            TriggerClientEvent("vorpmetabolism:changeValue", data.source, "Thirst", 1000)
-            TriggerClientEvent("vorpmetabolism:changeValue", data.source, "Hunger", 1000)
+            TriggerClientEvent("vorpmetabolism:changeValue", tonumber(data.args[1]), "Thirst", 1000)
+            TriggerClientEvent("vorpmetabolism:changeValue", tonumber(data.args[1]), "Hunger", 1000)
             HealPlayers(...)
         end
     },

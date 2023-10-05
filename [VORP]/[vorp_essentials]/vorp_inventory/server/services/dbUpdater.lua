@@ -82,7 +82,7 @@ local Updates = {
             where Table_Name = 'loadout'
             AND  Column_Name = 'dropped';
         ]],
-        sql =  [[
+        sql = [[
             ALTER TABLE `loadout` ADD COLUMN `dropped` INT NOT NULL DEFAULT 0;
         ]]
     },
@@ -95,7 +95,7 @@ local Updates = {
             where Table_Name = 'loadout'
             AND  Column_Name = 'comps';
         ]],
-        sql =  [[
+        sql = [[
             ALTER TABLE `loadout` ADD COLUMN `comps` VARCHAR(5550) NOT NULL DEFAULT '{}';
         ]]
     },
@@ -108,7 +108,7 @@ local Updates = {
             where Table_Name = 'loadout'
             AND  Column_Name = 'used2';
         ]],
-        sql =  [[
+        sql = [[
             ALTER TABLE `loadout` ADD COLUMN `used2` tinyint NOT NULL DEFAULT 0;
         ]]
     },
@@ -121,7 +121,7 @@ local Updates = {
             where Table_Name = 'items'
             AND  Column_Name = 'desc';
         ]],
-        sql =  [[
+        sql = [[
             ALTER TABLE `items` ADD COLUMN `desc` VARCHAR(5550) NOT NULL DEFAULT 'nice item';
         ]]
     },
@@ -134,7 +134,7 @@ local Updates = {
             where Table_Name = 'items'
             AND  Column_Name = 'id';
         ]],
-        sql =  [[
+        sql = [[
             ALTER TABLE items ADD COLUMN `id` int UNIQUE AUTO_INCREMENT;
         ]]
     },
@@ -147,7 +147,7 @@ local Updates = {
             where Table_Name = 'items'
             AND  Column_Name = 'metadata';
         ]],
-        sql =  [[
+        sql = [[
             ALTER TABLE items ADD COLUMN `metadata` JSON DEFAULT ('{}');
         ]]
     },
@@ -160,23 +160,23 @@ local Updates = {
             where Table_Name = 'loadout'
             AND  Column_Name = 'curr_inv';
         ]],
-        sql =  [[
+        sql = [[
             ALTER TABLE loadout ADD COLUMN IF NOT EXISTS `curr_inv` VARCHAR(100) DEFAULT 'default' NOT NULL;
         ]]
     }
 }
 
-     
+
 
 local tries = 10
 local currentry = 1
-local CORE = nil
-function getCore()
+
+local function getCore()
     TriggerEvent("getCore", function(core)
         if not core.dbUpdateAddTables and not core.dbUpdateAddUpdates then
             if currentry < tries then
                 currentry = currentry + 1
-                getCore() 
+                getCore()
             end
         else
             core.dbUpdateAddTables(Tables)

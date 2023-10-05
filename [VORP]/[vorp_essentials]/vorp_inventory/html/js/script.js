@@ -112,24 +112,21 @@ window.addEventListener('message', function (event) {
         $("#inventoryHud").fadeIn();
         $(".controls").remove();
 
-        if (event.data.search) {
-            $("#inventoryHud").append(
-                `<div class='controls'><div class='controls-center'><input type='text' id='search' placeholder='${LANGUAGE.inventorysearch}'/><button id='check'>${checkxy} / ${infoxy}</button></div><button id='close'>${LANGUAGE.inventoryclose}</button></div></div>`
-            );
-        } else {
-            $("#inventoryHud").append(
-                `<div class='controls'><div class='controls-center'><button id='check'>${checkxy} / ${infoxy}</button></div><button id='close'>${LANGUAGE.inventoryclose}</button></div></div>`
-            );
-        }
+        $("#inventoryHud").append(
+            `<div class='controls'><div class='controls-center'><input type='text' id='search' placeholder='${LANGUAGE.inventorysearch}'/input><button id='check'>${checkxy} / ${infoxy}</button></div><button id='close'>${LANGUAGE.inventoryclose}</button></div></div>`
+        );
 
-        $("#search").bind('input', function () {
-            searchFor = $("#search").val().toLowerCase();
+        $("#search").bind("input", function () {
+            var searchFor = $("#search").val().toLowerCase();
             $("#inventoryElement .item").each(function () {
-                label = $(this).data("label").toLowerCase();
-                if (label.indexOf(searchFor) < 0) {
-                    $(this).hide();
-                } else {
-                    $(this).show();
+                var label = $(this).data("label");
+                if (label) { // Check that label is defined
+                    label = label.toLowerCase();
+                    if (label.indexOf(searchFor) < 0) {
+                        $(this).hide();
+                    } else {
+                        $(this).show();
+                    }
                 }
             });
         });
@@ -256,6 +253,8 @@ window.addEventListener('message', function (event) {
                 total += Number(itemlist[p].count)
             }
             secondarySetCurrentCapacity(total)
+        } else {
+            secondarySetCurrentCapacity(0)
         }
     } else if (event.data.action == "nearPlayers") {
         if (event.data.what == "give") {

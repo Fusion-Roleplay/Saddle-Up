@@ -14,7 +14,7 @@ function toggleDropdown(mainButton) {
 }
 /* 0 is empty divs 1  is fixed divs like money and ammo */
 const Actions = {
-  all: { types: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
+  all: { types: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] },
   medical: { types: [0, 2] },
   foods: { types: [0, 3] },
   weapons: { types: [0, 5] },
@@ -100,6 +100,10 @@ function inventorySetup(items) {
 
     if (item.type != "item_weapon") {
       /* items */
+      if (!item.group) {
+        item.group = 1;
+      }
+
       $("#inventoryElement").append(`
             <div data-label='${item.label}' data-group='${item.group}' style='background-image: url("img/items/${item.name.toLowerCase()}.png"), url(); background-size: 90px 90px, 90px 90px; background-repeat: no-repeat; background-position: center;' id='item-${index}' class='item'>
                 <div class='count'<span style ='color:Black'>${count}</span></div>
@@ -120,10 +124,10 @@ function inventorySetup(items) {
     $("#item-" + index).data("inventory", "main");
 
     var data = [];
-    if (item.used) {
-      data.push({
-        text: LANGUAGE.unequip,
-        action: function () {
+
+    if (Config.DoubleClickToUse) {
+      $("#item-" + index).dblclick(function () {
+        if (item.used || item.used2) {
           $.post(
             `https://${GetParentResourceName()}/UnequipWeapon`,
             JSON.stringify({
@@ -131,52 +135,7 @@ function inventorySetup(items) {
               id: item.id,
             })
           );
-        },
-      });
-    }
-
-
-    $("#item-" + index).dblclick(function () {
-      if (item.used || item.used2) {
-        $.post(
-          `https://${GetParentResourceName()}/UnequipWeapon`,
-          JSON.stringify({
-            item: item.name,
-            id: item.id,
-          })
-        );
-      } else {
-        $.post(
-          `https://${GetParentResourceName()}/UseItem`,
-          JSON.stringify({
-            item: item.name,
-            type: item.type,
-            hash: item.hash,
-            amount: item.count,
-            id: item.id,
-          })
-        );
-      }
-    });
-
-    if (item.used2) {
-      data.push({
-        text: LANGUAGE.unequip,
-        action: function () {
-          $.post(
-            `https://${GetParentResourceName()}/UnequipWeapon`,
-            JSON.stringify({
-              item: item.name,
-              id: item.id,
-            })
-          );
-        },
-      });
-    }
-    if (item.canUse) {
-      data.push({
-        text: LANGUAGE.use,
-        action: function () {
+        } else {
           $.post(
             `https://${GetParentResourceName()}/UseItem`,
             JSON.stringify({
@@ -187,10 +146,45 @@ function inventorySetup(items) {
               id: item.id,
             })
           );
-        },
+        }
       });
+    } else {
+      if (item.used || item.used2) {
+        data.push({
+          text: LANGUAGE.unequip,
+          action: function () {
+            $.post(
+              `https://${GetParentResourceName()}/UnequipWeapon`,
+              JSON.stringify({
+                item: item.name,
+                id: item.id,
+              })
+            );
+          },
+        });
+      } else {
+        if (item.type != "item_weapon") {
+          lang = LANGUAGE.use;
+        } else {
+          lang = LANGUAGE.equip;
+        }
+        data.push({
+          text: lang,
+          action: function () {
+            $.post(
+              `https://${GetParentResourceName()}/UseItem`,
+              JSON.stringify({
+                item: item.name,
+                type: item.type,
+                hash: item.hash,
+                amount: item.count,
+                id: item.id,
+              })
+            );
+          },
+        });
+      }
     }
-
 
     if (item.canRemove) {
       data.push({
@@ -248,6 +242,7 @@ function inventorySetup(items) {
         OverSetDesc(" ");
       }
     );
+
   });
 
 

@@ -1,6 +1,11 @@
+---@class UtilityService
+---@field Table_equals fun(o1: any, o2: any, ignore_mt: boolean): boolean
+---@field Table_contains fun(o1: any, o2: any): boolean
+---@field Table_MergeTable fun(t1: table, t2: table): table
+---@field IsValueInArray fun(value: any,array:table): boolean
 SharedUtils = {}
 
-SharedUtils.Table_equals = function(o1, o2, ignore_mt)
+function SharedUtils.Table_equals(o1, o2, ignore_mt)
     if o1 == o2 then return true end
     local o1Type = type(o1)
     local o2Type = type(o2)
@@ -33,17 +38,18 @@ SharedUtils.Table_equals = function(o1, o2, ignore_mt)
     return true
 end
 
-SharedUtils.Table_contains = function(o1, o2)
+function SharedUtils.Table_contains(o1, o2)
     if o1 == o2 then return true end
     local o1Type = type(o1)
     local o2Type = type(o2)
-    if o1Type ~= o2Type then return false end
 
-    if o1Type ~= 'table' or o2Type ~= 'table' then return false end
+    if o1Type ~= o2Type then
+        return false
+    end
 
-
-
-    local keySet = {}
+    if o1Type ~= 'table' or o2Type ~= 'table' then
+        return false
+    end
 
     for key2, value2 in pairs(o2) do
         local value1 = o1[key2]
@@ -55,7 +61,11 @@ SharedUtils.Table_contains = function(o1, o2)
     return true
 end
 
-SharedUtils.MergeTables = function(a, b)
+--- merge two tables together
+---@param a any
+---@param b any
+---@return table
+function SharedUtils.MergeTables(a, b)
     a = type(a) == 'string' and json.decode(a) or a
     b = type(b) == 'string' and json.decode(b) or b
 
@@ -69,7 +79,11 @@ SharedUtils.MergeTables = function(a, b)
     return newTable
 end
 
-SharedUtils.IsValueInArray = function(value, array)
+--- check if a value is in a array
+---@param value string| number
+---@param array table
+---@return boolean
+function SharedUtils.IsValueInArray(value, array)
     for _, v in ipairs(array) do
         if v == value then
             return true

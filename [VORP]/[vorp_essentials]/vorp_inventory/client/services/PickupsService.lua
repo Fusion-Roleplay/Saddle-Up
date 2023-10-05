@@ -74,6 +74,7 @@ PickupsService.createGoldPickup = function(amount)
 	if not Config.UseGoldItem then
 		return
 	end
+
 	local playerPed = PlayerPedId()
 	local coords = GetEntityCoords(playerPed, true, true)
 	local forward = GetEntityForwardVector(playerPed)
@@ -108,7 +109,6 @@ PickupsService.sharePickupClient = function(name, entityHandle, amount, metadata
 				prompt = Prompt:New(0xF84FA74F, T.TakeFromFloor, PromptType.StandardHold, promptGroup)
 			})
 
-
 			pickup.prompt:SetVisible(false)
 			WorldPickups[entityHandle] = pickup
 			if Config.Debug then
@@ -135,7 +135,6 @@ PickupsService.shareMoneyPickupClient = function(entityHandle, amount, position,
 				coords = position,
 				prompt = Prompt:New(0xF84FA74F, T.TakeFromFloor, PromptType.StandardHold, promptGroup)
 			})
-
 
 			pickup.prompt:SetVisible(false)
 			WorldPickups[entityHandle] = pickup
@@ -200,6 +199,7 @@ PickupsService.removePickupClient = function(entityHandle)
 end
 
 PickupsService.playerAnim = function(obj)
+	local playerPed = PlayerPedId()
 	local animDict = "amb_work@world_human_box_pickup@1@male_a@stand_exit_withprop"
 	Citizen.InvokeNative(0xA862A2AD321F94B4, animDict)
 
@@ -207,12 +207,12 @@ PickupsService.playerAnim = function(obj)
 		Wait(10)
 	end
 
-	Citizen.InvokeNative(0xEA47FE3719165B94, PlayerPedId(), animDict, "exit_front", 1.0, 8.0, -1, 1, 0, false, false,
+	Citizen.InvokeNative(0xEA47FE3719165B94, playerPed, animDict, "exit_front", 1.0, 8.0, -1, 1, 0, false, false,
 		false)
 	Wait(1200)
 	PlaySoundFrontend("CHECKPOINT_PERFECT", "HUD_MINI_GAME_SOUNDSET", true, 1)
 	Wait(1000)
-	Citizen.InvokeNative(0xE1EF3C1216AFF2CD, PlayerPedId())
+	Citizen.InvokeNative(0xE1EF3C1216AFF2CD, playerPed)
 end
 
 PickupsService.DeadActions = function()
@@ -253,7 +253,7 @@ PickupsService.dropAllPlease = function()
 			local itemCount = item:getCount()
 			local itemMetadata = item:getMetadata()
 
-			TriggerServerEvent("vorpinventory:serverDropItem", itemName, item["id"], itemCount, itemMetadata)
+			TriggerServerEvent("vorpinventory:serverDropItem", itemName, item.id, itemCount, itemMetadata)
 			item:quitCount(itemCount)
 
 			if item:getCount() == 0 then
@@ -275,7 +275,7 @@ PickupsService.dropAllPlease = function()
 
 				if currentWeapon:getUsed() then
 					currentWeapon:setUsed(false)
-					RemoveWeaponFromPed(PlayerPedId(), GetHashKey(currentWeapon:getName()), true, 0)
+					RemoveWeaponFromPed(PlayerPedId(), joaat(currentWeapon:getName()), true, 0)
 				end
 
 				UserWeapons[index] = nil

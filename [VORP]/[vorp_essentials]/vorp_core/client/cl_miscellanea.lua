@@ -1,71 +1,12 @@
 local T = Translation[Lang].MessageOfSystem
 
---=================================== FUNCTIONS ======================================--
-
----comment
----@param hash string
----@return boolean
-LoadModel = function(hash)
-    if IsModelValid(hash) then
-        RequestModel(hash)
-        while not HasModelLoaded(hash) do
-            Citizen.Wait(0)
-        end
-        return true
-    end
-    return false
-end
-
----comment
----@param hash any
----@return boolean
-LoadTexture = function(hash)
-    if not HasStreamedTextureDictLoaded(hash) then
-        RequestStreamedTextureDict(hash, true)
-        while not HasStreamedTextureDictLoaded(hash) do
-            Wait(1)
-        end
-        return true
-    end
-    return false
-end
-
----comment
----@param text string
----@return unknown
-bigInt = function(text)
-    local string1 = DataView.ArrayBuffer(16)
-    string1:SetInt64(0, text)
-    return string1:GetInt64(0)
-end
-
---[[DrawText = function(text, font, x, y, fontscale, fontsize, r, g, b, alpha, textcentred, shadow)
-    local str = CreateVarString(10, "LITERAL_STRING", text)
-    SetTextScale(fontscale, fontsize)
-    SetTextColor(r, g, b, alpha)
-    SetTextCentre(textcentred)
-    if shadow then SetTextDropshadow(1, 0, 0, 0, 255) end
-    SetTextFontForCurrentCommand(font)
-    DisplayText(str, x, y)
-end]]
-
---========================================== THREADS =========================================--
-
 -- remove event notifications
-
 local Events = {
     `EVENT_CHALLENGE_GOAL_COMPLETE`,
     `EVENT_CHALLENGE_REWARD`,
     `EVENT_DAILY_CHALLENGE_STREAK_COMPLETED`
 }
 
-
-RegisterCommand("reload", function()
-    if IsEntityDead(PlayerPedId()) then
-        ExecuteCommand("rc")
-    end
-
-end)
 CreateThread(function()
     while true do
         Wait(0)
@@ -90,40 +31,47 @@ end)
 -- show players id when focus on other players
 CreateThread(function()
     while Config.showplayerIDwhenfocus do
-        Wait(400)
         for _, playersid in ipairs(GetActivePlayers()) do
+            --? needs a check if player is focusing on another player for better performance
             local ped = GetPlayerPed(playersid)
             SetPedPromptName(ped, T.message4 .. tostring(GetPlayerServerId(playersid)))
         end
+        Wait(800)
     end
 end)
 
+local playerCores = {
+    playerhealth = 0,
+    playerhealthcore = 1,
+    playerdeadeye = 3,
+    playerdeadeyecore = 2,
+    playerstamina = 4,
+    playerstaminacore = 5,
+}
+
+local horsecores = {
+    horsehealth = 6,
+    horsehealthcore = 7,
+    horsedeadeye = 9,
+    horsedeadeyecore = 8,
+    horsestamina = 10,
+    horsestaminacore = 11,
+}
+
 -- hide or show players cores
 CreateThread(function()
-    Wait(5000)
     if Config.HideOnlyDEADEYE then
         Citizen.InvokeNative(0xC116E6DF68DCE667, 2, 2)
         Citizen.InvokeNative(0xC116E6DF68DCE667, 3, 2)
     end
     if Config.HidePlayersCore then
-        Citizen.InvokeNative(0xC116E6DF68DCE667, 0, 2)
-        Citizen.InvokeNative(0xC116E6DF68DCE667, 1, 2)
-        Citizen.InvokeNative(0xC116E6DF68DCE667, 2, 2)
-        Citizen.InvokeNative(0xC116E6DF68DCE667, 3, 2)
-        Citizen.InvokeNative(0xC116E6DF68DCE667, 4, 2)
-        Citizen.InvokeNative(0xC116E6DF68DCE667, 5, 2)
-
+        for key, value in pairs(playerCores) do
+            Citizen.InvokeNative(0xC116E6DF68DCE667, value, 2)
+        end
     end
     if Config.HideHorseCores then
-        Citizen.InvokeNative(0xC116E6DF68DCE667, 6, 2)
-        Citizen.InvokeNative(0xC116E6DF68DCE667, 7, 2)
-        Citizen.InvokeNative(0xC116E6DF68DCE667, 8, 2)
-        Citizen.InvokeNative(0xC116E6DF68DCE667, 9, 2)
-        Citizen.InvokeNative(0xC116E6DF68DCE667, 10, 2)
-        Citizen.InvokeNative(0xC116E6DF68DCE667, 11, 2)
+        for key, value in pairs(horsecores) do
+            Citizen.InvokeNative(0xC116E6DF68DCE667, value, 2)
+        end
     end
 end)
-
-
-
---================================================================================================--

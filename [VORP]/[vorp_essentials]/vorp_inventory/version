@@ -1,3 +1,18 @@
+<3.0>
+- small fixes were done and a critical issue with items make sure to update again
+<2.9>
+- refactor server side.
+- added new exports for each api function (is compatible with vorp core vsc extension).
+- refactor client side.
+- make a back up of your old inventory as always.
+- update fxmanifest as well as ALL OTHER FILES.
+<2.8>
+- items by type were added to the inventory main and secondary
+- sql fie will be needed look in vorp discord on how to update
+- theres 10 types of items now
+- added API to update custom inventories slots
+- loading weapons from secondary inventories is now separated from player weapons
+- make sure to update all files and fxmanifest to keep getting version check
 <2.7>
 - small fixes on weapon use
 - fix for when transfering weapons that are set as equiped  would not let use other weapons

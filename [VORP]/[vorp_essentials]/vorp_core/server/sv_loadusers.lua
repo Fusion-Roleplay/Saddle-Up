@@ -152,15 +152,15 @@ RegisterNetEvent('vorp:playerSpawn', function()
 end)
 
 
-RegisterNetEvent('vorp:getUser', function(cb)
-    --[[{
+--[[ RegisterNetEvent('vorp:getUser', function(cb)
+    {
         string steam = "steam:" + Players[source].Identifiers["steam"];
         if (_users.ContainsKey(steam))
         {
             cb.Invoke(_users[steam].GetUser());
         }
-    });]]
-end)
+    });
+end) ]]
 
 RegisterNetEvent('vorp:SaveHealth')
 AddEventHandler('vorp:SaveHealth', function(healthOuter, healthInner)
@@ -202,6 +202,10 @@ AddEventHandler('vorp:HealthCached', function(healthOuter, healthInner, staminaO
     local _source = source
     local identifier = GetSteamID(_source)
 
+    if not identifier then
+      return
+    end
+
     if not _healthData[identifier] then
         _healthData[identifier] = {}
     end
@@ -214,19 +218,37 @@ end)
 
 RegisterNetEvent("vorp:GetValues")
 AddEventHandler("vorp:GetValues", function()
-    local healthData = {}
+
+    -- Default values
+    local healthData = {
+        hOuter = 0,
+        hInner = 0,
+        sOuter = 0,
+        sInner = 0,
+    }
+
     local _source = source
     local identifier = GetSteamID(_source)
 
-    healthData.hOuter = _users[identifier].GetUsedCharacter().HealthOuter()
-    healthData.hInner = _users[identifier].GetUsedCharacter().HealthInner()
-    healthData.sOuter = _users[identifier].GetUsedCharacter().StaminaOuter()
-    healthData.sInner = _users[identifier].GetUsedCharacter().StaminaInner()
+    local user = _users[identifier] or nil
+
+    -- Only if the player exists in online table...
+    if user and user.GetUsedCharacter then
+
+        local used_char =  user.GetUsedCharacter() or nil
+
+        -- Only there is an character...
+        if used_char then
+
+            healthData.hOuter = used_char.HealthOuter() or 0
+            healthData.hInner = used_char.HealthInner() or 0
+            healthData.sOuter = used_char.StaminaOuter() or 0
+            healthData.sInner = used_char.StaminaInner() or 0
+        end
+    end
 
     TriggerClientEvent("vorp:GetHealthFromCore", _source, healthData)
 end)
-
-
 
 Citizen.CreateThread(function()
     while true do
@@ -247,10 +269,10 @@ AddEventHandler("vorpchar:addtodb", function(status, identifier)
         for _, player in ipairs(GetPlayers()) do
             if identifier == GetPlayerIdentifiers(player)[1] then
                 if status == true then
-                    TriggerClientEvent("vorp:Tip", player, T.AddChar, 10000)
+                    TriggerClientEvent("vorp:Tip", tonumber(player), T.AddChar, 10000)
                     char = "true"
                 else
-                    TriggerClientEvent("vorp:Tip", player, T.RemoveChar, 10000)
+                    TriggerClientEvent("vorp:Tip", tonumber(player), T.RemoveChar, 10000)
                     char = "false"
                 end
                 break

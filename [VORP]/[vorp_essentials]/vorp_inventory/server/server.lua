@@ -1,23 +1,22 @@
 ---@diagnostic disable: undefined-global
-local VorpInv = {}
 
-VorpInv = exports.vorp_inventory:vorp_inventoryApi()
+Core = {}
+TriggerEvent("getCore", function(core)
+    Core = core
+end)
 
 T = TranslationInv.Langs[Lang]
 
-function getIdentity(source)
-    local identifiers = {}
-
-    for i = 0, GetNumPlayerIdentifiers(source) - 1 do
-        local id = GetPlayerIdentifier(source, i)
-
-        if string.find(id, "discord:") then
-            identifiers['discord'] = id
-        end
-    end
-
-    return identifiers
+if Config.DevMode then
+    Log.Warning("^1[DEV] ^7You are in dev mode, dont use this in production live servers")
 end
+
+RegisterServerEvent("syn:stopscene")
+AddEventHandler("syn:stopscene", function(x) -- new
+    local _source = source
+    TriggerClientEvent("inv:dropstatus", _source, x)
+end)
+
 
 RegisterServerEvent("vorpinventory:check_slots")
 AddEventHandler("vorpinventory:check_slots", function()
@@ -28,7 +27,7 @@ AddEventHandler("vorpinventory:check_slots", function()
     local charid = User.charIdentifier
     local money = User.money
     local gold = User.gold
-    local stufftosend = InventoryAPI.getUserTotalCount(identifier, charid)
+    local stufftosend = InventoryAPI.getUserTotalCountItems(identifier, charid)
 
     TriggerClientEvent("syn:getnuistuff", _source, stufftosend, part2, money, gold)
 end)
@@ -37,18 +36,17 @@ end)
 RegisterServerEvent("vorpinventory:getLabelFromId")
 AddEventHandler("vorpinventory:getLabelFromId", function(id, item2, cb)
     local _source = id
-    local inventory = VorpInv.getUserInventory(_source)
-    local label = "not found"
-    for i, item in ipairs(inventory) do
-        if item.name == item2 then
-            label = item.label
-            break
+    InventoryAPI.getInventory(_source, function(inventory)
+        local label = "not found"
+        for i, item in ipairs(inventory) do
+            if item.name == item2 then
+                label = item.label
+                break
+            end
         end
-    end
-    cb(label)
+        cb(label)
+    end)
 end)
-
-
 
 RegisterServerEvent("vorpinventory:itemlog")
 AddEventHandler("vorpinventory:itemlog", function(_source, targetHandle, itemName, amount)
@@ -93,144 +91,55 @@ AddEventHandler("vorpinventory:netduplog", function()
 end)
 
 
-if Config.DevMode then
-    RegisterCommand("getInv", function(source, args, rawCommand)
-        -- If the source is > 0, then that means it must be a player.
-        if (source > 0) then
-            local characterId = Core.getUser(source).getUsedCharacter
 
-            TriggerClientEvent("vorp:SelectedCharacter", source, characterId)
-            LoadDatabase(charid)
-            -- If it's not a player, then it must be RCON, a resource, or the server console directly.
-        else
-            print("This command was executed by the server console, RCON client, or a resource.")
-        end
-    end, false --[[this command is not restricted, everyone can use this.]])
-end
-
---============================  CUSTOM INVENTORY CHECK UP ====================================--
+-- * CUSTOM INVENTORY CHECK IS OPEN * --
 local InventoryBeingUsed = {}
 
-RegisterServerEvent("vorp_inventory:Server:LockCustomInv", function(id)
+Core.addRpcCallback("vorp_inventory:Server:CanOpenCustom", function(source, cb, id)
     local _source = source
-    local CanOpen = true
-
-    for _, value in pairs(InventoryBeingUsed) do
-        if value.invid == id then -- does this id exists
-            CanOpen = false
-            break
-        end
+    if not InventoryBeingUsed[id] then
+        InventoryBeingUsed[id] = _source
+        return cb(true)
     end
 
-    if CanOpen then
-        InventoryBeingUsed[#InventoryBeingUsed + 1] = { invid = id, playerid = _source } -- insert player and inv he is in
-    end
-
-    TriggerClientEvent("vorp_inventory:Client:CanOpenCustom", _source, CanOpen)
+    return cb(false)
 end)
 
 RegisterServerEvent("vorp_inventory:Server:UnlockCustomInv", function()
     local _source = source
-    for i, value in ipairs(InventoryBeingUsed) do
-        if value.playerid == _source then
-            table.remove(InventoryBeingUsed, i) -- remove index from table without creating a hole, this is why  should use table.remove
+    for i, value in pairs(InventoryBeingUsed) do
+        if value == _source then
+            InventoryBeingUsed[i] = nil
             break
         end
     end
 end)
 
--- for safe case
+
 AddEventHandler('playerDropped', function()
     local _source = source
+    -- clear ammo
+    allplayersammo[_source] = nil
+
+    -- if player is stil in inventory check and remove
     for i, value in ipairs(InventoryBeingUsed) do
-        if value.playerid == _source then
+        if value == _source then
             table.remove(InventoryBeingUsed, i)
             break
         end
     end
-end)
 
-
---=================================== CLEAR ITEMS WEAPONS AND MONEY=====================================--
-
-
-RegisterNetEvent("vorp:PlayerForceRespawn", function()
-    local _source = source
-    local User = Core.getUser(_source).getUsedCharacter
-    local _value = Config.OnPlayerRespawn
-    local job = User.job
-
-    if not User then
-        return
-    end
-
-    if not Config.UseClearAll then
-        return
-    end
-
-    --MONEY
-    if _value.Money.ClearMoney then
-        if not SharedUtils.IsValueInArray(job, _value.Money.JobLock) then
-            if not _value.Money.MoneyPercentage then
-                User.removeCurrency(0, User.money)
-            else
-                User.removeCurrency(0, User.money * _value.Money.MoneyPercentage)
+    -- remove weapons from cache on player leave
+    local weapons = UsersWeapons.default
+    local char = Core.getUser(_source).getUsedCharacter
+    if char then
+        local charid = char.charIdentifier
+        for key, value in pairs(weapons) do
+            if value.charId == charid then
+                UsersWeapons.default[key] = nil
+                break
             end
-        end
-    end
-
-    -- GOLD
-    if _value.Gold.ClearGold then
-        if not SharedUtils.IsValueInArray(job, _value.Gold.JobLock) then
-            if not _value.Gold.GoldPercentage then
-                User.removeCurrency(1, User.gold)
-            else
-                User.removeCurrency(1, User.gold * _value.Gold.GoldPercentage)
-            end
-        end
-    end
-
-    -- ITEMS
-    CreateThread(function()
-        if _value.Items.AllItems then
-            if not SharedUtils.IsValueInArray(job, _value.Items.JobLock) then
-                local Userinventory = VorpInv.getUserInventory(_source)
-                for i, item in pairs(Userinventory) do
-                    for index, value in ipairs(_value.Items.itemWhiteList) do
-                        if item.name ~= value then
-                            InventoryAPI.subItem(_source, item.name, item.count, item.metadata, function()
-                            end)
-                        end
-                    end
-                end
-            end
-        end
-    end)
-
-    -- WEAPONS
-    CreateThread(function()
-        if _value.Weapons.AllWeapons then
-            if not SharedUtils.IsValueInArray(job, _value.Weapons.JobLock) then
-                local Userweapons = VorpInv.getUserWeapons(_source)
-
-                for i, weapon in pairs(Userweapons) do
-                    for index, value in ipairs(_value.Weapons.WeaponWhitelisted) do
-                        if value ~= weapon.name then
-                            InventoryAPI.subWeapon(_source, weapon.id)
-                            InventoryAPI.deletegun(_source, weapon.id, function()
-                            end)
-                        end
-                    end
-                end
-            end
-        end
-    end)
-
-    --AMMO
-    if _value.Ammo.AllAmmo then
-        if not SharedUtils.IsValueInArray(job, _value.Ammo.JobLock) then
-            TriggerClientEvent('syn_weapons:removeallammo', _source)  -- syn script
-            TriggerClientEvent('vorp_weapons:removeallammo', _source) -- vorp script
         end
     end
 end)
+

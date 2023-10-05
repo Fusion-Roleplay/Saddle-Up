@@ -25,11 +25,11 @@ Config = {
     initGroup                = "user",       -- leave it like this
     Whitelist                = false,        -- dont use
     AllowWhitelistAutoUpdate = false,        -- dont use
-    SavePlayersStatus        = true,        -- save players health stamina inner and outter core to DB?
+    SavePlayersStatus        = false,        -- save players health stamina inner and outter core to DB?
     maxHealth                = 10,           -- 10 is FULL 0 IS EMPTY define max outer core for players
     maxStamina               = 10,           -- 10 is FULL 0 IS EMPTY define max outer core for players
     PVP                      = true,         -- Can players attack/hurt one another
-    PVPToggle                = false,         -- If true, players can set their own pvp state
+    PVPToggle                = true,         -- If true, players can set their own pvp state
     CommandOnOffPVP          = 'pvp',        -- [ NEED PVPToggle = true ] TOGGLE or OFF pvp for your character
     savePlayersTimer         = 10,           -- this will tell the core in how many minutes should all players be saved to the database
     showplayerIDwhenfocus    = true,         -- set false will show steam name when focus on another player RMB
@@ -56,14 +56,14 @@ Config = {
     --=======================================
     ---UI Configurations
     HideUi                   = false,      -- Show or Hide the Overall UI
-    HideGold                 = true,      -- disables Gold UI for all
-    HideMoney                = true,      -- disables Money UI for all
-    HideLevel                = true,      -- disables Level UI for all
+    HideGold                 = false,      -- disables Gold UI for all
+    HideMoney                = false,      -- disables Money UI for all
+    HideLevel                = false,      -- disables Level UI for all
     HideID                   = false,      -- disables ID UI for all
-    HideTokens               = true,      -- disables Token UI for all
-    HidePVP                  = true,      -- disables PVP UI for all
-    UIPosition               = 'BottomRight', -- Changes position of UI. Options: BottomRight, MiddleRight, TopRight, TopMiddle, BottomMiddle
-    UILayout                 = 'Row',   -- Changes the layour of the UI. Options: Row, Column
+    HideTokens               = false,      -- disables Token UI for all
+    HidePVP                  = false,      -- disables PVP UI for all
+    UIPosition               = 'TopRight', -- Changes position of UI. Options: BottomRight, MiddleRight, TopRight, TopMiddle, BottomMiddle
+    UILayout                 = 'Column',   -- Changes the layour of the UI. Options: Row, Column
     HideWithRader            = true,       -- UI will hide whenever the radar(minimap) is hidden
     OpenAfterRader           = true,       -- UI will show whenever the radar(minimap) is showing again
     CloseOnDelay             = false,      -- UI will automatically close after an amount of time
@@ -130,13 +130,13 @@ Config = {
     SetBothDBadmin           = false, -- if set true should the command addGroup set admins on both tables in databse!
     --=======================================================
     ---BUILT IN RICH PRESENCE DISCORD
-    maxplayers               = 48,                       -- change to the number of players that can get in to your server
-    appid                    = 842160449549893652,                       -- Application ID (Replace this with you own)
-    biglogo                  = "logo-black",                -- image assets name for the "large" icon.
-    biglogodesc              = "Saddle Up",  -- text when hover over image
-    smalllogo                = "logo-black",           -- image assets name for the "small" icon.(OPTIONAL)
+    maxplayers               = 128,                       -- change to the number of players that can get in to your server
+    appid                    = nil,                       -- Application ID (Replace this with you own)
+    biglogo                  = "LOGOname",                -- image assets name for the "large" icon.
+    biglogodesc              = " Redm Server Connect: ",  -- text when hover over image
+    smalllogo                = "smallboy name",           -- image assets name for the "small" icon.(OPTIONAL)
     smalllogodesc            = "Join us for a good time", -- text when hover over image
-    discordlink              = "https://discord.gg/pVz8QC696e",     -- discord link
+    discordlink              = "https://discord.gg/",     -- discord link
     richpresencebutton       = "Join Discord",            --set button text for Rich Presence Button
     shownameandid            = true,                      --show player steam name and id
     --======================================================

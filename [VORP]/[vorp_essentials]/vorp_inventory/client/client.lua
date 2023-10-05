@@ -1,6 +1,11 @@
+---@diagnostic disable: undefined-global
 local loaded = false
 local getammoinfo = false
 local playerammoinfo = {}
+Core = {}
+TriggerEvent("getCore", function(core)
+    Core = core
+end)
 
 -- Global for translations
 T = TranslationInv.Langs[Lang]
@@ -35,13 +40,14 @@ if Config.DevMode then
         TriggerServerEvent("DEV:loadweapons")
         print("Loading Inventory")
         TriggerServerEvent("vorpinventory:getItemsTable")
-        Wait(300)
+        Wait(1000)
         TriggerServerEvent("vorpinventory:getInventory")
-        Wait(5000)
+        Wait(2000)
         TriggerServerEvent("vorpCore:LoadAllAmmo")
         print("inventory loaded")
-        Wait(2500)
+        Wait(100)
         TriggerEvent("vorpinventory:loaded")
+        loaded = true
     end)
 end
 
@@ -60,7 +66,7 @@ end
 
 Citizen.CreateThread(function()
     while true do
-        Wait(1)
+        Wait(0)
         if not loaded then
             DisableControlAction(0, 0xC1989F95, true)
         else
@@ -74,16 +80,16 @@ RegisterNetEvent("vorpinventory:loaded")
 AddEventHandler("vorpinventory:loaded", function()
     SendNUIMessage({
         action = "reclabels",
-        labels = Config.Ammolabels
+        labels = SharedData.AmmoLabels
     })
     getammoinfo = true
     TriggerServerEvent("vorpinventory:getammoinfo")
     while getammoinfo do
         Wait(100)
     end
-    local playerammo = playerammoinfo["ammo"]
-    for k,v in pairs(playerammo) do 
-        SetPedAmmoByType(PlayerPedId(), GetHashKey(k), v)
+    local playerammo = playerammoinfo.ammo
+    for k, v in pairs(playerammo) do
+        SetPedAmmoByType(PlayerPedId(), joaat(k), v)
     end
     SendNUIMessage({
         action = "updateammo",
@@ -103,10 +109,11 @@ end)
 
 RegisterNetEvent("vorpinventory:setammotoped")
 AddEventHandler("vorpinventory:setammotoped", function(ammo)
-    Citizen.InvokeNative(0xF25DF915FA38C5F3, PlayerPedId(), 1, 1)
-    Citizen.InvokeNative(0x1B83C0DEEBCBB214, PlayerPedId())
+    local PlayerPedId = PlayerPedId()
+    Citizen.InvokeNative(0xF25DF915FA38C5F3, PlayerPedId, 1, 1)
+    Citizen.InvokeNative(0x1B83C0DEEBCBB214, PlayerPedId)
     for k, v in pairs(ammo) do
-        SetPedAmmoByType(PlayerPedId(), GetHashKey(k), v)
+        SetPedAmmoByType(PlayerPedId, joaat(k), v)
     end
 end)
 
@@ -134,8 +141,9 @@ Citizen.CreateThread(function()
     while true do
         Wait(500)
         if loaded then
-            local isArmed = Citizen.InvokeNative(0xCB690F680A3EA971, PlayerPedId(), 4)
-            local wephash = Citizen.InvokeNative(0x8425C5F057012DAB, PlayerPedId())
+            local PlayerPedId = PlayerPedId()
+            local isArmed = Citizen.InvokeNative(0xCB690F680A3EA971, PlayerPedId, 4)
+            local wephash = Citizen.InvokeNative(0x8425C5F057012DAB, PlayerPedId)
             local ismelee = Citizen.InvokeNative(0x959383DCD42040DA, wephash)
             if (isArmed or GetWeapontypeGroup(wephash) == 1548507267) and not ismelee then
                 getammoinfo = true
@@ -143,18 +151,20 @@ Citizen.CreateThread(function()
                 while getammoinfo do
                     Wait(100)
                 end
+
                 local wepgroup = GetWeapontypeGroup(wephash)
-                local ammotypes = Config.Ammotypes[tostring(wepgroup)]
-                local playerammo = playerammoinfo["ammo"]
-                if ammotypes ~= nil and playerammo ~= nil then
+                local ammotypes = SharedData.AmmoTypes[wepgroup]
+
+                local playerammo = playerammoinfo.ammo
+                if ammotypes and playerammo then
                     for k, v in pairs(ammotypes) do
                         if contains(playerammo, v) then
-                            local qt = Citizen.InvokeNative(0x39D22031557946C1, PlayerPedId(), GetHashKey(v))
+                            local qt = Citizen.InvokeNative(0x39D22031557946C1, PlayerPedId, joaat(v))
                             if not qt or ((GetWeapontypeGroup(wephash) == 1548507267 or GetWeapontypeGroup(wephash) == -1241684019) and qt == 1) then -- an issue occurs where when the player fires their last throwable this loop stops since the player auto switches to melee and it never registers that they used the last of their ammo, creating a problem where the player will always have 1 throwable left even after they have used it. to combat this the player is considered out of ammo if they only have 1 ammo left
                                 qt = 0
                             end
                             if playerammo[v] ~= qt then
-                                playerammoinfo["ammo"][v] = qt
+                                playerammoinfo.ammo[v] = qt
                                 TriggerServerEvent("vorpinventory:updateammo", playerammoinfo)
                                 SendNUIMessage({
                                     action = "updateammo",

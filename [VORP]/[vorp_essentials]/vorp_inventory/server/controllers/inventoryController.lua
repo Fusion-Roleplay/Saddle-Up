@@ -1,4 +1,5 @@
--- InventoryController client events
+---@diagnostic disable: undefined-global
+-- Inventory Service Controller
 RegisterServerEvent("vorpinventory:getItemsTable", InventoryService.getItemsTable)
 RegisterServerEvent("vorpinventory:getInventory", InventoryService.getInventory)
 RegisterServerEvent("vorpinventory:serverGiveItem", InventoryService.GiveItem)
@@ -24,3 +25,12 @@ RegisterServerEvent("vorp_inventory:useItem", InventoryService.UseItem)
 RegisterServerEvent("vorp_inventory:getNearbyCharacters", InventoryService.getNearbyCharacters)
 RegisterServerEvent("vorp_inventory:MoveToCustom", InventoryService.MoveToCustom)
 RegisterServerEvent("vorp_inventory:TakeFromCustom", InventoryService.TakeFromCustom)
+RegisterNetEvent("vorpinventory:servergiveammo", InventoryService.serverGiveAmmo)
+RegisterNetEvent("vorpinventory:getammoinfo", InventoryService.getAmmoInfo)
+RegisterServerEvent("vorpinventory:updateammo", InventoryService.updateAmmo)
+AddEventHandler("vorp_NewCharacter", InventoryService.onNewCharacter)
+
+-- shared and for dev mode --
+RegisterServerEvent("vorpCore:LoadAllAmmo")
+AddEventHandler("vorpCore:LoadAllAmmo", InventoryService.LoadAllAmmo)
+-------------------------

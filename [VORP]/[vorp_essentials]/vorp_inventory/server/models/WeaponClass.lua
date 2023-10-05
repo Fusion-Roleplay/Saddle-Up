@@ -1,17 +1,31 @@
----@class Weapon
-Weapon = {}
-
-Weapon.name = nil
-Weapon.id = nil
+---@class Weapon : table @Weapon class
+---@field id number @Weapon id
+---@field propietary number @Weapon owner steam id
+---@field name string @Weapon name
+---@field ammo number @Weapon ammo
+---@field components table @Weapon components
+---@field used boolean @Weapon used
+---@field used2 boolean @Weapon used2
+---@field charId number @Weapon charid
+---@field currInv string @Weapon current inventory
+---@field dropped number @Weapon dropped
+---@field group number @Weapon group type
+---@field source number @Weapon player source
+Weapon            = {}
+Weapon.name       = nil
+Weapon.id         = nil
 Weapon.propietary = nil
-Weapon.charId = nil
-Weapon.used = false
-Weapon.used2 = false
-Weapon.ammo = {}
+Weapon.charId     = nil
+Weapon.used       = false
+Weapon.used2      = false
+Weapon.ammo       = {}
 Weapon.components = {}
-Weapon.desc = nil
-Weapon.currInv = ''
-Weapon.dropped = 0
+Weapon.desc       = nil
+Weapon.currInv    = ''
+Weapon.dropped    = 0
+Weapon.group      = 5
+Weapon.source     = nil
+
 
 function Weapon:setUsed(isUsed)
 	self.used = isUsed
@@ -27,6 +41,14 @@ end
 
 function Weapon:getUsed2()
 	return self.used2
+end
+
+function Weapon:getSource()
+	return self.source
+end
+
+function Weapon:setSource(source)
+	self.source = source
 end
 
 function Weapon:setPropietary(propietary)
@@ -51,6 +73,10 @@ end
 
 function Weapon:getId()
 	return self.id
+end
+
+function Weapon:getGroup()
+	return self.group
 end
 
 function Weapon:setName(name)
@@ -116,14 +142,14 @@ function Weapon:addAmmo(type, amount)
 	else
 		self.ammo[type] = tonumber(amount)
 	end
-	MySQL.update('UPDATE loadout SET ammo = @ammo WHERE id=@id',
-		{ ['ammo'] = json.encode(self:getAllAmmo()), ['id'] = self.id })
+	DBService.updateAsync('UPDATE loadout SET ammo = @ammo WHERE id=@id',
+		{ ammo = json.encode(self:getAllAmmo()), id = self.id }, function() end)
 end
 
 function Weapon:setAmmo(type, amount)
 	self.ammo[type] = tonumber(amount)
-	MySQL.update('UPDATE loadout SET ammo = @ammo WHERE id=@id',
-		{ ['ammo'] = json.encode(self:getAllAmmo()), ['id'] = self.id })
+	DBService.updateAsync('UPDATE loadout SET ammo = @ammo WHERE id=@id',
+		{ ammo = json.encode(self:getAllAmmo()), id = self.id }, function() end)
 end
 
 function Weapon:subAmmo(type, amount)
@@ -133,8 +159,8 @@ function Weapon:subAmmo(type, amount)
 		if self.ammo[type] <= 0 then
 			self.ammo[type] = nil
 		end
-		MySQL.update('UPDATE loadout SET ammo = @ammo WHERE id=@id',
-			{ ['ammo'] = json.encode(self:getAllAmmo()), ['id'] = self.id })
+		DBService.updateAsync('UPDATE loadout SET ammo = @ammo WHERE id=@id',
+			{ ammo = json.encode(self:getAllAmmo()), id = self.id }, function() end)
 	end
 end
 

@@ -1,4 +1,5 @@
 ---@diagnostic disable: undefined-global
+-- it is advised to use the exports and not these events
 exports('vorp_inventoryApi', function()
     local INV = {}
 
@@ -15,9 +16,23 @@ exports('vorp_inventoryApi', function()
 
         return Citizen.Await(query_promise)
     end
+
     -- * CUSTOM INVENTORY * --
-    INV.registerInventory = function(...)
-        TriggerEvent("vorpCore:registerInventory", ...)
+    INV.registerInventory = function(id, name, limit, acceptWeapons, shared, ignoreItemStackLimit, whitelistItems,
+                                     UsePermissions, UseBlackList, whitelistWeapons)
+        local data = {
+            id = id,
+            name = name,
+            limit = limit,
+            acceptWeapons = acceptWeapons,
+            shared = shared,
+            ignoreItemStackLimit = ignoreItemStackLimit,
+            whitelistItems = whitelistItems,
+            UsePermissions = UsePermissions,
+            UseBlackList = UseBlackList,
+            whitelistWeapons = whitelistWeapons
+        }
+        TriggerEvent("vorpCore:registerInventory", data)
     end
 
     INV.removeInventory = function(...)
@@ -71,12 +86,8 @@ exports('vorp_inventoryApi', function()
     end
 
     INV.canCarryWeapons = function(source, amount, cb, weaponName)
-        if not weaponName then
-            print("4th parameter is required for the no weapons list to work properly refer to docs")
-        end
         TriggerEvent("vorpCore:canCarryWeapons", source, amount, cb, weaponName)
     end
-
 
     INV.getcomps = function(source, weaponid)
         local comps_promise = promise.new()
@@ -126,16 +137,20 @@ exports('vorp_inventoryApi', function()
         local weapon_promise = promise.new()
         TriggerEvent("vorpCore:getUserWeapon", source, function(weapon)
             weapon_promise:resolve(weapon)
-        end, weaponId)
+        end,weaponId)
         return Citizen.Await(weapon_promise)
+    end
+
+    INV.removeAllUserAmmo = function(source)
+        TriggerEvent("vorpinventory:removeammo", source)
     end
 
     -- * ITEMS * --
     INV.getItem = function(source, itemName, metadata)
         local item_promise = promise.new()
-        TriggerEvent("vorpCore:getItem", source, tostring(itemName), function(responseItem)
+        TriggerEvent("vorpCore:getItem", source, itemName, function(responseItem)
             item_promise:resolve(responseItem)
-        end, metadata)
+        end,metadata)
         return Citizen.Await(item_promise)
     end
 
@@ -208,7 +223,7 @@ exports('vorp_inventoryApi', function()
         local count_promise = promise.new()
         TriggerEvent("vorpCore:getItemCount", source, function(itemcount)
             count_promise:resolve(itemcount)
-        end, tostring(item), metadata)
+        end, item, metadata)
         return Citizen.Await(count_promise)
     end
 
@@ -234,11 +249,11 @@ exports('vorp_inventoryApi', function()
     end
 
     INV.canCarryItem = function(source, item, amount)
-        local itemcount = INV.getItemCount(source, item)
-        local reqCount = itemcount + amount
-        local limit = INV.getDBItem(source, item).limit
-        local canCarryItem = reqCount <= limit
-        return canCarryItem
+        local can_promise = promise.new()
+        TriggerEvent("vorpCore:canCarryItem", source, item, amount, function(data)
+            can_promise:resolve(data)
+        end)
+        return Citizen.Await(can_promise)
     end
 
     INV.RegisterUsableItem = function(itemName, cb)
@@ -264,7 +279,6 @@ exports('vorp_inventoryApi', function()
         if invId then
             return TriggerEvent("vorpCore:openCustomInventory", source, invId)
         end
-
         TriggerClientEvent("vorp_inventory:OpenInv", source)
     end
 

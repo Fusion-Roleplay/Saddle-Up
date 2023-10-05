@@ -43,24 +43,24 @@ function secondarySetCapacity(cap) {
   secondarySetCurrentCapacity("0");
 }
 
-function hideSecondaryCapacity() {
-  secondaryCapacityAvailable = false;
-  $(".capacity").hide();
-}
 
 function initiateSecondaryInventory(id, title, capacity) {
   $("#secondInventoryHud").append(
     `<div class='controls'><div class='controls-center'><input type='text' id='secondarysearch' placeholder='${LANGUAGE.inventorysearch}'/></div></div>`
   );
 
+
   $("#secondarysearch").bind("input", function () {
-    searchFor = $("#secondarysearch").val().toLowerCase();
+    var searchFor = $("#secondarysearch").val().toLowerCase();
     $("#secondInventoryElement .item").each(function () {
-      label = $(this).data("label").toLowerCase();
-      if (label.indexOf(searchFor) < 0) {
-        $(this).hide();
-      } else {
-        $(this).show();
+      var label = $(this).data("label");
+      if (label) { // Check that label is defined
+        label = label.toLowerCase();
+        if (label.indexOf(searchFor) < 0) {
+          $(this).hide();
+        } else {
+          $(this).show();
+        }
       }
     });
   });
@@ -71,10 +71,11 @@ function initiateSecondaryInventory(id, title, capacity) {
   if (capacity) {
     secondarySetCapacity(capacity);
   } else {
-    // Backwards compatible, inventory capacity will not show
-    hideSecondaryCapacity();
+    secondaryCapacityAvailable = false;
+    secondarySetCapacity("0")
   }
 }
+
 
 function initDivMouseOver() {
   if (isOpen === true) {
@@ -129,27 +130,6 @@ function disableInventory(ms) {
     disabledFunction.start();
   }
 }
-
-/*function selectPlayerToGive(data) {
-    const timer = setTimeout(() => {
-        clearTimeout(timer);
-        dialog.prompt({
-            title: LANGUAGE.toplayerpromptitle,
-            button: LANGUAGE.toplaterpromptaccept,
-            required: false,
-            item: data,
-            type: data.type,
-            select: true,
-            validate: function (value, data, player) {
-                $.post(`https://${GetParentResourceName()}/GiveItem`, JSON.stringify({
-                    player: player,
-                    data: data
-                }));
-                return true;
-            }
-        });
-    }, 300);
-}*/
 
 function validatePlayerSelection(player) {
   const data = objToGive;

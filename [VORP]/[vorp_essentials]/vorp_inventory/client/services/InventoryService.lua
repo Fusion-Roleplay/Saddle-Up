@@ -1,7 +1,5 @@
-
-
 ---@diagnostic disable: undefined-global
----@class InventoryService @InventoryService
+---@class  InventoryService @ InventoryService
 ---@class Weapon @Weapon
 ---@class Item @Item
 ---@field PullAllInventory fun():table
@@ -17,15 +15,16 @@
 ---@field UserWeapons table<string,Weapon>
 ---@field UserInventory table<number,Item>
 svItems = {}
+
 InventoryService = {}
 UserWeapons = {}
 UserInventory = {}
 
-InventoryService.PullAllInventory = function()
+function InventoryService.PullAllInventory()
 	return UserInventory
 end
 
-InventoryService.receiveItem = function(name, id, amount, metadata)
+function InventoryService.receiveItem(name, id, amount, metadata)
 	if UserInventory[id] ~= nil then
 		UserInventory[id]:addCount(amount)
 	else
@@ -39,14 +38,14 @@ InventoryService.receiveItem = function(name, id, amount, metadata)
 			type = "item_standard",
 			canUse = true,
 			canRemove = svItems[name].canRemove,
-			desc = svItems[name].desc
+			desc = svItems[name].desc,
+			group = svItems[name].group or 1,
 		})
 	end
-
 	NUIService.LoadInv()
 end
 
-InventoryService.removeItem = function(name, id, count)
+function InventoryService.removeItem(name, id, count)
 	if UserInventory[id] == nil then
 		return
 	end
@@ -67,7 +66,7 @@ InventoryService.removeItem = function(name, id, count)
 	end
 end
 
-InventoryService.receiveWeapon = function(id, propietary, name, ammos)
+function InventoryService.receiveWeapon(id, propietary, name, ammos)
 	local weaponAmmo = {}
 
 	for type, amount in pairs(ammos) do
@@ -84,7 +83,8 @@ InventoryService.receiveWeapon = function(id, propietary, name, ammos)
 			ammo = weaponAmmo,
 			used = false,
 			used2 = false,
-			desc = Utils.GetWeaponDesc(name)
+			desc = Utils.GetWeaponDesc(name),
+			group = 5
 		})
 
 		UserWeapons[newWeapon:getId()] = newWeapon
@@ -92,7 +92,7 @@ InventoryService.receiveWeapon = function(id, propietary, name, ammos)
 	end
 end
 
-InventoryService.onSelectedCharacter = function(charId)
+function InventoryService.onSelectedCharacter(charId)
 	SetNuiFocus(false, false)
 	SendNUIMessage({ action = "hide" })
 	print("Loading Inventory")
@@ -106,14 +106,14 @@ InventoryService.onSelectedCharacter = function(charId)
 	TriggerEvent("vorpinventory:loaded")
 end
 
-InventoryService.processItems = function(items)
+function InventoryService.processItems(items)
 	svItems = {}
 	for _, item in pairs(items) do
 		svItems[item.item] = Item:New(item)
 	end
 end
 
-InventoryService.getLoadout = function(loadout)
+function InventoryService.getLoadout(loadout)
 	for _, weapon in pairs(loadout) do
 		local weaponAmmo = weapon.ammo
 
@@ -140,6 +140,7 @@ InventoryService.getLoadout = function(loadout)
 				desc = Utils.GetWeaponDesc(weapon.name),
 				currInv = weapon.curr_inv,
 				dropped = 0,
+				group = 5
 			})
 
 			UserWeapons[newWeapon:getId()] = newWeapon
@@ -151,7 +152,7 @@ InventoryService.getLoadout = function(loadout)
 	end
 end
 
-InventoryService.getInventory = function(inventory)
+function InventoryService.getInventory(inventory)
 	if inventory and inventory ~= '' then
 		UserInventory = {}
 		local inventoryItems = json.decode(inventory)

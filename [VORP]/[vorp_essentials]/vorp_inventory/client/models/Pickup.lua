@@ -1,3 +1,5 @@
+---@class Pickup : table @Pickup class
+
 Pickup = {}
 
 Pickup.name = ''
@@ -13,7 +15,7 @@ Pickup.prompt = nil
 function Pickup:Distance()
     local playerCoords = GetEntityCoords(PlayerPedId(), true, true)
 
-    return Vdist(playerCoords.x, playerCoords.y, playerCoords.z, self.coords.x,  self.coords.y,  self.coords.z)
+    return Vdist(playerCoords.x, playerCoords.y, playerCoords.z, self.coords.x, self.coords.y, self.coords.z)
 end
 
 function Pickup:IsWeapon()
@@ -24,9 +26,9 @@ function Pickup:IsInRange()
     return self:Distance() <= 5
 end
 
-function Pickup:New (t)
-	t = t or {}
-	setmetatable(t, self)
-	self.__index = self
-	return t
+function Pickup:New(t)
+    t = t or {}
+    setmetatable(t, self)
+    self.__index = self
+    return t
 end

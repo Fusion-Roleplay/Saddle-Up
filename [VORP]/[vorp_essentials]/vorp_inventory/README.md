@@ -1,24 +1,32 @@
-# Inventory in Lua System for VORPCore framework
+# Inventory  System for VORPCore framework in Lua
 
 ## Requirements
-- [VORP CORE](https://github.com/VORPCORE/vorp-core-lua)
+- [vorp_core](https://github.com/VORPCORE/vorp-core-lua) Lua
 
 ## How to install
-* Download the lastest version of VORP Inventory
-* Copy and paste ```vorp_inventory``` folder to ```resources/vorp_inventory```
+* Download the lastest version of vorp_nventory
+* Copy and paste ```vorp_inventory``` folder to ```resources/[VORP]essentials/vorp_inventory```
 * Add ```ensure vorp_inventory``` to your ```resource.cfg``` file
-* To change the language go to ```resources/vorp_inventory/Config``` and change the default language, also you will have to edit the html file to change the text on the inventory menu
+* To change the language go to ```languages/language.lua``` and change the default language in config
 
+
+## Extensive API
+* using a single export on top of your server and client files as a function triggering events `that can also be used/listen` with callbacks using Lua promisses
+* single exports for each API function * NEW
 
 ## Features
-* extensive API
-* Unique weapons 
+* Unique weapons equip unequip
 * give ammo from your belt
 * drop give pick up functions
-* usable items.
+* usable items double click or right click
 * KLS.
 * metadata for items
-* storage API
+* storage/stashes API
+* on respawn clear weapons items money ammo
+* jobs can hold more weapons
+* items and weapons with groups
+* item give on first connection and weapons
+and much more
 
 
 ![image](https://user-images.githubusercontent.com/87246847/156600012-3901dac7-73f8-4577-a8f5-9a60d7e3150b.png)
@@ -30,12 +38,13 @@
 * Description of all items in DB
 * Gold item like Dollars (You can give and drop item)
 - You can choose if using Gold like Dollars in config.lua and config.js
-- Added descriptions of each item in inventory, for items (desc is in DB), for weapons (desc is in config.lua), for dollars and gold (desc are in html)
+- Added descriptions of each item in inventory, for items (desc is in DB), for weapons (desc is in shared/weapons.lua)
 
 
 ## DOCUMENTATION
 
-[VORP INVENTORY](https://vorpcore.github.io/VORP_Documentation/api/inventory)
+[vorp_inventory](https://vorpcore.github.io/VORP_Documentation/api/inventory)
+
 
 ## Credits
 - To [Val3ro](https://github.com/Val3ro) for the initial work.
