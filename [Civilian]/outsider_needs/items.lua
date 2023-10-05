@@ -9,9 +9,10 @@ Items = {}
 
 --[[
     giveItemBack          = true, -- should it give the item back after use ?
-      appleseeds = 1, -- item name and ammount
-     -- can add more items here
+    itemsToGive           = {
+        appleseeds = 1,            -- item name and ammount
     }
+
 ]]
 
 ------ custom items ------
@@ -90,8 +91,8 @@ Items.Consumables = {
                 },
             },
             apple = {
-                removethirst          = 100,
-                removehunger          = 100,
+                removethirst          = 0,
+                removehunger          = 0,
                 removestamina         = 0,
                 removehealth          = 0,
                 addhealth             = 0,
@@ -132,9 +133,9 @@ Items.Consumables = {
                     soundRef = "Consumption_Sounds"
                 },
                 -- give item back NEW FEATURE
-                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
+                giveItemBack          = true, -- should it give the item back after use ? like a bowl or spoon
                 itemsToGive           = {
-                    appleseeds = 1,            -- item name and ammount
+                    apple = 2,                -- item name and ammount
                 }
 
             },

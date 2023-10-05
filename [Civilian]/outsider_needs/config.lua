@@ -97,7 +97,7 @@ Config                    = {
     -------------------------------------------------------------
     ------------- * ADDICTION & STRESS SYSTEM * -----------------
     Stress                   = {
-        usestress = false,            -- if true will use stress
+        usestress = true,            -- if true will use stress
         WaterFoodLevel = 1,          --  at every one second it will add this value if food or water is below 0
         --* NEW *--
         ShootingLevel = 1,           -- at every one second it will add this value if player is shooting  <<<<<<NEW FEATURE >>>>>>>
@@ -136,7 +136,7 @@ Config                    = {
     },
 
     Addiction                = {
-        useaddiction = false,                  -- if true will use addiction
+        useaddiction = true,                  -- if true will use addiction
         Level1 = {
             AddictionRemoveHungerLevel = 0.5, -- remove hunger while addicted,
             AddictionRemoveThirstLevel = 0.5, -- remove thirst while addicted
@@ -274,7 +274,7 @@ function ServerNotify(type, text, VORP, source)
             VORP.NotifyObjective(source, text, 5000) -- change here to the notify you want
         end
     else                                             --  sucess
-        if source then                               -- notouch
+        if source then                               -- no touch
             VORP.NotifyRightTip(source, text, 5000)  -- change here to the notify you want
         end
     end
