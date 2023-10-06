@@ -171,122 +171,6 @@ AxRadialMenu = {
         },
         [4] = {
             shoudclose = false,
-            label = "",
-            icon = "",
-            submenu = {
-                {
-                    shoudclose = false,
-                    label = "Awkward",
-                    submenu = false,
-                    event = "Ax-Radial:Dance",
-                    type = "client",
-                    parameter = "Awkward",
-                    icon = "fas fa-running"
-                },
-                {
-                    shoudclose = false,
-                    label = "Carefree 1",
-                    submenu = false,
-                    event = "Ax-Radial:Dance",
-                    type = "client",
-                    parameter = "Carefree 1",
-                    icon = "fas fa-running"
-                },
-                {
-                    shoudclose = false,
-                    label = "Carefree 2",
-                    submenu = false,
-                    event = "Ax-Radial:Dance",
-                    type = "client",
-                    parameter = "Carefree 2",
-                    icon = "fas fa-running"
-                },
-                {
-                    shoudclose = false,
-                    label = "Confident 1",
-                    submenu = false,
-                    event = "Ax-Radial:Dance",
-                    type = "client",
-                    parameter = "Confident 1",
-                    icon = "fas fa-running"
-                },
-                {
-                    shoudclose = false,
-                    label = "Confident 2",
-                    submenu = false,
-                    event = "Ax-Radial:Dance",
-                    type = "client",
-                    parameter = "Confident 2",
-                    icon = "fas fa-running"
-                },            
-				{
-                    shoudclose = false,
-                    label = "Next",
-                    icon = "fas fa-chevron-circle-right",
-                    submenu = {
-                        
-                        {
-                            shoudclose = false,
-                            label = "Drunk 1",
-                            submenu = false,
-                            type = "client",
-                            event = "Ax-Radial:Dance",
-                            icon = "fas fa-running",
-                            parameter = "Drunk 1",
-                        },
-                        {
-                            shoudclose = false,
-                            label = "Drunk 2",
-                            submenu = false,
-                            type = "client",
-                            event = "Ax-Radial:Dance",
-                            icon = "fas fa-running",
-                            parameter = "Drunk 2",
-                        },
-						{
-                            shoudclose = false,
-                            label = "Formal",
-                            submenu = false,
-                            type = "client",
-                            event = "Ax-Radial:Dance",
-                            icon = "fas fa-running",
-                            parameter = "Formal",
-                        },
-						{
-                            shoudclose = false,
-                            label = "Graceful",
-                            submenu = false,
-                            type = "client",
-                            event = "Ax-Radial:Dance",
-                            icon = "fas fa-running",
-                            parameter = "Graceful",
-                        },
-						{
-                            shoudclose = false,
-                            label = "Old",
-                            submenu = false,
-                            type = "client",
-                            event = "Ax-Radial:Dance",
-                            icon = "fas fa-running",
-                            parameter = "Old",
-                        },
-						{
-                            shoudclose = false,
-                            label = "Wild",
-                            submenu = false,
-                            type = "client",
-                            event = "Ax-Radial:Dance",
-                            icon = "fas fa-running",
-                            parameter = "Wild 1",
-                        }
-                    }
-                }
-            }
-        },
-            
-        
-        [5] = {
-            shoudclose = false,
             icon = "fas fa-walking",
             label = "Walk Styles",
             submenu = {
@@ -401,7 +285,7 @@ AxRadialMenu = {
         },
 
 
-        [6] = {
+        [5] = {
             shoudclose = false,
             label = "Actions",
             icon = "fas fa-theater-masks",
