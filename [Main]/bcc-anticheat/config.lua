@@ -53,7 +53,7 @@ Config.ResourceInject = {
 }
 
 Config.Net = {
-    active = false,
+    active = true,
     allowedoffenses = 2,
     checkinrate = 5000, -- Milisecond
     kickrate = 20000,
@@ -83,7 +83,7 @@ Config.AFK = {
 }
 
 Config.SpamClick = {
-    active = false,
+    active = true,
     infractions = 0,
     maxspaminfractions = 5,
     spamsensitivity = 250, -- Higher is less sensitive
@@ -125,11 +125,22 @@ Config.Weapons = { -- Blacklist Weapon and Anti Infinte Ammo
 }
 
 Config.PlayerStatus = { -- Anti Change Health
-    active = false,
+    active = true,
     health = 600, -- Default Value (2088 = Golden Core Health)
     lang = {
         kickreason = "Player health hack detected"
     }
 }
 
+Config.FX = { 
+    active = false,
+    limit = 5, -- Default Value (5)
+	fxWhitelist = {
+    -- "EXAMPLE",
+    -- Add other fx event names here
+},
+    lang = {
+        kickreason = 'Player %s caused event %s too many times with data %s', sender, eventName, eventDataString
+    }
+}
 
