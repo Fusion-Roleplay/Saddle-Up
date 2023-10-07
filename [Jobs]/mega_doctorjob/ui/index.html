@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mega Doctorjob</title>
+    <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.prod.js"></script>
+    <link rel="stylesheet" href="./css/tingle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="notes" v-if="hospital" style="display: none;">
+            {{note}}
+            <div class="header-group">
+                <h1>Patient Notes - {{hospital}}</h1>
+                <hr>
+            </div>
+            <div class="scrollable">
+                <div class="note" v-for="note of notes">
+                    <div class="note-header">
+                        <h1>Dr. {{note.firstName}} {{note.lastName}}</h1>
+                        <div class="header-right">
+                            {{note.date}}
+                            <img class="scale-hover" src="./img/cross.png" alt="" @click="deleteNote(note.id)">
+                        </div>
+                    </div>
+                    <div class="note-content">
+                        {{note.note}}
+                    </div>
+                </div>
+                <button class="rdr-button" id="add-note" @click="openNoteModal()">
+                    Add Note
+                </button>
+            </div>
+        </div>
+        <div class="patient" style="display: none;">
+            <div class="header-group">
+                <h1 v-if="!this.inspectMode">Patient</h1>
+                <h1 v-else>Dead Body</h1>
+                <hr>
+            </div>
+            <div class="patient-info">
+                <div class="silhouette">
+                    <svg viewBox="0 0 182 470" fill="none" xmlns="http://www.w3.org/2000/svg" id="silhouette">
+                        <g clip-path="url(#clip0_401_59)">
+                            <path
+                                id="left-leg"
+                                d="M91.403 224.237H48.1279C46.9411 229.312 46.0382 234.446 45.4232 239.618C44.4225 250.207 45.6396 270.723 50.508 292.908C55.3765 315.092 58.1894 319.858 58.1894 332.618C57.5943 343.207 52.78 361.738 55.9715 381.355C59.1631 400.971 62.6521 406.716 64.6536 419.211C66.2764 429.297 65.5191 430.568 65.1945 432.077C64.655 434.096 64.9058 436.239 65.8977 438.086C65.8977 441.554 60.7859 448.464 57.973 452.408C56.1608 455.373 55.9445 455.373 54.8626 456.194C52.8882 457.676 52.1579 459.688 54.1053 460.43C53.5102 462.071 54.2676 464.427 56.242 463.474C55.701 465.168 57.9189 466.307 60.272 465.539C60.3881 465.953 60.6315 466.322 60.9693 466.596C61.307 466.87 61.7227 467.035 62.1598 467.07C62.597 467.105 63.0344 467.007 63.4128 466.79C63.7912 466.573 64.0922 466.247 64.2749 465.857C65.8166 463.765 66.033 461.621 67.3312 461.992C68.6295 462.362 67.5476 464.215 66.8714 465.539C66.1953 466.863 67.169 469.033 69.9818 468.822C71.0245 468.8 72.0249 468.414 72.8032 467.735C73.5816 467.055 74.0868 466.127 74.2282 465.115C74.5106 463.479 75.338 461.981 76.5813 460.853C78.012 459.288 78.751 457.232 78.6369 455.135C78.7991 452.329 79.9892 451.72 81.0711 450.238C82.153 448.755 82.4235 445.869 81.5039 441.025C80.5843 436.18 80.99 435.969 81.5039 434.195C82.0177 432.421 81.5039 431.15 80.7465 427.656C79.9921 419.821 80.2374 411.924 81.4768 404.148C82.7751 396.921 85.7773 387.152 84.6954 372.142C83.6135 357.132 81.9907 347.178 83.343 344.054C84.6954 340.93 84.7495 331.876 85.3175 320.731C86.3723 299.897 87.2108 262.649 90.5375 262.649C90.5375 262.649 90.5375 262.649 90.6998 262.649C89.2122 250.207 91.403 236.097 91.403 224.237Z"
+                                fill="#B4B4B4"
+                                />
+                            <path
+                                id="right-leg"
+                                d="M135.895 239.538C135.347 234.368 134.499 229.233 133.353 224.157H91.403C91.403 236.097 89.2122 250.207 90.7809 262.57C93.9995 264.555 95.9469 318.163 96.028 320.572C96.4878 331.717 96.7854 340.771 98.0025 343.895C99.2196 347.019 97.705 356.973 96.6231 371.983C95.5412 386.993 98.5434 396.762 99.8687 403.989C101.101 411.766 101.338 419.663 100.572 427.497C99.8146 430.992 99.3007 432.236 99.8146 434.036C100.329 435.836 100.734 436.048 99.8146 440.866C98.895 445.684 99.2196 448.596 100.274 450.079C101.329 451.561 102.546 452.17 102.709 454.976C102.643 456.015 102.791 457.057 103.144 458.039C103.497 459.021 104.048 459.924 104.764 460.694C106.008 461.822 106.835 463.321 107.117 464.956C107.253 465.97 107.757 466.902 108.537 467.582C109.316 468.263 110.319 468.646 111.364 468.663C114.068 468.875 115.15 466.73 114.474 465.38C113.798 464.03 112.716 462.203 114.014 461.833C115.313 461.462 115.529 463.606 117.044 465.698C118.558 467.789 120.533 466.889 121.074 465.38C123.427 466.148 125.644 465.009 125.104 463.315C127.078 464.268 127.808 461.912 127.213 460.271C129.134 459.53 128.43 457.623 126.456 456.035C125.374 455.214 125.185 455.214 123.346 452.249C120.641 448.305 115.448 441.395 115.448 437.927C116.44 436.08 116.691 433.937 116.151 431.918C115.826 430.409 115.042 429.271 116.665 419.052C118.693 406.557 122.074 400.812 125.374 381.196C128.674 361.579 123.751 343.154 123.156 332.459C123.156 319.778 125.861 315.013 130.838 292.749C135.814 270.485 136.923 250.021 135.895 239.538Z"
+                                fill="#B4B4B4" />
+                            <path
+                                id="left-arm"
+                                d="M46.992 169.279C48.3714 158.689 49.9671 150.747 50.6163 147.809C48.9935 127.319 56.0257 103.281 43.7463 83.8499C38.932 86.3383 34.3069 90.4417 31.1424 101.905C29.1139 108.624 28.734 115.717 30.0335 122.606C30.2229 126.869 28.1673 135.552 29.2221 147.888C29.5974 154.972 28.4073 162.051 25.733 168.643C22.244 178.65 21.4326 183.203 20.3237 202.529C19.2147 221.854 18.187 231.649 15.347 234.296C12.5071 236.944 8.77461 238.559 6.15105 243.8C3.52749 249.042 -0.935252 251.742 0.173674 253.516C1.2826 255.29 4.93394 253.516 6.85428 250.869C8.77461 248.221 11.2088 246.792 10.6949 249.969C10.181 253.145 7.04359 267.705 7.44929 271.279C7.855 274.853 10.3974 272.179 11.317 268.632C12.2366 265.085 14.752 251.372 15.8609 251.689C16.9698 252.007 14.1299 262.676 13.1562 268.129C12.1825 273.583 11.858 275.065 13.4537 275.568C15.0495 276.071 16.1584 273.662 17.4296 267.626C18.7008 261.59 20.9728 253.066 21.676 253.172C22.3792 253.278 19.5393 265.058 18.8361 268.817C18.1329 272.577 18.6197 273.662 19.8368 274.112C21.0539 274.562 23.38 268.817 24.2996 262.808C25.2192 256.799 25.4085 254.284 26.0306 254.495C26.6526 254.707 26.0306 259.049 25.6249 262.596C25.2192 266.144 24.1914 271.835 26.0306 272.232C27.8698 272.629 29.2492 266.673 30.872 253.887C31.5752 248.592 33.198 239.935 31.0884 235.17C30.2769 233.185 34.6315 223.204 37.5526 215.739C41.9612 203.905 44.0979 190.986 46.992 169.279Z"
+                                fill="#B4B4B4" />
+                            <path
+                                id="right-arm"
+                                d="M175.384 243.88C172.679 238.585 169.001 237.156 166.161 234.376C163.321 231.596 162.428 221.881 161.211 202.608C159.994 183.336 159.183 178.782 155.802 168.723C153.106 162.118 151.916 155.017 152.313 147.915C153.368 135.578 151.285 126.895 151.501 122.633C152.783 115.742 152.403 108.653 150.392 101.931C146.579 88.1915 140.71 84.9882 134.867 82.5262C129.249 103.65 127.862 125.639 130.783 147.279C131.351 149.794 133.055 157.869 134.543 169.305C137.437 191.013 139.547 203.932 144.226 215.765C147.147 223.231 151.501 233.211 150.69 235.197C148.553 239.962 150.176 248.566 150.879 253.913C152.502 266.7 153.936 272.656 155.748 272.259C157.56 271.862 156.451 266.197 156.153 262.623C155.856 259.049 155.153 254.681 155.748 254.522C156.343 254.363 156.559 256.878 157.479 262.835C158.398 268.791 160.724 274.43 161.914 274.139C163.104 273.847 163.645 272.735 162.942 268.844C162.239 264.952 159.291 253.357 159.994 253.357C160.697 253.357 163.132 261.776 164.24 267.811C165.349 273.847 166.567 276.23 168.189 275.753C169.812 275.277 169.623 273.768 168.487 268.314C167.351 262.861 164.565 252.166 165.782 251.875C166.999 251.583 169.406 265.323 170.326 268.817C171.246 272.312 173.761 274.959 174.167 271.465C174.572 267.97 171.462 253.331 170.948 250.154C170.434 246.977 172.868 248.274 174.789 251.054C176.709 253.834 180.55 255.104 181.469 253.701C182.389 252.298 178.007 249.148 175.384 243.88Z"
+                                fill="#B4B4B4" />
+                            <path
+                                id="torso"
+                                d="M129.729 206.579C128.511 195.143 127.916 191.569 126.835 184.58C125.701 179.651 125.094 174.621 125.022 169.57C124.833 159.483 130.432 146.406 130.432 146.406C130.432 146.406 130.432 146.697 130.621 147.253C127.7 125.613 129.087 103.624 134.705 82.4997L132.19 81.4408C125.59 78.6346 115.637 74.3195 109.714 71.5663C103.791 68.8131 103.709 68.4954 103.709 65.4775C103.709 62.4595 104.169 57.3767 104.169 57.3767H77.1222C77.1222 57.3767 77.6902 62.486 77.6902 65.504C77.6902 68.5219 77.6902 68.8396 71.7128 71.5928C65.7354 74.346 55.7822 78.6346 49.1827 81.4408C47.3976 82.2085 45.5584 82.9233 43.7733 83.8498C56.1067 103.281 49.0204 127.319 50.6432 147.809C50.8326 146.882 50.9678 146.406 50.9678 146.406C50.9678 146.406 56.5936 159.483 56.3772 169.57C56.3163 174.604 55.7088 179.618 54.5651 184.527C53.5102 191.516 52.9152 195.116 51.6981 206.526C50.508 213.065 49.2098 218.73 48.0738 224.104H133.353C132.217 218.783 130.919 213.118 129.729 206.579Z"
+                                fill="#B4B4B4" />
+                            <path
+                                id="head"
+                                d="M69.0082 30.9831C69.0082 30.9831 65.7084 30.9831 66.6821 35.51C67.498 38.7642 68.7725 41.8915 70.4687 44.802C71.5506 47.0522 72.4431 47.1581 73.1734 46.311C73.1734 46.311 73.6873 54.7559 77.1222 58.3033C79.5951 60.989 82.7076 63.0351 86.183 64.2598C89.7558 64.939 93.4289 64.939 97.0017 64.2598C100.148 62.8612 103.043 60.975 105.576 58.6739C108.181 55.0307 109.655 50.7285 109.822 46.2845C109.822 46.2845 111.31 47.3434 112.797 44.1931C115.772 37.8661 116.476 35.6953 116.286 33.3127C116.272 32.685 116.012 32.0868 115.558 31.6429C115.104 31.199 114.493 30.9436 113.852 30.9301C113.852 30.9301 121.533 4.29818 94.3241 2.02149C81.9366 1.51851 64.329 9.80459 69.0082 30.9831Z"
+                                fill="#B4B4B4" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_401_59">
+                                <rect width="182" height="470" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="patient-parameters" v-if="patient.diseases">
+                    <div class="parameter">
+                        <div class="header-group">
+                            <h1>Heart Rate</h1>
+                            <hr>
+                        </div>
+                        <p>{{heartRate}}</p>
+                    </div>
+                    <div class="parameter">
+                        <div class="header-group">
+                            <h1>Body Temperature</h1>
+                            <hr>
+                        </div>
+                        <p>{{bodyTemperature}}</p>
+                    </div>
+                    <div class="parameter" v-for="(diseaseData, disease) in bodyPartDiseases" :key="disease">
+                        <div class="parameter-info">
+                            <div class="header-group">
+                                <h1>{{getBoneName(getBoneNameID(diseaseData.bone))}}</h1>
+                                <hr>
+                            </div>
+                            <p class="text-danger curable" @click="heal(disease)">{{diseases[disease].displayName}}: {{getDamageType(disease)}}</p>
+                        </div>
+                    </div>
+                    <div class="parameter" id="notes-toggle-wrapper" v-if="hospital">
+                        <div class="header-group">
+                            <h1>Notes</h1>
+                            <hr>
+                        </div>
+                        <button @click="toggleNotes()" id="notes-toggle" class="rdr-button">
+                            {{ notesOpened ? 'Close Notes' : 'Open Notes' }}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="text/template" id="addNoteModalContent">
+        <h1>Add Note</h1>
+        <form class="modal-form" id="addNoteForm">
+            <textarea id="noteText"></textarea>
+        </form>
+    </script>
+    <script src="./js/tingle.min.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/addNoteModal.js"></script>
+    <script>
+        var app = Vue.createApp({
+            data() {
+                return {
+                    patient: {},
+                    diseases: {},
+                    notes: {},
+                    hospital: null,
+                    addingNote: false,
+                    notesOpened: false,
+                    target: null,
+                    inspectMode: false,
+                    lastDamagedBone: null
+                }
+            },
+            computed: {
+                bodyPartDiseases: function() {
+                    return Object.fromEntries(
+                        Object.entries(this.patient?.diseases)
+                            .filter(([i, v]) => ((v.active || v.damageType) && v.bone != null))
+                        )
+                },
+                activeDiseases: function() {
+                    return Object.fromEntries(
+                        Object.entries(this.patient?.diseases)
+                            .filter(([i, v]) => v.active)
+                        )
+                },
+                heartRate: function () {
+                    let diseases = Object.entries(this.patient.diseases)
+                    for(const [i, d] of diseases) {
+                        if (!d.active)
+                            continue;
+                        let disease = this.diseases[i]
+                        if (disease.symptoms?.heartRate) {
+                            return disease.symptoms.heartRate
+                        }
+                    }
+                    return this.getConfig().defaultHeartRate
+                },
+                bodyTemperature: function () {
+                    let diseases = Object.entries(this.patient.diseases)
+                    for(const [i, d] of diseases) {
+                        if (!d.active)
+                            continue;
+                        let disease = this.diseases[i]
+                        if (disease.symptoms?.bodyTemperatureRange) {
+                            let tempRange = disease.symptoms?.bodyTemperatureRange
+                            return (Math.random() * (tempRange[1] - tempRange[0]) + tempRange[0]).toFixed(1)
+                        }
+                    }
+                    let tempRange = this.getConfig().defaultBodyTemperatureRange
+                    return (Math.random() * (tempRange[1] - tempRange[0]) + tempRange[0]).toFixed(1)
+                }
+            },
+            async mounted() {
+                let self = this;
+                window.addEventListener('message', async function({data}) {
+                    if(data.action == 'show') {
+                        self.resetSilhouette()
+                        self.patient = data.patient
+                        self.diseases = data.diseases
+                        self.notes = data.notes
+                        self.hospital = data.hospital
+                        self.target = data.target
+                        self.show('.patient', 'block')
+                        self.colorSilhouette()
+                    } else if(data.action == 'hide') {
+                        self.inspectMode = false
+                        self.hideDashboard()
+                    } else if(data.action == 'inspect') {
+                        self.inspectMode = true
+                        self.lastDamagedBone = data.lastDamagedBone
+                        self.show('.patient', 'block')
+                        let silhouette = document.querySelector('#silhouette')
+                        silhouette.querySelector(`#${self.getBoneNameID(self.lastDamagedBone)}`).classList.add('fill-danger')
+                        self.patient = data.patient
+                        self.diseases = data.diseases
+                    } else {
+                        self.resetSilhouette()
+                        for(const [key, value] of Object.entries(data.data)) {
+                            self[key] = value
+                        }
+                        self.colorSilhouette()
+                    }
+                });
+
+                document.onkeyup = async (ev) => {
+                    if(ev.key === "Escape" && !self.addingNote) {
+                        self.hide('.patient')
+                        if(self.hospital) {
+                            self.hide('.notes')
+                        }
+                        self.notesOpened = false
+                        self.inspectMode = false
+                        fetch(`http://${GetParentResourceName()}/closeUi`, { method: 'POST' })
+                        self.resetSilhouette()
+                    } else {
+                        self.addingNote = false
+                    }
+                }
+            },
+            methods: {
+                async heal(diseaseID) {
+                    if (this.inspectMode)
+                        return
+                    this.hide('.patient')
+                    if (self.hospital) {
+                        self.hide('.notes')
+                    }
+                    fetch(`http://${GetParentResourceName()}/healDisease`, {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            diseaseID,
+                            disease: this.patient.diseases[diseaseID],
+                            target: this.target
+                        })
+                    })
+                },
+                getDamageType(diseaseID) {
+                    let disease = this.patient.diseases[diseaseID]
+                    let lang = this.getConfig().language
+                    return lang[disease.damageType] ? lang[disease.damageType] : 'heal'
+                },
+                async show(selector, display) {
+                    let elem = document.querySelector(selector);
+                    elem.style.display = display;
+                    elem.animate([
+                        { transform: 'scale(0.5)', opacity: 0 },
+                        { transform: 'scale(1)', opacity: 1 }
+                    ], {
+                        duration: 250,
+                        iterations: 1,
+                        easing: 'ease-in-out'
+                    })
+                },
+                async hide(selector) {
+                    let elem = document.querySelector(selector);
+                    elem.animate([
+                        { transform: 'scale(1)', opacity: 1 },
+                        { transform: 'scale(0.5)', opacity: 0 }
+                    ], {
+                        duration: 250,
+                        iterations: 1,
+                        easing: 'ease-in-out'
+                    })
+                    await this.delay(250)
+                    elem.style.display = 'none';
+                },
+                async delay(ms) {
+                    return new Promise((resolve, reject) => {
+                        setTimeout(resolve, ms)
+                    })
+                },
+                getConfig() {
+                    return CONFIG
+                },
+                getBoneNameID(boneId) {
+                    let bones = this.getConfig().boneIDsToName
+                    for(const boneName in bones) {
+                        for(const bone of bones[boneName]) {
+                            if (bone == boneId) {
+                                return boneName
+                            }
+                        }
+                    }
+                    return 'torso'
+                },
+                getBoneName(boneNameId) {
+                    return this.getConfig().boneNames[boneNameId]
+                },
+                colorSilhouette() {
+                    let diseases = Object.entries(this.patient.diseases)
+                    let silhouette = document.querySelector('#silhouette')
+                    for(const [i, disease] of diseases) {
+                        if (disease.bone != null) {
+                            silhouette.querySelector(`#${this.getBoneNameID(disease.bone)}`).classList.add('fill-danger')
+                        }
+                    }
+                },
+                resetSilhouette() {
+                    let silhouetteBones = document.querySelectorAll('#silhouette path')
+                    for(const bone of silhouetteBones) {
+                        bone.classList.remove('fill-danger')
+                    }
+                },
+                openNoteModal() {
+                    this.addingNote = true
+                    addNoteModal.open()
+                },
+                toggleNotes() {
+                    if (this.notesOpened)
+                        this.hide('.notes')
+                    else
+                        this.show('.notes', 'block')
+                    this.notesOpened = !this.notesOpened
+                },
+                deleteNote(noteId) {
+                    fetch(`http://${GetParentResourceName()}/deleteNote`, {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            noteId,
+                            hospitalId: this.hospital,
+                            patientCharId: this.patient.charid
+                        })
+                    })
+                }
+            }
+        }).mount('#app')
+    </script>
+</body>
+
+</html>

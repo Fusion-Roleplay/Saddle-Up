@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body, html {
+  font-family: 'Dawning of a New Day', cursive;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+#reg-paper {
+  position: right;
+  display: none;
+  margin: 100px 10px 0 0;
+  margin-right: 20px;
+  float: right;
+  width: 450px;
+  height: 300px;
+  background: url("../images/permit.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#reg-paper2 {
+  position: right;
+  display: none;
+  margin: 100px 10px 0 0;
+  margin-right: 20px;
+  float: right;
+  width: 450px;
+  height: 300px;
+  background: url("../images/permit2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#job-paper {
+  position: center;
+  display: none;
+  margin: 100px 10px 0 0;
+  margin-right: 150px;
+  float: right;
+  width: 600px;
+  height: 800px;
+  background: url("../images/job.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#toolprice { /*SENDER */
+  font-family: 'Noto Nastaliq Urdu', serif;
+  position: absolute;    
+  float: left;  
+  font-size: 30px;
+  color: #000000;
+  top: 452px;  
+  left: 1440px; 
+  z-index:5;     
+}
+#licenceprice { /*SENDER */
+  font-family: 'Noto Nastaliq Urdu', serif;
+  position: absolute;    
+  float: left;  
+  font-size: 30px;
+  color: #000000;
+  top: 527px;  
+  left: 1440px; 
+  z-index:5;     
+}
+#cash { /*SENDER */
+  font-family: 'Noto Nastaliq Urdu', serif;
+  position: absolute;    
+  float: left;  
+  font-size: 30px;
+  color: #000000;
+  top: 605px;  
+  left: 1440px; 
+  z-index:5;     
+}
+.changeprice { /*SENDER */
+  font-family: 'Gloria Hallelujah', serif;
+  position: absolute;    
+  float: left;  
+  font-size: 30px;
+  color: #000000;
+  top: 470px;  
+  left: 1550px; 
+  z-index:5;     
+}
+.changelicenceprice { /*SENDER */
+  font-family: 'Gloria Hallelujah', serif;
+  position: absolute;    
+  float: left;  
+  font-size: 30px;
+  color: #000000;
+  top: 550px;  
+  left: 1550px; 
+  z-index:5;     
+}
+.takecash { /*SENDER */
+  font-family: 'Gloria Hallelujah', serif;
+  position: absolute;    
+  float: left;  
+  font-size: 30px;
+  color: #000000;
+  top: 670px;  
+  left: 1560px; 
+  z-index:5;     
+}
+.depositcash { /*SENDER */
+  font-family: 'Gloria Hallelujah', serif;
+  position: absolute;    
+  float: left;  
+  font-size: 30px;
+  color: #000000;
+  top: 620px;  
+  left: 1550px; 
+  z-index:5;     
+}
+.close { /*SENDER */
+  font-family: 'Gloria Hallelujah', serif;
+  position: absolute;    
+  float: left;  
+  font-size: 40px;
+  color: #000000;
+  top: 180px;  
+  left: 1211px; 
+  z-index:5;     
+}
+.hire { /*SENDER */
+  font-family: 'Gloria Hallelujah', serif;
+  position: absolute;    
+  float: left;  
+  font-size: 20px;
+  color: #000000;
+  top: 800px;  
+  left: 1250px;  
+  z-index:5;     
+}
+.fire { /*SENDER */
+  font-family: 'Gloria Hallelujah', serif;
+  position: absolute;    
+  float: left;  
+  font-size: 20px;
+  color: #000000;
+  top: 800px;  
+  left: 1420px;  
+  z-index:5;     
+}
+.inv { /*SENDER */
+  font-family: 'Gloria Hallelujah', serif;
+  position: absolute;    
+  float: left;  
+  font-size: 30px;
+  color: #000000;
+  top: 320px;  
+  left: 1550px; 
+  z-index:5;     
+}
+.delivery { /*SENDER */
+  font-family: 'Gloria Hallelujah', serif;
+  position: absolute;    
+  float: left;  
+  font-size: 30px;
+  color: #000000;
+  top: 400px;  
+  left: 1550px; 
+  z-index:5;     
+}
+.sellcompany { /*SENDER */
+  font-family: 'Gloria Hallelujah', serif;
+  position: absolute;    
+  float: left;  
+  font-size: 20px;
+  color: #000000;
+  top: 800px;  
+  left: 1600px; 
+  z-index:5;     
+}
+
+#nume { /*DESTINATAR */
+  font-family: 'Bebas Neue', cursive;
+  position: relative;  
+  opacity: 0.9;  
+  font-size: 20px;
+  color: black;
+  top: 210px;
+}
+
+#first-name { /*SENDER */
+  font-family: 'Gloria Hallelujah', serif;
+  position: relative;    
+  float: left;  
+  font-size: 20px;
+  color: #000000;
+  top: 187px;  
+  left: 100px; 
+  z-index:5;     
+}
+
+#last-name { /*DESTINATAR */
+  font-family: 'Gloria Hallelujah', serif;
+  position: relative;           
+  float: left;  
+  font-size: 20px;
+  color: #000000;
+  top: 187px; 
+  left: 170px;
+  z-index:5;     
+}
+
+#first-name2 { /*SENDER */
+  font-family: 'Gloria Hallelujah', serif;
+  position: relative;    
+  float: left;  
+  font-size: 20px;
+  color: #000000;
+  top: 150px;  
+  left: 80px; 
+  z-index:5;     
+}
+
+#last-name2 { /*DESTINATAR */
+  font-family: 'Gloria Hallelujah', serif;
+  position: relative;           
+  float: left;  
+  font-size: 20px;
+  color: #000000;
+  top: 150px; 
+  left: 170px;
+  z-index:5;     
+}
+
+::placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: red;
+}
+

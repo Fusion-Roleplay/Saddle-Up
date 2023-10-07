@@ -1,0 +1,716 @@
+<?xml version="1.0"?>
+<CMapData>
+	<flags value="2"/>
+	<contentFlags value="65"/>
+	<streamingExtentsMin x="2451.200928" y="1017.315186" z="-332.714783"/>
+	<streamingExtentsMax x="3269.689941" y="1861.521851" z="471.107338"/>
+	<entitiesExtentsMin x="2851.200928" y="1417.315186" z="67.285217"/>
+	<entitiesExtentsMax x="2869.689941" y="1461.521851" z="71.107338"/>
+	<entities>
+		<Item type="CEntityDef">
+			<archetypeName>p_chair05x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2866.108887" y="1452.805542" z="68.145790"/>
+			<rotation w="0.087411" x="0.000000" y="-0.000000" z="-0.996172"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_saloonpropgroup01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2864.045898" y="1450.376587" z="68.938148"/>
+			<rotation w="0.764025" x="-0.000000" y="0.000000" z="0.645187"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_chair05x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2867.700195" y="1453.627563" z="68.145790"/>
+			<rotation w="0.611319" x="-0.000000" y="0.000000" z="0.791384"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_chair05x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2864.391113" y="1451.557129" z="68.145790"/>
+			<rotation w="0.993990" x="0.000000" y="-0.000000" z="-0.109475"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_barrelladle1x_military</archetypeName>
+			<flags value="1572897"/>
+			<position x="2863.157715" y="1460.966675" z="68.141014"/>
+			<rotation w="0.999812" x="-0.000000" y="0.000000" z="0.019405"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_paperstack01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2859.034424" y="1452.834595" z="68.947922"/>
+			<rotation w="0.626087" x="-0.000000" y="0.000000" z="0.779753"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_lantern07x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2865.147217" y="1456.482544" z="71.100342"/>
+			<rotation w="0.270694" x="0.000000" y="-0.000000" z="-0.962665"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_revolver_trelawny</archetypeName>
+			<flags value="1572897"/>
+			<position x="2864.845459" y="1450.991333" z="68.953018"/>
+			<rotation w="-0.409846" x="0.411277" y="-0.576710" z="-0.574703"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_lumber03x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2869.153076" y="1458.678955" z="68.154930"/>
+			<rotation w="0.952179" x="-0.000000" y="0.000000" z="0.305542"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_chalksign02x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2857.577393" y="1450.137939" z="69.713043"/>
+			<rotation w="0.507823" x="-0.000000" y="0.000000" z="0.861461"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_bench03x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2869.314697" y="1443.894165" z="67.285217"/>
+			<rotation w="0.933332" x="0.015801" y="-0.005782" z="-0.358619"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_cs_chessset01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2864.785889" y="1450.359009" z="68.921028"/>
+			<rotation w="0.344563" x="0.000000" y="-0.000000" z="-0.938763"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_bat_lumber04cx</archetypeName>
+			<flags value="1572897"/>
+			<position x="2860.640625" y="1454.669312" z="68.129692"/>
+			<rotation w="0.634324" x="0.000000" y="-0.000000" z="-0.773067"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>mp001_p_barreltwin01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2869.647705" y="1456.369507" z="68.151199"/>
+			<rotation w="0.913321" x="-0.000000" y="0.000000" z="0.407240"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_group_gamble_bottlebeer01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2866.291992" y="1453.929810" z="68.945786"/>
+			<rotation w="0.930493" x="-0.000000" y="0.000000" z="0.366309"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_chair05x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2864.190674" y="1449.255005" z="68.145790"/>
+			<rotation w="0.189354" x="0.000000" y="-0.000000" z="-0.981909"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_bottlecrate_sur</archetypeName>
+			<flags value="1572897"/>
+			<position x="2866.967529" y="1456.565430" z="69.100121"/>
+			<rotation w="0.446972" x="-0.000000" y="0.000000" z="0.894548"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_tablepoker02x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2864.615479" y="1450.453003" z="68.144562"/>
+			<rotation w="0.415893" x="-0.000000" y="0.000000" z="0.909413"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_coalbag02x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2859.041992" y="1451.955811" z="68.144035"/>
+			<rotation w="0.990017" x="0.000000" y="-0.000000" z="-0.140951"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_bookset05x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2858.653564" y="1452.524658" z="68.965775"/>
+			<rotation w="0.770932" x="0.000000" y="-0.000000" z="-0.636918"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_ashtray01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2864.380859" y="1451.061279" z="68.941551"/>
+			<rotation w="0.328998" x="-0.000000" y="0.000000" z="0.944330"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_pianochair01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2862.500732" y="1456.808838" z="68.126404"/>
+			<rotation w="0.875698" x="0.000000" y="-0.000000" z="-0.482860"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_tablepoker02x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2866.301514" y="1454.025269" z="68.144562"/>
+			<rotation w="0.415893" x="-0.000000" y="0.000000" z="0.909413"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>mp004_p_barreltwin01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2864.562256" y="1460.588745" z="68.139214"/>
+			<rotation w="0.985575" x="-0.000000" y="0.000000" z="0.169239"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_axe01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2864.181152" y="1459.848633" z="69.153717"/>
+			<rotation w="0.671833" x="0.728054" y="0.100170" z="-0.092435"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_chair05x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2865.971680" y="1455.217285" z="68.145790"/>
+			<rotation w="0.995668" x="0.000000" y="-0.000000" z="-0.092983"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_foundationwood02x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2858.746338" y="1451.025024" z="67.912384"/>
+			<rotation w="0.966937" x="-0.000000" y="0.000000" z="0.255017"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_campfirecombined01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2859.605469" y="1424.846313" z="67.688332"/>
+			<rotation w="0.960340" x="0.000000" y="-0.000000" z="-0.278831"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_bla_lumbdesk</archetypeName>
+			<flags value="1572897"/>
+			<position x="2867.751221" y="1456.625854" z="68.595390"/>
+			<rotation w="0.867329" x="0.000000" y="-0.000000" z="-0.497736"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_chair05x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2867.292236" y="1454.747437" z="68.145790"/>
+			<rotation w="0.873646" x="-0.000000" y="0.000000" z="0.486561"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_pot_plant_08a</archetypeName>
+			<flags value="1572897"/>
+			<position x="2859.647705" y="1453.948242" z="68.142357"/>
+			<rotation w="0.521956" x="0.000000" y="-0.000000" z="-0.852973"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_veh_logwagon01</archetypeName>
+			<flags value="1572897"/>
+			<position x="2857.473877" y="1417.315186" z="67.674927"/>
+			<rotation w="0.855850" x="-0.000000" y="0.000000" z="0.517224"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_chair05x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2865.707764" y="1451.197144" z="68.145790"/>
+			<rotation w="0.900964" x="-0.000000" y="0.000000" z="0.433895"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_cratetablemil01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2858.531006" y="1452.606323" z="68.142700"/>
+			<rotation w="0.853981" x="0.000000" y="-0.000000" z="-0.520304"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_barstoolset01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2862.641113" y="1460.282471" z="68.136124"/>
+			<rotation w="0.174969" x="0.000000" y="-0.000000" z="-0.984574"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_bat_lumber04x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2851.200928" y="1425.006592" z="67.685181"/>
+			<rotation w="0.578398" x="0.000000" y="-0.000000" z="-0.815755"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_helpwantedsign01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2868.861816" y="1458.638306" z="69.758278"/>
+			<rotation w="0.952792" x="-0.000000" y="0.000000" z="0.303623"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_shedtool01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2864.493652" y="1461.521851" z="68.136711"/>
+			<rotation w="0.967999" x="-0.000000" y="0.000000" z="0.250954"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_cratetools01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2860.477295" y="1455.659424" z="69.127380"/>
+			<rotation w="0.997110" x="0.000000" y="-0.000000" z="-0.075973"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_bench03x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2869.689941" y="1424.208130" z="67.638054"/>
+			<rotation w="0.658728" x="-0.014295" y="0.022374" z="-0.751912"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_chair05x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2865.116943" y="1454.176147" z="68.145790"/>
+			<rotation w="0.743902" x="0.000000" y="-0.000000" z="-0.668289"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_chair05x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2863.533936" y="1450.698242" z="68.145790"/>
+			<rotation w="0.749129" x="0.000000" y="-0.000000" z="-0.662424"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_nbxpiano01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2861.872070" y="1457.266968" z="68.145615"/>
+			<rotation w="0.880436" x="0.000000" y="-0.000000" z="-0.474165"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_lantern07x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2862.825439" y="1452.472656" z="71.107338"/>
+			<rotation w="0.270694" x="0.000000" y="-0.000000" z="-0.962665"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_group_gamble_bottlewine02x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2867.920410" y="1455.882324" z="69.107788"/>
+			<rotation w="0.981053" x="-0.000000" y="0.000000" z="0.193742"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_ashtray01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2867.346191" y="1457.115479" z="69.101662"/>
+			<rotation w="0.783895" x="-0.000000" y="0.000000" z="0.620894"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_lantern07x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2859.282471" y="1453.221313" z="69.521370"/>
+			<rotation w="0.789136" x="0.000000" y="-0.000000" z="-0.614218"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+	</entities>
+</CMapData>
