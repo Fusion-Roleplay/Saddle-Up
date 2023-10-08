@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<CMapData>
+	<flags value="2"/>
+	<contentFlags value="65"/>
+	<streamingExtentsMin x="-1189.840027" y="-1690.142578" z="-357.299999"/>
+	<streamingExtentsMax x="-380.756287" y="-887.800049" z="442.735954"/>
+	<entitiesExtentsMin x="-789.840027" y="-1290.142578" z="42.700001"/>
+	<entitiesExtentsMax x="-780.756287" y="-1287.800049" z="42.735954"/>
+	<entities>
+
+
+  <Item type="CEntityDef">
+          <archetypeName>p_door_sd_conservatory01x</archetypeName>
+          <flags value="353894400" />
+			<position x="-789.840027" y="-1287.800049" z="42.700001"/>
+			<rotation w="0.707107" x="-0.000000" y="0.000000" z="0.707107"/>
+          <scaleXY value="1" />
+          <scaleZ value="1" />
+          <parentIndex value="-1" />
+          <lodDist value="299" />
+          <childLodDist value="0" />
+          <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+          <numChildren value="0" />
+          <priorityLevel>PRI_REQUIRED</priorityLevel>
+          <extensions>
+            <Item type="CExtensionDefDoor">
+              <name>p_door_sd_conservatory01x</name>
+              <offsetPosition x="0.0" y="0" z="0" />
+              <ELUGHoA_0xDAF8214E value="false" />
+              <enableLimitAngle value="true" />
+              <EFwMwAA_0x091A42D0 value="false" />
+              <startsLocked value="false" />
+              <canBreak value="false" />
+              <PkpciBA_0xA37CAB71 value="false" />
+              <dKbmTLA_0xCFE37BDB value="1.919862" />
+              <nuskEbA_0xA0CF3C8D value="1.919862" />
+              <RbUnQLA_0x9C555ECF value="0" />
+              <OPkNlHA_0xBCA0289E value="0" />
+              <doorTargetRatio value="0" />
+              <audioHash>collision_8cy6bzk</audioHash>
+              <gUNkTFA_0x5907D538>
+              </gUNkTFA_0x5907D538>
+            </Item>
+            <Item type="SSxlGTA_0xDB12012B">
+              <name>p_door_sd_conservatory01x</name>
+              <offsetPosition x="0.00" y="0" z="0" />
+              <Id>door_front</Id>
+            </Item>
+          </extensions>
+          <powerGridId value="0" />
+          <tintValue value="0" />
+          <GtyHDFA_0x0DC5F270 value="255" />
+          <kXvVXMA_0x540CA436 value="255" />
+        </Item> 
+<Item type="CEntityDef">
+   <archetypeName>p_door32x</archetypeName>
+   <flags value="1572872" />
+   <id value="1200826059" />
+			<position x="-780.756287" y="-1290.142578" z="42.735954"/>
+			<rotation w="0.706053" x="-0.000000" y="0.000000" z="0.708159"/>
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="27" />
+   <lodDist value="126" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions>
+    <Item type="CExtensionDefDoor">
+     <name>p_door32x</name>
+     <offsetPosition x="0" y="0" z="0" />
+     <autoOpens value="False" />
+     <enableLimitAngle value="True" />
+     <EFwMwAA_0x091A42D0 value="False" />
+     <startsLocked value="False" />
+     <canBreak value="False" />
+     <PkpciBA_0xA37CAB71 value="False" />
+     <dKbmTLA_0xCFE37BDB value="1.570796" />
+     <nuskEbA_0xA0CF3C8D value="1.570796" />
+     <RbUnQLA_0x9C555ECF value="0" />
+     <OPkNlHA_0xBCA0289E value="0" />
+     <doorTargetRatio value="0" />
+     <audioHash>pJAWmFA_0x298C8CCD</audioHash>
+     <doorTags>
+      <Item />
+      <Item />
+      <Item />
+      <Item />
+     </doorTags>
+    </Item>
+    <Item type="CExtensionDefScriptEntityId">
+     <name>p_door32x</name>
+     <offsetPosition x="0" y="0" z="0" />
+     <Id>door_back</Id>
+    </Item>
+   </extensions>
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+	</entities>
+</CMapData>

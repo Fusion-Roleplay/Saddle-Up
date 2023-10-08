@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CMapData>
+  <name>bakery_ymap</name>
+  <parent/>
+  <flags value="0"/>
+  <contentFlags value="73"/>
+	<streamingExtentsMin x="-994.767" y="-1496.96069" z="-157.643509"/>
+	<streamingExtentsMax x="-577.232544" y="-1079.55518" z="251.381"/>
+	<entitiesExtentsMin x="-794.767" y="-1296.96069" z="42.3564873"/>
+	<entitiesExtentsMax x="-777.232544" y="-1279.55518" z="51.3809967"/>
+  <entities>
+		<Item type="CEntityDef">
+			<archetypeName>bakery</archetypeName>
+			<flags value="1572897"/>
+<position x="-787.0468" y="-1290.3998" z="46.949356" />
+			<rotation w="1.000000" x="-0.000000" y="0.000000" z="1.000000"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+  </entities>
+  <containerLods/>
+  <boxOccluders/>
+  <occludeModels/>
+  <physicsDictionaries>
+    <Item>bakery</Item>
+  </physicsDictionaries>
+  <instancedData>
+    <ImapLink/>
+    <PropInstanceList/>
+    <GrassInstanceList/>
+  </instancedData>
+  <timeCycleModifiers/>
+  <carGenerators/>
+  <LODLightsSOA>
+    <direction/>
+    <falloff/>
+    <falloffExponent/>
+    <timeAndStateFlags/>
+    <hash/>
+    <coneInnerAngle/>
+    <coneOuterAngleOrCapExt/>
+    <coronaIntensity/>
+  </LODLightsSOA>
+  <DistantLODLightsSOA>
+    <position/>
+    <RGBI/>
+    <numStreetLights value="0"/>
+    <category value="0"/>
+  </DistantLODLightsSOA>
+  <block>
+    <version value="0"/>
+    <flags value="0"/>
+    <name>bakery_ymap</name>
+    <exportedBy/>
+    <owner/>
+    <time/>
+  </block>
+</CMapData>

@@ -1,6 +1,6 @@
 Config = {}
 
-Config.defaultlang = 'en'
+Config.defaultlang = 'es'
 
 Config.MenuAlign = 'top-left'   -- top-right , top-center , top-left
 
@@ -193,6 +193,7 @@ Config.Prices = {
     RingLh = 7,
     Badge = 5,
     Armor = 30,
+    HairAccesories = 12,
 
     -- MAKEUP
     texture = 1,

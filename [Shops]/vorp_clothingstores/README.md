@@ -9,8 +9,6 @@ Refactored from C# to Lua with improvements
 - [VORP-Inputs](https://github.com/VORPCORE/vorp_inputs-lua)
 - [VORP-MenuAPI](https://github.com/outsider31000/menuapi)
 
-~~- [VORP-Character](https://github.com/VORPCORE/VORP-Character/releases)~~  Until a stable new release is pushed, use VORP characters from the prebuild
-
 ## How to install
 * disable clothing stores C# if you are using replace with this one.
 * Download the lastest version of VORP ClothingStore using ```Code > DownloadZip```
