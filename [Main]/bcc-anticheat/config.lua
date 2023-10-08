@@ -1,7 +1,7 @@
 Config = {}
 
 Config.Discord = {
-    active = false,
+    active = true,
     webhookavatar = "https://cdn2.iconfinder.com/data/icons/frosted-glass/256/Danger.png",
     webhookname = "Anti Cheat",
     webhook = "",
@@ -53,7 +53,7 @@ Config.ResourceInject = {
 }
 
 Config.Net = {
-    active = true,
+    active = false,
     allowedoffenses = 2,
     checkinrate = 5000, -- Milisecond
     kickrate = 20000,
@@ -83,7 +83,7 @@ Config.AFK = {
 }
 
 Config.SpamClick = {
-    active = true,
+    active = false,
     infractions = 0,
     maxspaminfractions = 5,
     spamsensitivity = 250, -- Higher is less sensitive

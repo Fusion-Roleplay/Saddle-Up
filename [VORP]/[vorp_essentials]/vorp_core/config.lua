@@ -29,7 +29,7 @@ Config = {
     maxHealth                = 10,           -- 10 is FULL 0 IS EMPTY define max outer core for players
     maxStamina               = 10,           -- 10 is FULL 0 IS EMPTY define max outer core for players
     PVP                      = true,         -- Can players attack/hurt one another
-    PVPToggle                = true,         -- If true, players can set their own pvp state
+    PVPToggle                = false,         -- If true, players can set their own pvp state
     CommandOnOffPVP          = 'pvp',        -- [ NEED PVPToggle = true ] TOGGLE or OFF pvp for your character
     savePlayersTimer         = 10,           -- this will tell the core in how many minutes should all players be saved to the database
     showplayerIDwhenfocus    = true,         -- set false will show steam name when focus on another player RMB
@@ -56,14 +56,14 @@ Config = {
     --=======================================
     ---UI Configurations
     HideUi                   = false,      -- Show or Hide the Overall UI
-    HideGold                 = false,      -- disables Gold UI for all
-    HideMoney                = false,      -- disables Money UI for all
-    HideLevel                = false,      -- disables Level UI for all
+    HideGold                 = true,      -- disables Gold UI for all
+    HideMoney                = true,      -- disables Money UI for all
+    HideLevel                = true,      -- disables Level UI for all
     HideID                   = false,      -- disables ID UI for all
-    HideTokens               = false,      -- disables Token UI for all
-    HidePVP                  = false,      -- disables PVP UI for all
-    UIPosition               = 'TopRight', -- Changes position of UI. Options: BottomRight, MiddleRight, TopRight, TopMiddle, BottomMiddle
-    UILayout                 = 'Column',   -- Changes the layour of the UI. Options: Row, Column
+    HideTokens               = true,      -- disables Token UI for all
+    HidePVP                  = true,      -- disables PVP UI for all
+    UIPosition               = 'BottomRight', -- Changes position of UI. Options: BottomRight, MiddleRight, TopRight, TopMiddle, BottomMiddle
+    UILayout                 = 'Row',   -- Changes the layour of the UI. Options: Row, Column
     HideWithRader            = true,       -- UI will hide whenever the radar(minimap) is hidden
     OpenAfterRader           = true,       -- UI will show whenever the radar(minimap) is showing again
     CloseOnDelay             = false,      -- UI will automatically close after an amount of time
