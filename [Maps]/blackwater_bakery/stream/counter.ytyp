@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMapTypes>
+  <extensions />
+  <archetypes>
+    <Item type="CBaseArchetypeDef">
+      <guid value="0"/>
+      <lodDist value="50.00000000"/>
+      <flags value="537001984" />
+      <loadFlags value="537001984" />
+      <specialAttribute value="0" />
+      <bbMin x="-1.594727" y="-0.8632813" z="-0.5395508" />
+      <bbMax x="1.594727" y="0.8632813" z="0.4941406" />
+      <bsCentre x="0.0" y="0.0" z="-0.022705093" />
+      <bsRadius value="1.8856136" />
+      <hdTextureDist value="60.0"/>
+      <name>counter</name>
+      <textureDictionary>counter</textureDictionary>
+      <physicsDictionary>counter</physicsDictionary>
+      <clipDictionary />
+      <drawableDictionary />
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>counter</assetName>
+      <extensions />
+      <redm_loves_you_a68fd88a5afa0b22 />
+    </Item>
+  </archetypes>
+  <name>counter</name>
+  <dependencies />
+  <compositeEntityTypes itemType="CCompositeEntityType" />
+</CMapTypes>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMapTypes>
+  <extensions />
+  <archetypes>
+  <Item type="CBaseArchetypeDef">
+    <guid value="0"/>
+    <lodDist value="147.00000000"/>
+    <flags value="0" />
+    <loadFlags value="0" />
+    <specialAttribute value="0" />
+   <bbMin x="-7.720231" y="-6.56095457" z="-4.592868" />
+   <bbMax x="9.814276" y="10.8445845" z="4.431641" />
+   <bsCentre x="1.04702234" y="2.141815" z="-0.0806133747" />
+   <bsRadius value="13.1515541" />
+    <hdTextureDist value="83.8283" />
+    <name>bakery</name>
+    <textureDictionary>bakery</textureDictionary>
+    <clipDictionary />
+    <drawableDictionary />
+    <physicsDictionary>bakery</physicsDictionary>
+    <assetType>ASSET_TYPE_DRAWABLE</assetType>
+    <assetName>bakery</assetName>
+    <extensions />
+    <redm_loves_you_a68fd88a5afa0b22>0xAD1EED63</redm_loves_you_a68fd88a5afa0b22>
+  </Item>
+ </archetypes>
+ <name>bakeryytyp</name>
+ <dependencies />
+ <compositeEntityTypes itemType="CCompositeEntityType" />
+</CMapTypes>
