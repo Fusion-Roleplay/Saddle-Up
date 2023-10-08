@@ -51,7 +51,7 @@ Config                    = {
     ------------------------
     ---- * UI VOICE * ------
     useUiVoice               = true,
-    UseSaltyChat             = true,       -- if you use salty chat set this to true
+    UseSaltyChat             = false,       -- if you use salty chat set this to true
     PressTalking             = 0x4BC9DABB, --N key only works for pma oice
     voice                    = {
         whisper = {
@@ -97,7 +97,7 @@ Config                    = {
     -------------------------------------------------------------
     ------------- * ADDICTION & STRESS SYSTEM * -----------------
     Stress                   = {
-        usestress = true,            -- if true will use stress
+        usestress = false,            -- if true will use stress
         WaterFoodLevel = 1,          --  at every one second it will add this value if food or water is below 0
         --* NEW *--
         ShootingLevel = 1,           -- at every one second it will add this value if player is shooting  <<<<<<NEW FEATURE >>>>>>>
@@ -136,7 +136,7 @@ Config                    = {
     },
 
     Addiction                = {
-        useaddiction = true,                  -- if true will use addiction
+        useaddiction = false,                  -- if true will use addiction
         Level1 = {
             AddictionRemoveHungerLevel = 0.5, -- remove hunger while addicted,
             AddictionRemoveThirstLevel = 0.5, -- remove thirst while addicted
