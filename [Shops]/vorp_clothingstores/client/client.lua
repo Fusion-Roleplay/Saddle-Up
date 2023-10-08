@@ -34,7 +34,7 @@ Citizen.CreateThread(function()
 				DrawText((T.PressGuide), 0.5, 0.9, 0.7, 0.7, 255, 255, 255, 255, true, true);
 			end
 			if totalCost > 0 then
-				; DrawText((T.CostOverlay) .. totalCost, 0.95, 0.9, 0.4, 0.4, 255, 250, 184, 255, false, true);
+				DrawText((T.CostOverlay) .. totalCost, 0.95, 0.9, 0.4, 0.4, 255, 250, 184, 255, false, true);
 			end
 
 			DisableAllControlActions(0)

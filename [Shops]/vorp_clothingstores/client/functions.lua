@@ -1,5 +1,5 @@
 local CamWardrove, CamUp, CamMid, CamBot, playerSex
-local outfits_db, MyOutfits, ClothesDB, SkinsDB, originalOutfit, VORPcore = {}, {}, {}, {}, {}, {}
+local MyOutfits, ClothesDB, SkinsDB, originalOutfit, VORPcore = {}, {}, {}, {}, {}
 
 T = TranslationCloth.Langs[Lang]
 
@@ -42,7 +42,7 @@ local clothesPlayer = {
 	GunbeltAccs = 0,
 	CoatClosed = 0,
 	HairAccessories = 0
-};
+}
 
 function LoadModel(model)
 	if Citizen.InvokeNative(0x392C8D8E07B70EFC, model) then
@@ -102,16 +102,16 @@ function EmergencyCleanup() -- Only called if the player dies inside the shops o
 		local PedExitz = Config.Stores[inShop].ExitWardrobe[3]
 		local PedExitheading = Config.Stores[inShop].ExitWardrobe[4]
 		MenuData.CloseAll()
-		SetCamActive(CamWardrove, false);
-		RenderScriptCams(false, true, 1000, true, true, 0);
-		Citizen.Wait(250);
-		DestroyCam(CamWardrove, true);
-		FreezeEntityPosition(PlayerPedId(), false);
+		SetCamActive(CamWardrove, false)
+		RenderScriptCams(false, true, 1000, true, true, 0)
+		Citizen.Wait(250)
+		DestroyCam(CamWardrove, true)
+		FreezeEntityPosition(PlayerPedId(), false)
 		DisplayRadar(true)
 		DisplayHud(true)
 		TriggerEvent("vorp:showUi", true)
-		SetEntityCoords(PlayerPedId(), PedExitx, PedExity, PedExitz, false, false, false, false);
-		SetEntityHeading(PlayerPedId(), PedExitheading);
+		SetEntityCoords(PlayerPedId(), PedExitx, PedExity, PedExitz, false, false, false, false)
+		SetEntityHeading(PlayerPedId(), PedExitheading)
 		VORPcore.instancePlayers(0)
 		inShop, totalCost = false, 0
 	end
@@ -122,7 +122,7 @@ function DrawText(text, x, y, fScale, fSize, rC, gC, bC, aC, tCentered, shadow)
 	SetTextScale(fScale, fSize)
 	SetTextColor(rC, gC, bC, aC)
 	SetTextCentre(tCentered)
-	if shadow then SetTextDropshadow(1, 0, 0, 255); end
+	if shadow then SetTextDropshadow(1, 0, 0, 255) end
 	Citizen.InvokeNative(0xADA9255D, 1)
 	DisplayText(str, x, y)
 end
@@ -141,7 +141,7 @@ function MoveToCoords(loc)
 	local Playery = Config.Stores[inShop].StoreRoom[2]
 	local Playerz = Config.Stores[inShop].StoreRoom[3]
 	local Playerheading = Config.Stores[inShop].StoreRoom[4]
-	DressHeading = Playerheading;
+	DressHeading = Playerheading
 	local CameraMainx = Config.Stores[inShop].Cameras[1][1]
 	local CameraMainy = Config.Stores[inShop].Cameras[1][2]
 	local CameraMainz = Config.Stores[inShop].Cameras[1][3]
@@ -172,65 +172,62 @@ function MoveToCoords(loc)
 
 	VORPcore.instancePlayers(tonumber(GetPlayerServerId(PlayerId())) + instanceNumber)
 
-	ClearPedTasksImmediately(StorePeds[inShop], 1, 1);
-	FreezeEntityPosition(StorePeds[inShop], false);
+	ClearPedTasksImmediately(StorePeds[inShop], true, true)
+	FreezeEntityPosition(StorePeds[inShop], false)
 
-	Citizen.Wait(1000);
-	NetworkSetInSpectatorMode(true, playerPed);
+	Citizen.Wait(1000)
+	NetworkSetInSpectatorMode(true, playerPed)
 
 	DisplayRadar(false)
 	DisplayHud(false)
 	TriggerEvent("vorp:showUi", false)
 
 	local pedModel = GetHashKey("S_M_M_Tailor_01")
-	local PedWardrobe = CreatePed(pedModel, Doorx, Doory, Doorz, 0.0, false, true, true, true);
-	Citizen.InvokeNative(0x283978A15512B2FE, PedWardrobe, true);
-	SetModelAsNoLongerNeeded(pedModel);
-	SetEntityAlpha(PedWardrobe, 0, true);
-	Citizen.Wait(1000);
-	TaskGoToEntity(StorePeds[inShop], PedWardrobe, 15000, 0.5, 1.1, 1.0, 1);
-	Citizen.Wait(4000);
-	TaskGoToEntity(playerPed, PedWardrobe, 10000, 0.5, 0.8, 1.0, 1);
-	Citizen.Wait(6500);
+	local PedWardrobe = CreatePed(pedModel, Doorx, Doory, Doorz, 0.0, false, true, true, true)
+	Citizen.InvokeNative(0x283978A15512B2FE, PedWardrobe, true)
+	SetModelAsNoLongerNeeded(pedModel)
+	SetEntityAlpha(PedWardrobe, 0, true)
+	Citizen.Wait(1000)
+	TaskGoToEntity(StorePeds[inShop], PedWardrobe, 15000, 0.5, 1.1, 1.0, 1)
+	Citizen.Wait(4000)
+	TaskGoToEntity(playerPed, PedWardrobe, 10000, 0.5, 0.8, 1.0, 1)
+	Citizen.Wait(6500)
 
-	DoScreenFadeOut(1800);
-	Citizen.Wait(2000);
-	ClearPedTasksImmediately(playerPed, 1, 1);
+	DoScreenFadeOut(1800)
+	Citizen.Wait(2000)
+	ClearPedTasksImmediately(playerPed, true, true)
 
-	SetEntityCoords(playerPed, Playerx, Playery, Playerz, false, false, false, false);
-	SetEntityHeading(playerPed, Playerheading);
-	Citizen.Wait(100);
-	FreezeEntityPosition(playerPed, true);
-	SetEntityCoords(StorePeds[inShop], Pedx, Pedy, Pedz, false, false, false, false);
-	SetEntityHeading(StorePeds[inShop], Pedheading);
+	SetEntityCoords(playerPed, Playerx, Playery, Playerz, false, false, false, false)
+	SetEntityHeading(playerPed, Playerheading)
+	Citizen.Wait(100)
+	FreezeEntityPosition(playerPed, true)
+	SetEntityCoords(StorePeds[inShop], Pedx, Pedy, Pedz, false, false, false, false)
+	SetEntityHeading(StorePeds[inShop], Pedheading)
 
-	Citizen.Wait(2000);
+	Citizen.Wait(2000)
 
 	CamWardrove = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", CameraMainx, CameraMainy, CameraMainz, CameraMainRotx,
-		CameraMainRoty, CameraMainRotz, 50.00, false, 0);
+		CameraMainRoty, CameraMainRotz, 50.00, false, 0)
 	CamUp = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", CameraChestx, CameraChesty, CameraChestz, CameraChestRotx,
-		CameraChestRoty, CameraChestRotz, 50.00, false, 0);
+		CameraChestRoty, CameraChestRotz, 50.00, false, 0)
 	CamMid = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", CameraBeltx, CameraBelty, CameraBeltz, CameraBeltRotx,
-		CameraBeltRoty, CameraBeltRotz, 50.00, false, 0);
+		CameraBeltRoty, CameraBeltRotz, 50.00, false, 0)
 	CamBot = CreateCamWithParams("DEFAULT_SCRIPTED_CAMERA", CameraBootsx, CameraBootsy, CameraBootsz, CameraBootsRotx,
-		CameraBootsRoty, CameraBootsRotz, 50.00, false, 0);
+		CameraBootsRoty, CameraBootsRotz, 50.00, false, 0)
 
-	SetCamActive(CamWardrove, true);
-	RenderScriptCams(true, true, 500, true, true, 0);
-	FreezeEntityPosition(StorePeds[inShop], true);
-	Citizen.Wait(1000);
-	DoScreenFadeIn(1000);
-	DeletePed(PedWardrobe);
-	NetworkSetInSpectatorMode(false, playerPed);
+	SetCamActive(CamWardrove, true)
+	RenderScriptCams(true, true, 500, true, true, 0)
+	FreezeEntityPosition(StorePeds[inShop], true)
+	Citizen.Wait(1000)
+	DoScreenFadeIn(1000)
+	DeletePed(PedWardrobe)
+	NetworkSetInSpectatorMode(false, playerPed)
 	playerSex = string.gsub(tostring(SkinsDB["sex"]), "mp_", "")
 	MainClothingMenu()
 end
 
 function SetOutfit(index)
-	TriggerServerEvent("vorpclothingstore:setOutfit", MyOutfits[index].comps);
-	-- for k,v in pairs(MyOutfits[index].comps) do
-	-- clothesPlayer[k] = v
-	-- end
+	TriggerServerEvent("vorpclothingstore:setOutfit", MyOutfits[index].comps)
 	startBuyCloths(false)
 end
 
@@ -243,7 +240,7 @@ function LoadYourCloths(cloths, skins)
 end
 
 function DeleteOutfit(index, dbId)
-	TriggerServerEvent("vorpclothingstore:deleteOutfit", dbId);
+	TriggerServerEvent("vorpclothingstore:deleteOutfit", dbId)
 	MyOutfits[index] = nil
 end
 
@@ -256,25 +253,25 @@ end
 
 function SwapCameras(index)
 	if index == 0 then
-		SetCamActive(CamWardrove, true);
-		SetCamActive(CamBot, false);
-		SetCamActive(CamUp, false);
-		RenderScriptCams(true, true, 200, true, true, 0);
+		SetCamActive(CamWardrove, true)
+		SetCamActive(CamBot, false)
+		SetCamActive(CamUp, false)
+		RenderScriptCams(true, true, 200, true, true, 0)
 	elseif index == 1 then
-		SetCamActive(CamUp, true);
-		SetCamActive(CamWardrove, false);
-		SetCamActive(CamMid, false);
-		RenderScriptCams(true, true, 200, true, true, 0);
+		SetCamActive(CamUp, true)
+		SetCamActive(CamWardrove, false)
+		SetCamActive(CamMid, false)
+		RenderScriptCams(true, true, 200, true, true, 0)
 	elseif index == 2 then
-		SetCamActive(CamMid, true);
-		SetCamActive(CamUp, false);
-		SetCamActive(CamBot, false);
-		RenderScriptCams(true, true, 200, true, true, 0);
+		SetCamActive(CamMid, true)
+		SetCamActive(CamUp, false)
+		SetCamActive(CamBot, false)
+		RenderScriptCams(true, true, 200, true, true, 0)
 	elseif index == 3 then
-		SetCamActive(CamBot, true);
-		SetCamActive(CamMid, false);
-		SetCamActive(CamWardrove, false);
-		RenderScriptCams(true, true, 200, true, true, 0);
+		SetCamActive(CamBot, true)
+		SetCamActive(CamMid, false)
+		SetCamActive(CamWardrove, false)
+		RenderScriptCams(true, true, 200, true, true, 0)
 	end
 end
 
@@ -285,11 +282,10 @@ function FinishBuy(buy, cost)
 			if result ~= "" or result then
 				outfitName = result
 				saveOutfit = true
+				return TriggerServerEvent("vorpclothingstore:buyPlayerCloths", cost, json.encode(clothesPlayer),
+					saveOutfit,
+					outfitName)
 			end
-
-			TriggerServerEvent("vorpclothingstore:buyPlayerCloths", cost, json.encode(clothesPlayer), saveOutfit,
-				outfitName);
-			return
 		end)
 	end
 end
@@ -298,24 +294,24 @@ function startBuyCloths(state)
 	if not state then
 		MenuData.CloseAll()
 	else
-		--TriggerServerEvent("vorpcharacter:getPlayerSkin"); when finished its sending alreadu an event to characters
+		--TriggerServerEvent("vorpcharacter:getPlayerSkin") when finished its sending alreadu an event to characters
 	end
 	local PedExitx = Config.Stores[inShop].ExitWardrobe[1]
 	local PedExity = Config.Stores[inShop].ExitWardrobe[2]
 	local PedExitz = Config.Stores[inShop].ExitWardrobe[3]
 	local PedExitheading = Config.Stores[inShop].ExitWardrobe[4]
 
-	DoScreenFadeOut(1000);
-	Citizen.Wait(2000);
-	if not state then ExecuteCommand("rc"); end
-	SetCamActive(CamWardrove, false);
-	RenderScriptCams(false, true, 1000, true, true, 0);
-	Citizen.Wait(1000);
-	DestroyCam(CamWardrove, true);
-	FreezeEntityPosition(PlayerPedId(), false);
+	DoScreenFadeOut(1000)
+	Citizen.Wait(2000)
+	if not state then ExecuteCommand("rc") end
+	SetCamActive(CamWardrove, false)
+	RenderScriptCams(false, true, 1000, true, true, 0)
+	Citizen.Wait(1000)
+	DestroyCam(CamWardrove, true)
+	FreezeEntityPosition(PlayerPedId(), false)
 
-	SetEntityCoords(PlayerPedId(), PedExitx, PedExity, PedExitz, false, false, false, false);
-	SetEntityHeading(PlayerPedId(), PedExitheading);
+	SetEntityCoords(PlayerPedId(), PedExitx, PedExity, PedExitz, false, false, false, false)
+	SetEntityHeading(PlayerPedId(), PedExitheading)
 
 	DisplayRadar(true)
 	DisplayHud(true)
@@ -323,7 +319,7 @@ function startBuyCloths(state)
 
 	VORPcore.instancePlayers(0)
 
-	DoScreenFadeIn(1000);
+	DoScreenFadeIn(1000)
 	inShop = false
 	totalCost = 0
 end
@@ -345,25 +341,25 @@ function PreviewOutfit(index)
 				if catHash == 0xE06D30CE then
 					Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0x662AC34, 0)
 				end
-				Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, catHash, 0);
-				Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0);
+				Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, catHash, 0)
+				Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0)
 			else
 				if catHash == 0xE06D30CE then
 					Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0x662AC34, 0)
-					Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0);
+					Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0)
 				end
-				Citizen.InvokeNative(0x59BD177A1A48600A, playerPed, catHash);
-				Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, v, true, false, false);
-				Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, v, true, true, false);
+				Citizen.InvokeNative(0x59BD177A1A48600A, playerPed, catHash)
+				Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, v, true, false, false)
+				Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, v, true, true, false)
 			end
 		else
 			if v <= 0 then
-				Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, catHash, 0);
-				Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0);
+				Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, catHash, 0)
+				Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0)
 			else
-				Citizen.InvokeNative(0x59BD177A1A48600A, playerPed, catHash);
-				Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, v, true, false, true);
-				Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, v, true, true, true);
+				Citizen.InvokeNative(0x59BD177A1A48600A, playerPed, catHash)
+				Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, v, true, false, true)
+				Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, v, true, true, true)
 			end
 		end
 		Citizen.Wait(5)
@@ -377,21 +373,21 @@ function SetPlayerComponent(menuVal, catName, rawCat)
 	local clothPlay = CategoryClothesPlayer[catName] -- Ex. "RingRh" - Match original category names in DB
 
 	if clothPlay == "Coat" then                   -- Carried over from original code, probably necessary
-		Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0x0662AC34, 0);
-		Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0);
+		Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0x0662AC34, 0)
+		Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0)
 		clothesPlayer["CoatClosed"] = -1
 	elseif clothPlay == "CoatClosed" then
-		if playerSex == "male" then Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0x662AC34, 0); end -- Only applies to males it seems
-		Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0xE06D30CE, 0);
-		Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0);
+		if playerSex == "male" then Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0x662AC34, 0) end -- Only applies to males it seems
+		Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0xE06D30CE, 0)
+		Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0)
 		clothesPlayer["Coat"] = -1
 	elseif clothPlay == "Spurs" then
-		Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0x514ADCEA, 0);
-		Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0);
+		Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0x514ADCEA, 0)
+		Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0)
 		clothesPlayer["Spats"] = -1
 	elseif clothPlay == "Spats" then
-		Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0x18729F39, 0);
-		Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0);
+		Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0x18729F39, 0)
+		Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0)
 		clothesPlayer["Spurs"] = -1
 	end
 
@@ -400,33 +396,35 @@ function SetPlayerComponent(menuVal, catName, rawCat)
 			if catHash == 0xE06D30CE then
 				Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0x662AC34, 0)
 			end
-			Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, catHash, 0);
-			Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0);
-			clothesPlayer[clothPlay] = -1;
+			Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, catHash, 0)
+			Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0)
+			clothesPlayer[clothPlay] = -1
 		else
 			if catHash == 0xE06D30CE then
 				Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, 0x662AC34, 0)
-				Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0);
+				Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0)
 			end
-			Citizen.InvokeNative(0x59BD177A1A48600A, playerPed, catHash);
-			Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, ClothesUtils[rawCat][menuVal], true, false, false);
-			Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, ClothesUtils[rawCat][menuVal], true, true, false);
+			Citizen.InvokeNative(0x59BD177A1A48600A, playerPed, catHash)
+			Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, ClothesUtils[rawCat][menuVal], true, false, false)
+			Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, ClothesUtils[rawCat][menuVal], true, true, false)
 			clothesPlayer[clothPlay] = ClothesUtils[rawCat][menuVal]
 		end
 	else
 		if menuVal <= 0 then
-			Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, catHash, 0);
-			Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0);
-			clothesPlayer[clothPlay] = -1;
+			Citizen.InvokeNative(0xD710A5007C2AC539, playerPed, catHash, 0)
+			Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, 0, 1, 1, 1, 0)
+			clothesPlayer[clothPlay] = -1
 		else
-			Citizen.InvokeNative(0x59BD177A1A48600A, playerPed, catHash);
-			Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, ClothesUtils[rawCat][menuVal], true, false, true);
-			Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, ClothesUtils[rawCat][menuVal], true, true, true);
+			Citizen.InvokeNative(0x59BD177A1A48600A, playerPed, catHash)
+			Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, ClothesUtils[rawCat][menuVal], true, false, true)
+			Citizen.InvokeNative(0xD3A7B003ED343FD9, playerPed, ClothesUtils[rawCat][menuVal], true, true, true)
 			clothesPlayer[clothPlay] = ClothesUtils[rawCat][menuVal]
 		end
 	end
 end
 
+local IMG = "<img style='max-height:120px;max-width:120px;float:center;' src='nui://" ..
+	GetCurrentResourceName() .. "/images/%s.png'><br>"
 function MainClothingMenu()
 	MenuData.CloseAll()
 	local cFG = Config.Stores[1]
@@ -435,14 +433,12 @@ function MainClothingMenu()
 		{
 			label = T.TitleMenuClothes,
 			value = 'ClothingMenu',
-			desc = T.SubTitleMenuClothes,
-			image = "nui://vorp_clothingstores/images/clothing_purchase.png",
+			desc = IMG:format("clothing_purchase") .. "<br>" .. T.SubTitleMenuClothes,
 		},
 		{
 			label = T.TitleMenuOutfits,
 			value = 'OutfitMenu',
-			desc = T.SubTitleMenuOutfits,
-			image = "nui://vorp_clothingstores/images/kit_wardrobe.png",
+			desc = IMG:format("kit_wardrobe") .. "<br>" .. T.SubTitleMenuOutfits,
 		},
 	}
 
@@ -470,18 +466,19 @@ end
 
 function ClothingMenu()
 	MenuData.CloseAll()
-	local cFG = Config.Stores[1]
 	local elements = {}
 	local selectedComponents = {}
-
+	totalCost = 0
 
 	for k, v in pairs(ClothesUtils) do
 		if string.find(string.lower(k), "_" .. playerSex) then
 			local labelForm, descForm, elmNum = "N/A", "N/A", (#elements + 1)
 			if CategoryRawNames[k] then
 				local convertedFormat = CategoryRawNames[k]
-				labelForm = TranslationCloth.Langs[Lang].ClothingMenu[convertedFormat] -- Look up table to make the conversion in a loop
-				descForm = TranslationCloth.Langs[Lang].Descriptions[convertedFormat] -- instead of each element being declared
+				labelForm = TranslationCloth.Langs[Lang].ClothingMenu
+					[convertedFormat] -- Look up table to make the conversion in a loop
+				descForm = TranslationCloth.Langs[Lang].Descriptions
+					[convertedFormat] -- instead of each element being declared
 			end
 
 			elements[elmNum] = {
@@ -501,7 +498,8 @@ function ClothingMenu()
 				if k2 == elements[elmNum].dbName then
 					for y, z in pairs(ClothesUtils[elements[elmNum].rawName]) do
 						if v2 == z then
-							elements[elmNum].value = y -- If player has specified category equipped, set menu value to worn
+							elements[elmNum].value =
+								y -- If player has specified category equipped, set menu value to worn
 							break
 						end
 					end
@@ -513,7 +511,7 @@ function ClothingMenu()
 	elements[#elements + 1] = {
 		label = T.Finish,
 		value = "purchase",
-		image = "nui://vorp_clothingstore/images/clothing_purchase.png"
+		desc = IMG:format("clothing_purchase") --"nui://" .. GetCurrentResourceName() .. "/images/clothing_purchase.png"
 	}
 
 	MenuData.Open('default', GetCurrentResourceName(), "ClothingMenu",
@@ -525,7 +523,7 @@ function ClothingMenu()
 		},
 
 		function(data, menu)
-			if data.current.value == "purchase" then
+			if data.current.value == "purchase" and totalCost > 0 then
 				FinishBuy(true, totalCost)
 				menu.close()
 			elseif data.current.type == "slider" and data.current.value < 0 then
@@ -537,7 +535,7 @@ function ClothingMenu()
 						SetPlayerComponent(data.current.value, data.current.catItem, data.current.rawName)
 						if not selectedComponents[data.current.rawName] then
 							totalCost = totalCost +
-								Config.Cost[data.current.catItem];
+								Config.Cost[data.current.catItem]
 						end
 						selectedComponents[data.current.rawName] = data.current.value
 						break
@@ -561,7 +559,7 @@ function ClothingMenu()
 						SetPlayerComponent(data.current.value, data.current.catItem, data.current.rawName)
 						if not selectedComponents[data.current.rawName] then
 							totalCost = totalCost +
-								Config.Cost[data.current.catItem];
+								Config.Cost[data.current.catItem]
 						end
 						selectedComponents[data.current.rawName] = data.current.value
 					elseif data.current.value == 0 and selectedComponents[data.current.rawName] then
@@ -587,7 +585,7 @@ function OutfitMenu()
 
 	for k, v in pairs(MyOutfits) do
 		local outfitName
-		if k == "" then outfitName = "Outfit"; else outfitName = v.title; end
+		if k == "" then outfitName = "Outfit" else outfitName = v.title end
 		elements[#elements + 1] = {
 			label = outfitName,
 			value = k,
@@ -625,7 +623,7 @@ function OutfitSubMenu(index, outfitId)
 		{
 			label = T.TitleMenuOutfitsUseBtn,
 			value = "wear",
-			image = "nui://vorp_clothingstore/images/kit_wardrobe.png"
+			desc = IMG:format("kit_wardrobe") --"nui://" .. GetCurrentResourceName() .. "/images/kit_wardrobe.png"
 		},
 		{ label = T.TitleMenuOutfitsDeleteBtn, value = "delete" }
 	}
