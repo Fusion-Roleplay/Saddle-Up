@@ -286,7 +286,7 @@ Items.Consumables = {
                 }
 
             },
-            raspberry = {
+            consumable_raspberry = {
                 removethirst          = 0,
                 removehunger          = 0,
                 removestamina         = 0,
@@ -1218,7 +1218,7 @@ Items.Consumables = {
                 }
 
             },
-            peach = {
+            consumable_peach = {
                 removethirst          = 0,
                 removehunger          = 0,
                 removestamina         = 0,
@@ -1267,7 +1267,7 @@ Items.Consumables = {
                 }
 
             },
-            pear = {
+            consumable_pear = {
                 removethirst          = 0,
                 removehunger          = 0,
                 removestamina         = 0,
@@ -1316,7 +1316,7 @@ Items.Consumables = {
                 }
 
             },
-            peppermint = {
+            consumable_peppermint = {
                 removethirst          = 0,
                 removehunger          = 0,
                 removestamina         = 0,
@@ -2713,9 +2713,52 @@ Items.Consumables = {
                 removestamina         = 0,
                 removehealth          = 0,
                 addhealth             = 0,
-                addstamina            = 150,
+                addstamina            = 50,
                 addhunger             = 0,
-                addthirst             = 25,
+                addthirst             = 20,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "drink",
+                animationtype         = "fastdrink",
+                description           = "Provided by Jack Jill", -- provide a custom description for this item
+                model                 = "s_inv_moonshine01x",
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",
+                UseDrunkEffect        = false,
+                DrunkDuration         = 0,
+                TimesUsed             = 3,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 5,
+                warmup                = 30,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,     -- max is 100
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false, -- effect name
+                    effectName = "",   -- effect name
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up",
+                    soundRef = "Consumption_Sounds"
+                }
+
+            },
+            consumable_raspberrywater = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 0,
+                addstamina            = 50,
+                addhunger             = 0,
+                addthirst             = 20,
                 addgooldstaminaInner  = 0,
                 addgooldstaminaOutter = 0,
                 addgoldhealthInner    = 0,
