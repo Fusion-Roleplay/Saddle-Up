@@ -1,24 +1,48 @@
 function makeDraggable(element, className) {
-	element
-		.draggable({
-			stop: function (event, ui) {
-				var pos = ui.position;
-				element.css({
-					top: pos.top + "px",
-					left: pos.left + "px",
-				});
-				$.post(
-					`https://${GetParentResourceName()}/UIposition`,
-					JSON.stringify({
-						x: pos.left,
-						y: pos.top,
-						className: className,
-					})
-				);
-			},
-		})
-		.addClass(className);
+	element.draggable({
+		stop: function (event, ui) {
+			var pos = ui.position;
+			element.css({
+				top: pos.top + "px",
+				left: pos.left + "px",
+			});
+			$.post(
+				`https://${GetParentResourceName()}/UIposition`,
+				JSON.stringify({
+					x: pos.left,
+					y: pos.top,
+					className: className,
+				})
+			);
+		},
+	}).addClass(className);
 }
+
+/* 
+function makeResizable(element, className) {
+	console.log(className)
+	element.resizable({
+		stop: function (event, ui) {
+			var size = {
+				width: ui.size.width + "px",
+				height: ui.size.height + "px",
+			};
+			element.css({
+				width: size.width,
+				height: size.height,
+			});
+			console.log(size.width, size.height)
+			$.post(`https://${GetParentResourceName()}/UIsize`,
+				JSON.stringify({
+					width: size.width,
+					height: size.height,
+					className: className,
+				})
+			);
+		}
+	}).addClass(className);
+}
+ */
 
 //close
 document.onkeyup = function (data) {
@@ -35,6 +59,15 @@ window.addEventListener("message", function (event) {
 			left: event.data.x + "px",
 		});
 	}
+
+	/* 	if (event.data.type === "UIsize") {
+			let element = $(`.${event.data.className}`);
+			element.css({
+				width: event.data.width + "px",
+				height: event.data.height + "px",
+			});
+		}
+	 */
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -54,6 +87,24 @@ document.addEventListener("DOMContentLoaded", function () {
 	makeDraggable($(".horseStamina"), "horseStamina");
 	makeDraggable($(".stress"), "stress");
 	makeDraggable($(".addiction"), "addiction");
+	/* resize*/
+
+
+
+	/* it doesnt work with images idk why
+	makeResizable($(".temp"), "temp");
+		makeResizable($(".hunger"), "hunger");
+		makeResizable($(".thirst"), "thirst");
+		makeResizable($(".voice"), "voice");
+		makeResizable($(".bath"), "bath");
+		makeResizable($(".health"), "health");
+		makeResizable($(".stamina"), "stamina");
+		makeResizable($(".templocal"), "templocal");
+		makeResizable($(".horseHealth"), "horseHealth");
+		makeResizable($(".horseStamina"), "horseStamina");
+		makeResizable($(".stress"), "stress");
+		makeResizable($(".addiction"), "addiction"); */
+
 
 
 	window.addEventListener("message", function (event) {
