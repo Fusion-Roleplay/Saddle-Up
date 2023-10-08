@@ -286,55 +286,6 @@ Items.Consumables = {
                 }
 
             },
-            consumable_raspberry = {
-                removethirst          = 0,
-                removehunger          = 0,
-                removestamina         = 0,
-                removehealth          = 8,
-                addhealth             = 0,
-                addstamina            = 0,
-                addhunger             = 8,
-                addthirst             = 8,
-                addgooldstaminaInner  = 0,
-                addgooldstaminaOutter = 0,
-                addgoldhealthInner    = 0,
-                addgoldhealthOutter   = 0,
-                Type                  = "eat",
-                animationtype         = "hand",                  -- types for eat [ hand sandwich bowl canned berry ]
-                description           = "Provided by Jack&Jill", -- provide a custom description for this item
-                model                 = "s_inv_raspberry01bx",        -- not all models will be positioned correctly
-                Drunk                 = false,
-                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
-                UseDrunkEffect        = false,
-                Drunkness             = 0.0,
-                DrunkDuration         = 0,
-                TimesUsed             = 1,
-                amountToCool          = 0,
-                cooldown              = 0,
-                amountToWarm          = 20,
-                warmup                = 10,
-                requiredItem          = false,
-                removeRequiredItem    = false, -- should it remove the required item after use ?
-                addStress             = 0,
-                addAddiction          = 0,
-                removeAddiction       = 0,
-                removeStress          = 0,
-                effects               = {
-                    addEffect = false,
-                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
-                },
-                sounds                = {
-                    addSound = false,
-                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
-                    soundRef = "Consumption_Sounds"
-                },
-                -- give item back NEW FEATURE
-                giveItemBack          = false, -- should it give the item back after use ? like a bowl or spoon
-                itemsToGive           = {
-                    apple = 2,                -- item name and ammount
-                }
-
-            },
             boiledegg = {
                 removethirst          = 0,
                 removehunger          = 0,
