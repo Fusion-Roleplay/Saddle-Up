@@ -1,6 +1,6 @@
 Config = {}
 
-Config.defaultlang = 'es'
+Config.defaultlang = 'en'
 
 Config.MenuAlign = 'top-left'   -- top-right , top-center , top-left
 
