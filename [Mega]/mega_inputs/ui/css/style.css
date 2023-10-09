@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'RDR Lino Regular';
+    src: url("../fonts/RDR_Lino_Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hapna Slab Serif';
+    src: url("../fonts/Hapna_Slab_Serif.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #fafafa;
+    font-family: 'RDR Lino Regular', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.input-form {
+    height: 250px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #212121;
+    border-radius: 3px;
+    padding: 15px 25px;
+    transition: all .2s ease-in-out;
+}
+
+.input-form input {
+    font-weight: normal;
+    font-family: 'RDR Lino Regular', sans-serif;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.input-form #input-val {
+    background: #313131;
+    color: #fafafa;
+    font-weight: normal;
+    font-size: 20px;
+    border: 0;
+    height: 50px;
+    padding: 10px;
+    width: 100%;
+    font-family: 'Hapna Slab Serif', serif;
+    text-align: center;
+}
+
+.input-form #submit {
+    background: #B21214;
+    border: 0;
+    padding: 10px 25px;
+    color: #fafafa;
+    font-size: 16px;
+}
+
+.input-form input:focus {
+    outline: none;
+}
