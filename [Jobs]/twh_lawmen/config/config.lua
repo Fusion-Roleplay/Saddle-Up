@@ -7,7 +7,7 @@ Config.adminGroups = {"admin"}
 --Webhook
 Config.Logs         = true 
 Config.Discord      = true  --if you use discord whitelist
-Config.webhook      = ""
+Config.webhook      = "https://discord.com/api/webhooks/1160688363024691391/wk_xLR0ER0eJZvZkmjlpCS2AUIKG4HjSNoVQMUBUAgwfSRv9jx6kBhF6xqvFXH5rLgh3"
 Config.webhookColor = 16711680 
 Config.name         = "Saddle Up Lawmen Logs" 
 Config.logo         = "https://media.discordapp.net/attachments/1017811858578735228/1103467115996004422/Logo-Grey.png?ex=65306dd5&is=651df8d5&hm=e191bc3eaf5421c9f45425667da72cc23a2ac9c1a08d31ba4efd3564d78461ae&=" -- Header

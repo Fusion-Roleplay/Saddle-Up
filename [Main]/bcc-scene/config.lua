@@ -17,7 +17,7 @@ Config.AdminLock = false -- Use 'false' for no admin lock or IE group names. {'a
 Config.JobLock = {'signer', 'doctor'} --{'police', 'doctor'} -- Use 'false' for no job lock or IE. {'police'}
 -------------------------------
 
-Config.HotKeysEnabled = true
+Config.HotKeysEnabled = false
 Config.HotKeys = {
     Scene = 0x26E9DC00,
     Place = 0x8CC9CD42
