@@ -31,7 +31,7 @@ EscapeRiddles = {
 	arrestTimeDecreaseAtSuccess = true, --when success to talk to a guard, then arrest time decreases
 	arrestTimeDecrease = 5, --how many minutes it decreases on success 
 
-	twh_social = true, --if you use twh social and want to increase talk chance by social level
+	twh_social = false, --if you use twh social and want to increase talk chance by social level
 	talkChanceIncrease = 0.01, --how much to increase per level if twh_social is true
 
 	--Hint mechanic:
