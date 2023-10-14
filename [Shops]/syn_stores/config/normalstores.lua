@@ -106,7 +106,7 @@ Config.normalstores = {  -- delete everything inside here if you dont want norma
     },
     {	   
         Pos = {x=-784.06, y=-1286.81, z=43.76}, -- location of shop
-        blipsprite = 1475879922, -- blip sprite for shop
+        blipsprite = -1852063472, -- blip sprite for shop
         Name = 'Blackwater Bakery', -- blip name 
         joblock = {},
         showblip = true,
@@ -129,7 +129,7 @@ Config.normalstores = {  -- delete everything inside here if you dont want norma
 
         },
         buyitems = { -- Items the shop will buy, these will only show if the player has them in his inventory 
-        {name = "blackberry", label = "Blackberry", price = ".75",type = "item_standard"},
+        {name = "water", label = "water", price = ".75",type = "item_standard"},
         {name = "consumable_peach", label = "Peach", price = "1",type = "item_standard"},
         {name = "blueberry", label = "Blueberry", price = "1.5",type = "item_standard"},
         {name = "consumable_herb_chanterelles", label = "Chanterelles", price = "3",type = "item_standard"},
