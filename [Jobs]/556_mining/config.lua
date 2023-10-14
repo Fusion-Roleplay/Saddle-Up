@@ -35,7 +35,7 @@ Config.StonecuttingJob              =               {"yourblacksmith"}
 
 --PERMIT/LICENCE
 Config.NeedsPermitToUseMine         =               false
-Config.NeedsPermitToCutStones       =               true
+Config.NeedsPermitToCutStones       =               false
 Config.NeedsJobToShowPermit         =               false
 Config.PermitItem                   =               "miningpermit"
 Config.image                        =               "permit" -- dont change
@@ -43,12 +43,12 @@ Config.Distance                     =               3 -- distance to show permit
 
 --METADATA/DURABILITY
 -- enable, durability text, max durability, loss each time, text if breaks, enable broken pickaxe item, broken pickaxe item
-Config.Metadata                     =               {true, "Durability", 100, 10, "Your pickaxe broke!", true, "brokenpickaxe"}
+Config.Metadata                     =               {true, "Durability", 100, 1, "Your pickaxe broke!", true, "brokenpickaxe"}
 -- time in seconds, +durability each time, use new status texts, metadata status texts, status values (e.g. sharp starts at 60 and up, dull at 20 and less, damaged is inbetween), repair item
 Config.PickaxeSharpen               =               {22, 10, true, "Dull", "Damaged", "Sharp", 20, 60, "whetstone"}
 Config.LessRewardIfNotSharp         =               true -- only gives half of the rewards if pickaxe isnt sharp. sharp = value above (more than 60)
 
-Config.NeedsJobToSharpenPickaxe     =               true
+Config.NeedsJobToSharpenPickaxe     =               false
 Config.SharpenPickaxeJobs           =               {"blacksmith"}
 
 --ORE WASHING LUCK AT WATERS
@@ -63,8 +63,8 @@ Config.StonecuttingOpen             =               6 --am
 Config.StonecuttingClose            =               22 -- pm
 
 --WEBHOOK
-Config.Logs                         =               false 
-Config.Discord                      =               false  --if you use discord whitelist
+Config.Logs                         =               true 
+Config.Discord                      =               true  --if you use discord whitelist
 Config.webhook                      =               ""
 Config.name                         =               "💎 Mining & Stonecutting" 
 Config.logo                         =               "https://via.placeholder.com/30x30" -- Header
