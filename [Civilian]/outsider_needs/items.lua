@@ -1659,6 +1659,49 @@ Items.Consumables = {
                 }
 
             },
+            consumable_steak = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 20,
+                addstamina            = 0,
+                addhunger             = 50,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_bowl04x_stew",        -- bowl do not need object
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 10,    -- can be used as spicy food
+                warmup                = 0,     -- how long should the hot last
+                requiredItem          = false, -- you can require a spoon in order to eat from a bowl leave false if you dont want
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                }
+            },
             consumable_steakpie = {
                 removethirst          = 0,
                 removehunger          = 0,
