@@ -105,6 +105,50 @@ Config.normalstores = {  -- delete everything inside here if you dont want norma
         },
     },
     {	   
+        Pos = {x=-784.06, y=-1286.81, z=43.76}, -- location of shop
+        blipsprite = -1852063472, -- blip sprite for shop
+        Name = 'Blackwater Bakery', -- blip name 
+        joblock = {},
+        showblip = true,
+        sellitems = { -- items sold by shop
+        {name = "bwb_ap", label = "Apple Pie", price = "2",type = "item_standard"}, -- change label of items shown 
+        {name = "bwb_bb", label = "Banana Bread", price = "2",type = "item_standard"},
+        {name = "bwb_bm", label = "Blueberry Muffin", price = "2",type = "item_standard"},
+        {name = "bwb_cc", label = "Chocolate Cake", price = "2",type = "item_standard"},
+        {name = "bwb_ccc", label = "Chocolate Chunk Cookie", price = "2",type = "item_standard"},
+        {name = "bwb_cr", label = "Cinnamon Cake", price = "2",type = "item_standard"},
+        {name = "bwb_cwc", label = "Coffee With Cream", price = "2",type = "item_standard"},
+        {name = "bwb_fp", label = "Fruit Punch", price = "2",type = "item_standard"},
+        {name = "bwb_pgd", label = "Pink Glazed Donut", price = "2",type = "item_standard"},
+        {name = "bwb_pit", label = "Peach Iced Tea", price = "2",type = "item_standard"},
+        {name = "bwb_pm", label = "Peppermint Mocha", price = "2",type = "item_standard"},
+        {name = "bwb_pt", label = "Peach Tarte", price = "2",type = "item_standard"},
+        {name = "bwb_sc", label = "Strawberry Cheesecake", price = "2",type = "item_standard"},
+        {name = "bwb_ss", label = "Strawberry Shortcake", price = "2",type = "item_standard"},
+
+
+        },
+        buyitems = { -- Items the shop will buy, these will only show if the player has them in his inventory 
+        {name = "water", label = "water", price = ".75",type = "item_standard"},
+        {name = "consumable_peach", label = "Peach", price = "1",type = "item_standard"},
+        {name = "blueberry", label = "Blueberry", price = "1.5",type = "item_standard"},
+        {name = "consumable_herb_chanterelles", label = "Chanterelles", price = "3",type = "item_standard"},
+        {name = "consumable_herb_oregano", label = "Oregano", price = "1.25",type = "item_standard"},
+        {name = "consumable_herb_vanilla_flower", label = "Vanilla Flower", price = ".75",type = "item_standard"},
+        {name = "consumable_herb_wintergreen_berry", label = "Wintergreen Berry", price = "1",type = "item_standard"},
+        {name = "consumable_pear", label = "Pear", price = "1",type = "item_standard"},
+        {name = "corn", label = "Corn", price = "1",type = "item_standard"},
+        {name = "hemp", label = "Hemp", price = "4",type = "item_standard"},
+        {name = "milk", label = "Milk", price = "1.5",type = "item_standard"},
+        {name = "eggs", label = "Eggs", price = "1.5",type = "item_standard"},
+        {name = "pear", label = "Pear", price = "0.75",type = "item_standard"},
+        {name = "Poltery", label = "Poltery", price = "2.5",type = "item_standard"},
+        {name = "meat", label = "Meat", price = ".4",type = "item_standard"},
+        {name = "sugar", label = "Sugar", price = ".2",type = "item_standard"},
+        {name = "wheat", label = "Wheat", price = ".75",type = "item_standard"},
+        },
+    },
+    {	   
         Pos = {x = -249.04, y = 685.93, z = 113.53}, -- location of shop
         blipsprite = 1475879922, -- blip sprite for shop
         Name = 'Valentine Bee Keeping Store', -- blip name 
