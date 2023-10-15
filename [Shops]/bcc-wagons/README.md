@@ -1,49 +1,46 @@
-# bcc-stables
+# bcc-wagons
 
 #### Description
-Stables script for RedM servers using the [VORP framework](https://github.com/VORPCORE). Using the 7 original stable locations from the game. More stable locations may be added in the `config.lua` file.
+
+Whether you're a hardworking farmer tending to your crops, a family embarking on a scenic countryside picnic, or a successful businessman looking to make an impression, these wagons will revolutionize the way you travel.
 
 #### Features
-- Buy and sell horses through the stables
+
+- Buy and sell wagons through the wagon shops
 - Cash and/or gold may be used for payments in the menu
-- Max player horses is set in the config (default: 5)
-- Individual inventory for each horse
-- Choose horse gender at purchase
-- Use oil lantern from inventory to equip a lantern to your horse
-- Shop hours may be set individually for each stable or disabled to allow the stable to remain open
-- Stable blips are colored and changeable per stable location
-- Blips can change color reflecting if stable is open, closed or job locked
-- Stable access can be limited by job and jobgrade
-- Return horse at stable (when open) or using the flee button in the horse menu
-- Feed your horse (haycubes) to increase horse's health and stamina
-- Brushing your horse will clean him and give a slight increase in health
-- Configurable cooldown time for feeding and brushing
+- Individual inventory for owned wagons
+- Call your selected wagon using the `J` key
+- Shop hours may be set individually for each shop or disabled to allow the shop to remain open
+- Shop blips are colored and changeable per shop location
+- Blips can change color reflecting if shop is open, closed or job locked
+- Shop access can be limited by job and jobgrade
+- Wagons can be returned at any shop location via prompt
+- Give your wagon a special name at purchase time (rename wagon using the menu)
+- Set a max number of wagons per player in the config
+
 - Distance-based NPC spawns
 
-#### Tips
-- Whistleing -- A short whistle will call your horse. A long one will set your horse to follow you. A second long whistle or mounting your horse will cancel following.
-
 #### Commands
-`/horseRespawn` Respawn your horse while bypassing the distance check
+- Command `/wagonEnter` if you have trouble getting to your wagon
+- Command `/wagonReturn` to return wagon when away from a shop
 
 #### Dependencies
+
 - [vorp_core](https://github.com/VORPCORE/vorp-core-lua)
 - [vorp_inventory](https://github.com/VORPCORE/vorp_inventory-lua)
-- [vorp_utils](https://github.com/VORPCORE/vorp_utils)
 
 #### Installation
-- Download the latest release `bcc-stables.zip` at [/releases/latest](https://github.com/BryceCanyonCounty/bcc-stables/releases/latest)
-- Add `bcc-stables` folder to your resources folder
-- Add `ensure bcc-stables` to your `resources.cfg`
-- Run the included database file `bcc-stables.sql`
-- Add oil_lantern image to: `...\vorp_inventory\html\img`
-- Update vorp_utils
-- Restart server
+
+- Ensure that the dependancies are added and started
+- Add `bcc-wagons` folder to your resources folder
+- Add `ensure bcc-wagons` to your `resources.cfg`
+- Run the included database file `wagons.sql`
+- Restart Server
 
 #### Credits
-- lrp_stables
+- lrp_stable
 - [ByteSizd](https://github.com/AndrewR3K) - Vue Boilerplate for RedM
 - [SavSin](https://github.com/DavFount) - UI conversion to VueJS
 
 #### GitHub
-- https://github.com/BryceCanyonCounty/bcc-stables
+- https://github.com/BryceCanyonCounty/bcc-wagons

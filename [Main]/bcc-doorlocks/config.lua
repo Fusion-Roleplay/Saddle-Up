@@ -9,10 +9,10 @@ Config.DeleteDoorCommand = 'deleteDoor' --command to delete door
 ---------- Admin Configuration (Anyone listed here will be able to create and delete doors!) -----------
 Config.AdminSteamIds = {
     {
-        steamid = 'steam:11000013707db23', --insert players steam id
+        steamid = 'steam:110000103002265', --insert players steam id
     }, --to add more just copy this table paste and change id
     {
-        steamid = 'steam:11000013707db22', --insert players steam id
+        steamid = 'steam:11000014bc55c60', --insert players steam id
     }, --to add more just copy this table paste and change id
 }
 

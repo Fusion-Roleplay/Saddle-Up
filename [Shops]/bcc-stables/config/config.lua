@@ -50,7 +50,8 @@ Config.boost = {
 -----------------------------------------------------
 
 -- Places Horse Name Above Horse When Saddle is Empty
-Config.horseTag = true --Default: true / Set to false to disable
+Config.horseTag = false --Default: true / Set to false to disable
+Config.tagDistance = 15 -- Default: 15 / Distance from Horse the Tag is Visible
 -----------------------------------------------------
 
 -- Allow Blips on Map when Stable is Closed
@@ -59,7 +60,6 @@ Config.blipOnClosed = true -- true = Show Blips / false = Remove Blips
 
 -- Stable Locations and Options
 Config.shops = {
-	-- Original 7 Stable Locations
 	valentine = {
 		shopName = 'Valentine Stable',                 -- Name Shown on the Stable Menu
 		promptName = 'Valentine Stable',               -- Text Below the Prompt Button
@@ -79,7 +79,7 @@ Config.shops = {
 		spawn = vector4(-371.35, 786.71, 116.17, 269.3), -- Location for Horse Preview When In-Menu
 		allowedJobs = {},                              -- If Empty, Everyone Can Use / Insert Job to limit access - ex. 'police'
 		jobGrade = 0,                                  -- Enter Minimum Rank / Job Grade to Access Shop
-		shopHours = false,                             -- If You Want the Shops to Use Open and Closed Hours
+		shopHours = true,                              -- If You Want the Shops to Use Open and Closed Hours
 		shopOpen = 7,                                  -- Shop Open Time / 24 Hour Clock
 		shopClose = 21,                                -- Shop Close Time / 24 Hour Clock
 	},
@@ -102,7 +102,7 @@ Config.shops = {
 		spawn = vector4(-1823.94, -560.85, 156.06, 257.86),
 		allowedJobs = {},
 		jobGrade = 0,
-		shopHours = false,
+		shopHours = true, 
 		shopOpen = 7,
 		shopClose = 21,
 	},
@@ -125,7 +125,7 @@ Config.shops = {
 		spawn = vector4(2971.66, 796.82, 51.4, 96.54),
 		allowedJobs = {},
 		jobGrade = 0,
-		shopHours = false,
+		shopHours = true, 
 		shopOpen = 7,
 		shopClose = 21,
 	},
@@ -148,7 +148,7 @@ Config.shops = {
 		spawn = vector4(1210.5, -196.25, 101.38, 15.61),
 		allowedJobs = {},
 		jobGrade = 0,
-		shopHours = false,
+		shopHours = true, 
 		shopOpen = 7,
 		shopClose = 21,
 	},
@@ -171,7 +171,7 @@ Config.shops = {
 		spawn = vector4(2502.59, -1438.62, 46.32, 182.93),
 		allowedJobs = {},
 		jobGrade = 0,
-		shopHours = false,
+		shopHours = true, 
 		shopOpen = 7,
 		shopClose = 21,
 	},
@@ -194,7 +194,7 @@ Config.shops = {
 		spawn = vector4(-864.7, -1366.19, 43.55, 88.47),
 		allowedJobs = {},
 		jobGrade = 0,
-		shopHours = false,
+		shopHours = true, 
 		shopOpen = 7,
 		shopClose = 21,
 	},
@@ -217,7 +217,7 @@ Config.shops = {
 		spawn = vector4(-5524.48, -3044.31, -2.39, 263.98),
 		allowedJobs = {},
 		jobGrade = 0,
-		shopHours = false,
+		shopHours = true, 
 		shopOpen = 7,
 		shopClose = 21,
 	},
@@ -240,7 +240,7 @@ Config.shops = {
 		spawn = vector4(1335.06, -6850.62, 47.34, 185.14),
 		allowedJobs = {},
 		jobGrade = 0,
-		shopHours = false,
+		shopHours = true, 
 		shopOpen = 7,
 		shopClose = 21,
 	}
@@ -488,16 +488,6 @@ Config.Horses = { -- Gold to Dollar Ratio Based on 1899 Gold Price / sellPrice i
 			['a_c_horse_turkoman_perlino']  = { color = 'Perlino',  cashPrice = 1000, goldPrice = 48 },
 		}
 	},
-	
-	{
-		breed = 'Other',
-		colors = {
-			['a_c_horsemule_01']          = { color = 'Mule',   cashPrice = 15, goldPrice = 1 },
-			['a_c_horsemulepainted_01']   = { color = 'Zebra',  cashPrice = 15, goldPrice = 1 },
-			['a_c_donkey_01']             = { color = 'Donkey', cashPrice = 15, goldPrice = 1 },
-			['a_c_horse_mp_mangy_backup'] = { color = 'Mangy',  cashPrice = 15, goldPrice = 1 },
-		}
-	}
 }
 -----------------------------------------------------
 
