@@ -127,7 +127,7 @@ Config.LumberMan = {
     },
     [2] = { -- Annesburg
         model                       =       "S_M_M_StrLumberjack_01",
-        coords                      =       { x = 2867.79, y = 1462.47, z =68.53, h = 134.34 },
+        coords                      =       { x = 2868.54, y = 1465.08, z =68.73, h = 237.83 },
         name                        =       "Chuck Wood",
         scene                       =       "WORLD_HUMAN_SMOKE",
         EnableBlip                  =       true,

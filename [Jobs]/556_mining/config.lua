@@ -155,13 +155,13 @@ Config.Nomads = {
         name                        =               "Vette",
         scene                       =               "WORLD_HUMAN_SMOKE",
         EnableBlip                  =               true,
-        FreezePed                   =               false, -- ped gets freezed and wont attack if true
+        FreezePed                   =               true, -- ped gets freezed and wont attack if true
         BlipSprite                  =               1095891419,
     },
     [2] = {
         model                       =               "G_M_M_UniDuster_03",
         locations                   =               { -- multiple locations = random choosing
-                                                    {x = 2461.728, y = 289.8640, z = 70.887, h= 86.58},
+                                                    {x = 2457.74, y = 288.27, z = 70.87, h= 8.52},
                                                     {x = -1332.05, y = 2396.82, z = 306.46, h= 240.68},
                                                     {x = -1320.50, y = 2435.22, z = 309.64, h= 336.28},
         },
