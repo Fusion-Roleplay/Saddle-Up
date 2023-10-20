@@ -18,7 +18,7 @@ Config.EnableMines                  =               true
 Config.EnableStonecutting           =               true
 Config.EnableBasicLoot              =               false
 Config.EnableOpenTimes              =               true
-Config.EnableMarkers                =               false
+Config.EnableMarkers                =               true
 Config.MarkerDistance               =               15
 Config.EnableProgressBars           =               true
 Config.NeedsWhetstoneToCutStone     =               true
@@ -76,7 +76,7 @@ Config.Avatar                       =               "https://via.placeholder.com
 Config.NpcTalk = true
 
 Config.StoneShop = {
-    Title                           =               "Shop",
+    Title                           =               "Stone Shop",
     SubText                         =               "Buy and Sell",
     Options = {
         [1] = {
@@ -154,7 +154,7 @@ Config.Nomads = {
         },
         name                        =               "Vette",
         scene                       =               "WORLD_HUMAN_SMOKE",
-        EnableBlip                  =               false,
+        EnableBlip                  =               true,
         FreezePed                   =               false, -- ped gets freezed and wont attack if true
         BlipSprite                  =               1095891419,
     },
@@ -167,7 +167,7 @@ Config.Nomads = {
         },
         name                        =               "Lance",
         scene                       =               "WORLD_HUMAN_LEAN_BACK_WALL_DRINKING_MOONSHINE",
-        EnableBlip                  =               false,
+        EnableBlip                  =               true,
         FreezePed                   =               true, -- ped gets freezed and wont attack if true
         BlipSprite                  =               1095891419,
     },
