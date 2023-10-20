@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    font-family: 'Caveat', cursive;
+    
+}
+
+
+.store-container {
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: nowrap;
+    /* background-color: rgba(0, 0, 0, 0.779); */
+
+}
+
+#storebook-container {
+    position: absolute;
+    width: 95%;
+    height: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(170, 170, 170, 0.335); */
+}
+
+#storebook-container img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.title-container {
+    position: absolute;
+    width: 30%;
+    height: 25%;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(0, 0, 0, 0.478); */
+}
+
+#title {
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    height: 30%;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.4vh;
+    font-weight: 500;
+    color: #565369;
+    /* background-color: aliceblue; */
+    text-shadow: rgb(253, 253, 253) 1px 0 10px;
+    border-bottom: 2px solid #565369;
+}
+
+#description {
+    position: absolute;
+    text-align: center;
+    width: 70%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.37vh;
+    font-weight: 600;
+    color: #565369;
+    /* background-color: aliceblue; */
+}
+
+#itemsearch {
+    position: absolute;
+    width: 7%;
+    height: 2.5%;
+    border-radius: 0.2vh;
+    right: 16%;
+    top: 25%;
+    outline: none;
+    background: none;
+    /* background-color: #02325cac; */
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 1.2vh;
+    font-weight: 600;
+}
+#storepng {
+    position: relative;
+    width: 35%;
+    height: 78%;
+    top: 10%;
+    left: 14.6%;
+    border-radius: 1vh;
+    /* background-color: #000000; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#itemsearch::placeholder {
+    color: #242c5e;
+    font-size: 1.7vh;
+    font-weight: 600;
+    padding-left: 0%;
+    font-family: 'Caveat', cursive;
+    border-bottom: 2px solid #242c5e;
+}
+.itemscategories {
+    position: absolute;
+    width: 32%;
+    height: 5%;
+    top: 25%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(194, 192, 192, 0.478); */
+}
+
+#itemicons {
+    position: absolute;
+    width: 13%;
+    height: 50%;
+    top: 70%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(144, 12, 12, 0.478); */
+    text-align: center;
+    font-size: 1.3vh;
+    font-weight: 600;
+    border-bottom: 2px solid #565369;
+}
+
+#itemlabels {
+    position: absolute;
+    width: 13%;
+    height: 50%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(125, 228, 105, 0.478); */
+    text-align: center;
+    font-size: 1.3vh;
+    font-weight: 600;
+    border-bottom: 2px solid #565369;
+}
+
+#itemprices {
+    position: absolute;
+    width: 13%;
+    height: 50%;
+    top: 70%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(144, 12, 135, 0.478); */
+    text-align: center;
+    font-size: 1.3vh;
+    font-weight: 600;
+    border-bottom: 2px solid #565369;
+}
+
+.itemlist {
+    position: absolute;
+    width: 32%;
+    height: 55%;
+    top: 56%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(18, 13, 13, 0.478); */
+    border-radius: 1vh;
+    overflow: auto;
+    
+}
+
+.itemlist::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.itemlist::-webkit-scrollbar
+{
+	width: 0.5vh;
+	background-color: #F5F5F5;
+}
+
+.itemlist::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+.item-container {
+    display: inline-block;
+    width: 100%;
+    height: 17%;
+    /* background-color: #7d17175d; */
+    color: #5c2602;
+    border-bottom: 1px solid #565369;
+    flex-direction: column;
+    
+}
+
+#listitem {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vh;
+    /* background-color: rgba(202, 226, 43, 0.152); */
+    
+}
+
+#listitem:hover {
+    background-color: #0d3a61;
+    color: white;
+}
+
+#listitem:active {
+    background-color: #29669c;
+    color: white;
+}
+.active {
+    background-color: #29669c;
+    color: white;
+}
+
+#listitemimg {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    left: 2%;
+    border-radius: 1vh;
+    /* background-color: rgba(202, 226, 43, 0.152); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-image: url("./a_c_fishsalmonsockeye_01_ml.png"); */
+}
+#listitemlabel {
+    position: relative;
+    width: 17%;
+    height: 60%;
+    left: 22%;
+    top: 24%;
+    border-radius: 1vh;
+    /* background-color: rgba(202, 226, 43, 0.152); */
+    text-align: center;
+    font-size: 1.2vh;
+    font-weight: 900;
+}
+#listitemprice {
+    position: relative;
+    width: 14%;
+    height: 60%;
+    left: 45%;
+    top: 24%;
+    border-radius: 1vh;
+    /* background-color: rgba(202, 226, 43, 0.152); */
+    text-align: center;
+    font-size: 1.9vh;
+    font-weight: 900;
+}
+
+#itemcount {
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    right: 0%;
+    top: 5%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+input#sell.sellbtn {
+    position: absolute;
+    font-family: 'Roboto Slab';
+    color: rgb(255, 255, 255);
+    width: 7%;
+    height: 4%; /* Yüksekliği otomatik olarak ayarla */
+    background: none;
+    margin: 10px 11px;
+    border-radius: 4px;
+    font-size: 1.7vh;
+    font-weight: 600;
+    top: 40%;
+    right: 8.7%;
+    border: none;
+    background-color: #02325c;
+    background-image: url('./buttonbg.png');
+    letter-spacing: 3px;
+    white-space: nowrap; /* Satır sonlarına inme */
+    transform: rotate(90deg); /* Metni saat yönünün tersine çevir */
+    transform-origin: bottom right; 
+}
+
+input#sell.sellbtn:hover {
+    transition: background-color 0.5s ease;
+    background-color: #297fcb;
+}
+
+input#sell.sellbtn:active {
+    top: 40.1%;
+}
+input#buy.buybtn {
+    position: absolute;
+    font-family: 'Roboto Slab';
+    color: rgb(255, 255, 255);
+    width: 7%;
+    height: 4%; /* Yüksekliği otomatik olarak ayarla */
+    background: none;
+    margin: 10px 11px;
+    border-radius: 4px;
+    font-size: 1.7vh;
+    font-weight: 600;
+    top: 40%;
+    right: 8.7%;
+    border: none;
+    background-color: #02325c;
+    background-image: url('./buttonbg.png');
+    letter-spacing: 3px;
+    white-space: nowrap; /* Satır sonlarına inme */
+    transform: rotate(90deg); /* Metni saat yönünün tersine çevir */
+    transform-origin: bottom right; 
+}
+
+input#buy.buybtn:hover {
+    transition: background-color 0.5s ease;
+    background-color: #297fcb;
+}
+
+input#buy.buybtn:active {
+    top: 40.1%;
+}
+input#close.closebtn {
+    position: absolute;
+    font-family: 'Roboto Slab';
+    color: rgb(255, 255, 255);
+    width: 7%;
+    height: 4%; /* Yüksekliği otomatik olarak ayarla */
+    background: none;
+    margin: 10px 11px;
+    border-radius: 4px;
+    font-size: 1.7vh;
+    font-weight: 600;
+    top: 51.4%;
+    right: 8.7%;
+    border: none;
+    background-color: #5c0202;
+    background-image: url('./buttonbg.png');
+    letter-spacing: 3px;
+    white-space: nowrap; /* Satır sonlarına inme */
+    transform: rotate(90deg); /* Metni saat yönünün tersine çevir */
+    transform-origin: bottom right; 
+}
+
+input#close.closebtn:hover {
+    transition: background-color 0.5s ease;
+    background-color: #e75050;
+}
+
+input#close.closebtn:active {
+    top: 51.5%;
+}
+
+.iteminput {
+    position: absolute;
+    width: 30%;
+    height: 5%;
+    /* background-color: #0c0345; */
+    border-radius: 1vh;
+    bottom: 10%;
+    right: 1%;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+}
+
+#inputcount {
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    border-radius: 0.2vh;
+    left: 40%;
+    top: 10%;
+    outline: none;
+    /* background: none; */
+    background-color: #000000f6;
+    color: rgb(255, 250, 250);
+    border: none;
+    font-size: 1.2vh;
+    font-weight: 600;
+}
+
+#inputcount::placeholder {
+    color: #ffffff;
+    font-size: 1.3vh;
+    font-weight: 600;
+    padding-left: 10%;
+    font-family: 'Caveat', cursive;
+}
+
+#confirm {
+    position: absolute;
+    width: 10%;
+    height: 70%;
+    top: 5%;
+    left: 20%;
+    /* background-color: #000000; */
+    border: none;
+    background: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./confirm.png);
+}
+
+#cancel {
+    position: absolute;
+    width: 10%;
+    height: 70%;
+    top: 5%;
+    right: 20%;
+    /* background-color: #000000; */
+    border: none;
+    background: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./cancel.png);
+}
+
+#confirm:hover,
+#cancel:hover {
+    transform: scale(1.25);
+}
+#confirm:active,
+#cancel:active {
+    transform: scale(1.05);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
