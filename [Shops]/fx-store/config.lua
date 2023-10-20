@@ -96,13 +96,95 @@ Config.Stores = {
         image = "https://cdn.discordapp.com/attachments/983538631127998464/1158843125180141688/75.png",
         ---- BLIP ---
         showblip = true,
-        blipname = "General Store",
+        blipname = "Saint Denis General Store",
         blipcoord = vector3(2825.71, -1318.27, 46.81),
-        blipsprite = 3442726182,
+        blipsprite = 1475879922,
         blipscale = 0.6,
         blipmodifier = "BLIP_MODIFIER_MP_COLOR_32",
         ---- PED SCENARİO AND ANİM ----
         pedScenario = "WORLD_HUMAN_SMOKE_NERVOUS_STRESSED",            --## Ped scenario /You can add optionally. You can delete the code or turn it false
+        anim = {                                                       --## Choose between scenarios or animation. Someone has to be false / You can add optionally. You can delete the code or turn it false
+        animDict = '',                                                 --## Gives priority to scenario, if you set the scenarios to false, the anim will work. (pedScenario = false pedScenarioNight = false)
+        animName = ''                                                  --## Choose animation or disable animation by putting false in animDict or animName https://rdr2.mooshe.tv/animations/
+        }, 
+        ----- NEW -------
+        storeTimeSettings = {                                          --## You can set when the store opens and closes.
+            allowed = true,                                            --## If you do false, the store will always be open
+            open = 8,
+            close = 21,
+            blipmodifier = "BLIP_MODIFIER_MP_COLOR_2"                  --## blip colour when the store is closed
+        },
+        ---- Can Interact -----
+        canInteract = {
+            func = true,                                              -- ## Checks to be carried out before interacting with the ped. If you don't know what to do, leave it like this.
+            error = "none"
+        },
+        distance = 2,
+        requiredJobs = false,
+        SellItems = {},                                               -- ## this feature switches off automatically if there is no data input. Close SellItems Store
+        BuyItems = {
+            {itemName = "canteen",itemLabel = "Canteen",price = 40},
+            {itemName = "apple",itemLabel = "Apple",price = 3.95},
+            {itemName = "consumable_pretzel",itemLabel = "Pretzel",price = 4.35},
+            {itemName = "water",itemLabel = "water",price = 1.99}
+        }
+    },
+    {
+        ped = true,
+        model = "U_M_M_NbxGeneralStoreOwner_01",
+        coords = vector4(1329.77, -1294.48, 77.07, 60.17),
+        promptitle = "Rhodes General Store",
+        image = "https://cdn.discordapp.com/attachments/983538631127998464/1158843125180141688/75.png",
+        ---- BLIP ---
+        showblip = true,
+        blipname = "Rhodes General Store",
+        blipcoord = vector3(1328.28, -1293.19, 77.07),
+        blipsprite = 1475879922,
+        blipscale = 0.6,
+        blipmodifier = "BLIP_MODIFIER_MP_COLOR_32",
+        ---- PED SCENARİO AND ANİM ----
+        pedScenario = "WORLD_HUMAN_SMOKE_NERVOUS_STRESSED",            --## Ped scenario /You can add optionally. You can delete the code or turn it false
+        anim = {                                                       --## Choose between scenarios or animation. Someone has to be false / You can add optionally. You can delete the code or turn it false
+        animDict = '',                                                 --## Gives priority to scenario, if you set the scenarios to false, the anim will work. (pedScenario = false pedScenarioNight = false)
+        animName = ''                                                  --## Choose animation or disable animation by putting false in animDict or animName https://rdr2.mooshe.tv/animations/
+        }, 
+        ----- NEW -------
+        storeTimeSettings = {                                          --## You can set when the store opens and closes.
+            allowed = true,                                            --## If you do false, the store will always be open
+            open = 8,
+            close = 21,
+            blipmodifier = "BLIP_MODIFIER_MP_COLOR_2"                  --## blip colour when the store is closed
+        },
+        ---- Can Interact -----
+        canInteract = {
+            func = true,                                              -- ## Checks to be carried out before interacting with the ped. If you don't know what to do, leave it like this.
+            error = "none"
+        },
+        distance = 2,
+        requiredJobs = false,
+        SellItems = {},                                               -- ## this feature switches off automatically if there is no data input. Close SellItems Store
+        BuyItems = {
+            {itemName = "canteen",itemLabel = "Canteen",price = 40},
+            {itemName = "apple",itemLabel = "Apple",price = 3.95},
+            {itemName = "consumable_pretzel",itemLabel = "Pretzel",price = 4.35},
+            {itemName = "water",itemLabel = "water",price = 1.99}
+        }
+    },
+    {
+        ped = true,
+        model = "U_M_M_NbxGeneralStoreOwner_01",
+        coords = vector4(-323.97, 803.41, 117.93, 228.64),
+        promptitle = "Valentine General Store",
+        image = "https://cdn.discordapp.com/attachments/983538631127998464/1158843125180141688/75.png",
+        ---- BLIP ---
+        showblip = true,
+        blipname = "Valentine General Store",
+        blipcoord = vector3(-322.25, 803.58, 117.93),
+        blipsprite = 1475879922,
+        blipscale = 0.6,
+        blipmodifier = "BLIP_MODIFIER_MP_COLOR_32",
+        ---- PED SCENARİO AND ANİM ----
+        pedScenario = "mech_inspection@store_shelf@top3",            --## Ped scenario /You can add optionally. You can delete the code or turn it false
         anim = {                                                       --## Choose between scenarios or animation. Someone has to be false / You can add optionally. You can delete the code or turn it false
         animDict = '',                                                 --## Gives priority to scenario, if you set the scenarios to false, the anim will work. (pedScenario = false pedScenarioNight = false)
         animName = ''                                                  --## Choose animation or disable animation by putting false in animDict or animName https://rdr2.mooshe.tv/animations/
