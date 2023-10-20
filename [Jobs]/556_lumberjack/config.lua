@@ -120,15 +120,15 @@ Config.LumberMan = {
     [1] = { -- Montos Rest
         model                       =       "u_m_m_sdtrapper_01",
         coords                      =       { x = -1401.16, y = -205.28, z = 101.95, h = 206.34 },
-        name                        =       "Kevin Gates",
+        name                        =       "Jack Lumber",
         scene                       =       false,
         EnableBlip                  =       true,
         BlipSprite                  =       1480984695,
     },
     [2] = { -- Annesburg
         model                       =       "S_M_M_StrLumberjack_01",
-        coords                      =       { x = 2868.23, y = 1457.01, z =68.19, h = 134.34 },
-        name                        =       "Jimmy Duck",
+        coords                      =       { x = 2867.79, y = 1462.47, z =68.53, h = 134.34 },
+        name                        =       "Chuck Wood",
         scene                       =       "WORLD_HUMAN_SMOKE",
         EnableBlip                  =       true,
         BlipSprite                  =       1480984695,
@@ -136,7 +136,7 @@ Config.LumberMan = {
 }
 
 Config.LumberShop = {
-    Title                           =       "Shop",
+    Title                           =       "Lumber Shop",
     SubText                         =       "Buy and Sell",
     Options = {
         [1] = {
