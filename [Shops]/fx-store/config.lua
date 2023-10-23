@@ -214,18 +214,18 @@ Config.Stores = {
     {
         ped = true,
         model = "U_M_M_NbxGeneralStoreOwner_01",
-        coords = vector4(-781.5109, -1323.9100, 43.9342, 92.5566),
-        promptitle = "General Store",
+        coords = vector4(-784.98, -1322.11, 43.93, 186.78),
+        promptitle = "Blackwater General Store",
         image = "https://cdn.discordapp.com/attachments/983538631127998464/1158843125180141688/75.png",
         ---- BLIP ---
         showblip = true,
-        blipname = "General Store",
-        blipcoord = vector3(-755.36, -1361.10, 43.77),
-        blipsprite = 3442726182,
+        blipname = "Blackwater General Store",
+        blipcoord = vector3(-784.98, -1322.11, 43.93,),
+        blipsprite = 1475879922,
         blipscale = 0.6,
         blipmodifier = "BLIP_MODIFIER_MP_COLOR_32",
         ---- PED SCENARİO AND ANİM ----
-        pedScenario = "WORLD_HUMAN_SMOKE_NERVOUS_STRESSED",            --## Ped scenario /You can add optionally. You can delete the code or turn it false
+        pedScenario = "WORLD_HUMAN_SELL_PAPER_MALE_A",            --## Ped scenario /You can add optionally. You can delete the code or turn it false
         anim = {                                                       --## Choose between scenarios or animation. Someone has to be false / You can add optionally. You can delete the code or turn it false
         animDict = '',                                                 --## Gives priority to scenario, if you set the scenarios to false, the anim will work. (pedScenario = false pedScenarioNight = false)
         animName = ''                                                  --## Choose animation or disable animation by putting false in animDict or animName https://rdr2.mooshe.tv/animations/
@@ -246,7 +246,10 @@ Config.Stores = {
         requiredJobs = false,
         SellItems = {},                                               -- ## this feature switches off automatically if there is no data input. Close SellItems Store
         BuyItems = {
-            {itemName = "water",itemLabel = "Water",price = 1}
+            {itemName = "canteen",itemLabel = "Canteen",price = 40},
+            {itemName = "apple",itemLabel = "Apple",price = 3.95},
+            {itemName = "consumable_pretzel",itemLabel = "Pretzel",price = 4.35},
+            {itemName = "water",itemLabel = "water",price = 1.99}
         }
         
     }
