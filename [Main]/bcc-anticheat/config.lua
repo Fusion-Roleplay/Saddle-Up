@@ -94,7 +94,7 @@ Config.SpamClick = {
 }
 
 Config.KickOnResourceStop = {
-    active = true,
+    active = false,
     lang = {
         kickreason = "Stop Resource Detected",
         warning = "Stoping resources is not allowed"
