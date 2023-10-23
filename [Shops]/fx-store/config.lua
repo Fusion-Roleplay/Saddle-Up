@@ -220,7 +220,7 @@ Config.Stores = {
         ---- BLIP ---
         showblip = true,
         blipname = "Blackwater General Store",
-        blipcoord = vector3(-784.98, -1322.11, 43.93,),
+        blipcoord = vector3(-784.98, -1322.11, 43.93),
         blipsprite = 1475879922,
         blipscale = 0.6,
         blipmodifier = "BLIP_MODIFIER_MP_COLOR_32",
