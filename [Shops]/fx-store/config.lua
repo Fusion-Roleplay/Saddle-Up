@@ -214,6 +214,170 @@ Config.Stores = {
     {
         ped = true,
         model = "U_M_M_NbxGeneralStoreOwner_01",
+        coords = vector4(-1789.9, -388.11, 160.38, 53.7),
+        promptitle = "Strawberry General Store",
+        image = "https://cdn.discordapp.com/attachments/983538631127998464/1158843125180141688/75.png",
+        ---- BLIP ---
+        showblip = true,
+        blipname = "Strawberry General Store",
+        blipcoord = vector3(-1789.9, -388.11, 160.38),
+        blipsprite = 1475879922,
+        blipscale = 0.6,
+        blipmodifier = "BLIP_MODIFIER_MP_COLOR_32",
+        ---- PED SCENARİO AND ANİM ----
+        pedScenario = "mech_inspection@store_shelf@top3",            --## Ped scenario /You can add optionally. You can delete the code or turn it false
+        anim = {                                                       --## Choose between scenarios or animation. Someone has to be false / You can add optionally. You can delete the code or turn it false
+        animDict = '',                                                 --## Gives priority to scenario, if you set the scenarios to false, the anim will work. (pedScenario = false pedScenarioNight = false)
+        animName = ''                                                  --## Choose animation or disable animation by putting false in animDict or animName https://rdr2.mooshe.tv/animations/
+        }, 
+        ----- NEW -------
+        storeTimeSettings = {                                          --## You can set when the store opens and closes.
+            allowed = true,                                            --## If you do false, the store will always be open
+            open = 8,
+            close = 21,
+            blipmodifier = "BLIP_MODIFIER_MP_COLOR_2"                  --## blip colour when the store is closed
+        },
+        ---- Can Interact -----
+        canInteract = {
+            func = true,                                              -- ## Checks to be carried out before interacting with the ped. If you don't know what to do, leave it like this.
+            error = "none"
+        },
+        distance = 2,
+        requiredJobs = false,
+        SellItems = {},                                               -- ## this feature switches off automatically if there is no data input. Close SellItems Store
+        BuyItems = {
+            {itemName = "canteen",itemLabel = "Canteen",price = 40},
+            {itemName = "apple",itemLabel = "Apple",price = 3.95},
+            {itemName = "consumable_pretzel",itemLabel = "Pretzel",price = 4.35},
+            {itemName = "water",itemLabel = "water",price = 1.99}
+        }
+    },
+    {
+        ped = true,
+        model = "U_M_M_NbxGeneralStoreOwner_01",
+        coords = vector4(-3687.37, -2623.4, -13.38, 275.58),
+        promptitle = "Armadillo General Store",
+        image = "https://cdn.discordapp.com/attachments/983538631127998464/1158843125180141688/75.png",
+        ---- BLIP ---
+        showblip = true,
+        blipname = "Armadillo General Store",
+        blipcoord = vector3(-3687.37, -2623.4, -13.38),
+        blipsprite = 1475879922,
+        blipscale = 0.6,
+        blipmodifier = "BLIP_MODIFIER_MP_COLOR_32",
+        ---- PED SCENARİO AND ANİM ----
+        pedScenario = "mech_inspection@store_shelf@top3",            --## Ped scenario /You can add optionally. You can delete the code or turn it false
+        anim = {                                                       --## Choose between scenarios or animation. Someone has to be false / You can add optionally. You can delete the code or turn it false
+        animDict = '',                                                 --## Gives priority to scenario, if you set the scenarios to false, the anim will work. (pedScenario = false pedScenarioNight = false)
+        animName = ''                                                  --## Choose animation or disable animation by putting false in animDict or animName https://rdr2.mooshe.tv/animations/
+        }, 
+        ----- NEW -------
+        storeTimeSettings = {                                          --## You can set when the store opens and closes.
+            allowed = true,                                            --## If you do false, the store will always be open
+            open = 8,
+            close = 21,
+            blipmodifier = "BLIP_MODIFIER_MP_COLOR_2"                  --## blip colour when the store is closed
+        },
+        ---- Can Interact -----
+        canInteract = {
+            func = true,                                              -- ## Checks to be carried out before interacting with the ped. If you don't know what to do, leave it like this.
+            error = "none"
+        },
+        distance = 2,
+        requiredJobs = false,
+        SellItems = {},                                               -- ## this feature switches off automatically if there is no data input. Close SellItems Store
+        BuyItems = {
+            {itemName = "canteen",itemLabel = "Canteen",price = 40},
+            {itemName = "apple",itemLabel = "Apple",price = 3.95},
+            {itemName = "consumable_pretzel",itemLabel = "Pretzel",price = 4.35},
+            {itemName = "water",itemLabel = "water",price = 1.99}
+        }
+    },
+    {
+        ped = true,
+        model = "U_M_M_NbxGeneralStoreOwner_01",
+        coords = vector4(-5486.46, -2937.53, -0.35, 80.43),
+        promptitle = "TumbleWeed General Store",
+        image = "https://cdn.discordapp.com/attachments/983538631127998464/1158843125180141688/75.png",
+        ---- BLIP ---
+        showblip = true,
+        blipname = "TumbleWeed General Store",
+        blipcoord = vector3(-5486.46, -2937.53, -0.35),
+        blipsprite = 1475879922,
+        blipscale = 0.6,
+        blipmodifier = "BLIP_MODIFIER_MP_COLOR_32",
+        ---- PED SCENARİO AND ANİM ----
+        pedScenario = "mech_inspection@store_shelf@top3",            --## Ped scenario /You can add optionally. You can delete the code or turn it false
+        anim = {                                                       --## Choose between scenarios or animation. Someone has to be false / You can add optionally. You can delete the code or turn it false
+        animDict = '',                                                 --## Gives priority to scenario, if you set the scenarios to false, the anim will work. (pedScenario = false pedScenarioNight = false)
+        animName = ''                                                  --## Choose animation or disable animation by putting false in animDict or animName https://rdr2.mooshe.tv/animations/
+        }, 
+        ----- NEW -------
+        storeTimeSettings = {                                          --## You can set when the store opens and closes.
+            allowed = true,                                            --## If you do false, the store will always be open
+            open = 8,
+            close = 21,
+            blipmodifier = "BLIP_MODIFIER_MP_COLOR_2"                  --## blip colour when the store is closed
+        },
+        ---- Can Interact -----
+        canInteract = {
+            func = true,                                              -- ## Checks to be carried out before interacting with the ped. If you don't know what to do, leave it like this.
+            error = "none"
+        },
+        distance = 2,
+        requiredJobs = false,
+        SellItems = {},                                               -- ## this feature switches off automatically if there is no data input. Close SellItems Store
+        BuyItems = {
+            {itemName = "canteen",itemLabel = "Canteen",price = 40},
+            {itemName = "apple",itemLabel = "Apple",price = 3.95},
+            {itemName = "consumable_pretzel",itemLabel = "Pretzel",price = 4.35},
+            {itemName = "water",itemLabel = "water",price = 1.99}
+        }
+    },
+    {
+        ped = true,
+        model = "U_M_M_NbxGeneralStoreOwner_01",
+        coords = vector4(2948.32, 528.15, 45.39, 179.84),
+        promptitle = "Vanhorn General Store",
+        image = "https://cdn.discordapp.com/attachments/983538631127998464/1158843125180141688/75.png",
+        ---- BLIP ---
+        showblip = true,
+        blipname = "Vanhorn General Store",
+        blipcoord = vector3(2948.32, 528.15, 45.39),
+        blipsprite = 1475879922,
+        blipscale = 0.6,
+        blipmodifier = "BLIP_MODIFIER_MP_COLOR_32",
+        ---- PED SCENARİO AND ANİM ----
+        pedScenario = "mech_inspection@store_shelf@top3",            --## Ped scenario /You can add optionally. You can delete the code or turn it false
+        anim = {                                                       --## Choose between scenarios or animation. Someone has to be false / You can add optionally. You can delete the code or turn it false
+        animDict = '',                                                 --## Gives priority to scenario, if you set the scenarios to false, the anim will work. (pedScenario = false pedScenarioNight = false)
+        animName = ''                                                  --## Choose animation or disable animation by putting false in animDict or animName https://rdr2.mooshe.tv/animations/
+        }, 
+        ----- NEW -------
+        storeTimeSettings = {                                          --## You can set when the store opens and closes.
+            allowed = true,                                            --## If you do false, the store will always be open
+            open = 8,
+            close = 21,
+            blipmodifier = "BLIP_MODIFIER_MP_COLOR_2"                  --## blip colour when the store is closed
+        },
+        ---- Can Interact -----
+        canInteract = {
+            func = true,                                              -- ## Checks to be carried out before interacting with the ped. If you don't know what to do, leave it like this.
+            error = "none"
+        },
+        distance = 2,
+        requiredJobs = false,
+        SellItems = {},                                               -- ## this feature switches off automatically if there is no data input. Close SellItems Store
+        BuyItems = {
+            {itemName = "canteen",itemLabel = "Canteen",price = 40},
+            {itemName = "apple",itemLabel = "Apple",price = 3.95},
+            {itemName = "consumable_pretzel",itemLabel = "Pretzel",price = 4.35},
+            {itemName = "water",itemLabel = "water",price = 1.99}
+        }
+    },
+    {
+        ped = true,
+        model = "U_M_M_NbxGeneralStoreOwner_01",
         coords = vector4(-784.98, -1322.11, 43.93, 186.78),
         promptitle = "Blackwater General Store",
         image = "https://cdn.discordapp.com/attachments/983538631127998464/1158843125180141688/75.png",

@@ -40,7 +40,7 @@ Config.DoubleAxe                    =       false
 
 --Digits
 Config.CompanyPrice                 =       4000    -- buy price if there is no owner yet, if owner sells the company he will get back the sell price
-Config.PermitPrice                  =       1000    -- initial amount if not set by lumberjack (licence)
+Config.PermitPrice                  =       100    -- initial amount if not set by lumberjack (licence)
 Config.ToolCostMoney                =       2       -- initial amount if not set by lumberjack (processing)
 Config.WorkTimeTools                =       22      -- seconds
 Config.Distance                     =       3       -- distance to show permit to other player
