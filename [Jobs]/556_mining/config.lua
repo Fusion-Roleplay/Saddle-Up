@@ -163,7 +163,6 @@ Config.Nomads = {
         locations                   =               { -- multiple locations = random choosing
                                                     {x = 2457.74, y = 288.27, z = 70.87, h= 8.52},
                                                     {x = -1332.05, y = 2396.82, z = 306.46, h= 240.68},
-                                                    {x = -1320.50, y = 2435.22, z = 309.64, h= 336.28},
         },
         name                        =               "Lance",
         scene                       =               "WORLD_HUMAN_LEAN_BACK_WALL_DRINKING_MOONSHINE",
