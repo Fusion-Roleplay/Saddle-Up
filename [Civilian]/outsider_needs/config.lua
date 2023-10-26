@@ -1,7 +1,7 @@
 Config                    = {
     -- in vorp core config disable health and stamina UI cores
     --=================================== HUNGER AND THIRST ======================================--
-    Devmode                  = true,  -- set to true if you testing things
+    Devmode                  = false,  -- set to true if you testing things
     -- MAX THIRST AND HUNGER IS 100
     saveNeedsTick            = 60000, -- save player data on server every 1 minute
     removehunger             = 0.1,   -- how much to remove at every tick
