@@ -1,8 +1,8 @@
 Config = {}
 
 -- BLIPS --
-Config.Blip 							= false 			-- Show blips on map
-Config.BlipColor 						= false 			-- Show colored blips on map
+Config.Blip 							= true 			-- Show blips on map
+Config.BlipColor 						= true 			-- Show colored blips on map
 
 -- BOAT --
 Config.MapBoat_StDenis_Boats 			= true 			-- Show 3 boats on Port
