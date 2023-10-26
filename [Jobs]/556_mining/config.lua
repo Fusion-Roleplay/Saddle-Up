@@ -170,6 +170,17 @@ Config.Nomads = {
         FreezePed                   =               true, -- ped gets freezed and wont attack if true
         BlipSprite                  =               1095891419,
     },
+    [3] = {87
+        model                       =               "G_M_M_UniDuster_03",
+        locations                   =               { -- multiple locations = random choosing
+                                                    {x = -5966.85, y = -3256.94, z = -21.17, h= 138.83},,
+        },
+        name                        =               "Craig",
+        scene                       =               "WORLD_HUMAN_LEAN_BACK_WALL_DRINKING_MOONSHINE",
+        EnableBlip                  =               true,
+        FreezePed                   =               true, -- ped gets freezed and wont attack if true
+        BlipSprite                  =               1095891419,
+    },
 }
 
 Config.MinePoints = {
@@ -192,15 +203,15 @@ Config.MinePoints = {
     },   
 
 ["Gaptooth Ridge"] ={
-                                                    {x = -5984.61, y = -3165.70, z = -26.54, h = 122.75, luck = 80, items = {"nitrite"},},
-                                                    {x = -5981.17, y = -3161.44, z = -26.50, h = 11.95, luck = 80, items = {"nitrite"},},
-                                                    {x = -5974.12, y = -3165.60, z = -25.63, h = 323.33, luck = 80, items = {"nitrite"},},
-                                                    {x = -5975.12, y = -3167.79, z = -25.49, h = 148.87, luck = 80, items = {"nitrite"},},
-                                                    {x = -5970.40, y = -3167.47, z = -25.18, h = 333.22, luck = 80, items = {"nitrite"},},
-                                                    {x = -5958.90, y = -3189.60, z = -21.63, h = 244.61, luck = 80, items = {"nitrite"},},
-                                                    {x = -5961.55, y = -3187.96, z = -21.57, h = 77.67, luck = 80, items = {"nitrite"},},
-                                                    {x = -5960.62, y = -3191.80, z = -21.51, h = 234.97, luck = 80, items = {"nitrite"},},
-                                                    {x = -5963.30, y = -3191.37, z = -21.55, h = 446.79, luck = 80, items = {"nitrite"},},
+                                                    {x = -5984.61, y = -3165.70, z = -26.54, h = 122.75, luck = 80, items = {"copper"},},
+                                                    {x = -5981.17, y = -3161.44, z = -26.50, h = 11.95, luck = 80, items = {"copper"},},
+                                                    {x = -5974.12, y = -3165.60, z = -25.63, h = 323.33, luck = 80, items = {"copper"},},
+                                                    {x = -5975.12, y = -3167.79, z = -25.49, h = 148.87, luck = 80, items = {"copper"},},
+                                                    {x = -5970.40, y = -3167.47, z = -25.18, h = 333.22, luck = 80, items = {"copper"},},
+                                                    {x = -5958.90, y = -3189.60, z = -21.63, h = 244.61, luck = 80, items = {"copper"},},
+                                                    {x = -5961.55, y = -3187.96, z = -21.57, h = 77.67, luck = 80, items = {"copper"},},
+                                                    {x = -5960.62, y = -3191.80, z = -21.51, h = 234.97, luck = 80, items = {"copper"},},
+                                                    {x = -5963.30, y = -3191.37, z = -21.55, h = 446.79, luck = 80, items = {"copper"},},
 },
 ["Diablo Cave"] ={
                                                     {x = -2716.91, y = 683.8833, z = 175.80, h = 266.35, luck = 80, items = {"sulfur"},},
@@ -296,6 +307,7 @@ Config.MinePoints = {
 Config.StonecuttingTable = {
     ["StonecuttingStart"] ={
                                                     {x = -1344.24, y = 2406.97, z = 307.19}, -- colter
+                                                    {x = -6048.41, y = -3260.45, z = -17.93}, -- joseph
                                                     --{x = 1892.33, y = -1350.56, z = 42.45}, -- caliga hall
     } ,     
 }
@@ -303,6 +315,7 @@ Config.StonecuttingTable = {
 --BLIPS
 Config.Blip = {                                     -- can add blips here
                                                     {x = -1344.24, y = 2406.97, z = 307.19, sprite = -813538438, name = "Stonemason", enabled = true},-- Colter
+                                                    {x = -6048.41, y = -3260.45, z = -17.93, sprite = -813538438, name = "Stonemason", enabled = true},-- Colter
                                                     --{x = 1892.33, y = -1350.56, z = 42.45, sprite = -813538438, name = "Stonemason", enabled = true}, -- Caliga Hall
 }
 
