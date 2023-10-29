@@ -58,7 +58,32 @@ Config.Farming = {
                 JobName = 'police',
             },
         },
-    }, -- too add more plants just copy and paste the table and change what you need
+    },
+    {
+        Webhooked = true, --if true when someone plants this a webhook will be sent
+        Type = 'Apple', --Set this has to be unique to each plant, once set once do not change it will break the database
+        PlantingTool = 'hoe', --This is the database name of the item that you have to have in your inventory in order to plant the crop
+        PlantingToolDurability = '100',  --This is the amount of hit points the planting tool has
+        PlantingToolUsage = '1',  --This is the amount of hit points the planting tool takes per plant
+        PlantProp = 'rdr2_bush_snakeweedflower', --The prop model this is what will spawn in game when you plant.
+        SoilName = false, -- This is the database name of the soil required to plant the seed. [false for none]
+        FertName = 'fertilizer', --This is the item that will be used to fertilize the plant
+        FertTimeRemove = 5000, --amount of time in ms the fertilizer will take off the TimetoGrow (if you do not want to use fertilizer for the plant set this too 0 and the option wont show)
+        Seedname = 'apple_seed', --This is the database name of the seed that will be used to plant the plant
+        SeedsRequired = 2, --Amount of seeds required to plant
+        HarvestItem = 'hop', --This is the database name of the item you will recieve when you harvest the plant
+        HarvestAmount = 5, --This is the amount you will recieve when harvesting the plant
+        TimetoGrow = 30000, --The time in ms it will take the plant to grow (60000 is one minute)
+        Joblock = false, --If you want to joblock this plant set true, if not then set false
+        Jobs = {
+            {
+                JobName = 'doctor', --the name of the job
+            }, --you can have as many jobs as you want just copy and paste the table and change what you need
+            {
+                JobName = 'police',
+            },
+        },
+    },
 }
 
 
