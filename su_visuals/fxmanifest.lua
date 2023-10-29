@@ -57,6 +57,7 @@ files {
 	
     'replacements.lua',
     'client.lua',
+    'SHT_DOUBLE_FINAL.awc',
 }
 
 this_is_a_map 'yes'
