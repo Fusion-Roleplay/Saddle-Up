@@ -262,7 +262,7 @@ Citizen.CreateThread(function()
 						if Config.jobonly then
 							TriggerServerEvent("syn_weapons:getjob")
 							Citizen.Wait(400)
-							if jobcheck(v.job, playerjob) and tonumber(playerrank) >= tonumber(Config.jobrankcrafting) then
+							if checkvalue(v.job, playerjob) and tonumber(playerrank) >= tonumber(Config.jobrankcrafting) then
 								crafting = true
 								FreezeEntityPosition(PlayerPedId(),true)
 								craftingmenu()
@@ -300,7 +300,7 @@ Citizen.CreateThread(function()
                         if Config.jobonly then
                             TriggerServerEvent("syn_weapons:getjob")
                             Citizen.Wait(400)
-                            if jobcheck(v.job, playerjob)  then
+                            if checkvalue(v.job, playerjob)  then
 								if tonumber(playerrank) >= tonumber(Config.jobrankcustomization) then 
 									incustom = true 
 									TriggerServerEvent("syn_weapons:getplayerweapons")
@@ -476,10 +476,25 @@ function opengunshop()
 	end)
 end
 
+local custominfo = {customserial = "",customlabel = "",customdesc = ""}
 function craftingmenu4(x,y,z) 
 	MenuData.CloseAll()
 	local elements = {
 	}
+		if x == "weapons" then 
+			if not checkvalue(Config.noserialweapons, z.hashname) then 
+				if Config.allowcustomserial then 
+					table.insert( elements, {label = Config2.Language.customserial, value = "customserial", desc = custominfo.customserial})
+				end
+			end
+			if Config.allowcustomlabel then 
+				table.insert( elements, {label = Config2.Language.customlabel, value = "customlabel", desc = custominfo.customlabel})
+			end
+			if Config.allowcustomdesc then 
+				table.insert( elements, {label = Config2.Language.customdesc, value = "customdesc", desc = custominfo.customdesc})
+			end
+			
+		end
 		for k,v in pairs(z.materials) do 
 			table.insert( elements, {label = v.amount.." "..v.label, value = v, desc = ""})
 		end
@@ -497,6 +512,36 @@ function craftingmenu4(x,y,z)
 	function(data, menu)
 		if(data.current == "backup") then
 			_G[data.trigger](x,y)
+		elseif data.current.value == "customserial" then 
+			TriggerEvent("syn_inputs:sendinputs", Config2.Language.confirm, Config2.Language.customserial, function(cb)
+                local name = cb
+                if name ~= nil and name ~= "" then 
+					custominfo.customserial = name
+					craftingmenu4(x,y,z)
+				else
+					TriggerEvent("vorp:TipRight", Config2.Language.invalidname, 6000)
+				end
+			end)
+		elseif data.current.value == "customlabel" then 
+			TriggerEvent("syn_inputs:sendinputs", Config2.Language.confirm, Config2.Language.customlabel, function(cb)
+				local name = cb
+				if name ~= nil and name ~= "" then 
+					custominfo.customlabel = name
+					craftingmenu4(x,y,z)
+				else
+					TriggerEvent("vorp:TipRight", Config2.Language.invalidname, 6000)
+				end
+			end)
+		elseif data.current.value == "customdesc" then
+			TriggerEvent("syn_inputs:sendinputs", Config2.Language.confirm, Config2.Language.customdesc, function(cb)
+				local name = cb
+				if name ~= nil and name ~= "" then 
+					custominfo.customdesc = name
+					craftingmenu4(x,y,z)
+				else
+					TriggerEvent("vorp:TipRight", Config2.Language.invalidname, 6000)
+				end
+			end)
 		elseif data.current.value == "confirm" then 
 			if x == "ammo" then
 				MenuData.CloseAll() 
@@ -512,7 +557,7 @@ function craftingmenu4(x,y,z)
 			elseif  x == "weapons" then 
 				MenuData.CloseAll()
 				local amount = 1 
-				TriggerServerEvent("syn_weapons:itemscheck",amount,z,x) 
+				TriggerServerEvent("syn_weapons:itemscheck",amount,z,x,custominfo) 
 				crafting = false 
 				FreezeEntityPosition(PlayerPedId(),false)
 			end
@@ -530,7 +575,7 @@ function craftingmenu3(x,y)
 	for k,v in pairs(y) do
 		if v.letcraft then  
 			if v.jobonly then
-				if jobcheck(v.jobs, playerjob) then 
+				if checkvalue(v.jobs, playerjob) then 
 					if gunsmithexp >= v.expreq then 
 						table.insert( elements, {label = k, value = v, desc = ""})
 					end
@@ -859,11 +904,11 @@ AddEventHandler("syn_weapons:nomods", function()
 end)
 
 RegisterNetEvent("syn_weapons:minigamecheck")
-AddEventHandler("syn_weapons:minigamecheck", function(type,table,amount)
+AddEventHandler("syn_weapons:minigamecheck", function(type,table,amount,custominfox)
 	TaskStartScenarioInPlace(PlayerPedId(), GetHashKey(Config.craftinganimations), 15000, true, false, false, false)
 	TriggerEvent("vorp_inventory:CloseInv")
     local testplayer = exports["syn_minigame"]:taskBar(table.diff,7)
-	TriggerServerEvent("syn_weapons:minigamecheck2",testplayer,type,table,amount)
+	TriggerServerEvent("syn_weapons:minigamecheck2",testplayer,type,table,amount,custominfox)
 	ClearPedTasks(PlayerPedId())
 	crafting = false 
 end)
@@ -930,7 +975,7 @@ function contains2(table, element)
     end
 return false
 end
-function jobcheck(table, element)
+function checkvalue(table, element)
 	for k, v in pairs(table) do
         if v == element then
         	return true

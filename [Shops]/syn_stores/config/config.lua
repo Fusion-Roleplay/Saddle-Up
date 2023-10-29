@@ -25,6 +25,8 @@ Config.keys = {
 }
 Config.debug = false -- set to false on live server
 
+
+Config.priceinfo = "<span style=color:Green;> " -- dont change if u dont know what ur doing, this is used to color the price info in the shop menu
 -----------------
 ------ IMPORTANT 
 -- IF YOU ARE UPDATING FROM OLD SYN STORES AND USING SYN SOCIETY MAKE SURE YOU READ updater.lua !!!!!!!!!!!!!!
@@ -47,7 +49,7 @@ Config.adminwebhook = "https://discord.com/api/webhooks/1012436122342785129/fALi
 Config.webhookavatar = "http://icons.iconarchive.com/icons/custom-icon-design/flatastic-11/512/Shop-icon.png"
 Config.playershopsprite = -242384756  -- blips for player owned shops 
 Config.initalstorage = 100 -- newly created stores will have this much capacity
-Config.allowuserwebhooks = false 
+Config.allowuserwebhooks = true 
 Config.shopspacing = 5 -- shops cant be too close to each other.
 Config.moveshopcost = 100 -- how much it costs to move a shop
 Config.relocatecommand = "moveshop" -- command to move a shop by player 
