@@ -10,7 +10,7 @@ Config.drawtext3d = false --
 --------------------------------------
 Config.discordid = true 
 Config.webhook = true -- turn webhooks for each job on or off 
-Config.adminwebhook = true -- turn admin webhook on or off 
+Config.adminwebhook = false -- turn admin webhook on or off 
 Config.webhookavatar = "https://findicons.com/files/icons/2453/clipboard/1816/clipboard_paper.png"
 Config.adminwebhooklink = "" -- input your webhook
 Config.OpenMenu = 0x760A9C6F -- Key: G
@@ -71,7 +71,26 @@ Config.jobs = {
         salary = true, -- (added line) enable/disable salary system.
     },
 
-   
+    bwb = {	   
+        Pos = { 
+            {x=-288.89, y=808.89, z=119.38},
+
+        }, 
+        jobmenu = { 
+            {x=-288.89, y=808.89, z=119.38},
+
+        },
+        blipsprite = -592068833,
+		Name = 'Blackwater Bakery',
+        recruitmentrank = 6,
+        bossrank = 7,
+        containerid = 4,
+        containername = "BWB Inv.",
+        billing = true,
+        webhook = "https://discord.com/api/webhooks/1167992259124416563/7h4-U7fRp2barbBYYbyGeAztubzhT60Q7L8-P5H_uWneXeMsG-J3U2MplwMoU--YupCh",
+        salary = true,
+
+    },
 
    
 
