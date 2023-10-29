@@ -1,22 +1,31 @@
 if GetCurrentResourceName() == 'vorp_inventory' then
+    local rscVersion = tonumber(GetResourceMetadata('vorp_inventory', 'version', 0))
+
     if IsDuplicityVersion() then
         Citizen.CreateThread(function ()
             while not InventoryAPI do
                 Citizen.Wait(0)
             end
     
-            while not InventoryAPI.giveWeapon2 do
+            local fncName = 'giveWeapon2'
+            if rscVersion >= 3.1 then
+                fncName = 'giveWeapon'
+
+                print('[RedM Weapon Maintenance] Detected vorp_inventory(' .. rscVersion .. ') version >= 3.1, applying updated patch for InventoryAPI.')
+            end
+
+            while not InventoryAPI[fncName] do
                 Citizen.Wait(0)
             end
     
-            local oldFnc = InventoryAPI.giveWeapon2
-            InventoryAPI.giveWeapon2 = function(player, weaponId, target)
+            local oldFnc = InventoryAPI[fncName]
+            InventoryAPI[fncName] = function(player, weaponId, target)
                 TriggerEvent('redm_weapon_maintenance:vorp:onGiveWeapon2', function()
                     oldFnc(player, weaponId, target)
                 end, player, weaponId, target)
             end
     
-            print('[RedM Weapon Maintenance] Patched InventoryAPI.giveWeapon2!')
+            print('[RedM Weapon Maintenance] Patched InventoryAPI.' .. fncName .. '!')
         end)
     
         Citizen.CreateThread(function ()

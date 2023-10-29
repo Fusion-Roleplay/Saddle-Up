@@ -964,7 +964,7 @@ AddEventHandler("syn_housing:createblips", function()
                 local blip = N_0x554d9d53f696d002(1664425300, housegeneral[k].primarydoor[1].x, housegeneral[k].primarydoor[1].y, housegeneral[k].primarydoor[1].z)
                 SetBlipScale(blip, 0.2)
                 SetBlipSprite(blip, Config.ownedhouseblip, 1)
-                Citizen.InvokeNative(0x9CB1A1623062F402, blip, Config.Language.mehome)
+                Citizen.InvokeNative(0x9CB1A1623062F402, blip, Config.Language.mehome.." / ID:"..k)
                 blips[k] = blip
             end
         end
@@ -1566,6 +1566,7 @@ Citizen.CreateThread(function() -- inside tele house logic
         end
     end
 end)
+local printedid = 0
 
 Citizen.CreateThread(function() -- near house logic 
     while true do
@@ -1576,6 +1577,10 @@ Citizen.CreateThread(function() -- near house logic
                 local coords = GetEntityCoords(PlayerPedId())
                 local distance = GetDistanceBetweenCoords(coords,v.primarydoor[1].x,v.primarydoor[1].y,v.primarydoor[1].z , true)
                 if 3 >= distance  then
+                    if printedid ~= k then 
+                        print("House ID:",k)
+                        printedid = k 
+                    end
                     if v.type == 3 or v.type == 4 then 
                         PromptSetEnabled(doorlock, 0)
                         PromptSetVisible(doorlock, 0)  

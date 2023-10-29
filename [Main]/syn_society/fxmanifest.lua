@@ -31,6 +31,7 @@ files {
 	'client/html/logo.png',
 	'client/html/icons/**/*'
 }
+server_exports { 'IsPlayerOnDuty','SetPlayerDuty','GetPlayersOnDuty' }
 
 escrow_ignore {
 	'config.lua',

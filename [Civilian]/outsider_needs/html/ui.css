@@ -639,47 +639,51 @@ h2.text-center#voice-v {
 @media (max-width:1920px) {
 
     .thirst {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         right: 53%;
         top: 92.3%;
     }
 
     .thirst-img {
-        width: 65px;
-        height: 65px;
+        width: 55px;
+        height: 55px;
+        top: 9px;
+        left: -9px;
     }
 
     .thirstimg {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         right: 4px;
-        top: 2px;
+        top: 3px;
     }
 
 
     .hunger {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         right: 49.9%;
         top: 92.3%;
         padding: 6px;
     }
 
     .hunger-img {
-        width: 65px;
-        height: 65px;
+        width: 55px;
+        height: 55px;
+        top: 9px;
+        left: -9px;
     }
 
     .hungerimg {
-        width: 35px;
-        height: 35px;
-        right: 4.5px;
+        width: 30px;
+        height: 30px;
+        right: 4px;
     }
 
     .temp {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         right: 46.7%;
         top: 92.3%;
         padding: 6px;
@@ -687,20 +691,22 @@ h2.text-center#voice-v {
     }
 
     .temp-img {
-        width: 65px;
-        height: 65px;
+        width: 55px;
+        height: 55px;
+        top: -10px;
+        left: -9px
     }
 
     .tempimg {
-        width: 80px;
-        height: 80px;
-        right: -19px;
-        top: -19px;
+        width: 70px;
+        height: 70px;
+        right: -17px;
+        top: -17px;
     }
 
     .templocal {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         right: 43.6%;
         top: 92.3%;
         padding: 6px;
@@ -709,14 +715,14 @@ h2.text-center#voice-v {
 
 
     .templocalnumber {
-        right: -21px;
-        margin-top: 5px;
-        font-size: 15px;
+        right: -32px;
+        margin-top: 2px;
+        font-size: 13px;
     }
 
     .bath {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         right: 59.2%;
         top: 92.3%;
         padding: 6px;
@@ -725,22 +731,24 @@ h2.text-center#voice-v {
     }
 
     .bath-img {
-        width: 65px;
-        height: 65px;
+        width: 55px;
+        height: 55px;
+        top: 8px;
+        left: -9px;
     }
 
     .bathimg {
-        width: 45px;
-        height: 45px;
-        right: -2px;
+        width: 40px;
+        height: 40px;
+        right: -1px;
         top: -4px;
 
     }
 
     .voice {
 
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         right: 56.1%;
         top: 92.3%;
         padding: 6px;
@@ -748,68 +756,70 @@ h2.text-center#voice-v {
     }
 
     .voice-img {
-        width: 65px;
-        height: 65px;
+        width: 55px;
+        height: 55px;
+        top: 8px;
+        left: -9px;
     }
 
     .voiceimg {
-        width: 32px;
-        height: 32px;
+        width: 28px;
+        height: 28px;
         top: 5px;
-
+        left: 5px;
     }
 
     .health {
-        width: 33px;
-        height: 33px;
+        width: 28px;
+        height: 28px;
         right: 40.6%;
         top: 92.8%;
         padding: 6px;
     }
 
     .health-img {
-        width: 63px;
-        height: 63px;
-        margin-top: -17px;
-        left: -10px;
+        width: 58px;
+        height: 56px;
+        margin-top: -15px;
+        left: -8px;
         z-index: 20;
     }
 
     .healthimg {
-        width: 66px;
-        height: 66px;
-        right: -11px;
-        top: -11px;
+        width: 61px;
+        height: 61px;
+        right: -12px;
+        top: -10px;
         z-index: 20;
     }
 
     .stamina {
-        width: 33px;
-        height: 33px;
+        width: 28px;
+        height: 28px;
         right: 37.8%;
         top: 92.8%;
         padding: 6px;
     }
 
     .stamina-img {
-        width: 63px;
-        height: 63px;
-        margin-top: -17px;
-        left: -10px;
+        width: 58px;
+        height: 58px;
+        margin-top: -15px;
+        left: -8px;
         z-index: 20;
     }
 
     .staminaimg {
-        width: 60px;
-        height: 60px;
-        right: -7px;
-        top: -9px;
+        width: 61px;
+        height: 61px;
+        right: -12px;
+        top: -10px;
     }
 
     .horseHealth {
 
-        width: 33px;
-        height: 33px;
+        width: 28px;
+        height: 28px;
         right: 34.9%;
         top: 92.8%;
         z-index: 10;
@@ -817,9 +827,9 @@ h2.text-center#voice-v {
 
     .horsehealth-img {
 
-        width: 63px;
-        height: 63px;
-        margin-top: -18px;
+        width: 58px;
+        height: 58px;
+        margin-top: -16px;
         left: -10px;
         z-index: 20;
     }
@@ -827,72 +837,72 @@ h2.text-center#voice-v {
 
     .healthHorseimg {
 
-        width: 70px;
-        height: 70px;
+        width: 65px;
+        height: 65px;
         right: -11px;
-        top: -15px;
+        top: -13px;
         z-index: 20;
 
     }
 
     .horsestamina-img {
-        width: 63px;
-        height: 63px;
-        margin-top: -17px;
+        width: 58px;
+        height: 58px;
+        margin-top: -16px;
         left: -10px;
         z-index: 20;
     }
 
     .horseStamina {
-        width: 33px;
-        height: 33px;
+        width: 28px;
+        height: 28px;
         right: 32%;
         top: 92.8%;
         z-index: 10;
     }
 
     .staminaHorseimg {
-        width: 70px;
-        height: 70px;
-        right: -12px;
+        width: 65px;
+        height: 65px;
+        right: -11px;
         top: -13px;
         z-index: 20;
     }
 
     .stress {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         right: 62.3%;
         top: 92.3%;
     }
 
     .stress-img {
-        width: 65px;
-        height: 65px;
+        width: 60px;
+        height: 60px;
     }
 
     .stressimg {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         right: 4px;
         top: 3px;
     }
 
     .addiction {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         right: 65.5%;
         top: 92.3%;
     }
 
     .addiction-img {
-        width: 65px;
-        height: 65px;
+        width: 60px;
+        height: 60px;
     }
 
     .addictionimg {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         right: 4px;
         top: 3px;
     }
@@ -901,7 +911,7 @@ h2.text-center#voice-v {
         right: -5px;
         margin-top: -27px;
         z-index: 20;
-        font-size: 15px;
+        font-size: 12px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: white;
     }
@@ -910,7 +920,7 @@ h2.text-center#voice-v {
         right: -5px;
         margin-top: -27px;
         z-index: 20;
-        font-size: 15px;
+        font-size: 12px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: white;
     }
