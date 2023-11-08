@@ -866,7 +866,7 @@ Items.Consumables = {
                     soundRef = "Consumption_Sounds"
                 }
             },
-            bambam_sourcream&onion_chips = {
+            bambam_sourcream_onion_chips = {
                 removethirst          = 0,
                 removehunger          = 0,
                 removestamina         = 0,
