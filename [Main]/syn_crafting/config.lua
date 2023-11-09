@@ -6,6 +6,7 @@ Config.interactiondist = 2.5 -- distance to interact with location
 Config.locations = { -- list of all crafting locations
     ["location1"] = {x = -1136.9,y = 270.47,z =42.9},
     ["location2"] = {x = 0,y = 0,z =0},
+    ["bwb"] = {x = -782.07, y = -1289.4, z = 43.76},
 }
 
 Config.craftingprops = {"p_campfire02x","p_campfirecombined02x","p_campfirecombined03x","p_kettle03x","p_campfirecombined04x"}
@@ -542,6 +543,24 @@ Config.crafting = {
         }
     },
 
+    [30] = {
+        ['Text'] = "Apple Pie - 1xPieCrust, 3xAppleFilling, 1xSugar ",
+        ['SubText'] = "",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "piecrust",
+            ['Item2'] = "applefilling",
+            ['Item3'] = "sugar_item",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Reward'] ={{ name = "bwb_ap", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
     
 
 }

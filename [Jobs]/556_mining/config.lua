@@ -170,7 +170,7 @@ Config.Nomads = {
         FreezePed                   =               true, -- ped gets freezed and wont attack if true
         BlipSprite                  =               1095891419,
     },
-    [3] = {87
+    [3] = {
         model                       =               "G_M_M_UniDuster_03",
         locations                   =               { -- multiple locations = random choosing
                                                     {x = -5966.85, y = -3256.94, z = -21.17, h= 138.83},,

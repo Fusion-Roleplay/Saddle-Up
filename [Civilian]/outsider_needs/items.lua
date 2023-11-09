@@ -3694,7 +3694,6 @@ Items.Consumables = {
                 removeStress          = 0,
 
             },
-
             peyote = {
                 removethirst          = 0,
                 removehunger          = 0,
@@ -3717,7 +3716,6 @@ Items.Consumables = {
                 removeStress          = 0,
 
             },
-
             hemp = {
                 removethirst          = 0,
                 removehunger          = 0,

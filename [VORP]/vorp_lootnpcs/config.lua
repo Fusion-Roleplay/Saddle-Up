@@ -14,7 +14,7 @@ Config.items = {               -- You will receive a random item from the list
 Config.canReceiveMoney = true  -- true | false
 Config.receiveMoney = 50        -- If below this number, then can receive
 Config.chanceGettingMoney = 100 -- Percentage out of 100
-Config.money = { 0.5, 1, 1.5, 2.0, 2.5, 3.5, 4.5, 5,0 5,5 }  -- You will receive a random value from the list
+Config.money = { 0.5, 1, 1.5, 2.0, 2.5, 3.5, 4.5, 5, 5,5 }  -- You will receive a random value from the list
 
 -- Enable or disable the chance to receive GOLD
 Config.canReceiveGold = false -- true | false
