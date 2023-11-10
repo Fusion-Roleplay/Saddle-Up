@@ -561,6 +561,25 @@ Config.crafting = {
 
         }
     },
+
+    [31] = {
+        ['Text'] = "Banana Bread - 3xMashedBanana, 1xFlour, 1xSugar ",
+        ['SubText'] = "",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "piecrust",
+            ['Item2'] = "applefilling",
+            ['Item3'] = "sugar_item",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Reward'] ={{ name = "bwb_ap", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
     
 
 }
