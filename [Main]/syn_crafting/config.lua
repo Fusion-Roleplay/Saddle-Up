@@ -13,8 +13,8 @@ Config.craftingprops = {"p_campfire02x","p_campfirecombined02x","p_campfirecombi
 
 Config.crafting = {
     [1] = {
-        ['Text'] = "Boiled Egg",
-        ['SubText'] = "1xEgg, 1xWater",
+        ['Text'] = "Boiled Egg - 1xEgg, 1xWater",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "eggs",
@@ -31,8 +31,8 @@ Config.crafting = {
         }
     }, 
      [2] = {
-        ['Text'] = "Dried Salmon", -- name of item to craft on list
-        ['SubText'] = "1xSockeye Salmon, 1xSalt",
+        ['Text'] = "Dried Salmon - 1xSockeye Salmon, 1xSalt", -- name of item to craft on list
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "a_c_fishsalmonsockeye_01_ms", 
@@ -49,8 +49,8 @@ Config.crafting = {
         }
     },
     [3] = {
-        ['Text'] = "Cooked Bluegil with Veggies",
-        ['SubText'] = "1xSmall Bluegil, 1xCarrot, 1xCorn",
+        ['Text'] = "Cooked Bluegil with Veggies - 1xSmall Bluegil, 1xCarrot, 1xCorn",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "a_c_fishbluegil_01_sm",
@@ -67,8 +67,8 @@ Config.crafting = {
         }
     },
     [4] = {
-        ['Text'] = "ChocolateBar",
-        ['SubText'] = "2xCocoa, 3xSugar",
+        ['Text'] = "ChocolateBar - 2xCocoa, 3xSugar",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "cocoa",
@@ -85,8 +85,8 @@ Config.crafting = {
         }
     },
     [5] = {
-        ['Text'] = "Fruit Salad",
-        ['SubText'] = "2xBlack Berry, 1xBlack Currant, 1xCreekplum",
+        ['Text'] = "Fruit Salad - 2xBlack Berry, 1xBlack Currant, 1xCreekplum",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Black_Berry",
@@ -103,8 +103,8 @@ Config.crafting = {
         } 
     },
     [6] = {
-        ['Text'] = "Jerkied Meat",
-        ['SubText'] = "2xMeat, 2xSalt",
+        ['Text'] = "Jerkied Meat - 2xMeat, 2xSalt",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "meat",
@@ -121,8 +121,8 @@ Config.crafting = {
         }
     },
     [7] = {
-        ['Text'] = "Dried Bluegil",
-        ['SubText'] = "2xSalt, 1xMedium Bluegil",
+        ['Text'] = "Dried Bluegil - 2xSalt, 1xMedium Bluegil",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "salt",
@@ -139,8 +139,8 @@ Config.crafting = {
         }
     },
     [8] = {
-        ['Text'] = "Cooked Trout",
-        ['SubText'] = "1xRainbow Trout, 1xCrows_Garlic, 1xOleander Sage",
+        ['Text'] = "Cooked Trout - 1xRainbow Trout, 1xCrows_Garlic, 1xOleander Sage",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "a_c_fishrainbowtrout_01_ms",
@@ -157,8 +157,8 @@ Config.crafting = {
         }
     },
     [9] = {
-        ['Text'] = "Jerkied GameMeat",
-        ['SubText'] = "1xGamey Meat, 2xSalt",
+        ['Text'] = "Jerkied GameMeat - 1xGamey Meat, 2xSalt",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Gamey_Meat",
@@ -175,8 +175,8 @@ Config.crafting = {
         }
     },
     [10] = {
-        ['Text'] = "Raspberry Water",
-        ['SubText'] = "1xSugar, 1xWater, 1xRedRaspberry",
+        ['Text'] = "Raspberry Water - 1xSugar, 1xWater, 1xRedRaspberry",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "sugar",
@@ -193,8 +193,8 @@ Config.crafting = {
         }
     },
      [11] = {
-        ['Text'] = "Cigarette",
-        ['SubText'] = "1xIndian Tobbaco, 1xRolling paper",
+        ['Text'] = "Cigarette - 1xIndian Tobbaco, 1xRolling paper",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Indian_Tobbaco",
@@ -211,8 +211,8 @@ Config.crafting = {
         }
     },
     [12] = {
-        ['Text'] = "Cigar",
-        ['SubText'] = "2xIndian Tobbaco, 1xRolling paper",
+        ['Text'] = "Cigar - 2xIndian Tobbaco, 1xRolling paper",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Indian_Tobbaco",
@@ -229,8 +229,8 @@ Config.crafting = {
         }
     },
     [13] = {
-        ['Text'] = "Caramel",
-        ['SubText'] = "2xSugar, 2xMilk",
+        ['Text'] = "Caramel - 2xSugar, 2xMilk",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "sugar",
@@ -247,8 +247,8 @@ Config.crafting = {
         }
     },
     [14] = {
-        ['Text'] = "Heroin",
-        ['SubText'] = "2xMorphine 2xAcid, 2xBlood Flower",
+        ['Text'] = "Heroin - 2xMorphine 2xAcid, 2xBlood Flower",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "morphine",
@@ -265,8 +265,8 @@ Config.crafting = {
         }
     },
     [15] = {
-        ['Text'] = "GoldBar",
-        ['SubText'] = "15xGold Nugget",
+        ['Text'] = "GoldBar - 15xGold Nugget",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "goldnugget",
@@ -283,8 +283,8 @@ Config.crafting = {
         }
     },
     [16] = {
-        ['Text'] = "Pipe",
-        ['SubText'] = "2xWood, 1xIron, 2xCopper",
+        ['Text'] = "Pipe - 2xWood, 1xIron, 2xCopper",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "wood",
@@ -302,8 +302,8 @@ Config.crafting = {
         }
     },
     [17] = {
-        ['Text'] = "Beer",
-        ['SubText'] = "2xBitterWeed, 1xAlcohol",
+        ['Text'] = "Beer - 2xBitterWeed, 1xAlcohol",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Bitter_Weed",
@@ -320,8 +320,8 @@ Config.crafting = {
         }
     },
     [18] = {
-        ['Text'] = "Wine",
-        ['SubText'] = "2xBlackberry, 1xAlcohol",
+        ['Text'] = "Wine - 2xBlackberry, 1xAlcohol",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Black_Berry",
@@ -338,8 +338,8 @@ Config.crafting = {
         }
     },
     [19] = {
-        ['Text'] = "Blackberry Water",
-        ['SubText'] = "1xSugar, 1xWater, 1xBlackBerry",
+        ['Text'] = "Blackberry Water - 1xSugar, 1xWater, 1xBlackBerry",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "sugar",
@@ -356,8 +356,8 @@ Config.crafting = {
         }
     },
     [20] = {
-        ['Text'] = "Snake Oil",
-        ['SubText'] = "1xSnakeSkin, 1xAcid, 2xBitter Weed",
+        ['Text'] = "Snake Oil - 1xSnakeSkin, 1xAcid, 2xBitter Weed",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "SnakeSkin",
@@ -374,8 +374,8 @@ Config.crafting = {
         }
     },
     [21] = {
-        ['Text'] = "Herbal Med",
-        ['SubText'] = "2xParasolMushroom, 2xEnglishMace, 2xCreepingThyme",
+        ['Text'] = "Herbal Med - 2xParasolMushroom, 2xEnglishMace, 2xCreepingThyme",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Parasol_Mushroom",
@@ -393,8 +393,8 @@ Config.crafting = {
     },
 
     [22] = {
-        ['Text'] = "BlackBerry Ale",
-        ['SubText'] = "1xBitterWeed, 2xBlackBerry 1xAlcohol",
+        ['Text'] = "BlackBerry Ale - 1xBitterWeed, 2xBlackBerry 1xAlcohol",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Bitter_Weed",
@@ -412,8 +412,8 @@ Config.crafting = {
     },
 
     [23] = {
-        ['Text'] = "Raspberry Ale",
-        ['SubText'] = "1xBitterWeed, 2xRedRaspberry 1xAlcohol",
+        ['Text'] = "Raspberry Ale - 1xBitterWeed, 2xRedRaspberry 1xAlcohol",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Bitter_Weed",
@@ -431,8 +431,8 @@ Config.crafting = {
     },
 
     [24] = {
-        ['Text'] = "Syn",
-        ['SubText'] = "1xSynpackage",
+        ['Text'] = "Syn - 1xSynpackage",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "synpackage",
@@ -450,8 +450,8 @@ Config.crafting = {
     },
     
     [25] = {
-        ['Text'] = "Breakfast",
-        ['SubText'] = "2xEgg, 2xmeat, 1xsalt",
+        ['Text'] = "Breakfast - 2xEgg, 2xmeat, 1xsalt",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "eggs",
@@ -468,8 +468,8 @@ Config.crafting = {
         }
     },
     [26] = {
-        ['Text'] = "Edible Veggies",
-        ['SubText'] = " - 1xCrowsGarlic, 1xParasolMushroom, 1xWildCarrot",
+        ['Text'] = "Edible Veggies - 1xCrowsGarlic, 1xParasolMushroom, 1xWildCarrot",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Crows_Garlic",
@@ -487,8 +487,8 @@ Config.crafting = {
     },
 
     [27] = {
-        ['Text'] = "Bottled Water",
-        ['SubText'] = "1xGlass Bottle, 1xFull Water Bucket",
+        ['Text'] = "Bottled Water - 1xGlass Bottle, 1xFull Water Bucket",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "glassbottle",
@@ -506,16 +506,16 @@ Config.crafting = {
     },
 
     [28] = {
-        ['Text'] = "Black Coffee",
-        ['SubText'] = "1xCoffee, 1xWater",
+        ['Text'] = "Black Coffee - 1xCoffee, 1xWater, 1xSugar",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "coffee",
             ['Item2'] = "water",
-            ['Item3'] = "",
+            ['Item3'] = "sugar_item",
             ['Count'] = 1,
             ['Count2'] = 1,
-            ['Count3'] = 0,
+            ['Count3'] = 1,
             ['Reward'] ={{ name = "blackcoffee", count = 1}},
             ['Job'] = 0, -- the job required
             ['prop'] = 0, -- 0 means any
@@ -525,8 +525,8 @@ Config.crafting = {
     },
 
     [29] = {
-        ['Text'] = "Ginseng Tea",
-        ['SubText'] = "1xWater, 1xSugar, 1xAmericanGinseng",
+        ['Text'] = "Ginseng Tea - 1xWater, 1xSugar, 1xAmericanGinseng",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "water",
@@ -544,8 +544,8 @@ Config.crafting = {
     },
 
     [30] = {
-        ['Text'] = "Apple Pie",
-        ['SubText'] = "1xPieCrust, 3xApple, 1xSugar",
+        ['Text'] = "Apple Pie - 1xPieCrust, 3xApple, 1xSugar",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "piecrust",
@@ -563,8 +563,8 @@ Config.crafting = {
     },
 
     [31] = {
-        ['Text'] = "Banana Bread",
-        ['SubText'] = "3xBanana, 1xFlour, 1xSugar",
+        ['Text'] = "Banana Bread - 3xBanana, 1xFlour, 1xSugar",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Banana",
@@ -582,8 +582,8 @@ Config.crafting = {
     },
 
     [32] = {
-        ['Text'] = "Blueberry Muffin",
-        ['SubText'] = "3xblueberry, 1xflour, 1xSugar",
+        ['Text'] = "Blueberry Muffin - 3xblueberry, 1xflour, 1xSugar",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "blueberry",
@@ -601,8 +601,8 @@ Config.crafting = {
     },
 
     [33] = {
-        ['Text'] = "Chocolate Cake",
-        ['SubText'] = "1xFlour, 1xEgg, 1xCocoa",
+        ['Text'] = "Chocolate Cake - 1xFlour, 1xEgg, 1xCocoa",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "flour",
@@ -620,8 +620,8 @@ Config.crafting = {
     },
 
     [34] = {
-        ['Text'] = "Chocolate Chunk Cookie",
-        ['SubText'] = "1xFlour, 1xEgg, 1xCocoa",
+        ['Text'] = "Chocolate Chunk Cookie - 1xFlour, 1xEgg, 1xCocoa",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "flour",
@@ -639,8 +639,8 @@ Config.crafting = {
     },
 
     [35] = {
-        ['Text'] = "Cinnamon Roll",
-        ['SubText'] = "1xflour, 1xEgg, 1xSugar, 1xCinnamon",
+        ['Text'] = "Cinnamon Roll - 1xflour, 1xEgg, 1xSugar, 1xCinnamon",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "flour",
@@ -660,8 +660,8 @@ Config.crafting = {
     },
 
     [36] = {
-        ['Text'] = "Coffee with Cream",
-        ['SubText'] = "1xCoffee, 1xMilk, 1xSugar",
+        ['Text'] = "Coffee with Cream - 1xCoffee, 1xMilk, 1xSugar",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "coffee_item",
@@ -679,8 +679,8 @@ Config.crafting = {
     },
 
     [37] = {
-        ['Text'] = "Donut",
-        ['SubText'] = "1xFlour, 1xSugar",
+        ['Text'] = "Donut - 1xFlour, 1xSugar",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "flour",
@@ -698,8 +698,8 @@ Config.crafting = {
     },
 
     [38] = {
-        ['Text'] = "Fruit Punch",
-        ['SubText'] = "1xWater, 1xSugar, 1xFruitCocktail",
+        ['Text'] = "Fruit Punch - 1xWater, 1xSugar, 1xFruitCocktail",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "water",
@@ -717,8 +717,8 @@ Config.crafting = {
     },
 
     [39] = {
-        ['Text'] = "Fruit Cocktail",
-        ['SubText'] = "1xBlackberry, 1xStrawberry, 1xGrapes",
+        ['Text'] = "Fruit Cocktail - 1xBlackberry, 1xStrawberry, 1xGrapes",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "black_berry",
@@ -736,8 +736,8 @@ Config.crafting = {
     },
 
     [40] = {
-        ['Text'] = "Pink Glazed Donut",
-        ['SubText'] = "1xDonut, 1xStrawberry, 1xSugar",
+        ['Text'] = "Pink Glazed Donut - 1xDonut, 1xStrawberry, 1xSugar",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "bwb_d",
@@ -755,8 +755,8 @@ Config.crafting = {
     },
 
     [41] = {
-        ['Text'] = "Peach Iced Tea ",
-        ['SubText'] = "1xWater, 1xPeach, 1xSugar",
+        ['Text'] = "Peach Iced Tea - 1xWater, 1xPeach, 1xSugar",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "water",
@@ -774,8 +774,8 @@ Config.crafting = {
     },
 
     [42] = {
-        ['Text'] = "Peppermint Mocha",
-        ['SubText'] = "1xPeppermint, 1xCoffee, 1xCocoa",
+        ['Text'] = "Peppermint Mocha - 1xPeppermint, 1xCoffee, 1xCocoa",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "peppermint",
@@ -793,8 +793,8 @@ Config.crafting = {
     },
 
     [43] = {
-        ['Text'] = "Peach Tarte",
-        ['SubText'] = "1xPeach, 1xFlour, 1xSugar",
+        ['Text'] = "Peach Tarte - 1xPeach, 1xFlour, 1xSugar",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "peach",
@@ -812,8 +812,8 @@ Config.crafting = {
     },
 
     [44] = {
-        ['Text'] = "Strawberry Cheesecake",
-        ['SubText'] = "1xStrawberry, 1xEgg, 1xFlour, 1xCreamCheese",
+        ['Text'] = "Strawberry Cheesecake - 1xStrawberry, 1xEgg, 1xFlour, 1xCreamCheese",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "strawberry",
@@ -833,8 +833,8 @@ Config.crafting = {
     },
 
     [45] = {
-        ['Text'] = "Strawberry Shortcake",
-        ['SubText'] = "1xStrawberry, 1xFlour, 1xSugar",
+        ['Text'] = "Strawberry Shortcake - 1xStrawberry, 1xFlour, 1xSugar",
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "strawberry",
@@ -852,8 +852,8 @@ Config.crafting = {
     },
 
     [46] = {
-        ['Text'] = "Cream of Sum Yung Guy", -- name of item to craft on list
-        ['SubText'] = "1xToad, 1xTurtle, 1,Skunk, 1xSalt, 1xMilk",
+        ['Text'] = "Cream of Sum Yung Guy - 1xToad, 1xTurtle, 1,Skunk, 1xSalt, 1xMilk", -- name of item to craft on list
+        ['SubText'] = "",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "toad_c", 
