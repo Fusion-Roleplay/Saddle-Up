@@ -13,8 +13,8 @@ Config.craftingprops = {"p_campfire02x","p_campfirecombined02x","p_campfirecombi
 
 Config.crafting = {
     [1] = {
-        ['Text'] = "Boiled Egg  - 1xEgg, 1xWater",
-        ['SubText'] = "",
+        ['Text'] = "Boiled Egg",
+        ['SubText'] = "1xEgg, 1xWater",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "eggs",
@@ -31,8 +31,8 @@ Config.crafting = {
         }
     }, 
      [2] = {
-        ['Text'] = "Dried Salmon  - 1xSockeye Salmon, 1xSalt", -- name of item to craft on list
-        ['SubText'] = "",
+        ['Text'] = "Dried Salmon", -- name of item to craft on list
+        ['SubText'] = "1xSockeye Salmon, 1xSalt",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "a_c_fishsalmonsockeye_01_ms", 
@@ -49,8 +49,8 @@ Config.crafting = {
         }
     },
     [3] = {
-        ['Text'] = "Cooked Bluegil with Veggies - 1xSmall Bluegil, 1xCarrot and 1xCorn",
-        ['SubText'] = "",
+        ['Text'] = "Cooked Bluegil with Veggies",
+        ['SubText'] = "1xSmall Bluegil, 1xCarrot, 1xCorn",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "a_c_fishbluegil_01_sm",
@@ -67,8 +67,8 @@ Config.crafting = {
         }
     },
     [4] = {
-        ['Text'] = "ChocolateBar - 2xCocoa and 3xSugar",
-        ['SubText'] = "",
+        ['Text'] = "ChocolateBar",
+        ['SubText'] = "2xCocoa, 3xSugar",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "cocoa",
@@ -85,8 +85,8 @@ Config.crafting = {
         }
     },
     [5] = {
-        ['Text'] = "Fruit Salad - 2xBlack Berry, 1xBlack Currant and 1xCreekplum",
-        ['SubText'] = "",
+        ['Text'] = "Fruit Salad",
+        ['SubText'] = "2xBlack Berry, 1xBlack Currant, 1xCreekplum",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Black_Berry",
@@ -103,8 +103,8 @@ Config.crafting = {
         } 
     },
     [6] = {
-        ['Text'] = "Jerkied Meat - 2xMeat and 2xSalt",
-        ['SubText'] = "",
+        ['Text'] = "Jerkied Meat",
+        ['SubText'] = "2xMeat, 2xSalt",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "meat",
@@ -121,8 +121,8 @@ Config.crafting = {
         }
     },
     [7] = {
-        ['Text'] = "Dried Bluegil - 2xSalt, 1xMedium Bluegil",
-        ['SubText'] = "",
+        ['Text'] = "Dried Bluegil",
+        ['SubText'] = "2xSalt, 1xMedium Bluegil",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "salt",
@@ -139,8 +139,8 @@ Config.crafting = {
         }
     },
     [8] = {
-        ['Text'] = "Cooked Trout  - 1xRainbow Trout, 1xCrows_Garlic, 1xOleander Sage",
-        ['SubText'] = "",
+        ['Text'] = "Cooked Trout",
+        ['SubText'] = "1xRainbow Trout, 1xCrows_Garlic, 1xOleander Sage",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "a_c_fishrainbowtrout_01_ms",
@@ -157,8 +157,8 @@ Config.crafting = {
         }
     },
     [9] = {
-        ['Text'] = "Jerkied GameMeat - 1xGamey Meat, 2xSalt",
-        ['SubText'] = "",
+        ['Text'] = "Jerkied GameMeat",
+        ['SubText'] = "1xGamey Meat, 2xSalt",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Gamey_Meat",
@@ -175,8 +175,8 @@ Config.crafting = {
         }
     },
     [10] = {
-        ['Text'] = "Raspberry Water - 1xSugar, 1xWater, 1xRedRaspberry",
-        ['SubText'] = "",
+        ['Text'] = "Raspberry Water",
+        ['SubText'] = "1xSugar, 1xWater, 1xRedRaspberry",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "sugar",
@@ -193,8 +193,8 @@ Config.crafting = {
         }
     },
      [11] = {
-        ['Text'] = "Cigarette - 1xIndian Tobbaco, 1xRolling paper",
-        ['SubText'] = "",
+        ['Text'] = "Cigarette",
+        ['SubText'] = "1xIndian Tobbaco, 1xRolling paper",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Indian_Tobbaco",
@@ -211,8 +211,8 @@ Config.crafting = {
         }
     },
     [12] = {
-        ['Text'] = "Cigar - 2xIndian Tobbaco, 1xRolling paper",
-        ['SubText'] = "",
+        ['Text'] = "Cigar",
+        ['SubText'] = "2xIndian Tobbaco, 1xRolling paper",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Indian_Tobbaco",
@@ -229,8 +229,8 @@ Config.crafting = {
         }
     },
     [13] = {
-        ['Text'] = "Caramel - 2xSugar and 2xMilk",
-        ['SubText'] = "",
+        ['Text'] = "Caramel",
+        ['SubText'] = "2xSugar, 2xMilk",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "sugar",
@@ -247,8 +247,8 @@ Config.crafting = {
         }
     },
     [14] = {
-        ['Text'] = "Heroin - 2xMorphine 2xAcid and 2xBlood Flower",
-        ['SubText'] = "",
+        ['Text'] = "Heroin",
+        ['SubText'] = "2xMorphine 2xAcid, 2xBlood Flower",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "morphine",
@@ -265,8 +265,8 @@ Config.crafting = {
         }
     },
     [15] = {
-        ['Text'] = "GoldBar - 15xGold nugget",
-        ['SubText'] = "",
+        ['Text'] = "GoldBar",
+        ['SubText'] = "15xGold Nugget",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "goldnugget",
@@ -283,8 +283,8 @@ Config.crafting = {
         }
     },
     [16] = {
-        ['Text'] = "Pipe - 2xWood, 1xIron and 2xCopper",
-        ['SubText'] = "",
+        ['Text'] = "Pipe",
+        ['SubText'] = "2xWood, 1xIron, 2xCopper",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "wood",
@@ -302,8 +302,8 @@ Config.crafting = {
         }
     },
     [17] = {
-        ['Text'] = "Beer - 2xBitterWeed and 1xAlcohol",
-        ['SubText'] = "",
+        ['Text'] = "Beer",
+        ['SubText'] = "2xBitterWeed, 1xAlcohol",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Bitter_Weed",
@@ -320,8 +320,8 @@ Config.crafting = {
         }
     },
     [18] = {
-        ['Text'] = "Wine - 2xBlackberry and 1xAlcohol",
-        ['SubText'] = "",
+        ['Text'] = "Wine",
+        ['SubText'] = "2xBlackberry, 1xAlcohol",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Black_Berry",
@@ -338,8 +338,8 @@ Config.crafting = {
         }
     },
     [19] = {
-        ['Text'] = "Blackberry Water - 1xSugar, 1xWater, 1xBlackBerry",
-        ['SubText'] = "",
+        ['Text'] = "Blackberry Water",
+        ['SubText'] = "1xSugar, 1xWater, 1xBlackBerry",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "sugar",
@@ -356,8 +356,8 @@ Config.crafting = {
         }
     },
     [20] = {
-        ['Text'] = "Snake Oil - 1xSnakeSkin, 1xAcid, 2xBitter Weed",
-        ['SubText'] = "",
+        ['Text'] = "Snake Oil",
+        ['SubText'] = "1xSnakeSkin, 1xAcid, 2xBitter Weed",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "SnakeSkin",
@@ -374,8 +374,8 @@ Config.crafting = {
         }
     },
     [21] = {
-        ['Text'] = "Herbal Med - 2xParasolMushroom, 2xEnglishMace, 2xCreepingThyme",
-        ['SubText'] = "",
+        ['Text'] = "Herbal Med",
+        ['SubText'] = "2xParasolMushroom, 2xEnglishMace, 2xCreepingThyme",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Parasol_Mushroom",
@@ -393,8 +393,8 @@ Config.crafting = {
     },
 
     [22] = {
-        ['Text'] = "BlackBerry Ale - 1xBitterWeed, 2xBlackBerry 1xAlcohol",
-        ['SubText'] = "",
+        ['Text'] = "BlackBerry Ale",
+        ['SubText'] = "1xBitterWeed, 2xBlackBerry 1xAlcohol",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Bitter_Weed",
@@ -412,8 +412,8 @@ Config.crafting = {
     },
 
     [23] = {
-        ['Text'] = "Raspberry Ale - 1xBitterWeed, 2xRedRaspberry 1xAlcohol",
-        ['SubText'] = "",
+        ['Text'] = "Raspberry Ale",
+        ['SubText'] = "1xBitterWeed, 2xRedRaspberry 1xAlcohol",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Bitter_Weed",
@@ -431,8 +431,8 @@ Config.crafting = {
     },
 
     [24] = {
-        ['Text'] = "Syn - 1x Synpackage",
-        ['SubText'] = "",
+        ['Text'] = "Syn",
+        ['SubText'] = "1xSynpackage",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "synpackage",
@@ -450,8 +450,8 @@ Config.crafting = {
     },
     
     [25] = {
-        ['Text'] = "Breakfast  - 2xEgg, 2xmeat, 1xsalt",
-        ['SubText'] = "",
+        ['Text'] = "Breakfast",
+        ['SubText'] = "2xEgg, 2xmeat, 1xsalt",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "eggs",
@@ -468,8 +468,8 @@ Config.crafting = {
         }
     },
     [26] = {
-        ['Text'] = "Edible Veggies - 1xCrowsGarlic, 1xParasolMushroom, 1xWildCarrot",
-        ['SubText'] = "",
+        ['Text'] = "Edible Veggies",
+        ['SubText'] = " - 1xCrowsGarlic, 1xParasolMushroom, 1xWildCarrot",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "Crows_Garlic",
@@ -487,8 +487,8 @@ Config.crafting = {
     },
 
     [27] = {
-        ['Text'] = "Bottled Water - 1xGlass Bottle, 1xFull Water Bucket",
-        ['SubText'] = "",
+        ['Text'] = "Bottled Water",
+        ['SubText'] = "1xGlass Bottle, 1xFull Water Bucket",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "glassbottle",
@@ -506,17 +506,17 @@ Config.crafting = {
     },
 
     [28] = {
-        ['Text'] = "Ginseng Tea - 1xWater, 1xSugar, 1xAmericanGinseng ",
-        ['SubText'] = "",
+        ['Text'] = "Black Coffee",
+        ['SubText'] = "1xCoffee, 1xWater",
         ['Desc'] = "",
         ['Param'] = {
-            ['Item'] = "water",
-            ['Item2'] = "sugar",
-            ['Item3'] = "American_Ginseng",
+            ['Item'] = "coffee",
+            ['Item2'] = "water",
+            ['Item3'] = "",
             ['Count'] = 1,
             ['Count2'] = 1,
-            ['Count3'] = 1,
-            ['Reward'] ={{ name = "ginsengtea", count = 1}},
+            ['Count3'] = 0,
+            ['Reward'] ={{ name = "blackcoffee", count = 1}},
             ['Job'] = 0, -- the job required
             ['prop'] = 0, -- 0 means any
             ['location'] = 0, 
@@ -525,8 +525,8 @@ Config.crafting = {
     },
 
     [29] = {
-        ['Text'] = "Ginseng Tea - 1xWater, 1xSugar, 1xAmericanGinseng ",
-        ['SubText'] = "",
+        ['Text'] = "Ginseng Tea",
+        ['SubText'] = "1xWater, 1xSugar, 1xAmericanGinseng",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "water",
@@ -544,12 +544,12 @@ Config.crafting = {
     },
 
     [30] = {
-        ['Text'] = "Apple Pie - 1xPieCrust, 3xAppleFilling, 1xSugar ",
-        ['SubText'] = "",
+        ['Text'] = "Apple Pie",
+        ['SubText'] = "1xPieCrust, 3xApple, 1xSugar",
         ['Desc'] = "",
         ['Param'] = {
             ['Item'] = "piecrust",
-            ['Item2'] = "applefilling",
+            ['Item2'] = "apple",
             ['Item3'] = "sugar_item",
             ['Count'] = 1,
             ['Count2'] = 1,
@@ -563,23 +563,297 @@ Config.crafting = {
     },
 
     [31] = {
-        ['Text'] = "Banana Bread - 3xMashedBanana, 1xFlour, 1xSugar ",
-        ['SubText'] = "",
+        ['Text'] = "Banana Bread",
+        ['SubText'] = "3xBanana, 1xFlour, 1xSugar",
         ['Desc'] = "",
         ['Param'] = {
-            ['Item'] = "piecrust",
-            ['Item2'] = "applefilling",
+            ['Item'] = "Banana",
+            ['Item2'] = "Flour",
             ['Item3'] = "sugar_item",
-            ['Count'] = 1,
+            ['Count'] = 3,
             ['Count2'] = 1,
             ['Count3'] = 1,
-            ['Reward'] ={{ name = "bwb_ap", count = 1}},
+            ['Reward'] ={{ name = "bwb_bb", count = 1}},
             ['Job'] = {"bwb"}, -- the job required
             ['prop'] = 0, -- 0 means any
             ['location'] = {"bwb"}, 
 
         }
     },
+
+    [32] = {
+        ['Text'] = "Blueberry Muffin",
+        ['SubText'] = "3xblueberry, 1xflour, 1xSugar",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "blueberry",
+            ['Item2'] = "flour",
+            ['Item3'] = "sugar_item",
+            ['Count'] = 3,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Reward'] ={{ name = "bwb_bm", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
+
+    [33] = {
+        ['Text'] = "Chocolate Cake",
+        ['SubText'] = "1xFlour, 1xEgg, 1xCocoa",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "flour",
+            ['Item2'] = "egg",
+            ['Item3'] = "cocoa",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Reward'] ={{ name = "bwb_cc", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
+
+    [34] = {
+        ['Text'] = "Chocolate Chunk Cookie",
+        ['SubText'] = "1xFlour, 1xEgg, 1xCocoa",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "flour",
+            ['Item2'] = "egg",
+            ['Item3'] = "cocoa",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Reward'] ={{ name = "bwb_ccc", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
+
+    [35] = {
+        ['Text'] = "Cinnamon Roll",
+        ['SubText'] = "1xflour, 1xEgg, 1xSugar, 1xCinnamon",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "flour",
+            ['Item2'] = "egg",
+            ['Item3'] = "sugar_item",
+            ['Item4'] = "cinnamon",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Count4'] = 1,
+            ['Reward'] ={{ name = "bwb_cr", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
+
+    [36] = {
+        ['Text'] = "Coffee with Cream",
+        ['SubText'] = "1xCoffee, 1xMilk, 1xSugar",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "coffee_item",
+            ['Item2'] = "milk",
+            ['Item3'] = "sugar_item",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Reward'] ={{ name = "bwb_cwc", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
+
+    [37] = {
+        ['Text'] = "Donut",
+        ['SubText'] = "1xFlour, 1xSugar",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "flour",
+            ['Item2'] = "sugar_item",
+            ['Item3'] = "",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 0,
+            ['Reward'] ={{ name = "bwb_d", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
+
+    [38] = {
+        ['Text'] = "Fruit Punch",
+        ['SubText'] = "1xWater, 1xSugar, 1xFruitCocktail",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "water",
+            ['Item2'] = "sugar_item",
+            ['Item3'] = "fruitcocktail",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Reward'] ={{ name = "bwb_fp", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
+
+    [39] = {
+        ['Text'] = "Fruit Cocktail",
+        ['SubText'] = "1xBlackberry, 1xStrawberry, 1xGrapes",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "black_berry",
+            ['Item2'] = "strawberry",
+            ['Item3'] = "grapes",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Reward'] ={{ name = "fruitcocktail", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
+
+    [40] = {
+        ['Text'] = "Pink Glazed Donut",
+        ['SubText'] = "1xDonut, 1xStrawberry, 1xSugar",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "bwb_d",
+            ['Item2'] = "strawberry",
+            ['Item3'] = "sugar_item",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Reward'] ={{ name = "bwb_pgd", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
+
+    [41] = {
+        ['Text'] = "Peach Iced Tea ",
+        ['SubText'] = "1xWater, 1xPeach, 1xSugar",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "water",
+            ['Item2'] = "peach",
+            ['Item3'] = "sugar_item",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Reward'] ={{ name = "bwb_pit", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
+
+    [42] = {
+        ['Text'] = "Peppermint Mocha",
+        ['SubText'] = "1xPeppermint, 1xCoffee, 1xCocoa",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "peppermint",
+            ['Item2'] = "coffee",
+            ['Item3'] = "cocoa",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Reward'] ={{ name = "bwb_pm", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
+
+    [43] = {
+        ['Text'] = "Peach Tarte",
+        ['SubText'] = "1xPeach, 1xFlour, 1xSugar",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "peach",
+            ['Item2'] = "flour",
+            ['Item3'] = "sugar_item",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Reward'] ={{ name = "bwb_pt", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
+
+    [44] = {
+        ['Text'] = "Strawberry Cheesecake",
+        ['SubText'] = "1xStrawberry, 1xEgg, 1xFlour, 1xCreamCheese",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "strawberry",
+            ['Item2'] = "egg",
+            ['Item3'] = "flour",
+            ['Item4'] = "creamcheese",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Count4'] = 1,
+            ['Reward'] ={{ name = "bwb_sc", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
+
+    [45] = {
+        ['Text'] = "Strawberry Shortcake",
+        ['SubText'] = "1xStrawberry, 1xFlour, 1xSugar",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "strawberry",
+            ['Item2'] = "flour",
+            ['Item3'] = "sugar_item",
+            ['Count'] = 1,
+            ['Count2'] = 1,
+            ['Count3'] = 1,
+            ['Reward'] ={{ name = "bwb_ss", count = 1}},
+            ['Job'] = {"bwb"}, -- the job required
+            ['prop'] = 0, -- 0 means any
+            ['location'] = {"bwb"}, 
+
+        }
+    },
+
+    
+
+    
     
 
 }
