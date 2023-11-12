@@ -851,6 +851,29 @@ Config.crafting = {
         }
     },
 
+    [46] = {
+        ['Text'] = "Cream of Sum Yung Guy", -- name of item to craft on list
+        ['SubText'] = "1xToad, 1xTurtle, 1,Skunk, 1xSalt, 1xMilk",
+        ['Desc'] = "",
+        ['Param'] = {
+            ['Item'] = "toad_c", 
+            ['Item2'] = "turtle_meat", 
+            ['Item3'] = "skunk_meat",
+            ['Item4'] = "salt",
+            ['Item5'] = "milk",
+            ['Count'] = 1, 
+            ['Count2'] = 1, 
+            ['Count3'] = 1,
+            ['Count4'] = 1,
+            ['Count5'] = 1,
+            ['Reward'] ={{ name = "cream_of_syg", count = 1}},
+            ['Job'] = 0, 
+            ['prop'] = {"p_campfire02x","p_campfirecombined02x","p_campfirecombined03x","p_kettle03x"}, -- will only show in those 2 props 
+            ['location'] = {"location1","location2"}, -- this item can only be crafted in location 1 and 2 
+
+        }
+    },
+
     
 
     
