@@ -44,6 +44,29 @@ if Config.framework == 'redemrp2k23' then
     function GetCharGroup(targetID)
         return RedEM.GetPlayer(targetID).group
     end
+
+    function GetPatientNotes(charid)
+        local notes = exports.oxmysql:query_async([[
+            SELECT hospital.hospital, 
+            hospital_notes.note_id,
+            hospital_notes.written_by,
+            hospital_notes.date,
+            hospital_notes.note,
+            hospital_notes.patient,
+            characters.firstname,
+            characters.lastname
+            FROM hospital 
+            LEFT JOIN hospital_notes ON hospital.hospital = hospital_notes.hospital
+            LEFT JOIN characters ON characters.charidentifier = hospital_notes.written_by
+            WHERE hospital_notes.patient = ?
+        ]], { charid })
+        for k, v in pairs(notes) do
+            HospitalsManager.hospitals[v.hospital]:addNote(
+                Note:new(v.note_id, v.written_by, v.patient, v.firstname, v.lastname,
+                    os.date('%d %b', v.date), v.note)
+            )
+        end
+    end
     
     -- This registers all the usable items that are used by the script, 
     -- You have to adjust all the code to fit your framework properly

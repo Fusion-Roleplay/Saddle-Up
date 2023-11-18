@@ -12,19 +12,19 @@ if DiseasesConfig['cholera'] then
                     self:startEffect()
                 else
                     local coords = GetEntityCoords(PlayerPedId())
+                    local insideZone = nil
                     for k, v in pairs(self.config.infectionZonesProbability) do
                         if #(v.coords - coords) <= v.radius and not self._data.active then
                             sleep = false
-                            if not BandanaUp then
-                                infectionLevel = math.min(infectionLevel + v.infectionPoints,
-                                    self.config.maxInfectionLevel)
-                            else
-                                infectionLevel = math.max(infectionLevel - v.infectionPoints, 0)
-                            end
+                            insideZone = v
                         else
-                            infectionLevel = math.max(infectionLevel - v.infectionPoints, 0)
                             sleep = true
                         end
+                    end
+                    if insideZone and not BandanaUp then
+                        infectionLevel = math.min(infectionLevel + insideZone.infectionPoints, self.config.maxInfectionLevel)
+                    else
+                        infectionLevel = math.max(infectionLevel - 1, 0)
                     end
                 end
                 if self._data.active then
