@@ -51,13 +51,13 @@ Config.language = {
 
 -- uncomment to enable webhook options
 Config.webhookOptions = {
-    webhook = "https://discord.com/api/webhooks/1019985997108355124/LoMPlbhDpxewsa4DlxVor_94QfI-Z1UJDpF4vHa4WIosJu9amsAI1li1g18G84zIAJ2L",
+    webhook = "https://discord.com/api/webhooks/1160098216084242462/d__S_DxsqaswanRb_9RHzM5hoHKHsLaW7qm-d9NyKgzQmTwrC-rQofQsbOw5miK-aiBn",
     color = 3447003
 }
 
 -- If you have syn_society it will use it's API export to calculate only "in duty" workers.
-Config.syn_society = false
-Config.mega_companies = true
+Config.syn_society = true
+Config.mega_companies = false
 -- !!!Only works if you have syn_society or mega_companies!!!
 -- Tax that gets deducted from the doctor npc revenue. 
 -- Example: doctor npc heal costs 30$
@@ -127,7 +127,112 @@ Config.hospitals = {
             range = 2.0
         },
         jobId = 'doctor' -- the id of the society (syn_society) or company (mega_companies) set to nil if you don't need it
-    }
+    },
+    ['Rhodes Hospital'] = {
+        showBlip = true,
+        blipSprite = -1739686743,
+        coords = vector3(1368.96, -1311.13, 77.99),
+        radius = 20.0,
+        npc = {
+            enabled = true,
+            -- the jobs to check the players count
+            -- if a player with one of these jobs is online
+            -- the function will be disabled
+            jobs = { 'doctor' },
+            healCost = 5.0,
+            reviveCost = 5.0,
+            reviveTime = 30,
+            npcModel = 'CS_DrMalcolmMacIntosh',
+            coords = vector3(1368.96, -1311.13, 77.99),
+            heading = 150.64,
+            range = 2.0
+        },
+        jobId = 'doctor' -- the id of the society (syn_society) or company (mega_companies) set to nil if you don't need it
+    },
+    ['Valentine Hospital'] = {
+        showBlip = true,
+        blipSprite = -1739686743,
+        coords = vector3(-288.03, 804.57, 119.44),
+        radius = 20.0,
+        npc = {
+            enabled = true,
+            -- the jobs to check the players count
+            -- if a player with one of these jobs is online
+            -- the function will be disabled
+            jobs = { 'doctor' },
+            healCost = 5.0,
+            reviveCost = 5.0,
+            reviveTime = 30,
+            npcModel = 'CS_DrMalcolmMacIntosh',
+            coords = vector3(-288.03, 804.57, 119.44),
+            heading = 277.11,
+            range = 2.0
+        },
+        jobId = 'doctor' -- the id of the society (syn_society) or company (mega_companies) set to nil if you don't need it
+    },
+    ['Strawberry Hospital'] = {
+        showBlip = true,
+        blipSprite = -1739686743,
+        coords = vector3(-1778.23, -374.99, 159.96),
+        radius = 20.0,
+        npc = {
+            enabled = true,
+            -- the jobs to check the players count
+            -- if a player with one of these jobs is online
+            -- the function will be disabled
+            jobs = { 'doctor' },
+            healCost = 5.0,
+            reviveCost = 5.0,
+            reviveTime = 30,
+            npcModel = 'CS_DrMalcolmMacIntosh',
+            coords = vector3(-1778.23, -374.99, 159.96),
+            heading = 135.07,
+            range = 2.0
+        },
+        jobId = 'doctor' -- the id of the society (syn_society) or company (mega_companies) set to nil if you don't need it
+    },
+    ['Blackwater Hospital'] = {
+        showBlip = true,
+        blipSprite = -1739686743,
+        coords = vector3(-810.46, -1264.14, 43.74),
+        radius = 20.0,
+        npc = {
+            enabled = true,
+            -- the jobs to check the players count
+            -- if a player with one of these jobs is online
+            -- the function will be disabled
+            jobs = { 'doctor' },
+            healCost = 5.0,
+            reviveCost = 5.0,
+            reviveTime = 30,
+            npcModel = 'CS_DrMalcolmMacIntosh',
+            coords = vector3(-810.46, -1264.14, 43.74),
+            heading = 314.36,
+            range = 2.0
+        },
+        jobId = 'doctor' -- the id of the society (syn_society) or company (mega_companies) set to nil if you don't need it
+    },
+    ['Armadillo Hospital'] = {
+        showBlip = true,
+        blipSprite = -1739686743,
+        coords = vector3(-3661.07, -2600.27, -13.24),
+        radius = 20.0,
+        npc = {
+            enabled = true,
+            -- the jobs to check the players count
+            -- if a player with one of these jobs is online
+            -- the function will be disabled
+            jobs = { 'doctor' },
+            healCost = 5.0,
+            reviveCost = 5.0,
+            reviveTime = 30,
+            npcModel = 'CS_DrMalcolmMacIntosh',
+            coords = vector3(-3661.07, -2600.27, -13.24),
+            heading = 184.13,
+            range = 2.0
+        },
+        jobId = 'doctor' -- the id of the society (syn_society) or company (mega_companies) set to nil if you don't need it
+    },
 }
 
 -- This is for calculaing body temperature including types of clothes that the player has
