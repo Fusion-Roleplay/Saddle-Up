@@ -119,7 +119,7 @@ Config.jobs = {
         },
         blipsprite = -592068833,
 		Name = 'Doctor',
-        recruitmentrank = 6,
+        recruitmentrank = 1,
         bossrank = 7,
         containerid = 4,
         containername = "Doctor Inv.",
