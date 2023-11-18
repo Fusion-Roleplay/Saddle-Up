@@ -28,7 +28,7 @@
 ---@field isPermEnabled fun(self : CustomInventory) : boolean @Get Perm Enabled
 ---@field getIgnoreItemStack fun(self : CustomInventory) : boolean @Get Ignore Item Stack
 ---@field isWeaponInList fun(self : CustomInventory, name : string) : boolean @Is Weapon In List
----@field isItemInList fun(self : CustomInventory, name : string) : boolean @Is Item In List
+---@field isItemInList fun(self : CustomInventory, name:{limit:number}) : boolean @Is Item In List
 ---@field isItemInBlackList fun(self : CustomInventory, name : string) : boolean @Is Item In Black List
 ---@field getWeaponLimit fun(self : CustomInventory, name : string) : number @Get Weapon Limit
 ---@field getItemLimit fun(self : CustomInventory, name : string) : number @Get Item Limit

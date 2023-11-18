@@ -15,6 +15,7 @@ shared_scripts {
   "config/config.lua",
   "config/weapons.lua",
   "config/ammo.lua",
+  "config/logs.lua",
   "languages/*.lua",
   "shared/models/*.lua",
   'shared/handler/*.lua',
@@ -44,7 +45,7 @@ files { 'html/**/*' }
 server_exports { 'vorp_inventoryApi' }
 
 -- version
-version '3.0'
+version '3.2'
 vorp_checker 'yes'
 vorp_name '^4Resource version Check^3'
 vorp_github 'https://github.com/VORPCORE/vorp_inventory-lua'

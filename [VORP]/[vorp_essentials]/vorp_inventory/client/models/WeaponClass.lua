@@ -12,7 +12,10 @@ Weapon.used2 = false
 Weapon.desc = nil
 Weapon.currInv = ''
 Weapon.group = 5
-
+Weapon.custom_label = nil
+Weapon.serial_number = nil
+Weapon.source = nil
+Weapon.custom_desc = nil
 
 local equippedWeapons = {}
 
@@ -194,6 +197,7 @@ function Weapon:equipwep()
 end
 
 function Weapon:loadComponents()
+	local playerPedId = PlayerPedId()
 	for _, value in pairs(self.components) do
 		Citizen.InvokeNative(0x74C9090FDD1BB48E, playerPedId, joaat(value), joaat(self.name), true)
 	end
@@ -339,4 +343,28 @@ end
 
 function Weapon:getGroup()
 	self.group = self.group
+end
+
+function Weapon:getCustomLabel()
+	return self.custom_label
+end
+
+function Weapon:setCustomLabel(custom_label)
+	self.custom_label = custom_label
+end
+
+function Weapon:getSerialNumber()
+	return self.serial_number
+end
+
+function Weapon:setSerialNumber()
+	self.serial_number = serial_number
+end
+
+function Weapon:setCustomDesc(custom_desc)
+	self.custom_desc = custom_desc
+end
+
+function Weapon:getCustomDesc()
+	return self.custom_desc
 end

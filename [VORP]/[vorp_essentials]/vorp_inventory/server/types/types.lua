@@ -1,25 +1,26 @@
 ---@diagnostic disable: undefined-global
 ---@meta
 
---- checks item limit
+
+--- check inventory limit
 ---@param source number player id
 ---@param amount number amount of item
 ---@param callback fun(canCarry:boolean)?  callback function async or sync leave nil
 ---@return boolean
-function exports.vorp_inventory:canCarryItem(source, amount, callback) end
+function exports.vorp_inventory:canCarryItems(source, amount, callback) end
 
---- check inventory limit
+--- checks item limit
 ---@param source number player id
 ---@param item string item name
 ---@param amount number amount of item
 ---@param callback fun(canCarry:boolean)?  callback function async or sync leave nil
 ---@return boolean
-function exports.vorp_inventory:canCarryItems(source, item, amount, callback) end
+function exports.vorp_inventory:canCarryItem(source, item, amount, callback) end
 
 --- can carry weapons
 ---@param source number player id
 ---@param amount number amount of weapons
----@param weaponName string weapon name
+---@param weaponName string? weapon name not neccesary but allows to check if weapon is in the list of not weapons
 ---@param callback fun(canCarry: boolean)? callback function async or sync leave nil
 ---@return boolean
 function exports.vorp_inventory:canCarryWeapons(source, amount, callback, weaponName) end
@@ -113,11 +114,32 @@ function exports.vorp_inventory:getItemMatchingMetadata(source, slot, metadata, 
 ---@return table| nil item data
 function exports.vorp_inventory:getItemDB(item, callback) end
 
+--- set weapon custom serial number
+---@param weaponId number weapon id
+---@param serial string serial number
+---@param callback fun(boolean:boolean)? callback function async or sync leave nil
+---@return boolean
+function exports.vorp_inventory:setWeaponSerialNumber(weaponId, serial, callback) end
+
+--- set weapon custom label
+---@param weaponId number weapon id
+---@param label string label
+---@param callback fun(boolean:boolean)? callback function async or sync leave nil
+---@return boolean
+function exports.vorp_inventory:setWeaponCustomLabel(weaponId, label, callback) end
+
+--- set weapon custom description
+---@param weaponId number weapon id
+---@param desc string description
+---@param callback fun(boolean:boolean)? callback function async or sync leave nil
+---@return boolean
+function exports.vorp_inventory:setWeaponCustomDesc(weaponId, desc, callback) end
+
 --- add item to user
 ---@param source number player id
 ---@param item string item name
 ---@param amount number amount of item
----@param metadata table | nil  item metadata
+---@param metadata table?  item metadata
 ---@param callback fun(boolean:boolean)? callback function async or sync leave nil
 function exports.vorp_inventory:addItem(source, item, amount, metadata, callback) end
 
@@ -173,11 +195,15 @@ function exports.vorp_inventory:deleteWeapon(source, weaponId, callback) end
 --- create Weapon
 ---@param source number player id
 ---@param weaponName string weapon name
----@param ammo string? amount of ammo
+---@param ammo table ammo
 ---@param components table? weapon components
 ---@param comps table? weapon components
+---@param custom_serial string? weapon serial number
+---@param custom_label string? weapon custom label
+---@param custom_desc? string? weapon custom description
 ---@param callback fun(boolean:boolean)? callback function async or sync leave nil
-function exports.vorp_inventory:createWeapon(source, weaponName, ammo, components, comps, callback) end
+function exports.vorp_inventory:createWeapon(source, weaponName, ammo, components, comps, callback, custom_serial, custom_label, custom_desc)
+end
 
 --- give weapon
 ---@param source number player id

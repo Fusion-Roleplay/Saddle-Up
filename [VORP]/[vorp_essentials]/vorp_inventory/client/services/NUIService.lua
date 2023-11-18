@@ -12,7 +12,6 @@ local CanOpen = true
 InInventory = false
 NUIService = {}
 
---======================= EVENTS =======================--
 RegisterNetEvent('inv:dropstatus')
 AddEventHandler('inv:dropstatus', function(x)
 	candrop = x
@@ -24,8 +23,6 @@ AddEventHandler('inv:givestatus', function(x)
 end)
 
 
---====================S ====================--
-
 function NUIService.ReloadInventory(inventory)
 	local payload = json.decode(inventory)
 	if payload.itemList == '[]' then
@@ -34,9 +31,26 @@ function NUIService.ReloadInventory(inventory)
 
 	for _, item in pairs(payload.itemList) do
 		if item.type == "item_weapon" then
-			item.label = Utils.GetWeaponLabel(item.name)
+			item.label = item.custom_label or Utils.GetWeaponLabel(item.name)
+			local serial_number = ""
+			local custom_desc = nil
+
+			if item.serial_number then
+				serial_number = item.serial_number
+			end
+			if item.custom_desc then
+				local serial_number_str = "<br><br>" .. T.serialnumber .. serial_number
+				if not string.find(item.custom_desc, serial_number_str, 1, true) then 
+					custom_desc = item.custom_desc .. "<br><br>" .. T.serialnumber .. serial_number
+				end
+			end
+
+			if item.desc and custom_desc then
+				item.desc = custom_desc
+			end
+
 			if item.desc == nil then
-				item.desc = Utils.GetWeaponDesc(item.name)
+				item.desc = custom_desc or Utils.GetWeaponDesc(item.name) .. "<br><br>" .. T.serialnumber .. serial_number
 			end
 		end
 	end
@@ -129,7 +143,7 @@ function NUIService.CloseInventory()
 			end
 		end
 	end
-	if not CanOpen then -- only trigger if somone is inside custom inv
+	if not CanOpen then -- only trigger if someone is inside custom inv
 		TriggerServerEvent("vorp_inventory:Server:UnlockCustomInv")
 	end
 	SetNuiFocus(false, false)
@@ -347,43 +361,29 @@ end
 
 function NUIService.NUISetNearPlayers(obj, nearestPlayers)
 	local nuiReturn = {}
-	local isAnyPlayerFound = #nearestPlayers > 0
+	local isAnyPlayerFound = next(nearestPlayers) ~= nil
+	local itemId = obj.id or 0
+	local itemCount = obj.count or 1
+	local itemHash = obj.hash or 1
 
-	if next(nearestPlayers) == nil then
+	if not isAnyPlayerFound then
 		TriggerEvent('vorp:TipRight', T.noplayersnearby, 5000)
 		return
 	end
+
 	if Config.Debug then
-		print('[^NUISetNearPlayers^7] ^2Info^7: players found = ' .. json.encode(nearestPlayers));
-	end
-	local item = {}
-
-	for k, v in pairs(obj) do
-		item[k] = v
-	end
-
-	if item.id == nil then
-		item.id = 0
-	end
-
-	if item.count == nil then
-		item.count = 1
-	end
-
-	if item.hash == nil then
-		item.hash = 1
+		print('[^NUISetNearPlayers^7] ^2Info^7: players found = ' .. json.encode(nearestPlayers))
 	end
 
 	nuiReturn.action = "nearPlayers"
 	nuiReturn.foundAny = isAnyPlayerFound
 	nuiReturn.players = nearestPlayers
-	nuiReturn.item = item.item
-	nuiReturn.hash = item.hash
-	nuiReturn.count = item.count
-	nuiReturn.id = item.id
-	nuiReturn.type = item.type
-	nuiReturn.what = item.what
-
+	nuiReturn.item = nuiReturn.item or obj.item
+	nuiReturn.hash = itemHash
+	nuiReturn.count = itemCount
+	nuiReturn.id = itemId
+	nuiReturn.type = obj.type
+	nuiReturn.what = nuiReturn.what or obj.what
 
 	SendNUIMessage(nuiReturn)
 end
@@ -407,7 +407,7 @@ function NUIService.NUIGiveItem(obj)
 							if isProcessingPay then return end
 							isProcessingPay = true
 							TriggerServerEvent("vorpinventory:giveMoneyToPlayer", target, tonumber(data2.count))
-							TriggerServerEvent("vorpinventory:moneylog", target, tonumber(data2.count))
+							--TriggerServerEvent("vorpinventory:moneylog", target, tonumber(data2.count))
 						elseif Config.UseGoldItem and data2.type == "item_gold" then
 							if isProcessingPay then return end
 							isProcessingPay = true
@@ -430,7 +430,7 @@ function NUIService.NUIGiveItem(obj)
 							end
 						else
 							TriggerServerEvent("vorpinventory:serverGiveWeapon", tonumber(itemId), target)
-							TriggerServerEvent("vorpinventory:weaponlog", target, data2)
+							--TriggerServerEvent("vorpinventory:weaponlog", target, data2)
 						end
 						if Config.Debug then
 							print('[^NUIGiveItem^7] ^2Info^7: Reloading inv after sending info of giving item ?');
@@ -470,13 +470,19 @@ function NUIService.NUIDropItem(obj)
 			if type == "item_standard" then
 				if aux.number ~= nil and aux.number ~= '' then
 					local item = UserInventory[itemId]
+					if not item then
+						return
+					end
 
-					if qty > 0 and item ~= nil and item:getCount() >= qty then
-						TriggerServerEvent("vorpinventory:serverDropItem", itemName, itemId, qty, metadata)
-						item:quitCount(qty)
-						if item:getCount() == 0 then
-							UserInventory[itemId] = nil
-						end
+					if qty <= 0 or qty > item:getCount() then
+						return
+					end
+
+					TriggerServerEvent("vorpinventory:serverDropItem", itemName, itemId, qty, metadata)
+
+					item:quitCount(qty)
+					if item:getCount() == 0 then
+						UserInventory[itemId] = nil
 					end
 				end
 			end
@@ -495,8 +501,9 @@ function NUIService.NUIDropItem(obj)
 					UserWeapons[aux.id] = nil
 				end
 			end
-
-			NUIService.LoadInv()
+			SetTimeout(100, function()
+				NUIService.LoadInv()
+			end)
 		end
 	else
 		TriggerEvent('vorp:TipRight', T.cantdrophere, 5000)
@@ -509,10 +516,10 @@ local function getGuidFromItemId(inventoryId, itemData, category, slotId)
 	if not itemData then
 		itemData = 0
 	end
-
-	local success = Citizen.InvokeNative(0x886DFD3E185C8A89, inventoryId, itemData, category, slotId, outItem:Buffer()) --InventoryGetGuidFromItemid
+	--InventoryGetGuidFromItemid
+	local success = Citizen.InvokeNative(0x886DFD3E185C8A89, inventoryId, itemData, category, slotId, outItem:Buffer())
 	if success then
-		return outItem:Buffer()                                                                                      --Seems to not return anythign diff. May need to pull from native above
+		return outItem:Buffer() --Seems to not return anythign diff. May need to pull from native above
 	else
 		return nil
 	end
@@ -605,18 +612,6 @@ function NUIService.NUIFocusOff()
 	NUIService.CloseInv()
 end
 
-function NUIService.OnKey()
-	if IsControlJustReleased(1, Config.OpenKey) and IsInputDisabled(0) then
-		if InInventory then
-			NUIService.CloseInv()
-			Wait(1000)
-		else
-			NUIService.OpenInv()
-			Wait(1000)
-		end
-	end
-end
-
 function NUIService.LoadInv()
 	local payload = {}
 	local items = {}
@@ -658,10 +653,11 @@ function NUIService.LoadInv()
 		end
 	end
 	for _, currentWeapon in pairs(UserWeapons) do
+		local label = currentWeapon:getCustomLabel() or currentWeapon:getLabel()
 		local weapon = {}
 		weapon.count = currentWeapon:getTotalAmmoCount()
 		weapon.limit = -1
-		weapon.label = currentWeapon:getLabel()
+		weapon.label = label
 		weapon.name = currentWeapon:getName()
 		weapon.metadata = {}
 		weapon.hash = GetHashKey(currentWeapon:getName())
@@ -672,6 +668,9 @@ function NUIService.LoadInv()
 		weapon.used = currentWeapon:getUsed()
 		weapon.desc = currentWeapon:getDesc()
 		weapon.group = 5
+		weapon.serial_number = currentWeapon:getSerialNumber()
+		weapon.custom_label = currentWeapon:getCustomLabel()
+		weapon.custom_desc = currentWeapon:getCustomDesc()
 
 		table.insert(items, weapon)
 	end
@@ -750,14 +749,20 @@ Citizen.CreateThread(function()
 	NUIService.initiateData()
 
 	while true do
-		NUIService.OnKey()
+		local sleep = 1000
+		if not InInventory then
+			sleep = 0
+			if IsControlJustReleased(1, Config.OpenKey) and IsInputDisabled(0) then
+				NUIService.OpenInv()
+			end
+		end
 
 		if Config.DisableDeathInventory then
 			if InInventory and IsPedDeadOrDying(PlayerPedId(), false) then
 				NUIService.CloseInv()
 			end
 		end
-		Wait(0)
+		Wait(sleep)
 	end
 end)
 
