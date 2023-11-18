@@ -14,7 +14,6 @@ SvUtils = {}
 
 --@Processing user when making inventory transactions
 local processingUser = {}
-math.randomseed(GetGameTimer())
 
 ---return a table will all weapons that match the name
 ---@param invId string
@@ -196,50 +195,5 @@ function SvUtils.DoesItemExist(itemName, api)
     else
         Log.error("[^2" .. api .. "7] Item [^3" .. tostring(itemName) .. "^7] does not exist in DB.")
         return false
-    end
-end
-
---- generate a weapon label
----@param name string weapon name
----@return string
-function SvUtils.GenerateWeaponLabel(name)
-    for key, value in ipairs(SharedData.Weapons) do
-        if value.HashName == name then
-            return value.Name
-        end
-    end
-    return ""
-end
-
---- filter weapons that should not have a serial number
----@param name string weapon name
----@return boolean
-function SvUtils.filterWeaponsSerialNumber(name)
-    for _, weapon in pairs(Config.noSerialNumber) do
-        if weapon == name then
-            return false
-        end
-    end
-    return true
-end
-
---- generate a unique serial number
----@return string
-function SvUtils.GenerateSerialNumber(name)
-    if not SvUtils.filterWeaponsSerialNumber(name) then
-        return ""
-    end
-    local timeStamp = os.time()
-    local randomNumber = math.random(1000, 9999)
-    return string.format("%s-%s", timeStamp, randomNumber)
-end
-
-
---- discord webhook service
----@param data {title: string, webhook: string, description: string, color: number, name: string, logo: string, footerlogo: string, avatar: string, source: number, target: number}
-function SvUtils.SendDiscordWebhook(data)
-    local _source = data.source
-    if _source then
-        Core.AddWebhook(data.title, data.webhook, data.description, data.color, data.name)
     end
 end

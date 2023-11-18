@@ -48,25 +48,45 @@ AddEventHandler("vorpinventory:getLabelFromId", function(id, item2, cb)
     end)
 end)
 
+RegisterServerEvent("vorpinventory:itemlog")
+AddEventHandler("vorpinventory:itemlog", function(_source, targetHandle, itemName, amount)
+    local name = GetPlayerName(_source)
+    local name2 = GetPlayerName(targetHandle)
+    local description = name .. T.transfered .. amount .. " " .. itemName .. T.to .. name2
+    Core.AddWebhook(_source, Config.webhook, description, color, Name, logo, footerlogo, avatar)
+end)
+
+RegisterServerEvent("vorpinventory:weaponlog")
+AddEventHandler("vorpinventory:weaponlog", function(targetHandle, data)
+    local _source = source
+    local name = GetPlayerName(_source)
+    local name2 = GetPlayerName(targetHandle)
+    local description = name .. T.transfered ..
+        data.item .. T.to .. name2 .. T.withid .. data.id
+    Core.AddWebhook(_source, Config.webhook, description, color, Name, logo, footerlogo, avatar) -- if undefined it will choose vorp default.
+end)
+
+RegisterServerEvent("vorpinventory:moneylog")
+AddEventHandler("vorpinventory:moneylog", function(targetHandle, amount)
+    local _source = source
+    local name = GetPlayerName(_source)
+    local name2 = GetPlayerName(targetHandle)
+    local description = name .. T.transfered .. " $" .. amount .. " " .. T.to .. name2
+    Core.AddWebhook(_source, Config.webhook, description, color, Name, logo, footerlogo, avatar)
+end)
+
 RegisterServerEvent("vorpinventory:netduplog")
 AddEventHandler("vorpinventory:netduplog", function()
     local _source = source
-    local playername = GetPlayerName(_source)
-    local description = Logs.NetDupWebHook.Language.descriptionstart ..
-        name .. Logs.NetDupWebHook.Language.descriptionend
+    local name = GetPlayerName(_source)
+    local description = Config.NetDupWebHook.Language.descriptionstart ..
+        name .. Config.NetDupWebHook.Language.descriptionend
 
-    if Logs.NetDupWebHook.Active then
-        Info = {
-            source = _source,
-            title = Config.NetDupWebHook.Language.title,
-            name = playername,
-            description = description,
-            webhook = Logs.NetDupWebHook.webhook,
-            color = Logs.NetDupWebHook.color
-        }
-        SvUtils.SendDiscordWebhook(Info)
+    if Config.NetDupWebHook.Active then
+        Core.AddWebhook(Config.NetDupWebHook.Language.title, Config.webhook, description, color, name, logo, footerlogo,
+            avatar)
     else
-        print('[' .. Logs.NetDupWebHook.Language.title .. '] ', description)
+        print('[' .. Config.NetDupWebHook.Language.title .. '] ', description)
     end
 end)
 
@@ -82,7 +102,6 @@ Core.addRpcCallback("vorp_inventory:Server:CanOpenCustom", function(source, cb, 
         return cb(true)
     end
 
-    Core.NotifyObjective(_source, "someone is using this stash, wait for your turn", 5000)
     return cb(false)
 end)
 
@@ -103,9 +122,9 @@ AddEventHandler('playerDropped', function()
     allplayersammo[_source] = nil
 
     -- if player is stil in inventory check and remove
-    for i, value in pairs(InventoryBeingUsed) do
+    for i, value in ipairs(InventoryBeingUsed) do
         if value == _source then
-            InventoryBeingUsed[i] = nil
+            table.remove(InventoryBeingUsed, i)
             break
         end
     end
@@ -113,7 +132,6 @@ AddEventHandler('playerDropped', function()
     -- remove weapons from cache on player leave
     local weapons = UsersWeapons.default
     local char = Core.getUser(_source).getUsedCharacter
-
     if char then
         local charid = char.charIdentifier
         for key, value in pairs(weapons) do
@@ -124,3 +142,4 @@ AddEventHandler('playerDropped', function()
         end
     end
 end)
+

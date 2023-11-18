@@ -53,6 +53,7 @@ InventoryApiService.addWeaponBullets = function(bulletType, qty)
     NUIService.LoadInv()
 end
 
+
 InventoryApiService.subWeaponBullets = function(weaponId, bulletType, qty)
     if UserWeapons[weaponId] ~= nil then
         UserWeapons[weaponId]:subAmmo(bulletType, qty)
