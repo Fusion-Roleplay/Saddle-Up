@@ -2993,49 +2993,6 @@ Items.Consumables =
                     soundRef = "Consumption_Sounds"
                 }
             },
-            blackcoffee = {
-                -- item name like in your database
-                removethirst          = 0,
-                removehunger          = 0,
-                removestamina         = 0,
-                removehealth          = 0,
-                addhealth             = 0,
-                addstamina            = 10,
-                addhunger             = 0,
-                addthirst             = 10,
-                addgooldstaminaInner  = 0,
-                addgooldstaminaOutter = 20,
-                addgoldhealthInner    = 0,
-                addgoldhealthOutter   = 0,
-                Type                  = "drink",
-                animationtype         = "mug",
-                description           = "Provided by Jack&Jill", -- provide a custom description for this item
-                model                 = "p_mugCoffee01x",
-                Drunk                 = false,
-                DrunkEffect           = "MP_Downed",
-                UseDrunkEffect        = false,
-                DrunkDuration         = 0,
-                TimesUsed             = 1,
-                amountToCool          = 0,
-                cooldown              = 0,
-                amountToWarm          = 5,
-                warmup                = 30,
-                requiredItem          = false,
-                removeRequiredItem    = false, -- should it remove the required item after use ?
-                addStress             = 0,
-                addAddiction          = 0,
-                removeAddiction       = 0,
-                removeStress          = 0,
-                effects               = {
-                    addEffect = false,
-                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
-                },
-                sounds                = {
-                    addSound = false,
-                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
-                    soundRef = "Consumption_Sounds"
-                }
-            },
             water = {
                 removethirst          = 0,
                 removehunger          = 0,
