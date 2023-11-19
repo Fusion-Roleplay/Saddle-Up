@@ -91,10 +91,10 @@ Config.playerTargetRange = 1.5
 Config.inspectCommand = 'inspect'
 Config.inspectJobs = { 'doctor', 'police' } 
 Config.allowPlayerInspecting = true
-Config.playerInspectRange = 1.5
+Config.playerInspectRange = 2.0
 
 -- NPC Revive System
-Config.noHeadshotRevive = true
+Config.noHeadshotRevive = false
 
 -- If you already have a bandana script, you can link it by adding an event when the bandana is up or down
 -- doctorjob script will listen for this event, data must be a boolean (true/false) for (up/down)
@@ -118,9 +118,9 @@ Config.hospitals = {
             -- if a player with one of these jobs is online
             -- the function will be disabled
             jobs = { 'doctor' },
-            healCost = 5.0,
-            reviveCost = 5.0,
-            reviveTime = 30,
+            healCost = 30.0,
+            reviveCost = 80.0,
+            reviveTime = 60,
             npcModel = 'CS_DrMalcolmMacIntosh',
             coords = vector3(2721.34, -1231.71, 49.36),
             heading = 90.0,
@@ -139,9 +139,9 @@ Config.hospitals = {
             -- if a player with one of these jobs is online
             -- the function will be disabled
             jobs = { 'doctor' },
-            healCost = 5.0,
-            reviveCost = 5.0,
-            reviveTime = 30,
+            healCost = 30.0,
+            reviveCost = 80.0,
+            reviveTime = 60,,
             npcModel = 'CS_DrMalcolmMacIntosh',
             coords = vector3(1368.96, -1311.13, 77.99),
             heading = 150.64,
@@ -160,9 +160,9 @@ Config.hospitals = {
             -- if a player with one of these jobs is online
             -- the function will be disabled
             jobs = { 'doctor' },
-            healCost = 5.0,
-            reviveCost = 5.0,
-            reviveTime = 30,
+            healCost = 30.0,
+            reviveCost = 80.0,
+            reviveTime = 60,,
             npcModel = 'CS_DrMalcolmMacIntosh',
             coords = vector3(-288.03, 804.57, 119.44),
             heading = 277.11,
@@ -181,9 +181,9 @@ Config.hospitals = {
             -- if a player with one of these jobs is online
             -- the function will be disabled
             jobs = { 'doctor' },
-            healCost = 5.0,
-            reviveCost = 5.0,
-            reviveTime = 30,
+            healCost = 30.0,
+            reviveCost = 80.0,
+            reviveTime = 60,,
             npcModel = 'CS_DrMalcolmMacIntosh',
             coords = vector3(-1778.23, -374.99, 159.96),
             heading = 135.07,
@@ -202,9 +202,9 @@ Config.hospitals = {
             -- if a player with one of these jobs is online
             -- the function will be disabled
             jobs = { 'doctor' },
-            healCost = 5.0,
-            reviveCost = 5.0,
-            reviveTime = 30,
+            healCost = 30.0,
+            reviveCost = 80.0,
+            reviveTime = 60,,
             npcModel = 'CS_DrMalcolmMacIntosh',
             coords = vector3(-810.46, -1264.14, 43.74),
             heading = 314.36,
@@ -223,9 +223,9 @@ Config.hospitals = {
             -- if a player with one of these jobs is online
             -- the function will be disabled
             jobs = { 'doctor' },
-            healCost = 5.0,
-            reviveCost = 5.0,
-            reviveTime = 30,
+            healCost = 30.0,
+            reviveCost = 80.0,
+            reviveTime = 60,,
             npcModel = 'CS_DrMalcolmMacIntosh',
             coords = vector3(-3661.07, -2600.27, -13.24),
             heading = 184.13,
