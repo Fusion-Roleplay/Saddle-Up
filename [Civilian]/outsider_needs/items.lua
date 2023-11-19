@@ -38,7 +38,7 @@ Items = {}
 
 
 Items.Consumables = 
-    Types = {
+    Types == {
         ---------------------------------------------------------------------------------------
         ----------------------------------- * FOOD ITEMS *-------------------------------------
         -- types of animation  for  * eat * >>>  [ "hand" "sandwich" "bowl" "canned" "berry" ] each type has its own anmimation
