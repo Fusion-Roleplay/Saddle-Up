@@ -236,17 +236,18 @@ function RefreshBlips()
 end
 
 function RefreshNPCs()
-    for k,v in pairs(npcs) do
+    for k, v in pairs(npcs) do
         Citizen.InvokeNative(0xFAA3D236, v) -- DeleteEntity
     end
-    for k,v in pairs(Config.hospitals) do
+
+    for k, v in pairs(Config.hospitals) do
         if v.npc.enabled then
             local model = RequestModel(GetHashKey(v.npc.npcModel))
 
             while not HasModelLoaded(GetHashKey(v.npc.npcModel)) do
                 Wait(100)
             end
-    
+
             local spawnCoords = v.npc.coords
             local ped = CreatePed(GetHashKey(v.npc.npcModel), spawnCoords.x, spawnCoords.y, spawnCoords.z, v.npc.heading, false, true, true, true)
             Citizen.InvokeNative(0x283978A15512B2FE, ped, true)
@@ -258,6 +259,13 @@ function RefreshNPCs()
             SetBlockingOfNonTemporaryEvents(ped, true)
             SetModelAsNoLongerNeeded(GetHashKey(v.npc.npcModel))
             table.insert(npcs, ped)
+
+            -- Check if the player with the doctor job is within the radius of the NPC
+            local playerCoords = GetEntityCoords(PlayerPedId())
+            local npcRadius = v.npc.range
+            if #(spawnCoords - playerCoords) <= npcRadius and contains(Config.jobs, PlayerData.job) then
+                Citizen.InvokeNative(0xFAA3D236, ped) -- DeleteEntity
+            end
         end
     end
 end
