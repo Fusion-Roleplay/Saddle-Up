@@ -236,35 +236,39 @@ function RefreshBlips()
 end
 
 function RefreshNPCs()
-    for k, v in pairs(npcs) do
-        Citizen.InvokeNative(0xFAA3D236, v) -- DeleteEntity
-    end
+    while true do
+        Citizen.Wait(5000) -- Adjust the delay based on your needs
 
-    for k, v in pairs(Config.hospitals) do
-        if v.npc.enabled then
-            local model = RequestModel(GetHashKey(v.npc.npcModel))
+        for k, v in pairs(npcs) do
+            Citizen.InvokeNative(0xFAA3D236, v) -- DeleteEntity
+        end
 
-            while not HasModelLoaded(GetHashKey(v.npc.npcModel)) do
-                Wait(100)
-            end
+        for k, v in pairs(Config.hospitals) do
+            if v.npc.enabled then
+                local model = RequestModel(GetHashKey(v.npc.npcModel))
 
-            local spawnCoords = v.npc.coords
-            local ped = CreatePed(GetHashKey(v.npc.npcModel), spawnCoords.x, spawnCoords.y, spawnCoords.z, v.npc.heading, false, true, true, true)
-            Citizen.InvokeNative(0x283978A15512B2FE, ped, true)
-            SetEntityNoCollisionEntity(PlayerPedId(), ped, false)
-            SetEntityCanBeDamaged(ped, false)
-            SetEntityInvincible(ped, true)
-            Wait(2000)
-            FreezeEntityPosition(ped, true)
-            SetBlockingOfNonTemporaryEvents(ped, true)
-            SetModelAsNoLongerNeeded(GetHashKey(v.npc.npcModel))
-            table.insert(npcs, ped)
+                while not HasModelLoaded(GetHashKey(v.npc.npcModel)) do
+                    Wait(100)
+                end
 
-            -- Check if the player with the doctor job is within the radius of the NPC
-            local playerCoords = GetEntityCoords(PlayerPedId())
-            local npcRadius = v.npc.range
-            if #(spawnCoords - playerCoords) <= npcRadius and contains(Config.jobs, PlayerData.job) then
-                Citizen.InvokeNative(0xFAA3D236, ped) -- DeleteEntity
+                local spawnCoords = v.npc.coords
+                local ped = CreatePed(GetHashKey(v.npc.npcModel), spawnCoords.x, spawnCoords.y, spawnCoords.z, v.npc.heading, false, true, true, true)
+                Citizen.InvokeNative(0x283978A15512B2FE, ped, true)
+                SetEntityNoCollisionEntity(PlayerPedId(), ped, false)
+                SetEntityCanBeDamaged(ped, false)
+                SetEntityInvincible(ped, true)
+                Wait(2000)
+                FreezeEntityPosition(ped, true)
+                SetBlockingOfNonTemporaryEvents(ped, true)
+                SetModelAsNoLongerNeeded(GetHashKey(v.npc.npcModel))
+                table.insert(npcs, ped)
+
+                -- Check if the player with the doctor job is within the radius of the NPC
+                local playerCoords = GetEntityCoords(PlayerPedId())
+                local npcRadius = v.npc.range
+                if #(spawnCoords - playerCoords) <= npcRadius and contains(Config.jobs, PlayerData.job) then
+                    Citizen.InvokeNative(0xFAA3D236, ped) -- DeleteEntity
+                end
             end
         end
     end
