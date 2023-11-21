@@ -38,7 +38,7 @@ Items = {}
 
 
 Items.Consumables = {
-    Types = {
+    Types == {
         ---------------------------------------------------------------------------------------
         ----------------------------------- * FOOD ITEMS *-------------------------------------
         -- types of animation  for  * eat * >>>  [ "hand" "sandwich" "bowl" "canned" "berry" ] each type has its own anmimation
@@ -74,7 +74,7 @@ Items.Consumables = {
                 cooldown              = 0,                       -- duration it should last to cool down in seconds
                 amountToWarm          = 0,                       -- a number to warm the player up for cold weathers  or hot food
                 warmup                = 0,                       -- duration it should last to warm up in seconds
-                requiredItem          = false,                   -- does it require an extra item to use this ? like a spoon ? its a table {"itemname", "itemname2"} or just "itemname"
+                requiredItem          = false,                   -- does it require an extra item to use this ? like a spoon ? its a table {"itemname", "itemname2"}
                 removeRequiredItem    = false,                   -- should it remove the required item after use ?
                 addStress             = 0,                       -- should this item add stress to player ? max is 100
                 addAddiction          = 0,                       --  should this item add addiction to player ? max is 100
@@ -113,10 +113,10 @@ Items.Consumables = {
                 Drunkness             = 0.0,
                 DrunkDuration         = 0,
                 TimesUsed             = 1,
-                amountToCool          = 100,
-                cooldown              = 60,
-                amountToWarm          = 0,
-                warmup                = 0,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 20,
+                warmup                = 10,
                 requiredItem          = false,
                 removeRequiredItem    = false, -- should it remove the required item after use ?
                 addStress             = 0,
@@ -135,138 +135,9 @@ Items.Consumables = {
                 -- give item back NEW FEATURE
                 giveItemBack          = true, -- should it give the item back after use ? like a bowl or spoon
                 itemsToGive           = {
-                    appleseeds = 2,           -- item name and ammount
+                    apple = 2,                -- item name and ammount
                 }
 
-            },
-            consumable_fruitsalad = {
-                removethirst          = 0,
-                removehunger          = 0,
-                removestamina         = 0,
-                removehealth          = 0,
-                addhealth             = 20,
-                addstamina            = 0,
-                addhunger             = 30,
-                addthirst             = 0,
-                addgooldstaminaInner  = 0,
-                addgooldstaminaOutter = 0,
-                addgoldhealthInner    = 0,
-                addgoldhealthOutter   = 0,
-                Type                  = "eat",
-                animationtype         = "canned",                -- types for eat [ hand sandwich bowl canned berry ]
-                description           = "Provided by Jack&Jill", -- provide a custom description for this item
-                model                 = "s_canpineapple01x",     -- not all models will be positioned correctly
-                Drunk                 = false,
-                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
-                UseDrunkEffect        = false,
-                Drunkness             = 0.0,
-                DrunkDuration         = 0,
-                TimesUsed             = 1,
-                amountToCool          = 0,
-                cooldown              = 0,
-                amountToWarm          = 0,
-                warmup                = 0,
-                requiredItem          = false,
-                removeRequiredItem    = false, -- should it remove the required item after use ?
-                addStress             = 0,
-                addAddiction          = 0,
-                removeAddiction       = 0,
-                removeStress          = 0,
-                effects               = {
-                    addEffect = false,
-                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
-                },
-                sounds                = {
-                    addSound = false,
-                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
-                    soundRef = "Consumption_Sounds"
-                }
-            },
-            knotmeat = {
-                removethirst          = 0,
-                removehunger          = 0,
-                removestamina         = 0,
-                removehealth          = 0,
-                addhealth             = 0,
-                addstamina            = 0,
-                addhunger             = 50,
-                addthirst             = 0,
-                addgooldstaminaInner  = 0,
-                addgooldstaminaOutter = 0,
-                addgoldhealthInner    = 0,
-                addgoldhealthOutter   = 0,
-                Type                  = "eat",
-                animationtype         = "bowl",
-                description           = "Provided by Jack&Jill", -- provide a custom description for this item
-                model                 = "",                      -- bowl do not need object
-                Drunk                 = false,
-                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
-                UseDrunkEffect        = false,
-                Drunkness             = 0.0,
-                DrunkDuration         = 0,
-                TimesUsed             = 1,
-                amountToCool          = 0,
-                cooldown              = 0,
-                amountToWarm          = 10,    -- can be used as spicy food
-                warmup                = 0,     -- how long should the hot last
-                requiredItem          = false, -- you can require a spoon in order to eat from a bowl leave false if you dont want
-                removeRequiredItem    = false, -- should it remove the required item after use ?
-                addStress             = 0,
-                addAddiction          = 0,
-                removeAddiction       = 0,
-                removeStress          = 0,
-                effects               = {
-                    addEffect = false,
-                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
-                },
-                sounds                = {
-                    addSound = false,
-                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
-                    soundRef = "Consumption_Sounds"
-                }
-            },
-            consumable_chocolate = {
-                removethirst          = 0,
-                removehunger          = 0,
-                removestamina         = 0,
-                removehealth          = 0,
-                addhealth             = 10,
-                addstamina            = 0,
-                addhunger             = 8,
-                addthirst             = 0,
-                addgooldstaminaInner  = 0,
-                addgooldstaminaOutter = 0,
-                addgoldhealthInner    = 0,
-                addgoldhealthOutter   = 0,
-                Type                  = "eat",
-                animationtype         = "berry",
-                description           = "Provided by Jack&Jill", -- provide a custom description for this item
-                model                 = "s_inv_raspberry01bx",   -- berries no need for model
-                Drunk                 = false,
-                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
-                UseDrunkEffect        = false,
-                Drunkness             = 0.0,
-                DrunkDuration         = 0,
-                TimesUsed             = 1,
-                amountToCool          = 0,
-                cooldown              = 0,
-                amountToWarm          = 0,
-                warmup                = 0,
-                requiredItem          = false,
-                removeRequiredItem    = false, -- should it remove the required item after use ?
-                addStress             = 0,
-                addAddiction          = 0,
-                removeAddiction       = 0,
-                removeStress          = 0,
-                effects               = {
-                    addEffect = false,
-                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
-                },
-                sounds                = {
-                    addSound = false,
-                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
-                    soundRef = "Consumption_Sounds"
-                }
             },
             banana = {
                 removethirst          = 0,
@@ -2827,9 +2698,52 @@ Items.Consumables = {
                 removestamina         = 0,
                 removehealth          = 0,
                 addhealth             = 0,
-                addstamina            = 150,
+                addstamina            = 50,
                 addhunger             = 0,
-                addthirst             = 50,
+                addthirst             = 20,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "drink",
+                animationtype         = "fastdrink",
+                description           = "Provided by Jack Jill", -- provide a custom description for this item
+                model                 = "s_inv_moonshine01x",
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",
+                UseDrunkEffect        = false,
+                DrunkDuration         = 0,
+                TimesUsed             = 3,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 5,
+                warmup                = 30,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,     -- max is 100
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false, -- effect name
+                    effectName = "",   -- effect name
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up",
+                    soundRef = "Consumption_Sounds"
+                }
+
+            },
+            consumable_raspberrywater = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 0,
+                addstamina            = 50,
+                addhunger             = 0,
+                addthirst             = 20,
                 addgooldstaminaInner  = 0,
                 addgooldstaminaOutter = 0,
                 addgoldhealthInner    = 0,
@@ -2992,6 +2906,178 @@ Items.Consumables = {
                     soundName = "Core_Fill_Up",
                     soundRef = "Consumption_Sounds"
                 }
+            },
+            bwb_cwc = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 0,
+                addstamina            = 150,
+                addhunger             = 0,
+                addthirst             = 40,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "drink",
+                animationtype         = "fastdrink",
+                description           = "Provided by Black Water Bakery", -- provide a custom description for this item
+                model                 = "s_inv_moonshine01x",
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",
+                UseDrunkEffect        = false,
+                DrunkDuration         = 0,
+                TimesUsed             = 3,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 5,
+                warmup                = 30,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,     -- max is 100
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false, -- effect name
+                    effectName = "",   -- effect name
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up",
+                    soundRef = "Consumption_Sounds"
+                }
+
+            },
+            bwb_fp = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 0,
+                addstamina            = 150,
+                addhunger             = 0,
+                addthirst             = 40,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "drink",
+                animationtype         = "fastdrink",
+                description           = "Provided by Black Water Bakery", -- provide a custom description for this item
+                model                 = "s_inv_moonshine01x",
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",
+                UseDrunkEffect        = false,
+                DrunkDuration         = 0,
+                TimesUsed             = 3,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 5,
+                warmup                = 30,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,     -- max is 100
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false, -- effect name
+                    effectName = "",   -- effect name
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up",
+                    soundRef = "Consumption_Sounds"
+                }
+
+            },
+            bwb_pit = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 0,
+                addstamina            = 150,
+                addhunger             = 0,
+                addthirst             = 40,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "drink",
+                animationtype         = "fastdrink",
+                description           = "Provided by Black Water Bakery", -- provide a custom description for this item
+                model                 = "s_inv_moonshine01x",
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",
+                UseDrunkEffect        = false,
+                DrunkDuration         = 0,
+                TimesUsed             = 3,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 5,
+                warmup                = 30,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,     -- max is 100
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false, -- effect name
+                    effectName = "",   -- effect name
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up",
+                    soundRef = "Consumption_Sounds"
+                }
+
+            },
+            bwb_pm = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 0,
+                addstamina            = 150,
+                addhunger             = 0,
+                addthirst             = 40,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "drink",
+                animationtype         = "fastdrink",
+                description           = "Provided by Black Water Bakery", -- provide a custom description for this item
+                model                 = "s_inv_moonshine01x",
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",
+                UseDrunkEffect        = false,
+                DrunkDuration         = 0,
+                TimesUsed             = 3,
+                amountToCool          = 0,
+                cooldown              = 0,
+                amountToWarm          = 5,
+                warmup                = 30,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,     -- max is 100
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false, -- effect name
+                    effectName = "",   -- effect name
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up",
+                    soundRef = "Consumption_Sounds"
+                }
+
             },
         },
         ---------------------------------------------------------------------------------------
@@ -3350,7 +3436,6 @@ Items.Consumables = {
                 removeStress          = 0,
 
             },
-
             peyote = {
                 removethirst          = 0,
                 removehunger          = 0,
@@ -3373,7 +3458,6 @@ Items.Consumables = {
                 removeStress          = 0,
 
             },
-
             hemp = {
                 removethirst          = 0,
                 removehunger          = 0,

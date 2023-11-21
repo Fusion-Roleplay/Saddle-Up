@@ -1,3 +1,4 @@
+
 function makeDraggable(element, className) {
 	element.draggable({
 		stop: function (event, ui) {
@@ -69,6 +70,7 @@ window.addEventListener("message", function (event) {
 		}
 	 */
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
 	document.body.style.display = "none";
@@ -291,10 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					}
 
 				} else {
-					$(".thirstimg, .staminaimg, .staminaHorseimg").css("animation", "none");
-					$(".stamina, .thirst, .horseStamina ").css("animation", "none");
-					$(".hunger, .hungerimg").css("animation", "none");
-					$(".stressimg, .stress").css("animation", "none");
+					$(".stamina, .thirst, .horseStamina, .hunger, .hungerimg, .stressimg, .stress, .thirstimg, .staminaimg, .staminaHorseimg").css("animation", "none");
 				}
 
 				//pulse
@@ -307,22 +306,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			if (item.type === "speak") {
 				voice.innerHTML = item.rangeType;
-				/* setTimeout(function () {
-					voice.innerHTML = "";
-				}, 500); */
 			}
 
 			if (item.type === "ShowAll") {
 				if (item.HideUi) {
-					$(".container").attr(
-						"style",
-						"left: -2000px;opacity: 0;visibility: hidden;transition: left 0s 0.8s, visibility 0s 0.8s, opacity 0.8s;"
-					);
+					$(".container").attr("style", "left: -2000px;opacity: 0;visibility: hidden;transition: left 0s 0.8s, visibility 0s 0.8s, opacity 0.8s;");
 				} else {
-					$(".container").attr(
-						"style",
-						"left: 0; opacity: 1;visibility: visible;transition: left 0s, visibility 0s, opacity 0.8s;"
-					);
+					$(".container").attr("style", "left: 0; opacity: 1;visibility: visible;transition: left 0s, visibility 0s, opacity 0.8s;");
 				}
 			}
 
@@ -345,67 +335,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	});
 
-	//functions
 	function updateStamina(item) {
-		$(".stamina").css("animation", "pulseimg 1s;animation-iteration-count: 1;");
-		$(".staminaimg").css(
-			"animation",
-			"pulseicon 1s;animation-iteration-count: 1;"
-		);
+		$(".stamina .staminaimg").css("animation", "pulseimg 1s;animation-iteration-count: 1;");
 		$(".staminaimg").attr("src", item.img);
 		hunger.innerHTML = item.Hv;
 		setTimeout(function () {
 			hunger.innerHTML = "";
-			$(".stamina").css("animation", "none");
 			$(".staminaimg").css("animation", "none");
 		}, 5000);
 	}
 
 	function updateHealth(item) {
-		$(".health").css("animation", "pulseimg 1s;animation-iteration-count: 1;");
-		$(".healthimg").css(
-			"animation",
-			"pulseicon 1s;animation-iteration-count: 1;"
-		);
+		$(".health .healthimg").css("animation", "pulseimg 1s;animation-iteration-count: 1;");
 		$(".healthimg").attr("src", item.img);
 		hunger.innerHTML = item.Hv;
 		setTimeout(function () {
 			hunger.innerHTML = "";
-			$(".health").css("animation", "none");
-			$(".healthimg").css("animation", "none");
+			$(".health .healthimg").css("animation", "none");
 		}, 5000);
 	}
 
 	function updateHunger(item) {
-		$(".hunger").css("animation", "pulseimg 1s;animation-iteration-count: 1;");
-		$(".hungerimg").css(
-			"animation",
-			"pulseicon 1s;animation-iteration-count: 1;"
-		);
+		$(".hunger .hungerimg").css("animation", "pulseimg 1s;animation-iteration-count: 1;");
 		$(".hungerimg").attr("src", item.img);
 		hunger.innerHTML = item.Hv;
 		setTimeout(function () {
 			hunger.innerHTML = "";
-			$(".hunger").css("animation", "none");
-			$(".hungerimg").css("animation", "none");
+			$(".hunger .hungerimg").css("animation", "none");
 		}, 5000);
 	}
 
 	function updateThirst(item) {
-		$(".thirstimg").css(
-			"animation",
-			"pulseicon 1s ;animation-iteration-count: 1;"
-		);
-		$(".thirst").css(
-			"animation",
-			"pulseimg 1s ; animation-iteration-count: 1;"
-		);
+		$(".thirstimg .thirst").css("animation", "pulseicon 1s ;animation-iteration-count: 1;");
 		$(".thirstimg").attr("src", item.img1);
 		thirst.innerHTML = item.Tv;
 		setTimeout(function () {
 			thirst.innerHTML = "";
-			$(".thirst").css("animation", "none");
-			$(".thirstimg").css("animation", "none");
+			$(".thirst .thirstimg").css("animation", "none");
 		}, 5000);
 	}
+
+
 });

@@ -49,3 +49,21 @@ ALTER TABLE `visn_telegram_characters`
 
 INSERT INTO `items` (`item`, `label`, `limit`, `can_remove`, `type`, `usable`, `metadata`, `desc`) VALUES
 ('telegram', 'Telegram', 5, 1, 'item_standard', 1, '{}', 'A retrieved telegram from a post office.');
+
+-- Update: 19.11.2023
+
+CREATE TABLE `visn_telegram_log` (
+  `id` int(11) NOT NULL,
+  `source_char_id` int(11) NOT NULL,
+  `target_char_id` int(11) NOT NULL,
+  `telegram_id` int(11) NOT NULL,
+  `message` text NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+
+ALTER TABLE `visn_telegram_log`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `visn_telegram_log`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;

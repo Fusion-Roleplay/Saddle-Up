@@ -1,6 +1,12 @@
 Config = {}
 Config.Language = "en"
-
+Config.Log = true -- if true webhook channel send buy or sell log
+---- NEW ----
+Config.Webhook = {
+    WebhookLogo = "https://cdn.discordapp.com/attachments/1108845226233184377/1160266389433618522/1024x1024.png",
+    WebhookImage = "https://cdn.discordapp.com/attachments/1108845226233184377/1162786499423633529/Profil-afis.png",
+    WebhookChannel = "https://discord.com/api/webhooks/1176350940949913731/nVS8eYHpPZLL4-pIJMpVTXZ_XRRzosnxOjWFaRDNioc8Eh_9O4VHgT7tsLdy21sojJ_E"
+}
 Config.Locale = {
     ["en"] = {
         ["nomoney"] = "You have no money!",
@@ -13,6 +19,8 @@ Config.Locale = {
         ["invalidCount"] = "Invalid Count!",
         ------ NEW --------
         ["shopisclose"] = "Shop is closed!",
+        ["buylog"] = "I bought ${count}x of ${item} for ${price} dollars",
+        ["sellog"] = "I sold ${count}x of ${item} for ${price} dollars",
     }
 }
 

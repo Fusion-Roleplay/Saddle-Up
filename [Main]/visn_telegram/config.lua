@@ -10,6 +10,7 @@ Config.Language = "en"
 Config.CharNamesAllowedAsReciever = true -- If true, char names can also be receiver instead of the post office number only (Char Name will be resolved to the post office number)
 Config.Year = 1899 -- Year of the telegram (used for the letter)
 Config.EnableReceiveNotification = true -- Enable or disable the notification when you receive a telegram
+Config.OpenMenuKey = "INPUT_DYNAMIC_SCENARIO" -- "E" | https://github.com/femga/rdr3_discoveries/blob/master/Controls/README.md
 Config.PostOffices = {
     {
         coords = vector3(2749.57, -1399.69, 46.19), -- Location of the post office (blip and marker)

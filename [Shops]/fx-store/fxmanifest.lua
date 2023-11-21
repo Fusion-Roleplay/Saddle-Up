@@ -3,7 +3,7 @@ games {"rdr3"}
 rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aware my resources *will* become incompatible once RedM ships.'
 description 'Fixitfy Store System'
 author "Fixitfy Development"
-version '1.5' 
+version '1.7' 
 
 shared_scripts {
     "framework/vorp.lua",

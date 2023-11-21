@@ -58,7 +58,7 @@ Needs.HealStats(_source, stats) -- heal each or all needs
  -- get all player data
  local playerdata = Needs.GetAllData(source) -- table
  
- print(playerdata.stress,playerdata.sddiction,playerdata.thirst,playerdata.hunger,playerdata.bodytemp,playerdata.dirtiness)
+ print(playerdata.stress,playerdata.addiction,playerdata.thirst,playerdata.hunger,playerdata.bodytemp,playerdata.dirtiness)
  -- have in mind the values will constantlychange , so make sure you dont store them  just use when you need.
  
 ```
