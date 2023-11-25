@@ -39,7 +39,7 @@ Config = {
     ---MULTICHAR
     SaveSteamNameDB          = true,  -- TRUE if you want save steamname on character DB when player drop (need to update SQL)
     UseCharPermission        = false, -- | if false it will let players create maxchars bellow
-    MaxCharacters            = 5,     -- MAX ALLOWED TO BE CREATED [if UseCharPermission = true, SELECTED players(with command) can create MaxCharacters characters / if UseCharPermission = false, players can create MaxCharacters characters]
+    MaxCharacters            = 3,     -- MAX ALLOWED TO BE CREATED [if UseCharPermission = true, SELECTED players(with command) can create MaxCharacters characters / if UseCharPermission = false, players can create MaxCharacters characters]
     --========================================
     --UI CORES
     HideOnlyDEADEYE          = true,
@@ -49,7 +49,7 @@ Config = {
     ---WEBHOOKS
     -- see commands.config
     webhookColor             = 16711680,                            --EMBED COLOR
-    name                     = "VORP",                              --NAME OF EMBED
+    name                     = "Saddle Up",                              --NAME OF EMBED
     logo                     = "https://via.placeholder.com/30x30", --HEAD LOGO
     footerLogo               = "https://via.placeholder.com/30x30", --FOOTER LOGO
     Avatar                   = "https://via.placeholder.com/30x30", -- AVATAR LOGO
@@ -130,13 +130,13 @@ Config = {
     SetBothDBadmin           = false, -- if set true should the command addGroup set admins on both tables in databse!
     --=======================================================
     ---BUILT IN RICH PRESENCE DISCORD
-    maxplayers               = 128,                       -- change to the number of players that can get in to your server
-    appid                    = nil,                       -- Application ID (Replace this with you own)
-    biglogo                  = "LOGOname",                -- image assets name for the "large" icon.
+    maxplayers               = 48,                       -- change to the number of players that can get in to your server
+    appid                    = 842160449549893652,       -- Application ID (Replace this with you own)
+    biglogo                  = "logo-black",                -- image assets name for the "large" icon.
     biglogodesc              = " Redm Server Connect: ",  -- text when hover over image
-    smalllogo                = "smallboy name",           -- image assets name for the "small" icon.(OPTIONAL)
+    smalllogo                = "logo-black",           -- image assets name for the "small" icon.(OPTIONAL)
     smalllogodesc            = "Join us for a good time", -- text when hover over image
-    discordlink              = "https://discord.gg/",     -- discord link
+    discordlink              = "https://discord.gg/pVz8QC696e",     -- discord link
     richpresencebutton       = "Join Discord",            --set button text for Rich Presence Button
     shownameandid            = true,                      --show player steam name and id
     --======================================================
