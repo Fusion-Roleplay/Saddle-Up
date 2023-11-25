@@ -1,7 +1,7 @@
 Config                = {
     -- in vorp core config disable health and stamina UI cores
     --=================================== HUNGER AND THIRST ======================================--
-    Devmode                  = true,  -- set to true if you testing things
+    Devmode                  = false,  -- set to true if you testing things
     -- MAX THIRST AND HUNGER IS 100
     saveNeedsTick            = 60000, -- save player data on server every 1 minute
     removehunger             = 0.1,   -- how much to remove at every tick
@@ -26,7 +26,7 @@ Config                = {
         seven = "img/rpg_cold.png",                      -- normal
     },
     border                   = " 5px ",                  -- for the UI body temp border to make it ticker or slimer
-    localTempCelsius         = true,                     -- if false will use fahrenheit
+    localTempCelsius         = false,                     -- if false will use fahrenheit
     whenTooHotRemoveThirst   = 0.5,                      -- amount to remove thirst when too hot  [startRemoveThirst = 30,] define here when should be too hot this will also effect clothing
     whenTooColdRemoveHunger  = 0.5,                      -- amount to remove hunger when too cold [startRemoveHunger = -5,] define bellow when should be too cold this will also effect clothing
     TickTemperature          = 6000,                     -- at every 6 seconds if too cold or too hot  remove hunger or thirst? increase or decrease use in miliseconds
@@ -97,7 +97,7 @@ Config                = {
     -------------------------------------------------------------
     ------------- * ADDICTION & STRESS SYSTEM * -----------------
     Stress                   = {
-        usestress = true,            -- if true will use stress
+        usestress = false,            -- if true will use stress
         WaterFoodLevel = 1,          --  at every one second it will add this value if food or water is below 0
         --* NEW *--
         ShootingLevel = 1,           -- at every one second it will add this value if player is shooting  <<<<<<NEW FEATURE >>>>>>>
@@ -136,7 +136,7 @@ Config                = {
     },
 
     Addiction                = {
-        useaddiction = true,                  -- if true will use addiction
+        useaddiction = false,                  -- if true will use addiction
         Level1 = {
             AddictionRemoveHungerLevel = 0.5, -- remove hunger while addicted,
             AddictionRemoveThirstLevel = 0.5, -- remove thirst while addicted
