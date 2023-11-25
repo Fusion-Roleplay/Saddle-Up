@@ -268,6 +268,92 @@ Items.Consumables = {
                     soundRef = "Consumption_Sounds"
                 }
             },
+            banana = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 0,
+                addstamina            = 0,
+                addhunger             = 11,
+                addthirst             = 8,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_banana_day_01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 100,
+                cooldown              = 60,
+                amountToWarm          = 0,
+                warmup                = 0,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+            },
+            beefjerky = {
+                removethirst          = 0,
+                removehunger          = 0,
+                removestamina         = 0,
+                removehealth          = 0,
+                addhealth             = 0,
+                addstamina            = 0,
+                addhunger             = 15,
+                addthirst             = 0,
+                addgooldstaminaInner  = 0,
+                addgooldstaminaOutter = 0,
+                addgoldhealthInner    = 0,
+                addgoldhealthOutter   = 0,
+                Type                  = "eat",
+                animationtype         = "hand",                  -- types for eat [ hand sandwich bowl canned berry ]
+                description           = "Provided by Jack&Jill", -- provide a custom description for this item
+                model                 = "p_cs_jerky01x",        -- not all models will be positioned correctly
+                Drunk                 = false,
+                DrunkEffect           = "MP_Downed",             -- play a light effect only when you too drunk it will increase
+                UseDrunkEffect        = false,
+                Drunkness             = 0.0,
+                DrunkDuration         = 0,
+                TimesUsed             = 1,
+                amountToCool          = 100,
+                cooldown              = 60,
+                amountToWarm          = 0,
+                warmup                = 0,
+                requiredItem          = false,
+                removeRequiredItem    = false, -- should it remove the required item after use ?
+                addStress             = 0,
+                addAddiction          = 0,
+                removeAddiction       = 0,
+                removeStress          = 0,
+                effects               = {
+                    addEffect = false,
+                    effectName = "PlayerOverpower", -- effect name example this one will do goldcore effect you can find more in rdr3 discoveries github
+                },
+                sounds                = {
+                    addSound = false,
+                    soundName = "Core_Fill_Up", --  you can find more in rdr3 discoveries github
+                    soundRef = "Consumption_Sounds"
+                },
+            },
         },
         ----------------------------------------------------------------------------------------
         ----------------------------------- * DRINK ITEMS *-------------------------------------
