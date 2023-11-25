@@ -1,7 +1,7 @@
-Config                    = {
+Config                = {
     -- in vorp core config disable health and stamina UI cores
     --=================================== HUNGER AND THIRST ======================================--
-    Devmode                  = false,  -- set to true if you testing things
+    Devmode                  = true,  -- set to true if you testing things
     -- MAX THIRST AND HUNGER IS 100
     saveNeedsTick            = 60000, -- save player data on server every 1 minute
     removehunger             = 0.1,   -- how much to remove at every tick
@@ -14,7 +14,7 @@ Config                    = {
     removeHealthThirst       = 1,     -- once  thirst is 0 remove this much -- NEW
     NotifyThirst             = 15000, -- time for each notification to draw when Thirst is low
     NotifyHunger             = 15000, -- dont make it too long or players prob wont see them changing
-    doAudioPain              = false, -- if true will disable audio pain when hunger or thirst is lower -- >>>>>>>>>>>> NEW FEATURE <<<<<<<<<<<< --
+    doAudioPain              = false, -- if false will disable audio pain when hunger or thirst is lower -- >>>>>>>>>>>> NEW FEATURE <<<<<<<<<<<< --
     --=================================== TEMPERATURE ============================================--
     Colors                   = {
         one = "img/rpg_verycold.png",                    -- very cold
@@ -51,7 +51,7 @@ Config                    = {
     ------------------------
     ---- * UI VOICE * ------
     useUiVoice               = true,
-    UseSaltyChat             = false,       -- if you use salty chat set this to true
+    UseSaltyChat             = true,       -- if you use salty chat set this to true
     PressTalking             = 0x4BC9DABB, --N key only works for pma oice
     voice                    = {
         whisper = {
@@ -97,7 +97,7 @@ Config                    = {
     -------------------------------------------------------------
     ------------- * ADDICTION & STRESS SYSTEM * -----------------
     Stress                   = {
-        usestress = false,            -- if true will use stress
+        usestress = true,            -- if true will use stress
         WaterFoodLevel = 1,          --  at every one second it will add this value if food or water is below 0
         --* NEW *--
         ShootingLevel = 1,           -- at every one second it will add this value if player is shooting  <<<<<<NEW FEATURE >>>>>>>
@@ -116,17 +116,17 @@ Config                    = {
         -- stress levels for efects and animatios
         Level1 = {
             StressRemoveStamina = 0, -- remove stamina while stressed every 1 second
-            CanHoldWeapons = false,  -- if true player cant hold weapons
+            CanHoldWeapons = true,   -- if true player cant hold weapons
             Blurriness = 0.0,        -- blurriness while stressed
         },
         Level2 = {
-            CanHoldWeapons = false,    -- if true player cant hold weapons
+            CanHoldWeapons = true,     -- if true player cant hold weapons
             StressRemoveStamina = 0.1, -- remove stamina while stressed every 1 second
             Blurriness = 2.5,          -- blurriness while stressed
             AnimPostfx = '',           --l_0026a09djq
         },
         Level3 = {
-            CanHoldWeapons = true,     -- if true player cant hold weapons
+            CanHoldWeapons = false,    -- if true player cant hold weapons
             StressRemoveStamina = 0.2, -- remove stamina while stressed every 1 second
             Blurriness = 3.5,          -- blurriness while stressed
             --* NEW* --
@@ -136,7 +136,7 @@ Config                    = {
     },
 
     Addiction                = {
-        useaddiction = false,                  -- if true will use addiction
+        useaddiction = true,                  -- if true will use addiction
         Level1 = {
             AddictionRemoveHungerLevel = 0.5, -- remove hunger while addicted,
             AddictionRemoveThirstLevel = 0.5, -- remove thirst while addicted
@@ -161,6 +161,7 @@ Config                    = {
     },
 
 
+
     -------------------------------------------------------------
     ------------- * DRUNK SYSTEM * ------------------------------
     Random                 = math.random(1, 2), -- min and max chance to get up when pressing to get up when drunk
@@ -170,11 +171,17 @@ Config                    = {
     -------------------------------------------------------------
 }
 
+-- when player respanws
+Config.waterLevel     = 100 -- add water level when player respawns
+Config.foodLevel      = 100 -- add food level when player respawns
+Config.stressLevel    = 100 -- remove stress level when player respawns
+Config.addictionLevel = 100 -- remove addiction level when player respawns leave 0 if you dont want to add any
+
+
 Config.CommandGetScenario =
 "getscenario" -- if dev mode is true you can use this command to get scenario hash for stress list
 
 --* CLOTHING SYSTEM * --
-
 Config.ListHash           = {
     -- * dont touch hash
     -- * this edit makes players wear coats in too cold weathers and remove coats in too hot weathers

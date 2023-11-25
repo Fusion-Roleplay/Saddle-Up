@@ -59,7 +59,25 @@ window.addEventListener("message", function (event) {
 			top: event.data.y + "px",
 			left: event.data.x + "px",
 		});
+	} else if (event.data.action == "setMicMuteStatus") {
+
+		if (event.data.status == true) {
+			$('.voice .voiceimg').attr("src", "img/voicered.png");
+		} else {
+			$('.voice .voiceimg').attr("src", "img/voicewhite.png");
+		}
 	}
+
+
+	/*     if (event.data.type === "UIsize") {
+			let element = $(.${event.data.className});
+			element.css({
+				width: event.data.width + "px",
+				height: event.data.height + "px",
+			});
+		}
+	 */
+
 
 	/* 	if (event.data.type === "UIsize") {
 			let element = $(`.${event.data.className}`);
@@ -153,6 +171,8 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 
 		} else {
+
+
 
 			/* notify */
 			if (item.type === "hotTemp") {
