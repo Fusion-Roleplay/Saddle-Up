@@ -92,7 +92,7 @@ Config = {
     RespawnKeyTime           = 5000,                                 -- Milliseconds it will take to press the button
     CombatLogDeath           = true,                                 -- people who combat log now spawn in dead rather than force spawned
     UseControlsCamera        = false,                                -- if youset this to true players while dead  or being carried can move the camera using w a d s controls this is resource intensive leave to false
-    UseDeathHandler          = true,                                 -- levae this to true if you dont know what you doing . this is to disable the death handling incase you have something custom
+    UseDeathHandler          = false,                                 -- levae this to true if you dont know what you doing . this is to disable the death handling incase you have something custom
     -- places for players to spawn
     Hospitals                = {
         Valentine = {
